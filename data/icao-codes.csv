@@ -1037,20 +1037,20 @@ DGSN,AIRPORT,,Sunyani Arpt,Sunyani,GH,Ghana,7.361,-2.33,NYI,,,,,,301,BA,METAR,si
 DGSW,AIRPORT,,Wenchi,Wenchi,GH,Ghana,7.75,-2.1,,,,,,,339,BA,METAR,site-name,,,,awc-station-cache
 DGTK,AIRPORT,,Takoradi Arpt,Takoradi,GH,Ghana,4.896,-1.775,TKD,,,,,,5,,METAR|TAF,site-name,,,,awc-station-cache
 DGTX,AIRPORT,,Axim,Axim,GH,Ghana,4.867,-2.233,,,,,,,38,WP,METAR,site-name,,,,awc-station-cache
-DIAD,AIRPORT,,Adiake,Adiake,CI,Côte d’Ivoire,5.286,-3.303,,,,,,,39,AB,METAR,site-name,,,,awc-station-cache
-DIAP,AIRPORT,,Boigny Intl,Abidjan,CI,Côte d’Ivoire,5.261,-3.926,ABJ,,,,,,4,AB,METAR|TAF,site-city,,,,awc-station-cache
-DIBK,AIRPORT,,Bouaké Arpt,Bouaké,CI,Côte d’Ivoire,7.739,-5.074,BYK,,,,,,363,BK,METAR|TAF,site-name,,,,awc-station-cache
-DIBU,AIRPORT,,Bondoukou Arpt,Bondoukou,CI,Côte d’Ivoire,8.012,-2.765,BDK,,,,,,363,BD,METAR,site-name,,,,awc-station-cache
-DIDK,AIRPORT,,Dimbokro,Dimbokro,CI,Côte d’Ivoire,6.65,-4.7,DIM,,,,,,81,DI,METAR,site-name,,,,awc-station-cache
-DIDL,AIRPORT,,Daloa Arpt,Daloa,CI,Côte d’Ivoire,6.79,-6.474,DJO,,,,,,263,DA,METAR,site-name,,,,awc-station-cache
-DIGA,AIRPORT,,Gagnoa Arpt,Gagnoa,CI,Côte d’Ivoire,6.109,-5.989,GGN,,,,,,218,GD,METAR,site-name,,,,awc-station-cache
-DIKO,AIRPORT,,Korhogo Arpt,Korhogo,CI,Côte d’Ivoire,9.411,-5.622,HGO,,,,,,383,KO,METAR,site-name,,,,awc-station-cache
-DIMN,AIRPORT,,Man Arpt,Man,CI,Côte d’Ivoire,7.271,-7.588,MJC,,,,,,382,MA,METAR,site-name,,,,awc-station-cache
-DIOD,AIRPORT,,Odienne Arpt,Odienne,CI,Côte d’Ivoire,9.538,-7.564,KEO,,,,,,417,KO,METAR,site-name,,,,awc-station-cache
-DISP,AIRPORT,,San Pedro Arpt,San Pedro,CI,Côte d’Ivoire,4.747,-6.661,SPY,,,,,,8,SP,METAR,site-name,,,,awc-station-cache
-DISS,AIRPORT,,Sassandra Arpt,Sassandra,CI,Côte d’Ivoire,4.931,-6.132,ZSS,,,,,,62,SA,METAR,site-name,,,,awc-station-cache
-DITB,AIRPORT,,Tabou Arpt,Tabou,CI,Côte d’Ivoire,4.433,-7.36,TXU,,,,,,13,TA,METAR,site-name,,,,awc-station-cache
-DIYO,AIRPORT,,Yamoussoukro Arpt,Yamoussoukro,CI,Côte d’Ivoire,6.903,-5.366,ASK,,,,,,202,YA,METAR|TAF,site-name,,,,awc-station-cache
+DIAD,AIRPORT,,Adiake,Adiake,CI,Cote d'Ivoire,5.286,-3.303,,,,,,,39,AB,METAR,site-name,,,,awc-station-cache
+DIAP,AIRPORT,,Boigny Intl,Abidjan,CI,Cote d'Ivoire,5.261,-3.926,ABJ,,,,,,4,AB,METAR|TAF,site-city,,,,awc-station-cache
+DIBK,AIRPORT,,Bouaké Arpt,Bouaké,CI,Cote d'Ivoire,7.739,-5.074,BYK,,,,,,363,BK,METAR|TAF,site-name,,,,awc-station-cache
+DIBU,AIRPORT,,Bondoukou Arpt,Bondoukou,CI,Cote d'Ivoire,8.012,-2.765,BDK,,,,,,363,BD,METAR,site-name,,,,awc-station-cache
+DIDK,AIRPORT,,Dimbokro,Dimbokro,CI,Cote d'Ivoire,6.65,-4.7,DIM,,,,,,81,DI,METAR,site-name,,,,awc-station-cache
+DIDL,AIRPORT,,Daloa Arpt,Daloa,CI,Cote d'Ivoire,6.79,-6.474,DJO,,,,,,263,DA,METAR,site-name,,,,awc-station-cache
+DIGA,AIRPORT,,Gagnoa Arpt,Gagnoa,CI,Cote d'Ivoire,6.109,-5.989,GGN,,,,,,218,GD,METAR,site-name,,,,awc-station-cache
+DIKO,AIRPORT,,Korhogo Arpt,Korhogo,CI,Cote d'Ivoire,9.411,-5.622,HGO,,,,,,383,KO,METAR,site-name,,,,awc-station-cache
+DIMN,AIRPORT,,Man Arpt,Man,CI,Cote d'Ivoire,7.271,-7.588,MJC,,,,,,382,MA,METAR,site-name,,,,awc-station-cache
+DIOD,AIRPORT,,Odienne Arpt,Odienne,CI,Cote d'Ivoire,9.538,-7.564,KEO,,,,,,417,KO,METAR,site-name,,,,awc-station-cache
+DISP,AIRPORT,,San Pedro Arpt,San Pedro,CI,Cote d'Ivoire,4.747,-6.661,SPY,,,,,,8,SP,METAR,site-name,,,,awc-station-cache
+DISS,AIRPORT,,Sassandra Arpt,Sassandra,CI,Cote d'Ivoire,4.931,-6.132,ZSS,,,,,,62,SA,METAR,site-name,,,,awc-station-cache
+DITB,AIRPORT,,Tabou Arpt,Tabou,CI,Cote d'Ivoire,4.433,-7.36,TXU,,,,,,13,TA,METAR,site-name,,,,awc-station-cache
+DIYO,AIRPORT,,Yamoussoukro Arpt,Yamoussoukro,CI,Cote d'Ivoire,6.903,-5.366,ASK,,,,,,202,YA,METAR|TAF,site-name,,,,awc-station-cache
 DNAA,AIRPORT,,Azikiwe Intl,Abuja,NG,Nigeria,9.007,7.263,ABV,,,,,,338,NI,METAR|TAF,site-city,,,,awc-station-cache
 DNAK,AIRPORT,,Akure Arpt,Akure,NG,Nigeria,7.247,5.301,AKR,,,,,,328,ON,METAR|TAF,site-name,,,,awc-station-cache
 DNBE,AIRPORT,,Benin Arpt,Benin,NG,Nigeria,6.317,5.603,BNI,,,,,,77,ED,METAR|TAF,site-name,,,,awc-station-cache
@@ -1472,9 +1472,9 @@ EKYT,AIRPORT,,Aalborg Arpt,Aalborg,DK,Denmark,57.093,9.879,AAL,,,,,,2,NO,METAR|T
 ELLX,AIRPORT,,Findel Arpt,Luxembourg,LU,Luxembourg,49.626,6.204,LUX,,,,,,374,LL,METAR|TAF,site-city,,,,awc-station-cache
 ENAL,AIRPORT,,Alesund Arpt,Vigra,NO,Norway,62.562,6.115,AES,,,,,,21,MR,METAR|TAF,site-city,,,,awc-station-cache
 ENAN,AIRPORT,,Andøya Arpt,Andøya,NO,Norway,69.307,16.131,ANX,,,,,,13,NO,METAR|TAF,site-name,,,,awc-station-cache
-ENAS,AIRPORT,,Ny-Ålesund Arpt,Ny-Ålesund,SJ,Svalbard & Jan Mayen,78.917,11.933,,,,,,,8,SV,METAR,site-name,,,,awc-station-cache
+ENAS,AIRPORT,,Ny-Ålesund Arpt,Ny-Ålesund,SJ,Svalbard and Jan Mayen,78.917,11.933,,,,,,,8,SV,METAR,site-name,,,,awc-station-cache
 ENAT,AIRPORT,,Alta Arpt,Alta,NO,Norway,69.978,23.358,ALF,,,,,,3,FI,METAR|TAF,site-name,,,,awc-station-cache
-ENBJ,AIRPORT,,Bjornoya Island,Bjornoya Island,SJ,Svalbard & Jan Mayen,74.504,19,,,,,,,2,SV,METAR,site-name,,,,awc-station-cache
+ENBJ,AIRPORT,,Bjornoya Island,Bjornoya Island,SJ,Svalbard and Jan Mayen,74.504,19,,,,,,,2,SV,METAR,site-name,,,,awc-station-cache
 ENBL,AIRPORT,,Bringeland Arpt,Bringeland,NO,Norway,61.391,5.76,FDE,,,,,,313,SO,METAR|TAF,site-name,,,,awc-station-cache
 ENBM,AIRPORT,,Voss-Bomden,Voss-Bomden,NO,Norway,60.639,6.502,,,,,,,129,HO,METAR,site-name,,,,awc-station-cache
 ENBN,AIRPORT,,Bronnoy Arpt,Bronnoysund,NO,Norway,65.458,12.216,BNN,,,,,,3,NO,METAR|TAF,site-city,,,,awc-station-cache
@@ -1500,9 +1500,9 @@ ENHE,AIRPORT,,Heidrun,Heidrun,NO,Norway,65.325,2.327,,,,,,,10,,METAR|TAF,site-na
 ENHF,AIRPORT,,Hammerfest Arpt,Hammerfest,NO,Norway,70.681,23.677,HFT,,,,,,79,FI,METAR|TAF,site-name,,,,awc-station-cache
 ENHK,AIRPORT,,Hasvik Arpt,Hasvik,NO,Norway,70.487,22.14,HAA,,,,,,6,FI,METAR|TAF,site-name,,,,awc-station-cache
 ENHM,AIRPORT,,Heimdal,Heimdal,NO,Norway,59.57,2.22,,,,,,,10,,METAR|TAF,site-name,,,,awc-station-cache
-ENHO,AIRPORT,,Hopen Island,Hopen Island,SJ,Svalbard & Jan Mayen,76.509,25.016,,,,,,,5,SV,METAR,site-name,,,,awc-station-cache
+ENHO,AIRPORT,,Hopen Island,Hopen Island,SJ,Svalbard and Jan Mayen,76.509,25.016,,,,,,,5,SV,METAR,site-name,,,,awc-station-cache
 ENHV,AIRPORT,,Valan Arpt,Honningsvag,NO,Norway,71.009,25.982,HVG,,,,,,13,SV,METAR|TAF,site-city,,,,awc-station-cache
-ENJA,AIRPORT,,Jan Mayen Island,Jan Mayen Island,SJ,Svalbard & Jan Mayen,70.94,-8.668,,,,,,,2,JM,METAR,site-name,,,,awc-station-cache
+ENJA,AIRPORT,,Jan Mayen Island,Jan Mayen Island,SJ,Svalbard and Jan Mayen,70.94,-8.668,,,,,,,2,JM,METAR,site-name,,,,awc-station-cache
 ENJS,AIRPORT,,Johan Sverdrup,Johan Sverdrup,NO,Norway,58.835,2.545,,,,,,,0,,METAR|TAF,site-name,,,,awc-station-cache
 ENKA,AIRPORT,,Kautokeino Arpt,Kautokeino,NO,Norway,69.04,23.034,,,,,,,364,FI,METAR,site-name,,,,awc-station-cache
 ENKB,AIRPORT,,Kristiansund Arpt,Kristiansund,NO,Norway,63.109,7.816,KSU,,,,,,62,MR,METAR|TAF,site-name,,,,awc-station-cache
@@ -1828,22 +1828,22 @@ FBSP,AIRPORT,,Selebi Phikwe Arpt,Selebi Phikwe,BW,Botswana,-22.058,27.829,PKW,,,
 FBSW,AIRPORT,,Shakawe,Shakawe,BW,Botswana,-18.379,21.838,SWX,,,,,,1007,NG,METAR,site-name,,,,awc-station-cache
 FBTE,AIRPORT,,Tshane,Tshane,BW,Botswana,-24.018,21.87,,,,,,,1122,KG,METAR,site-name,,,,awc-station-cache
 FBTS,AIRPORT,,Tsabong Arpt,Tsabong,BW,Botswana,-26.031,22.402,TBY,,,,,,962,KG,METAR,site-name,,,,awc-station-cache
-FCBB,AIRPORT,,Brazzaville Arpt,Brazzaville,CG,Congo - Brazzaville,-4.252,15.253,BZV,,,,,,316,BZ,METAR|TAF,site-name,,,,awc-station-cache
-FCBD,AIRPORT,,Djambala,Djambala,CG,Congo - Brazzaville,-2.53,14.77,DJM,,,,,,791,,METAR,site-name,,,,awc-station-cache
-FCBM,AIRPORT,,Mouyondzi,Mouyondzi,CG,Congo - Brazzaville,-4.015,13.966,MUY,,,,,,512,BO,METAR,site-name,,,,awc-station-cache
-FCBO,AIRPORT,,M'Pouya,M'Pouya,CG,Congo - Brazzaville,-2.617,16.217,,,,,,,289,BN,METAR,site-name,,,,awc-station-cache
-FCBS,AIRPORT,,Sibiti,Sibiti,CG,Congo - Brazzaville,-3.683,13.35,SIB,,,,,,532,LE,METAR,site-name,,,,awc-station-cache
-FCCC,FIR,,BRAZZAVILLE FIR,Brazzaville,CG,Congo - Brazzaville,1.25,17.008,,FC,0,245,false,,,,,station,FC,FCCCFIR,524,eurocontrol-nm
-FCCC,UIR,,BRAZZAVILLE UIR,Brazzaville,CG,Congo - Brazzaville,1.25,17.008,,FC,245,999,false,,,,,station,FC,FCCCUIR,524,eurocontrol-nm
-FCOD,AIRPORT,,N'Guesso Arpt,Ollombo,CG,Congo - Brazzaville,-1.226,15.91,,,,,,,327,MN,METAR,site-city,,,,awc-station-cache
-FCOG,AIRPORT,,Gamboma Arpt,Gamboma,CG,Congo - Brazzaville,-1.894,15.855,GMM,,,,,,309,PL,METAR,site-name,,,,awc-station-cache
-FCOI,AIRPORT,,Impfondo Arpt,Impfondo,CG,Congo - Brazzaville,1.592,18.051,ION,,,,,,320,LI,METAR,site-name,,,,awc-station-cache
-FCOM,AIRPORT,,Makoua,Makoua,CG,Congo - Brazzaville,-0.02,15.58,MKJ,,,,,,329,CU,METAR,site-name,,,,awc-station-cache
-FCOS,AIRPORT,,Souanke,Souanke,CG,Congo - Brazzaville,2.067,14.133,SOE,,,,,,549,SA,METAR,site-name,,,,awc-station-cache
-FCOU,AIRPORT,,Ouesso,Ouesso,CG,Congo - Brazzaville,1.616,16.038,OUE,,,,,,354,SA,METAR,site-name,,,,awc-station-cache
-FCPA,AIRPORT,,Makabana,Makabana,CG,Congo - Brazzaville,-3.483,12.617,KMK,,,,,,158,NI,METAR,site-name,,,,awc-station-cache
-FCPL,AIRPORT,,Loubomo,Loubomo,CG,Congo - Brazzaville,-4.2,12.7,DIS,,,,,,330,NI,METAR,site-name,,,,awc-station-cache
-FCPP,AIRPORT,,Pointe-Noire Arpt,Pointe-Noire,CG,Congo - Brazzaville,-4.816,11.887,PNR,,,,,,18,KO,METAR|TAF,site-name,,,,awc-station-cache
+FCBB,AIRPORT,,Brazzaville Arpt,Brazzaville,CG,Republic of the Congo,-4.252,15.253,BZV,,,,,,316,BZ,METAR|TAF,site-name,,,,awc-station-cache
+FCBD,AIRPORT,,Djambala,Djambala,CG,Republic of the Congo,-2.53,14.77,DJM,,,,,,791,,METAR,site-name,,,,awc-station-cache
+FCBM,AIRPORT,,Mouyondzi,Mouyondzi,CG,Republic of the Congo,-4.015,13.966,MUY,,,,,,512,BO,METAR,site-name,,,,awc-station-cache
+FCBO,AIRPORT,,M'Pouya,M'Pouya,CG,Republic of the Congo,-2.617,16.217,,,,,,,289,BN,METAR,site-name,,,,awc-station-cache
+FCBS,AIRPORT,,Sibiti,Sibiti,CG,Republic of the Congo,-3.683,13.35,SIB,,,,,,532,LE,METAR,site-name,,,,awc-station-cache
+FCCC,FIR,,BRAZZAVILLE FIR,Brazzaville,CG,Republic of the Congo,1.25,17.008,,FC,0,245,false,,,,,station,FC,FCCCFIR,524,eurocontrol-nm
+FCCC,UIR,,BRAZZAVILLE UIR,Brazzaville,CG,Republic of the Congo,1.25,17.008,,FC,245,999,false,,,,,station,FC,FCCCUIR,524,eurocontrol-nm
+FCOD,AIRPORT,,N'Guesso Arpt,Ollombo,CG,Republic of the Congo,-1.226,15.91,,,,,,,327,MN,METAR,site-city,,,,awc-station-cache
+FCOG,AIRPORT,,Gamboma Arpt,Gamboma,CG,Republic of the Congo,-1.894,15.855,GMM,,,,,,309,PL,METAR,site-name,,,,awc-station-cache
+FCOI,AIRPORT,,Impfondo Arpt,Impfondo,CG,Republic of the Congo,1.592,18.051,ION,,,,,,320,LI,METAR,site-name,,,,awc-station-cache
+FCOM,AIRPORT,,Makoua,Makoua,CG,Republic of the Congo,-0.02,15.58,MKJ,,,,,,329,CU,METAR,site-name,,,,awc-station-cache
+FCOS,AIRPORT,,Souanke,Souanke,CG,Republic of the Congo,2.067,14.133,SOE,,,,,,549,SA,METAR,site-name,,,,awc-station-cache
+FCOU,AIRPORT,,Ouesso,Ouesso,CG,Republic of the Congo,1.616,16.038,OUE,,,,,,354,SA,METAR,site-name,,,,awc-station-cache
+FCPA,AIRPORT,,Makabana,Makabana,CG,Republic of the Congo,-3.483,12.617,KMK,,,,,,158,NI,METAR,site-name,,,,awc-station-cache
+FCPL,AIRPORT,,Loubomo,Loubomo,CG,Republic of the Congo,-4.2,12.7,DIS,,,,,,330,NI,METAR,site-name,,,,awc-station-cache
+FCPP,AIRPORT,,Pointe-Noire Arpt,Pointe-Noire,CG,Republic of the Congo,-4.816,11.887,PNR,,,,,,18,KO,METAR|TAF,site-name,,,,awc-station-cache
 FDBB,AIRPORT,,Big Bend Met,Big Bend Met,SZ,Eswatini,-26.815,31.934,,,,,,,106,LU,METAR,site-name,,,,awc-station-cache
 FDJR,AIRPORT,,Jericho,Jericho,SZ,Eswatini,-27.162,31.439,,,,,,,696,SH,METAR,site-name,,,,awc-station-cache
 FDLM,AIRPORT,,Lomahasha,Lomahasha,SZ,Eswatini,-25.984,31.986,,,,,,,585,LU,METAR,site-name,,,,awc-station-cache
@@ -1874,7 +1874,7 @@ FEFT,AIRPORT,,Berbérati Arpt,Berbérati,CF,Central African Republic,4.226,15.78
 FEFY,AIRPORT,,Yalinga,Yalinga,CF,Central African Republic,6.521,23.26,AIG,,,,,,619,HK,METAR,site-name,,,,awc-station-cache
 FGBT,AIRPORT,,Bata Intl,Bata,GQ,Equatorial Guinea,1.905,9.806,BSG,,,,,,2,LI,METAR|TAF,site-name,,,,awc-station-cache
 FGSL,AIRPORT,,Santa Isabel Arpt,Malabo,GQ,Equatorial Guinea,3.756,8.71,SSG,,,,,,23,BN,METAR|TAF,site-city,,,,awc-station-cache
-FHAW,AIRPORT,,Ascension Arpt,Ascension,SH,St. Helena,-7.97,-14.394,ASI,,,,,,79,HE,METAR|TAF,site-name,,,,awc-station-cache
+FHAW,AIRPORT,,Ascension Arpt,Ascension,SH,Saint Helena,-7.97,-14.394,ASI,,,,,,79,HE,METAR|TAF,site-name,,,,awc-station-cache
 FIMM,FIR,,MAURITIUS FIR,Mauritius,MU,Mauritius,-25.5,65.25,,FI,0,999,false,,,,,station,FIM,FIMMFIR,524,eurocontrol-nm
 FIMP,AIRPORT,,Mauritius Intl,Mauritius,MU,Mauritius,-20.434,57.684,MRU,,,,,,57,GP,METAR|TAF,site-name,,,,awc-station-cache
 FIMR,AIRPORT,,Rodrigues Arpt,Rodrigues,MU,Mauritius,-19.755,63.36,RRG,,,,,,31,RO,METAR|TAF,site-name,,,,awc-station-cache
@@ -1933,8 +1933,8 @@ FLZB,AIRPORT,,Zambezi,Zambezi,ZM,Zambia,-13.537,23.108,BBZ,,,,,,1076,EA,METAR,si
 FMCH,AIRPORT,,Ibrahim Intl,Comoros,KM,Comoros,-11.534,43.272,HAH,,,,,,30,G,METAR|TAF,site-city,,,,awc-station-cache
 FMCV,AIRPORT,,Ouani Arpt,Ouani,KM,Comoros,-12.132,44.43,AJN,,,,,,19,A,METAR,site-name,,,,awc-station-cache
 FMCZ,AIRPORT,,Pamandzi Intl,Dzaoudzi,YT,Mayotte,-12.805,45.281,DZA,,,,,,7,MA,METAR|TAF,site-city,,,,awc-station-cache
-FMEE,AIRPORT,,St Denis/Garros Arpt,Reunion,RE,Réunion,-20.887,55.51,RUN,,,,,,20,,METAR|TAF,site-city,,,,awc-station-cache
-FMEP,AIRPORT,,Pierrefonds Arpt,Reunion,RE,Réunion,-21.32,55.425,ZSE,,,,,,21,,METAR|TAF,site-city,,,,awc-station-cache
+FMEE,AIRPORT,,St Denis/Garros Arpt,Reunion,RE,Reunion,-20.887,55.51,RUN,,,,,,20,,METAR|TAF,site-city,,,,awc-station-cache
+FMEP,AIRPORT,,Pierrefonds Arpt,Reunion,RE,Reunion,-21.32,55.425,ZSE,,,,,,21,,METAR|TAF,site-city,,,,awc-station-cache
 FMME,AIRPORT,,Antsirabe,Antsirabe,MG,Madagascar,-19.817,47.067,ATJ,,,,,,1546,T,METAR|TAF,site-name,,,,awc-station-cache
 FMMH,AIRPORT,,Mahanoro,Mahanoro,MG,Madagascar,-19.833,48.8,VVB,,,,,,8,A,METAR,site-name,,,,awc-station-cache
 FMMI,AIRPORT,,Ivato Intl,Antananarivo,MG,Madagascar,-18.797,47.479,TNR,,,,,,1269,T,METAR|TAF,site-city,,,,awc-station-cache
@@ -1996,8 +1996,8 @@ FOON,AIRPORT,,Franceville Arpt,Franceville,GA,Gabon,-1.656,13.438,MVB,,,,,,440,H
 FOOR,AIRPORT,,Lastoursville,Lastoursville,GA,Gabon,-0.827,12.745,LTL,,,,,,487,OL,METAR,site-name,,,,awc-station-cache
 FOOT,AIRPORT,,Tchibanga Arpt,Tchibanga,GA,Gabon,-2.887,10.957,TCH,,,,,,75,NY,METAR,site-name,,,,awc-station-cache
 FOOY,AIRPORT,,Mayumba,Mayumba,GA,Gabon,-3.454,10.668,MYB,,,,,,8,NY,METAR,site-name,,,,awc-station-cache
-FPPR,AIRPORT,,Príncipe,Príncipe,ST,São Tomé & Príncipe,1.65,7.42,PCP,,,,,,3,,METAR,site-name,,,,awc-station-cache
-FPST,AIRPORT,,São Tomé Intl,São Tomé,ST,São Tomé & Príncipe,0.378,6.712,TMS,,,,,,11,S,METAR|TAF,site-name,,,,awc-station-cache
+FPPR,AIRPORT,,Príncipe,Príncipe,ST,Sao Tome and Principe,1.65,7.42,PCP,,,,,,3,,METAR,site-name,,,,awc-station-cache
+FPST,AIRPORT,,São Tomé Intl,São Tomé,ST,Sao Tome and Principe,0.378,6.712,TMS,,,,,,11,S,METAR|TAF,site-name,,,,awc-station-cache
 FQBE,FIR,,BEIRA FIR,Beira,MZ,Mozambique,-20.208,36.609,,FQ,0,999,false,,,,,station,FQB,FQBEFIR,524,eurocontrol-nm
 FQBR,AIRPORT,,Beira Intl,Beira,MZ,Mozambique,-19.796,34.908,BEW,,,,,,14,SO,METAR|TAF,site-name,,,,awc-station-cache
 FQCB,AIRPORT,,Cuamba,Cuamba,MZ,Mozambique,-14.815,36.53,FXO,,,,,,587,NI,METAR,site-name,,,,awc-station-cache
@@ -2104,37 +2104,37 @@ FYWE,AIRPORT,,Eros Arpt,Windhoek,NA,Namibia,-22.612,17.08,ERS,,,,,,1700,KH,METAR
 FYWF,FIR,,WINDHOEK FIR,Windhoek,NA,Namibia,-22.242,17.629,,FY,0,999,false,,,,,station,FYW,FYWFFIR,524,eurocontrol-nm
 FYWH,AIRPORT,,Kufako Intl,Windhoek,NA,Namibia,-22.481,17.47,WDH,,,,,,1699,KH,METAR|TAF,site-city,,,,awc-station-cache
 FYWW,AIRPORT,,Windhoek,Windhoek,NA,Namibia,-22.567,17.1,,,,,,,1672,KH,METAR|TAF,site-name,,,,awc-station-cache
-FZAA,AIRPORT,,NDjili Arpt,Kinshasa,CD,Congo - Kinshasa,-4.387,15.448,FIH,,,,,,309,KN,METAR|TAF,site-city,,,,awc-station-cache
-FZAG,AIRPORT,,Moanda Arpt,Moanda,CD,Congo - Kinshasa,-5.931,12.351,MNB,,,,,,27,BC,METAR,site-name,,,,awc-station-cache
-FZAM,AIRPORT,,Matadi,Matadi,CD,Congo - Kinshasa,-5.8,13.44,MAT,,,,,,341,BC,METAR,site-name,,,,awc-station-cache
-FZAN,AIRPORT,,Inga,Inga,CD,Congo - Kinshasa,-5.532,13.579,,,,,,,271,BC,METAR,site-name,,,,awc-station-cache
-FZBA,AIRPORT,,Inongo,Inongo,CD,Congo - Kinshasa,-1.946,18.286,INO,,,,,,316,BN,METAR,site-name,,,,awc-station-cache
-FZBO,AIRPORT,,Bandundu,Bandundu,CD,Congo - Kinshasa,-3.311,17.382,FDU,,,,,,321,BN,METAR,site-name,,,,awc-station-cache
-FZCA,AIRPORT,,Kikwit Arpt,Kikwit,CD,Congo - Kinshasa,-5.036,18.786,KKW,,,,,,479,BN,METAR,site-name,,,,awc-station-cache
-FZCS,AIRPORT,,Kenge,Kenge,CD,Congo - Kinshasa,-4.839,17.029,,,,,,,545,BN,METAR,site-name,,,,awc-station-cache
-FZEA,AIRPORT,,Mbandaka Arpt,Mbandaka,CD,Congo - Kinshasa,0.022,18.289,MDK,,,,,,315,EQ,METAR,site-name,,,,awc-station-cache
-FZFK,AIRPORT,,Gemena,Gemena,CD,Congo - Kinshasa,3.28,19.78,GMA,,,,,,475,EQ,METAR,site-name,,,,awc-station-cache
-FZGN,AIRPORT,,Boende Arpt,Boende,CD,Congo - Kinshasa,-0.288,20.881,BNB,,,,,,352,EQ,METAR,site-name,,,,awc-station-cache
-FZIA,AIRPORT,,Kisangani,Kisangani,CD,Congo - Kinshasa,0.517,25.183,,,,,,,398,TO,METAR,site-name,,,,awc-station-cache
-FZIC,AIRPORT,,Bangoka Arpt,Kisangani,CD,Congo - Kinshasa,0.482,25.338,FKI,,,,,,432,TO,METAR|TAF,site-city,,,,awc-station-cache
-FZMB,AIRPORT,,Butembo,Butembo,CD,Congo - Kinshasa,0.117,29.313,,,,,,,1754,NK,METAR,site-name,,,,awc-station-cache
-FZNA,AIRPORT,,Goma Arpt,Goma,CD,Congo - Kinshasa,-1.663,29.237,GOM,,,,,,1552,NK,METAR|TAF,site-name,,,,awc-station-cache
-FZNC,AIRPORT,,Rutshuru,Rutshuru,CD,Congo - Kinshasa,-1.183,29.45,,,,,,,1283,NK,METAR,site-name,,,,awc-station-cache
-FZOA,AIRPORT,,Kindu,Kindu,CD,Congo - Kinshasa,-2.925,25.916,KND,,,,,,495,MA,METAR,site-name,,,,awc-station-cache
-FZQA,AIRPORT,,Lubumbashi Intl,Lubumbashi,CD,Congo - Kinshasa,-11.592,27.53,FBM,,,,,,1309,HK,METAR|TAF,site-name,,,,awc-station-cache
-FZQM,AIRPORT,,Kolwezi Arpt,Kolwezi,CD,Congo - Kinshasa,-10.766,25.508,KWZ,,,,,,1526,HK,METAR,site-name,,,,awc-station-cache
-FZRA,AIRPORT,,Manono Arpt,Manono,CD,Congo - Kinshasa,-7.289,27.394,MNO,,,,,,633,NK,METAR,site-name,,,,awc-station-cache
-FZRF,AIRPORT,,Kalemie,Kalemie,CD,Congo - Kinshasa,-5.881,29.243,FMI,,,,,,778,NK,METAR,site-name,,,,awc-station-cache
-FZRQ,AIRPORT,,Kongolo,Kongolo,CD,Congo - Kinshasa,-5.394,26.991,KOO,,,,,,570,NK,METAR,site-name,,,,awc-station-cache
-FZSA,AIRPORT,,Kamina,Kamina,CD,Congo - Kinshasa,-8.647,25.249,,,,,,,1105,HK,METAR,site-name,,,,awc-station-cache
-FZUA,AIRPORT,,Kananga,Kananga,CD,Congo - Kinshasa,-5.88,22.42,KGA,,,,,,654,,METAR,site-name,,,,awc-station-cache
-FZUK,AIRPORT,,Tshikapa,Tshikapa,CD,Congo - Kinshasa,-6.438,20.794,TSH,,,,,,491,KS,METAR,site-name,,,,awc-station-cache
-FZVA,AIRPORT,,Lodja,Lodja,CD,Congo - Kinshasa,-3.462,23.618,LJA,,,,,,499,KE,METAR,site-name,,,,awc-station-cache
-FZVI,AIRPORT,,Lusambo,Lusambo,CD,Congo - Kinshasa,-4.967,23.433,LBO,,,,,,433,KE,,site-name,,,,awc-station-cache
-FZVS,AIRPORT,,Ilebo,Ilebo,CD,Congo - Kinshasa,-4.33,20.589,PFR,,,,,,445,KS,METAR,site-name,,,,awc-station-cache
-FZWA,AIRPORT,,Mbuji-Mayi Arpt,Mbuji-Mayi,CD,Congo - Kinshasa,-6.123,23.57,MJM,,,,,,679,KE,METAR,site-name,,,,awc-station-cache
-FZZA,FIR,,KINSHASA FIR,Kinshasa,CD,Congo - Kinshasa,-3.308,21.609,,FZ,0,245,false,,,,,station,FZ,FZZAFIR,524,eurocontrol-nm
-FZZA,UIR,,KINSHASA UIR,Kinshasa,CD,Congo - Kinshasa,-3.308,21.609,,FZ,245,999,false,,,,,station,FZ,FZZAUIR,524,eurocontrol-nm
+FZAA,AIRPORT,,NDjili Arpt,Kinshasa,CD,Democratic Republic of the Congo,-4.387,15.448,FIH,,,,,,309,KN,METAR|TAF,site-city,,,,awc-station-cache
+FZAG,AIRPORT,,Moanda Arpt,Moanda,CD,Democratic Republic of the Congo,-5.931,12.351,MNB,,,,,,27,BC,METAR,site-name,,,,awc-station-cache
+FZAM,AIRPORT,,Matadi,Matadi,CD,Democratic Republic of the Congo,-5.8,13.44,MAT,,,,,,341,BC,METAR,site-name,,,,awc-station-cache
+FZAN,AIRPORT,,Inga,Inga,CD,Democratic Republic of the Congo,-5.532,13.579,,,,,,,271,BC,METAR,site-name,,,,awc-station-cache
+FZBA,AIRPORT,,Inongo,Inongo,CD,Democratic Republic of the Congo,-1.946,18.286,INO,,,,,,316,BN,METAR,site-name,,,,awc-station-cache
+FZBO,AIRPORT,,Bandundu,Bandundu,CD,Democratic Republic of the Congo,-3.311,17.382,FDU,,,,,,321,BN,METAR,site-name,,,,awc-station-cache
+FZCA,AIRPORT,,Kikwit Arpt,Kikwit,CD,Democratic Republic of the Congo,-5.036,18.786,KKW,,,,,,479,BN,METAR,site-name,,,,awc-station-cache
+FZCS,AIRPORT,,Kenge,Kenge,CD,Democratic Republic of the Congo,-4.839,17.029,,,,,,,545,BN,METAR,site-name,,,,awc-station-cache
+FZEA,AIRPORT,,Mbandaka Arpt,Mbandaka,CD,Democratic Republic of the Congo,0.022,18.289,MDK,,,,,,315,EQ,METAR,site-name,,,,awc-station-cache
+FZFK,AIRPORT,,Gemena,Gemena,CD,Democratic Republic of the Congo,3.28,19.78,GMA,,,,,,475,EQ,METAR,site-name,,,,awc-station-cache
+FZGN,AIRPORT,,Boende Arpt,Boende,CD,Democratic Republic of the Congo,-0.288,20.881,BNB,,,,,,352,EQ,METAR,site-name,,,,awc-station-cache
+FZIA,AIRPORT,,Kisangani,Kisangani,CD,Democratic Republic of the Congo,0.517,25.183,,,,,,,398,TO,METAR,site-name,,,,awc-station-cache
+FZIC,AIRPORT,,Bangoka Arpt,Kisangani,CD,Democratic Republic of the Congo,0.482,25.338,FKI,,,,,,432,TO,METAR|TAF,site-city,,,,awc-station-cache
+FZMB,AIRPORT,,Butembo,Butembo,CD,Democratic Republic of the Congo,0.117,29.313,,,,,,,1754,NK,METAR,site-name,,,,awc-station-cache
+FZNA,AIRPORT,,Goma Arpt,Goma,CD,Democratic Republic of the Congo,-1.663,29.237,GOM,,,,,,1552,NK,METAR|TAF,site-name,,,,awc-station-cache
+FZNC,AIRPORT,,Rutshuru,Rutshuru,CD,Democratic Republic of the Congo,-1.183,29.45,,,,,,,1283,NK,METAR,site-name,,,,awc-station-cache
+FZOA,AIRPORT,,Kindu,Kindu,CD,Democratic Republic of the Congo,-2.925,25.916,KND,,,,,,495,MA,METAR,site-name,,,,awc-station-cache
+FZQA,AIRPORT,,Lubumbashi Intl,Lubumbashi,CD,Democratic Republic of the Congo,-11.592,27.53,FBM,,,,,,1309,HK,METAR|TAF,site-name,,,,awc-station-cache
+FZQM,AIRPORT,,Kolwezi Arpt,Kolwezi,CD,Democratic Republic of the Congo,-10.766,25.508,KWZ,,,,,,1526,HK,METAR,site-name,,,,awc-station-cache
+FZRA,AIRPORT,,Manono Arpt,Manono,CD,Democratic Republic of the Congo,-7.289,27.394,MNO,,,,,,633,NK,METAR,site-name,,,,awc-station-cache
+FZRF,AIRPORT,,Kalemie,Kalemie,CD,Democratic Republic of the Congo,-5.881,29.243,FMI,,,,,,778,NK,METAR,site-name,,,,awc-station-cache
+FZRQ,AIRPORT,,Kongolo,Kongolo,CD,Democratic Republic of the Congo,-5.394,26.991,KOO,,,,,,570,NK,METAR,site-name,,,,awc-station-cache
+FZSA,AIRPORT,,Kamina,Kamina,CD,Democratic Republic of the Congo,-8.647,25.249,,,,,,,1105,HK,METAR,site-name,,,,awc-station-cache
+FZUA,AIRPORT,,Kananga,Kananga,CD,Democratic Republic of the Congo,-5.88,22.42,KGA,,,,,,654,,METAR,site-name,,,,awc-station-cache
+FZUK,AIRPORT,,Tshikapa,Tshikapa,CD,Democratic Republic of the Congo,-6.438,20.794,TSH,,,,,,491,KS,METAR,site-name,,,,awc-station-cache
+FZVA,AIRPORT,,Lodja,Lodja,CD,Democratic Republic of the Congo,-3.462,23.618,LJA,,,,,,499,KE,METAR,site-name,,,,awc-station-cache
+FZVI,AIRPORT,,Lusambo,Lusambo,CD,Democratic Republic of the Congo,-4.967,23.433,LBO,,,,,,433,KE,,site-name,,,,awc-station-cache
+FZVS,AIRPORT,,Ilebo,Ilebo,CD,Democratic Republic of the Congo,-4.33,20.589,PFR,,,,,,445,KS,METAR,site-name,,,,awc-station-cache
+FZWA,AIRPORT,,Mbuji-Mayi Arpt,Mbuji-Mayi,CD,Democratic Republic of the Congo,-6.123,23.57,MJM,,,,,,679,KE,METAR,site-name,,,,awc-station-cache
+FZZA,FIR,,KINSHASA FIR,Kinshasa,CD,Democratic Republic of the Congo,-3.308,21.609,,FZ,0,245,false,,,,,station,FZ,FZZAFIR,524,eurocontrol-nm
+FZZA,UIR,,KINSHASA UIR,Kinshasa,CD,Democratic Republic of the Congo,-3.308,21.609,,FZ,245,999,false,,,,,station,FZ,FZZAUIR,524,eurocontrol-nm
 GABG,AIRPORT,,Bougouni,Bougouni,ML,Mali,11.417,-7.5,,,,,,,360,SK,METAR,site-name,,,,awc-station-cache
 GABS,AIRPORT,,Senou Intl,Bamako,ML,Mali,12.534,-7.95,BKO,,,,,,375,BK,METAR|TAF,site-city,,,,awc-station-cache
 GAGO,AIRPORT,,Gao Arpt,Gao,ML,Mali,16.247,-0.006,GAQ,,,,,,262,GA,METAR|TAF,site-name,,,,awc-station-cache
@@ -6128,7 +6128,7 @@ LFSX,AIRPORT,,Luxeuil Arpt,Luxeuil,FR,France,47.783,6.364,,,,,,,266,HD,METAR|TAF
 LFTH,AIRPORT,,Hyères Arpt,Toulon,FR,France,43.094,6.146,TLN,,,,,,3,PA,METAR|TAF,site-city,,,,awc-station-cache
 LFTU,AIRPORT,,St-Raphael,St-Raphael,FR,France,43.417,6.736,,,,,,,6,PA,METAR,site-name,,,,awc-station-cache
 LFTW,AIRPORT,,Garons Arpt,Nimes,FR,France,43.757,4.416,FNI,,,,,,91,OC,METAR|TAF,site-city,,,,awc-station-cache
-LFVP,AIRPORT,,St Pierre Arpt,St Pierre,PM,St. Pierre & Miquelon,46.764,-56.169,FSP,,,,,,5,ML,METAR|TAF,site-name,,,,awc-station-cache
+LFVP,AIRPORT,,St Pierre Arpt,St Pierre,PM,Saint Pierre and Miquelon,46.764,-56.169,FSP,,,,,,5,ML,METAR|TAF,site-name,,,,awc-station-cache
 LFXA,AIRPORT,,Ambérieu-en-Bugey,Ambérieu-en-Bugey,FR,France,45.979,5.331,,,,,,,249,AR,METAR,site-name,,,,awc-station-cache
 LFXI,AIRPORT,,Saint Christol Arpt,Saint Christol,FR,France,44.058,5.495,,,,,,,833,PA,METAR,site-name,,,,awc-station-cache
 LFYR,AIRPORT,,Romorantin Arpt,Romorantin,FR,France,47.32,1.688,,,,,,,83,CV,METAR|TAF,site-name,,,,awc-station-cache
@@ -6336,24 +6336,24 @@ LJLJ,AIRPORT,,Pucnik Arpt,Ljubljana,SI,Slovenia,46.218,14.477,LJU,,,,,,363,LJ,ME
 LJMB,AIRPORT,,Rusjan Arpt,Maribor,SI,Slovenia,46.48,15.682,MBX,,,,,,263,MA,METAR|TAF,site-city,,,,awc-station-cache
 LJMS,AIRPORT,,Murska Sobota,Murska Sobota,SI,Slovenia,46.63,16.175,,,,,,,184,MU,METAR,site-name,,,,awc-station-cache
 LJPZ,AIRPORT,,Portorož Arpt,Portorož,SI,Slovenia,45.473,13.615,POW,,,,,,2,PI,METAR|TAF,site-name,,,,awc-station-cache
-LKAA,FIR,,PRAHA FIR,Praha,CZ,Czechia,49.796,15.529,,LK,0,999,true,fabce,,,,region-name,LK,LKAAFIR,524,eurocontrol-nm
-LKCS,AIRPORT,,Ceske Budejovice Arpt,Ceske Budejovice,CZ,Czechia,48.946,14.427,,,,,,,432,SB,TAF,site-name,,,,awc-station-cache
-LKCV,AIRPORT,,Caslav Arpt,Caslav,CZ,Czechia,49.94,15.382,,,,,,,234,ST,METAR|TAF,site-name,,,,awc-station-cache
-LKKB,AIRPORT,,Kbely Arpt,Prague,CZ,Czechia,50.123,14.538,,,,,,,281,PR,METAR|TAF,site-city,,,,awc-station-cache
-LKKU,AIRPORT,,Kunovice Arpt,Kunovice,CZ,Czechia,49.042,17.442,UHE,,,,,,176,ZL,METAR,site-name,,,,awc-station-cache
-LKKV,AIRPORT,,Karlovy Vary Intl,Karlovy Vary,CZ,Czechia,50.202,12.91,KLV,,,,,,600,KA,METAR|TAF,site-name,,,,awc-station-cache
-LKKZ,AIRPORT,,Kosice Intl,Kosice,CZ,Czechia,48.664,21.242,,,,,,,232,,,site-name,,,,awc-station-cache
-LKLB,AIRPORT,,Liberec Arpt,Liberec,CZ,Czechia,50.77,15.024,,,,,,,397,LI,METAR,site-name,,,,awc-station-cache
-LKLN,AIRPORT,,Plzeň-Líně Arpt,Plzeň-Líně,CZ,Czechia,49.675,13.275,,,,,,,353,PL,METAR,site-name,,,,awc-station-cache
-LKMT,AIRPORT,,Janáček Arpt,Ostrava,CZ,Czechia,49.696,18.111,OSR,,,,,,251,MO,METAR|TAF,site-city,,,,awc-station-cache
-LKNA,AIRPORT,,Namest nad Oslavou Arpt,Namest nad Oslavou,CZ,Czechia,49.166,16.125,,,,,,,460,VY,METAR|TAF,site-name,,,,awc-station-cache
-LKPD,AIRPORT,,Pardubice Arpt,Pardubice,CZ,Czechia,50.016,15.74,PED,,,,,,226,PA,METAR|TAF,site-name,,,,awc-station-cache
-LKPO,AIRPORT,,Prerov Arpt,Prerov,CZ,Czechia,49.424,17.406,PRV,,,,,,201,OL,METAR|TAF,site-name,,,,awc-station-cache
-LKPP,AIRPORT,,Piestany,Piestany,CZ,Czechia,48.613,17.832,,,,,,,160,TV,,site-name,,,,awc-station-cache
-LKPR,AIRPORT,,Havel Arpt,Prague,CZ,Czechia,50.101,14.26,PRG,,,,,,364,ST,METAR|TAF,site-city,,,,awc-station-cache
-LKSL,AIRPORT,,Sliac,Sliac,CZ,Czechia,48.63,19.14,,,,,,,318,,,site-name,,,,awc-station-cache
-LKTB,AIRPORT,,Tuřany Arpt,Brno,CZ,Czechia,49.151,16.694,BRQ,,,,,,233,JM,METAR|TAF,site-city,,,,awc-station-cache
-LKVO,AIRPORT,,Vodochody Arpt,Vodochody,CZ,Czechia,50.217,14.396,VOD,,,,,,275,ST,METAR,site-name,,,,awc-station-cache
+LKAA,FIR,,PRAHA FIR,Praha,CZ,Czech Republic,49.796,15.529,,LK,0,999,true,fabce,,,,region-name,LK,LKAAFIR,524,eurocontrol-nm
+LKCS,AIRPORT,,Ceske Budejovice Arpt,Ceske Budejovice,CZ,Czech Republic,48.946,14.427,,,,,,,432,SB,TAF,site-name,,,,awc-station-cache
+LKCV,AIRPORT,,Caslav Arpt,Caslav,CZ,Czech Republic,49.94,15.382,,,,,,,234,ST,METAR|TAF,site-name,,,,awc-station-cache
+LKKB,AIRPORT,,Kbely Arpt,Prague,CZ,Czech Republic,50.123,14.538,,,,,,,281,PR,METAR|TAF,site-city,,,,awc-station-cache
+LKKU,AIRPORT,,Kunovice Arpt,Kunovice,CZ,Czech Republic,49.042,17.442,UHE,,,,,,176,ZL,METAR,site-name,,,,awc-station-cache
+LKKV,AIRPORT,,Karlovy Vary Intl,Karlovy Vary,CZ,Czech Republic,50.202,12.91,KLV,,,,,,600,KA,METAR|TAF,site-name,,,,awc-station-cache
+LKKZ,AIRPORT,,Kosice Intl,Kosice,CZ,Czech Republic,48.664,21.242,,,,,,,232,,,site-name,,,,awc-station-cache
+LKLB,AIRPORT,,Liberec Arpt,Liberec,CZ,Czech Republic,50.77,15.024,,,,,,,397,LI,METAR,site-name,,,,awc-station-cache
+LKLN,AIRPORT,,Plzeň-Líně Arpt,Plzeň-Líně,CZ,Czech Republic,49.675,13.275,,,,,,,353,PL,METAR,site-name,,,,awc-station-cache
+LKMT,AIRPORT,,Janáček Arpt,Ostrava,CZ,Czech Republic,49.696,18.111,OSR,,,,,,251,MO,METAR|TAF,site-city,,,,awc-station-cache
+LKNA,AIRPORT,,Namest nad Oslavou Arpt,Namest nad Oslavou,CZ,Czech Republic,49.166,16.125,,,,,,,460,VY,METAR|TAF,site-name,,,,awc-station-cache
+LKPD,AIRPORT,,Pardubice Arpt,Pardubice,CZ,Czech Republic,50.016,15.74,PED,,,,,,226,PA,METAR|TAF,site-name,,,,awc-station-cache
+LKPO,AIRPORT,,Prerov Arpt,Prerov,CZ,Czech Republic,49.424,17.406,PRV,,,,,,201,OL,METAR|TAF,site-name,,,,awc-station-cache
+LKPP,AIRPORT,,Piestany,Piestany,CZ,Czech Republic,48.613,17.832,,,,,,,160,TV,,site-name,,,,awc-station-cache
+LKPR,AIRPORT,,Havel Arpt,Prague,CZ,Czech Republic,50.101,14.26,PRG,,,,,,364,ST,METAR|TAF,site-city,,,,awc-station-cache
+LKSL,AIRPORT,,Sliac,Sliac,CZ,Czech Republic,48.63,19.14,,,,,,,318,,,site-name,,,,awc-station-cache
+LKTB,AIRPORT,,Tuřany Arpt,Brno,CZ,Czech Republic,49.151,16.694,BRQ,,,,,,233,JM,METAR|TAF,site-city,,,,awc-station-cache
+LKVO,AIRPORT,,Vodochody Arpt,Vodochody,CZ,Czech Republic,50.217,14.396,VOD,,,,,,275,ST,METAR,site-name,,,,awc-station-cache
 LLBG,AIRPORT,,Ben Gurion Arpt,Tel Aviv,IL,Israel,32.011,34.887,TLV,,,,,,35,C,METAR|TAF,site-city,,,,awc-station-cache
 LLBS,AIRPORT,,Beer-Sheva Arpt,Beer-Sheva,IL,Israel,31.287,34.723,BEV,,,,,,193,S,METAR,site-name,,,,awc-station-cache
 LLER,AIRPORT,,Ramone Arpt,Eilat,IL,Israel,29.722,35.012,ETM,,,,,,88,S,METAR|TAF,site-city,,,,awc-station-cache
@@ -6409,14 +6409,14 @@ LPPS,AIRPORT,,Porto Santo Isl Arpt,Porto Santo Isl,PT,Portugal,33.073,-16.35,PXO
 LPPT,AIRPORT,,Lisbon Arpt,Lisbon,PT,Portugal,38.781,-9.136,LIS,,,,,,98,LI,METAR|TAF,site-name,,,,awc-station-cache
 LPST,AIRPORT,,Sintra,Sintra,PT,Portugal,38.831,-9.34,,,,,,,129,LI,METAR|TAF,site-name,,,,awc-station-cache
 LPVR,AIRPORT,,Vila Real,Vila Real,PT,Portugal,41.274,-7.717,VRL,,,,,,560,VR,METAR,site-name,,,,awc-station-cache
-LQBI,AIRPORT,,Bihac,Bihac,BA,Bosnia & Herzegovina,44.817,15.883,,,,,,,222,BI,,site-name,,,,awc-station-cache
-LQBK,AIRPORT,,Banja Luka Intl,Banja Luka,BA,Bosnia & Herzegovina,44.937,17.299,BNX,,,,,,114,SR,METAR|TAF,site-name,,,,awc-station-cache
-LQLV,AIRPORT,,Livno,Livno,BA,Bosnia & Herzegovina,43.825,17.008,,,,,,,738,BI,,site-name,,,,awc-station-cache
-LQMO,AIRPORT,,Mostar Intl,Mostar,BA,Bosnia & Herzegovina,43.285,17.84,OMO,,,,,,49,BI,METAR|TAF,site-name,,,,awc-station-cache
-LQSA,AIRPORT,,Sarajevo Intl,Sarajevo,BA,Bosnia & Herzegovina,43.825,18.331,SJJ,,,,,,505,BI,METAR|TAF,site-name,,,,awc-station-cache
-LQSB,FIR,,SARAJEVO FIR,Sarajevo,BA,Bosnia & Herzegovina,43.89,17.67,,LQ,0,245,true,fabce,,,,station,LQS,LQSBFIR,524,eurocontrol-nm
-LQSB,UIR,,SARAJEVO UIR,Sarajevo,BA,Bosnia & Herzegovina,43.89,17.67,,LQ,245,999,true,fabce,,,,station,LQS,LQSBUIR,524,eurocontrol-nm
-LQTZ,AIRPORT,,Tuzla Intl,Tuzla,BA,Bosnia & Herzegovina,44.461,18.728,TZL,,,,,,242,BI,METAR|TAF,site-name,,,,awc-station-cache
+LQBI,AIRPORT,,Bihac,Bihac,BA,Bosnia and Herzegovina,44.817,15.883,,,,,,,222,BI,,site-name,,,,awc-station-cache
+LQBK,AIRPORT,,Banja Luka Intl,Banja Luka,BA,Bosnia and Herzegovina,44.937,17.299,BNX,,,,,,114,SR,METAR|TAF,site-name,,,,awc-station-cache
+LQLV,AIRPORT,,Livno,Livno,BA,Bosnia and Herzegovina,43.825,17.008,,,,,,,738,BI,,site-name,,,,awc-station-cache
+LQMO,AIRPORT,,Mostar Intl,Mostar,BA,Bosnia and Herzegovina,43.285,17.84,OMO,,,,,,49,BI,METAR|TAF,site-name,,,,awc-station-cache
+LQSA,AIRPORT,,Sarajevo Intl,Sarajevo,BA,Bosnia and Herzegovina,43.825,18.331,SJJ,,,,,,505,BI,METAR|TAF,site-name,,,,awc-station-cache
+LQSB,FIR,,SARAJEVO FIR,Sarajevo,BA,Bosnia and Herzegovina,43.89,17.67,,LQ,0,245,true,fabce,,,,station,LQS,LQSBFIR,524,eurocontrol-nm
+LQSB,UIR,,SARAJEVO UIR,Sarajevo,BA,Bosnia and Herzegovina,43.89,17.67,,LQ,245,999,true,fabce,,,,station,LQS,LQSBUIR,524,eurocontrol-nm
+LQTZ,AIRPORT,,Tuzla Intl,Tuzla,BA,Bosnia and Herzegovina,44.461,18.728,TZL,,,,,,242,BI,METAR|TAF,site-name,,,,awc-station-cache
 LRAR,AIRPORT,,Arad Intl,Arad,RO,Romania,46.176,21.264,ARW,,,,,,102,AD,METAR|TAF,site-name,,,,awc-station-cache
 LRBB,FIR,,BUCAREST FIR,Bucarest,RO,Romania,45.939,25.399,,LR,0,999,true,danube,,,,region-name,LRB,LRBBFIR,524,eurocontrol-nm
 LRBC,AIRPORT,,Bacău Intl,Bacău,RO,Romania,46.522,26.91,BCM,,,,,,183,BA,METAR|TAF,site-name,,,,awc-station-cache
@@ -6464,89 +6464,89 @@ LSZH,AIRPORT,,Zürich Intl Arpt,Zürich,CH,Switzerland,47.48,8.536,ZRH,,,,,,424,
 LSZL,AIRPORT,,Locarno Arpt,Locarno,CH,Switzerland,46.164,8.878,,,,,,,198,TI,METAR|TAF,site-name,,,,awc-station-cache
 LSZR,AIRPORT,,Altenrhein,Rheineck,CH,Switzerland,47.485,9.561,ACH,,,,,,396,SG,METAR|TAF,site-city,,,,awc-station-cache
 LSZS,AIRPORT,,Samedan Arpt,Samedan,CH,Switzerland,46.526,9.879,SMV,,,,,,1708,GR,METAR|TAF,site-name,,,,awc-station-cache
-LTAA,FIR,,ANKARA FIR,Ankara,TR,Türkiye,39.308,37.295,,LT,0,999,true,,,,,station,LTA,LTAAFIR,524,eurocontrol-nm
-LTAB,AIRPORT,,Guvercin Lik,Ankara,TR,Türkiye,39.934,32.739,,,,,,,820,AN,METAR|TAF,site-city,,,,awc-station-cache
-LTAC,AIRPORT,,Esenboğa Intl,Ankara,TR,Türkiye,40.128,32.995,ESB,,,,,,952,AN,METAR|TAF,site-city,,,,awc-station-cache
-LTAD,AIRPORT,,Etimesgut Arpt,Ankara,TR,Türkiye,39.95,32.689,ANK,,,,,,813,AN,METAR|TAF,site-city,,,,awc-station-cache
-LTAE,AIRPORT,,Murted ),Murted ),TR,Türkiye,40.079,32.566,,,,,,,836,AN,METAR|TAF,site-name,,,,awc-station-cache
-LTAF,AIRPORT,,Adana Arpt,Adana,TR,Türkiye,36.989,35.293,ADA,,,,,,19,AD,METAR|TAF,site-name,,,,awc-station-cache
-LTAG,AIRPORT,,Incirlik,Adana,TR,Türkiye,37.002,35.426,UAB,,,,,,62,AD,METAR|TAF,site-city,,,,awc-station-cache
-LTAH,AIRPORT,,Afyon Arpt,Afyon,TR,Türkiye,38.735,30.596,AFY,,,,,,1004,AF,METAR|TAF,site-name,,,,awc-station-cache
-LTAI,AIRPORT,,Antalya Arpt,Antalya,TR,Türkiye,36.9,30.798,AYT,,,,,,50,AN,METAR|TAF,site-name,,,,awc-station-cache
-LTAJ,AIRPORT,,Gaziantep Arpt,Gaziantep,TR,Türkiye,36.947,37.479,GZT,,,,,,684,GA,METAR|TAF,site-name,,,,awc-station-cache
-LTAK,AIRPORT,,Iskenderun,Iskenderun,TR,Türkiye,36.592,36.158,,,,,,,2,HT,METAR,site-name,,,,awc-station-cache
-LTAL,AIRPORT,,Kastamonu Arpt,Kastamonu,TR,Türkiye,41.305,33.792,KFS,,,,,,1074,KA,METAR|TAF,site-name,,,,awc-station-cache
-LTAN,AIRPORT,,Konya Arpt,Konya,TR,Türkiye,37.979,32.562,KYA,,,,,,1029,KA,METAR|TAF,site-name,,,,awc-station-cache
-LTAO,AIRPORT,,Malatya Tulga Arpt,Malatya Tulga,TR,Türkiye,38.354,38.254,,,,,,,919,,TAF,site-name,,,,awc-station-cache
-LTAP,AIRPORT,,Merzifon Arpt,Merzifon,TR,Türkiye,40.826,35.52,MZH,,,,,,536,AM,METAR|TAF,site-name,,,,awc-station-cache
-LTAQ,AIRPORT,,Samsun Arpt,Samsun,TR,Türkiye,41.278,36.305,,,,,,,168,,METAR,site-name,,,,awc-station-cache
-LTAR,AIRPORT,,Sivas Arpt,Sivas,TR,Türkiye,39.798,36.894,VAS,,,,,,1601,SI,METAR|TAF,site-name,,,,awc-station-cache
-LTAS,AIRPORT,,Çaycuma Arpt,Zonguldak,TR,Türkiye,41.507,32.089,ONQ,,,,,,13,ZO,METAR|TAF,site-city,,,,awc-station-cache
-LTAT,AIRPORT,,Malatya Arpt,Malatya,TR,Türkiye,38.435,38.092,MLX,,,,,,850,MA,METAR|TAF,site-name,,,,awc-station-cache
-LTAU,AIRPORT,,Kayseri Intl,Kayseri,TR,Türkiye,38.77,35.495,ASR,,,,,,1053,KA,METAR|TAF,site-name,,,,awc-station-cache
-LTAV,AIRPORT,,Sivrihisar,Sivrihisar,TR,Türkiye,39.453,31.369,,,,,,,976,ES,METAR|TAF,site-name,,,,awc-station-cache
-LTAW,AIRPORT,,Tokat Arpt,Tokat,TR,Türkiye,40.308,36.368,TJK,,,,,,561,TO,METAR|TAF,site-name,,,,awc-station-cache
-LTAY,AIRPORT,,Çardak Arpt,Çardak,TR,Türkiye,37.785,29.701,DNZ,,,,,,851,DE,METAR|TAF,site-name,,,,awc-station-cache
-LTAZ,AIRPORT,,Nevsehir Arpt,Nevsehir,TR,Türkiye,38.771,34.521,NAV,,,,,,944,NE,METAR|TAF,site-name,,,,awc-station-cache
-LTBA,AIRPORT,,Ataturk Intl,Istanbul,TR,Türkiye,40.982,28.821,ISL,,,,,,33,IS,METAR|TAF,site-city,,,,awc-station-cache
-LTBB,FIR,,ISTANBUL FIR,Istanbul,TR,Türkiye,39.438,28.287,,LT,0,999,true,,,,,station,LTB,LTBBFIR,524,eurocontrol-nm
-LTBD,AIRPORT,,Çıldır Arpt,Aydin,TR,Türkiye,37.816,27.886,CII,,,,,,29,AY,METAR|TAF,site-city,,,,awc-station-cache
-LTBE,AIRPORT,,Bursa Arpt,Bursa,TR,Türkiye,40.233,29.009,,,,,,,97,BR,METAR,site-name,,,,awc-station-cache
-LTBF,AIRPORT,,Balikesir Arpt,Balikesir,TR,Türkiye,39.619,27.926,BZI,,,,,,95,BA,METAR|TAF,site-name,,,,awc-station-cache
-LTBG,AIRPORT,,Bandirma Arpt,Bandirma,TR,Türkiye,40.318,27.978,BDM,,,,,,42,BA,METAR|TAF,site-name,,,,awc-station-cache
-LTBH,AIRPORT,,Çanakkale Arpt,Çanakkale,TR,Türkiye,40.14,26.425,CKZ,,,,,,8,CK,METAR|TAF,site-name,,,,awc-station-cache
-LTBI,AIRPORT,,Eskisehir,Eskisehir,TR,Türkiye,39.781,30.58,ESK,,,,,,785,ES,METAR|TAF,site-name,,,,awc-station-cache
-LTBJ,AIRPORT,,Menderes Arpt,Izmir,TR,Türkiye,38.285,27.155,ADB,,,,,,123,IZ,METAR|TAF,site-city,,,,awc-station-cache
-LTBK,AIRPORT,,Gaziemir Arpt,Izmir,TR,Türkiye,38.32,27.159,,,,,,,132,IZ,TAF,site-city,,,,awc-station-cache
-LTBL,AIRPORT,,Cigli,Izmir,TR,Türkiye,38.513,27.01,IGL,,,,,,5,IZ,METAR|TAF,site-city,,,,awc-station-cache
-LTBM,AIRPORT,,Isparta,Isparta,TR,Türkiye,37.75,30.55,,,,,,,1116,IS,METAR,site-name,,,,awc-station-cache
-LTBN,AIRPORT,,Kutahya,Kutahya,TR,Türkiye,39.427,30.017,,,,,,,921,MA,TAF,site-name,,,,awc-station-cache
-LTBO,AIRPORT,,Uşak Arpt,Uşak,TR,Türkiye,38.68,29.483,USQ,,,,,,868,US,METAR|TAF,site-name,,,,awc-station-cache
-LTBP,AIRPORT,,Yalova,Yalova,TR,Türkiye,40.682,29.377,,,,,,,13,IS,TAF,site-name,,,,awc-station-cache
-LTBQ,AIRPORT,,Topel Arpt),Topel Arpt),TR,Türkiye,40.735,30.083,KCO,,,,,,51,KO,METAR|TAF,site-name,,,,awc-station-cache
-LTBR,AIRPORT,,Yenisehir Arpt,Bursa,TR,Türkiye,40.255,29.562,YEI,,,,,,233,BR,METAR|TAF,site-city,,,,awc-station-cache
-LTBS,AIRPORT,,Dalaman Arpt,Dalaman,TR,Türkiye,36.713,28.793,DLM,,,,,,2,MU,METAR|TAF,site-name,,,,awc-station-cache
-LTBT,AIRPORT,,Akhisar Arpt,Akhisar,TR,Türkiye,38.809,27.834,,,,,,,81,MA,METAR|TAF,site-name,,,,awc-station-cache
-LTBU,AIRPORT,,Corlu Arpt,Corlu,TR,Türkiye,41.139,27.919,TEQ,,,,,,165,TE,METAR|TAF,site-name,,,,awc-station-cache
-LTBV,AIRPORT,,Imisiki,Bodrum,TR,Türkiye,37.14,27.67,BXN,,,,,,48,MU,TAF,site-city,,,,awc-station-cache
-LTBX,AIRPORT,,Samandira,Istanbul,TR,Türkiye,40.993,29.216,,,,,,,116,IS,TAF,site-city,,,,awc-station-cache
-LTBY,AIRPORT,,Polatkan Arpt,Eskisehir,TR,Türkiye,39.81,30.519,AOE,,,,,,788,ES,METAR|TAF,site-city,,,,awc-station-cache
-LTBZ,AIRPORT,,Zafer Arpt,Zafer,TR,Türkiye,39.114,30.13,KZR,,,,,,1010,MA,METAR|TAF,site-name,,,,awc-station-cache
-LTCA,AIRPORT,,Elazığ Arpt,Elazığ,TR,Türkiye,38.607,39.291,EZS,,,,,,887,EL,METAR|TAF,site-name,,,,awc-station-cache
-LTCB,AIRPORT,,Giresun Arpt,Ordu,TR,Türkiye,40.967,38.081,OGU,,,,,,5,GI,METAR|TAF,site-city,,,,awc-station-cache
-LTCC,AIRPORT,,Diyarbakır,Diyarbakır,TR,Türkiye,37.894,40.201,DIY,,,,,,676,DI,METAR|TAF,site-name,,,,awc-station-cache
-LTCD,AIRPORT,,Erzincan Arpt,Erzincan,TR,Türkiye,39.71,39.527,ERC,,,,,,1146,EZ,METAR|TAF,site-name,,,,awc-station-cache
-LTCE,AIRPORT,,Erzurum Intl,Erzurum,TR,Türkiye,39.956,41.17,ERZ,,,,,,1758,EZ,METAR|TAF,site-name,,,,awc-station-cache
-LTCF,AIRPORT,,Harakani Arpt,Kars,TR,Türkiye,40.562,43.115,KSY,,,,,,1794,KR,METAR|TAF,site-city,,,,awc-station-cache
-LTCG,AIRPORT,,Trabzon Arpt,Trabzon,TR,Türkiye,40.995,39.782,TZX,,,,,,28,TR,METAR|TAF,site-name,,,,awc-station-cache
-LTCH,AIRPORT,,Şanlıurfa,Şanlıurfa,TR,Türkiye,37.133,38.767,SFQ,,,,,,550,SA,METAR|TAF,site-name,,,,awc-station-cache
-LTCI,AIRPORT,,Van Arpt,Van,TR,Türkiye,38.469,43.337,VAN,,,,,,1654,VA,METAR|TAF,site-name,,,,awc-station-cache
-LTCJ,AIRPORT,,Batman Arpt,Batman,TR,Türkiye,37.93,41.117,BAL,,,,,,559,SI,METAR|TAF,site-name,,,,awc-station-cache
-LTCK,AIRPORT,,Muş Arpt,Muş,TR,Türkiye,38.748,41.661,MSR,,,,,,1267,MU,METAR|TAF,site-name,,,,awc-station-cache
-LTCL,AIRPORT,,Siirt Arpt,Siirt,TR,Türkiye,37.978,41.842,SXZ,,,,,,602,SI,METAR|TAF,site-name,,,,awc-station-cache
-LTCM,AIRPORT,,Sinop Arpt,Sinop,TR,Türkiye,42.019,35.072,NOP,,,,,,7,SI,METAR|TAF,site-name,,,,awc-station-cache
-LTCN,AIRPORT,,Kahramanmaraş Arpt,Kahramanmaraş,TR,Türkiye,37.539,36.953,KCM,,,,,,505,KA,METAR|TAF,site-name,,,,awc-station-cache
-LTCO,AIRPORT,,Ağrı Arpt,Ağrı,TR,Türkiye,39.654,43.026,AJI,,,,,,1657,AG,METAR|TAF,site-name,,,,awc-station-cache
-LTCP,AIRPORT,,Adiyaman Arpt,Adiyaman,TR,Türkiye,37.731,38.469,ADF,,,,,,672,AD,METAR|TAF,site-name,,,,awc-station-cache
-LTCR,AIRPORT,,Mardin Arpt,Mardin,TR,Türkiye,37.232,40.638,MQM,,,,,,529,MA,METAR|TAF,site-name,,,,awc-station-cache
-LTCS,AIRPORT,,Şanlıurfa GAP Arpt,Şanlıurfa GAP,TR,Türkiye,37.445,38.904,GNY,,,,,,825,SA,METAR|TAF,site-name,,,,awc-station-cache
-LTCT,AIRPORT,,Iğdır Arpt,Iğdır,TR,Türkiye,39.977,43.878,IGD,,,,,,936,IG,METAR|TAF,site-name,,,,awc-station-cache
-LTCU,AIRPORT,,Bingöl Arpt,Bingöl,TR,Türkiye,38.861,40.593,BGG,,,,,,1061,BG,METAR|TAF,site-name,,,,awc-station-cache
-LTCV,AIRPORT,,Sirnak Arpt,Sirnak,TR,Türkiye,37.365,42.06,NKT,,,,,,620,SN,METAR|TAF,site-name,,,,awc-station-cache
-LTCW,AIRPORT,,Yüksekova Arpt,Yüksekova,TR,Türkiye,37.55,44.238,YKO,,,,,,1852,HA,METAR|TAF,site-name,,,,awc-station-cache
-LTDA,AIRPORT,,Hatay Arpt,Hatay,TR,Türkiye,36.361,36.283,HTY,,,,,,80,HT,METAR|TAF,site-name,,,,awc-station-cache
-LTDB,AIRPORT,,Çukurova Intl,Tarsus,TR,Türkiye,36.89385,35.06999,COV,,,,,,6,ME,METAR|TAF,site-city,,,,awc-station-cache
-LTFA,AIRPORT,,Kaklic,Izmir,TR,Türkiye,38.511,26.978,,,,,,,4,IZ,METAR|TAF,site-city,,,,awc-station-cache
-LTFB,AIRPORT,,Efes Arpt,Izmir-Selcuk,TR,Türkiye,37.951,27.333,,,,,,,3,IZ,METAR|TAF,site-city,,,,awc-station-cache
-LTFC,AIRPORT,,Demirel Arpt,Isparta,TR,Türkiye,37.855,30.368,ISE,,,,,,862,IZ,METAR|TAF,site-city,,,,awc-station-cache
-LTFD,AIRPORT,,Seyit Arpt,Balikesir,TR,Türkiye,39.559,27.025,EDO,,,,,,15,BA,METAR|TAF,site-city,,,,awc-station-cache
-LTFE,AIRPORT,,Milas-Bodrun Arpt,Milas-Bodrun,TR,Türkiye,37.245,27.673,BJV,,,,,,6,MU,METAR|TAF,site-name,,,,awc-station-cache
-LTFG,AIRPORT,,Gazipasa Arpt,Gazipasa,TR,Türkiye,36.299,32.3,GZP,,,,,,26,AN,METAR|TAF,site-name,,,,awc-station-cache
-LTFH,AIRPORT,,Samsun-Çarşamba Arpt,Samsun-Çarşamba,TR,Türkiye,41.255,36.567,SZF,,,,,,7,SA,METAR|TAF,site-name,,,,awc-station-cache
-LTFJ,AIRPORT,,Gokcen Intl,Istanbul,TR,Türkiye,40.899,29.309,SAW,,,,,,83,KO,METAR|TAF,site-city,,,,awc-station-cache
-LTFK,AIRPORT,,Gokceada Arpt,Gokceada,TR,Türkiye,40.2,25.883,GKD,,,,,,21,IM,METAR|TAF,site-name,,,,awc-station-cache
-LTFM,AIRPORT,,Istanbul Arpt,Istanbul,TR,Türkiye,41.262,28.74,IST,,,,,,99,IS,METAR|TAF,site-name,,,,awc-station-cache
-LTFO,AIRPORT,,Rize-Artvin Arpt,Rize-Artvin,TR,Türkiye,41.179,40.845,,,,,,,5,RI,METAR|TAF,site-name,,,,awc-station-cache
+LTAA,FIR,,ANKARA FIR,Ankara,TR,Turkey,39.308,37.295,,LT,0,999,true,,,,,station,LTA,LTAAFIR,524,eurocontrol-nm
+LTAB,AIRPORT,,Guvercin Lik,Ankara,TR,Turkey,39.934,32.739,,,,,,,820,AN,METAR|TAF,site-city,,,,awc-station-cache
+LTAC,AIRPORT,,Esenboğa Intl,Ankara,TR,Turkey,40.128,32.995,ESB,,,,,,952,AN,METAR|TAF,site-city,,,,awc-station-cache
+LTAD,AIRPORT,,Etimesgut Arpt,Ankara,TR,Turkey,39.95,32.689,ANK,,,,,,813,AN,METAR|TAF,site-city,,,,awc-station-cache
+LTAE,AIRPORT,,Murted ),Murted ),TR,Turkey,40.079,32.566,,,,,,,836,AN,METAR|TAF,site-name,,,,awc-station-cache
+LTAF,AIRPORT,,Adana Arpt,Adana,TR,Turkey,36.989,35.293,ADA,,,,,,19,AD,METAR|TAF,site-name,,,,awc-station-cache
+LTAG,AIRPORT,,Incirlik,Adana,TR,Turkey,37.002,35.426,UAB,,,,,,62,AD,METAR|TAF,site-city,,,,awc-station-cache
+LTAH,AIRPORT,,Afyon Arpt,Afyon,TR,Turkey,38.735,30.596,AFY,,,,,,1004,AF,METAR|TAF,site-name,,,,awc-station-cache
+LTAI,AIRPORT,,Antalya Arpt,Antalya,TR,Turkey,36.9,30.798,AYT,,,,,,50,AN,METAR|TAF,site-name,,,,awc-station-cache
+LTAJ,AIRPORT,,Gaziantep Arpt,Gaziantep,TR,Turkey,36.947,37.479,GZT,,,,,,684,GA,METAR|TAF,site-name,,,,awc-station-cache
+LTAK,AIRPORT,,Iskenderun,Iskenderun,TR,Turkey,36.592,36.158,,,,,,,2,HT,METAR,site-name,,,,awc-station-cache
+LTAL,AIRPORT,,Kastamonu Arpt,Kastamonu,TR,Turkey,41.305,33.792,KFS,,,,,,1074,KA,METAR|TAF,site-name,,,,awc-station-cache
+LTAN,AIRPORT,,Konya Arpt,Konya,TR,Turkey,37.979,32.562,KYA,,,,,,1029,KA,METAR|TAF,site-name,,,,awc-station-cache
+LTAO,AIRPORT,,Malatya Tulga Arpt,Malatya Tulga,TR,Turkey,38.354,38.254,,,,,,,919,,TAF,site-name,,,,awc-station-cache
+LTAP,AIRPORT,,Merzifon Arpt,Merzifon,TR,Turkey,40.826,35.52,MZH,,,,,,536,AM,METAR|TAF,site-name,,,,awc-station-cache
+LTAQ,AIRPORT,,Samsun Arpt,Samsun,TR,Turkey,41.278,36.305,,,,,,,168,,METAR,site-name,,,,awc-station-cache
+LTAR,AIRPORT,,Sivas Arpt,Sivas,TR,Turkey,39.798,36.894,VAS,,,,,,1601,SI,METAR|TAF,site-name,,,,awc-station-cache
+LTAS,AIRPORT,,Çaycuma Arpt,Zonguldak,TR,Turkey,41.507,32.089,ONQ,,,,,,13,ZO,METAR|TAF,site-city,,,,awc-station-cache
+LTAT,AIRPORT,,Malatya Arpt,Malatya,TR,Turkey,38.435,38.092,MLX,,,,,,850,MA,METAR|TAF,site-name,,,,awc-station-cache
+LTAU,AIRPORT,,Kayseri Intl,Kayseri,TR,Turkey,38.77,35.495,ASR,,,,,,1053,KA,METAR|TAF,site-name,,,,awc-station-cache
+LTAV,AIRPORT,,Sivrihisar,Sivrihisar,TR,Turkey,39.453,31.369,,,,,,,976,ES,METAR|TAF,site-name,,,,awc-station-cache
+LTAW,AIRPORT,,Tokat Arpt,Tokat,TR,Turkey,40.308,36.368,TJK,,,,,,561,TO,METAR|TAF,site-name,,,,awc-station-cache
+LTAY,AIRPORT,,Çardak Arpt,Çardak,TR,Turkey,37.785,29.701,DNZ,,,,,,851,DE,METAR|TAF,site-name,,,,awc-station-cache
+LTAZ,AIRPORT,,Nevsehir Arpt,Nevsehir,TR,Turkey,38.771,34.521,NAV,,,,,,944,NE,METAR|TAF,site-name,,,,awc-station-cache
+LTBA,AIRPORT,,Ataturk Intl,Istanbul,TR,Turkey,40.982,28.821,ISL,,,,,,33,IS,METAR|TAF,site-city,,,,awc-station-cache
+LTBB,FIR,,ISTANBUL FIR,Istanbul,TR,Turkey,39.438,28.287,,LT,0,999,true,,,,,station,LTB,LTBBFIR,524,eurocontrol-nm
+LTBD,AIRPORT,,Çıldır Arpt,Aydin,TR,Turkey,37.816,27.886,CII,,,,,,29,AY,METAR|TAF,site-city,,,,awc-station-cache
+LTBE,AIRPORT,,Bursa Arpt,Bursa,TR,Turkey,40.233,29.009,,,,,,,97,BR,METAR,site-name,,,,awc-station-cache
+LTBF,AIRPORT,,Balikesir Arpt,Balikesir,TR,Turkey,39.619,27.926,BZI,,,,,,95,BA,METAR|TAF,site-name,,,,awc-station-cache
+LTBG,AIRPORT,,Bandirma Arpt,Bandirma,TR,Turkey,40.318,27.978,BDM,,,,,,42,BA,METAR|TAF,site-name,,,,awc-station-cache
+LTBH,AIRPORT,,Çanakkale Arpt,Çanakkale,TR,Turkey,40.14,26.425,CKZ,,,,,,8,CK,METAR|TAF,site-name,,,,awc-station-cache
+LTBI,AIRPORT,,Eskisehir,Eskisehir,TR,Turkey,39.781,30.58,ESK,,,,,,785,ES,METAR|TAF,site-name,,,,awc-station-cache
+LTBJ,AIRPORT,,Menderes Arpt,Izmir,TR,Turkey,38.285,27.155,ADB,,,,,,123,IZ,METAR|TAF,site-city,,,,awc-station-cache
+LTBK,AIRPORT,,Gaziemir Arpt,Izmir,TR,Turkey,38.32,27.159,,,,,,,132,IZ,TAF,site-city,,,,awc-station-cache
+LTBL,AIRPORT,,Cigli,Izmir,TR,Turkey,38.513,27.01,IGL,,,,,,5,IZ,METAR|TAF,site-city,,,,awc-station-cache
+LTBM,AIRPORT,,Isparta,Isparta,TR,Turkey,37.75,30.55,,,,,,,1116,IS,METAR,site-name,,,,awc-station-cache
+LTBN,AIRPORT,,Kutahya,Kutahya,TR,Turkey,39.427,30.017,,,,,,,921,MA,TAF,site-name,,,,awc-station-cache
+LTBO,AIRPORT,,Uşak Arpt,Uşak,TR,Turkey,38.68,29.483,USQ,,,,,,868,US,METAR|TAF,site-name,,,,awc-station-cache
+LTBP,AIRPORT,,Yalova,Yalova,TR,Turkey,40.682,29.377,,,,,,,13,IS,TAF,site-name,,,,awc-station-cache
+LTBQ,AIRPORT,,Topel Arpt),Topel Arpt),TR,Turkey,40.735,30.083,KCO,,,,,,51,KO,METAR|TAF,site-name,,,,awc-station-cache
+LTBR,AIRPORT,,Yenisehir Arpt,Bursa,TR,Turkey,40.255,29.562,YEI,,,,,,233,BR,METAR|TAF,site-city,,,,awc-station-cache
+LTBS,AIRPORT,,Dalaman Arpt,Dalaman,TR,Turkey,36.713,28.793,DLM,,,,,,2,MU,METAR|TAF,site-name,,,,awc-station-cache
+LTBT,AIRPORT,,Akhisar Arpt,Akhisar,TR,Turkey,38.809,27.834,,,,,,,81,MA,METAR|TAF,site-name,,,,awc-station-cache
+LTBU,AIRPORT,,Corlu Arpt,Corlu,TR,Turkey,41.139,27.919,TEQ,,,,,,165,TE,METAR|TAF,site-name,,,,awc-station-cache
+LTBV,AIRPORT,,Imisiki,Bodrum,TR,Turkey,37.14,27.67,BXN,,,,,,48,MU,TAF,site-city,,,,awc-station-cache
+LTBX,AIRPORT,,Samandira,Istanbul,TR,Turkey,40.993,29.216,,,,,,,116,IS,TAF,site-city,,,,awc-station-cache
+LTBY,AIRPORT,,Polatkan Arpt,Eskisehir,TR,Turkey,39.81,30.519,AOE,,,,,,788,ES,METAR|TAF,site-city,,,,awc-station-cache
+LTBZ,AIRPORT,,Zafer Arpt,Zafer,TR,Turkey,39.114,30.13,KZR,,,,,,1010,MA,METAR|TAF,site-name,,,,awc-station-cache
+LTCA,AIRPORT,,Elazığ Arpt,Elazığ,TR,Turkey,38.607,39.291,EZS,,,,,,887,EL,METAR|TAF,site-name,,,,awc-station-cache
+LTCB,AIRPORT,,Giresun Arpt,Ordu,TR,Turkey,40.967,38.081,OGU,,,,,,5,GI,METAR|TAF,site-city,,,,awc-station-cache
+LTCC,AIRPORT,,Diyarbakır,Diyarbakır,TR,Turkey,37.894,40.201,DIY,,,,,,676,DI,METAR|TAF,site-name,,,,awc-station-cache
+LTCD,AIRPORT,,Erzincan Arpt,Erzincan,TR,Turkey,39.71,39.527,ERC,,,,,,1146,EZ,METAR|TAF,site-name,,,,awc-station-cache
+LTCE,AIRPORT,,Erzurum Intl,Erzurum,TR,Turkey,39.956,41.17,ERZ,,,,,,1758,EZ,METAR|TAF,site-name,,,,awc-station-cache
+LTCF,AIRPORT,,Harakani Arpt,Kars,TR,Turkey,40.562,43.115,KSY,,,,,,1794,KR,METAR|TAF,site-city,,,,awc-station-cache
+LTCG,AIRPORT,,Trabzon Arpt,Trabzon,TR,Turkey,40.995,39.782,TZX,,,,,,28,TR,METAR|TAF,site-name,,,,awc-station-cache
+LTCH,AIRPORT,,Şanlıurfa,Şanlıurfa,TR,Turkey,37.133,38.767,SFQ,,,,,,550,SA,METAR|TAF,site-name,,,,awc-station-cache
+LTCI,AIRPORT,,Van Arpt,Van,TR,Turkey,38.469,43.337,VAN,,,,,,1654,VA,METAR|TAF,site-name,,,,awc-station-cache
+LTCJ,AIRPORT,,Batman Arpt,Batman,TR,Turkey,37.93,41.117,BAL,,,,,,559,SI,METAR|TAF,site-name,,,,awc-station-cache
+LTCK,AIRPORT,,Muş Arpt,Muş,TR,Turkey,38.748,41.661,MSR,,,,,,1267,MU,METAR|TAF,site-name,,,,awc-station-cache
+LTCL,AIRPORT,,Siirt Arpt,Siirt,TR,Turkey,37.978,41.842,SXZ,,,,,,602,SI,METAR|TAF,site-name,,,,awc-station-cache
+LTCM,AIRPORT,,Sinop Arpt,Sinop,TR,Turkey,42.019,35.072,NOP,,,,,,7,SI,METAR|TAF,site-name,,,,awc-station-cache
+LTCN,AIRPORT,,Kahramanmaraş Arpt,Kahramanmaraş,TR,Turkey,37.539,36.953,KCM,,,,,,505,KA,METAR|TAF,site-name,,,,awc-station-cache
+LTCO,AIRPORT,,Ağrı Arpt,Ağrı,TR,Turkey,39.654,43.026,AJI,,,,,,1657,AG,METAR|TAF,site-name,,,,awc-station-cache
+LTCP,AIRPORT,,Adiyaman Arpt,Adiyaman,TR,Turkey,37.731,38.469,ADF,,,,,,672,AD,METAR|TAF,site-name,,,,awc-station-cache
+LTCR,AIRPORT,,Mardin Arpt,Mardin,TR,Turkey,37.232,40.638,MQM,,,,,,529,MA,METAR|TAF,site-name,,,,awc-station-cache
+LTCS,AIRPORT,,Şanlıurfa GAP Arpt,Şanlıurfa GAP,TR,Turkey,37.445,38.904,GNY,,,,,,825,SA,METAR|TAF,site-name,,,,awc-station-cache
+LTCT,AIRPORT,,Iğdır Arpt,Iğdır,TR,Turkey,39.977,43.878,IGD,,,,,,936,IG,METAR|TAF,site-name,,,,awc-station-cache
+LTCU,AIRPORT,,Bingöl Arpt,Bingöl,TR,Turkey,38.861,40.593,BGG,,,,,,1061,BG,METAR|TAF,site-name,,,,awc-station-cache
+LTCV,AIRPORT,,Sirnak Arpt,Sirnak,TR,Turkey,37.365,42.06,NKT,,,,,,620,SN,METAR|TAF,site-name,,,,awc-station-cache
+LTCW,AIRPORT,,Yüksekova Arpt,Yüksekova,TR,Turkey,37.55,44.238,YKO,,,,,,1852,HA,METAR|TAF,site-name,,,,awc-station-cache
+LTDA,AIRPORT,,Hatay Arpt,Hatay,TR,Turkey,36.361,36.283,HTY,,,,,,80,HT,METAR|TAF,site-name,,,,awc-station-cache
+LTDB,AIRPORT,,Çukurova Intl,Tarsus,TR,Turkey,36.89385,35.06999,COV,,,,,,6,ME,METAR|TAF,site-city,,,,awc-station-cache
+LTFA,AIRPORT,,Kaklic,Izmir,TR,Turkey,38.511,26.978,,,,,,,4,IZ,METAR|TAF,site-city,,,,awc-station-cache
+LTFB,AIRPORT,,Efes Arpt,Izmir-Selcuk,TR,Turkey,37.951,27.333,,,,,,,3,IZ,METAR|TAF,site-city,,,,awc-station-cache
+LTFC,AIRPORT,,Demirel Arpt,Isparta,TR,Turkey,37.855,30.368,ISE,,,,,,862,IZ,METAR|TAF,site-city,,,,awc-station-cache
+LTFD,AIRPORT,,Seyit Arpt,Balikesir,TR,Turkey,39.559,27.025,EDO,,,,,,15,BA,METAR|TAF,site-city,,,,awc-station-cache
+LTFE,AIRPORT,,Milas-Bodrun Arpt,Milas-Bodrun,TR,Turkey,37.245,27.673,BJV,,,,,,6,MU,METAR|TAF,site-name,,,,awc-station-cache
+LTFG,AIRPORT,,Gazipasa Arpt,Gazipasa,TR,Turkey,36.299,32.3,GZP,,,,,,26,AN,METAR|TAF,site-name,,,,awc-station-cache
+LTFH,AIRPORT,,Samsun-Çarşamba Arpt,Samsun-Çarşamba,TR,Turkey,41.255,36.567,SZF,,,,,,7,SA,METAR|TAF,site-name,,,,awc-station-cache
+LTFJ,AIRPORT,,Gokcen Intl,Istanbul,TR,Turkey,40.899,29.309,SAW,,,,,,83,KO,METAR|TAF,site-city,,,,awc-station-cache
+LTFK,AIRPORT,,Gokceada Arpt,Gokceada,TR,Turkey,40.2,25.883,GKD,,,,,,21,IM,METAR|TAF,site-name,,,,awc-station-cache
+LTFM,AIRPORT,,Istanbul Arpt,Istanbul,TR,Turkey,41.262,28.74,IST,,,,,,99,IS,METAR|TAF,site-name,,,,awc-station-cache
+LTFO,AIRPORT,,Rize-Artvin Arpt,Rize-Artvin,TR,Turkey,41.179,40.845,,,,,,,5,RI,METAR|TAF,site-name,,,,awc-station-cache
 LUBL,AIRPORT,,Bălți Intl Arpt,Bălți,MD,Moldova,47.838,27.782,BZY,,,,,,226,RI,METAR|TAF,site-name,,,,awc-station-cache
 LUBM,AIRPORT,,Marculesti Intl,Marculesti,MD,Moldova,47.863,28.213,,,,,,,95,FR,METAR|TAF,site-name,,,,awc-station-cache
 LUCH,AIRPORT,,Cahul Intl,Cahul,MD,Moldova,45.844,28.264,,,,,,,199,CA,METAR|TAF,site-name,,,,awc-station-cache
@@ -6564,7 +6564,7 @@ LYBT,AIRPORT,,Batajnica,Batajnica,RS,Serbia,44.935,20.258,BJY,,,,,,78,VO,METAR|T
 LYKV,AIRPORT,,Ladevci Arpt,Kraljevo,RS,Serbia,43.818,20.587,KVO,,,,,,209,RA,METAR|TAF,site-city,,,,awc-station-cache
 LYNI,AIRPORT,,Niš Arpt,Niš,RS,Serbia,43.338,21.863,INI,,,,,,197,NI,METAR|TAF,site-name,,,,awc-station-cache
 LYPG,AIRPORT,,Podgorica Arpt,Podgorica,ME,Montenegro,42.359,19.252,TGD,,,,,,32,PO,METAR|TAF,site-name,,,,awc-station-cache
-LYPR,AIRPORT,,Pristina Arpt,Pristina,KV,,42.581,21.03,,,,,,,546,KM,TAF,site-name,,,,awc-station-cache
+LYPR,AIRPORT,,Pristina Arpt,Pristina,XK,Kosovo,42.581,21.03,,,,,,,546,KM,TAF,site-name,,,,awc-station-cache
 LYTI,AIRPORT,,Podgorica Arpt,Podgorica,ME,Montenegro,42.367,19.25,,,,,,,29,PO,METAR,site-name,,,,awc-station-cache
 LYTV,AIRPORT,,Tivat Arpt,Tivat,ME,Montenegro,42.405,18.723,TIV,,,,,,3,TI,METAR|TAF,site-name,,,,awc-station-cache
 LYUZ,AIRPORT,,Ponikve Arpt,Uzice,RS,Serbia,43.901,19.679,UZC,,,,,,914,ZL,METAR|TAF,site-city,,,,awc-station-cache
@@ -6582,8 +6582,8 @@ LZPW,AIRPORT,,Presov,Presov,SK,Slovakia,49.03,21.304,POV,,,,,,323,NI,TAF,site-na
 LZSL,AIRPORT,,Sliač Arpt,Sliač,SK,Slovakia,48.639,19.14,SLD,,,,,,311,BL,METAR|TAF,site-name,,,,awc-station-cache
 LZTT,AIRPORT,,Tatry Arpt,Poprad,SK,Slovakia,49.068,20.25,TAT,,,,,,693,NI,METAR|TAF,site-city,,,,awc-station-cache
 LZZI,AIRPORT,,Žilina Arpt,Žilina,SK,Slovakia,49.231,18.613,ILZ,,,,,,311,ZI,METAR|TAF,site-name,,,,awc-station-cache
-MBGT,AIRPORT,,McCarthy,Grand Turk,TC,Turks & Caicos Islands,21.443,-71.146,GDT,,,,,,6,GT,METAR|TAF,site-city,,,,awc-station-cache
-MBPV,AIRPORT,,Providenciales Intl,Providenciales,TC,Turks & Caicos Islands,21.772,-72.265,PLS,,,,,,7,PR,METAR|TAF,site-name,,,,awc-station-cache
+MBGT,AIRPORT,,McCarthy,Grand Turk,TC,Turks and Caicos Islands,21.443,-71.146,GDT,,,,,,6,GT,METAR|TAF,site-city,,,,awc-station-cache
+MBPV,AIRPORT,,Providenciales Intl,Providenciales,TC,Turks and Caicos Islands,21.772,-72.265,PLS,,,,,,7,PR,METAR|TAF,site-name,,,,awc-station-cache
 MDAB,AIRPORT,,Arroyo Barril Intl,Arroyo Barril,DO,Dominican Republic,19.2,-69.433,EPS,,,,,,28,SM,METAR|TAF,site-name,,,,awc-station-cache
 MDBH,AIRPORT,,Montez Intl,Barahona,DO,Dominican Republic,18.25,-71.126,BRX,,,,,,7,BH,METAR|TAF,site-city,,,,awc-station-cache
 MDCS,FIR,,SANTO DOMINGO FIR,Santo Domingo,DO,Dominican Republic,18.209,-70.001,,MD,0,195,false,,,,,station,MDC,MDCSFIR,524,eurocontrol-nm
@@ -6825,8 +6825,8 @@ NGTR,AIRPORT,,Arorae,Arorae,KI,Kiribati,-2.654,176.832,AIS,,,,,,10,G,METAR,site-
 NGTT,AIRPORT,,Getio Island,Tarawa,KI,Kiribati,1.355,172.921,,,,,,,10,G,METAR,site-city,,,,awc-station-cache
 NGTU,AIRPORT,,Butaritari,Butaritari,KI,Kiribati,3.085,172.806,BBG,,,,,,5,G,METAR,site-name,,,,awc-station-cache
 NIUE,AIRPORT,,Hanan Intl,Niue,NU,Niue,-19.079,-169.926,IUE,,,,,,22,,METAR|TAF,site-city,,,,awc-station-cache
-NLWF,AIRPORT,,Maopoopo Ile Fu,Maopoopo Ile Fu,WF,Wallis & Futuna,-14.308,-178.117,FUT,,,,,,24,,METAR|TAF,site-name,,,,awc-station-cache
-NLWW,AIRPORT,,Hihifo Arpt,Wallis Isl,WF,Wallis & Futuna,-13.238,-176.199,WLS,,,,,,24,,METAR|TAF,site-city,,,,awc-station-cache
+NLWF,AIRPORT,,Maopoopo Ile Fu,Maopoopo Ile Fu,WF,Wallis and Futuna,-14.308,-178.117,FUT,,,,,,24,,METAR|TAF,site-name,,,,awc-station-cache
+NLWW,AIRPORT,,Hihifo Arpt,Wallis Isl,WF,Wallis and Futuna,-13.238,-176.199,WLS,,,,,,24,,METAR|TAF,site-city,,,,awc-station-cache
 NSAP,AIRPORT,,Upolu Isl,Apia,WS,Samoa,-13.815,-171.781,,,,,,,4,TU,METAR|TAF,site-city,,,,awc-station-cache
 NSFA,AIRPORT,,Faleolo Intl,Apia,WS,Samoa,-13.829,-171.993,APW,,,,,,6,AA,METAR|TAF,site-city,,,,awc-station-cache
 NSTU,AIRPORT,,Tafuna Intl,Pago Pago,AS,American Samoa,-14.337,-170.721,PPG,,,,,,8,,METAR|TAF,site-city,,,,awc-station-cache
@@ -8203,14 +8203,14 @@ SYKM,AIRPORT,,Kamarang Arpt,Kamarang,GY,Guyana,5.869,-60.629,KAR,,,,,,488,CU,MET
 SYLT,AIRPORT,,Lethem Arpt,Lethem,GY,Guyana,3.373,-59.789,LTM,,,,,,88,UT,METAR|TAF,site-name,,,,awc-station-cache
 SYMB,AIRPORT,,Maburuma Arpt,Maburuma,GY,Guyana,8.2,-59.777,USI,,,,,,13,BA,METAR|TAF,site-name,,,,awc-station-cache
 SYTM,AIRPORT,,Timehri Airport,Timehri,GY,Guyana,6.499,-58.254,,,,,,,30,DE,,site-name,,,,awc-station-cache
-TAPA,AIRPORT,,Bird Intl,Antigua,AG,Antigua & Barbuda,17.135,-61.797,ANU,,,,,,15,3,METAR|TAF,site-city,,,,awc-station-cache
+TAPA,AIRPORT,,Bird Intl,Antigua,AG,Antigua and Barbuda,17.135,-61.797,ANU,,,,,,15,3,METAR|TAF,site-city,,,,awc-station-cache
 TBPB,AIRPORT,,Adams Intl,Bridgetown,BB,Barbados,13.075,-59.492,BGI,,,,,,55,1,METAR|TAF,site-city,,,,awc-station-cache
 TBPO,AIRPORT,,Bridgetown City,Bridgetown City,BB,Barbados,13.1,-59.62,,,,,,,50,,METAR,site-name,,,,awc-station-cache
 TDCF,AIRPORT,,Canefield Arpt,Canefield,DM,Dominica,15.339,-61.392,DCF,,,,,,4,2,METAR,site-name,,,,awc-station-cache
 TDPD,AIRPORT,,Douglas Charles Intl,Douglas Charles,DM,Dominica,15.547,-61.299,DOM,,,,,,13,2,METAR|TAF,site-name,,,,awc-station-cache
 TDPR,AIRPORT,,Roseau,Roseau,DM,Dominica,15.303,-61.389,,,,,,,10,10,METAR,site-name,,,,awc-station-cache
 TFFF,AIRPORT,,Cesaire Intl,Le Lamentin,MQ,Martinique,14.591,-61.003,FDF,,,,,,3,FD,METAR|TAF,site-city,,,,awc-station-cache
-TFFJ,AIRPORT,,Gustav Arpt,St Barthelemy,BL,St. Barthélemy,17.904,-62.844,SBH,,,,,,13,,METAR,site-city,,,,awc-station-cache
+TFFJ,AIRPORT,,Gustav Arpt,St Barthelemy,BL,Saint Barthelemy,17.904,-62.844,SBH,,,,,,13,,METAR,site-city,,,,awc-station-cache
 TFFR,AIRPORT,,Pitre Intl,Guadeloupe,GP,Guadeloupe,16.265,-61.532,PTP,,,,,,6,,METAR|TAF,site-city,,,,awc-station-cache
 TGPY,AIRPORT,,Bishop Intl,St Georges,GD,Grenada,12.006,-61.797,GND,,,,,,12,3,METAR|TAF,site-city,,,,awc-station-cache
 TIST,AIRPORT,,King Arpt,St Thomas,VI,U.S. Virgin Islands,18.33623,-64.97994,STT,,,,,,5,,METAR|TAF,site-city,,,,awc-station-cache
@@ -8223,13 +8223,13 @@ TJPS,AIRPORT,,Mercedita Arpt,Ponce,PR,Puerto Rico,18.011,-66.567,PSE,,,,,,12,,ME
 TJRV,AIRPORT,,Jose Alponte Arpt,Jose Alponte,PR,Puerto Rico,18.25,-65.643,NRR,,,,,,11,,METAR|TAF,site-name,,,,awc-station-cache
 TJSJ,AIRPORT,,Marin Intl,San Juan,PR,Puerto Rico,18.4326,-66.01065,SJU,,,,,,3,,METAR|TAF,site-city,,,,awc-station-cache
 TJZS,FIR,,SAN JUAN OCEANIC FIR/UIR,San Juan /,PR,Puerto Rico,18.549,-65.323,,TJ,0,999,false,,,,,region-name,TJ,TJZSFIR,524,eurocontrol-nm
-TKPK,AIRPORT,,Bradshaw Intl,St Kitts,KN,St. Kitts & Nevis,17.312,-62.72,SKB,,,,,,62,K,METAR|TAF,site-city,,,,awc-station-cache
-TKPN,AIRPORT,,Armory Intl,Nevis,KN,St. Kitts & Nevis,17.205,-62.591,NEV,,,,,,12,N,METAR|TAF,site-city,,,,awc-station-cache
-TLPC,AIRPORT,,Charles Arpt,St Lucia,LC,St. Lucia,14.021,-60.993,SLU,,,,,,8,CA,METAR|TAF,site-city,,,,awc-station-cache
-TLPL,AIRPORT,,Hewanorra Intl,St Lucia,LC,St. Lucia,13.743,-60.948,UVF,,,,,,13,VF,METAR|TAF,site-city,,,,awc-station-cache
+TKPK,AIRPORT,,Bradshaw Intl,St Kitts,KN,Saint Kitts and Nevis,17.312,-62.72,SKB,,,,,,62,K,METAR|TAF,site-city,,,,awc-station-cache
+TKPN,AIRPORT,,Armory Intl,Nevis,KN,Saint Kitts and Nevis,17.205,-62.591,NEV,,,,,,12,N,METAR|TAF,site-city,,,,awc-station-cache
+TLPC,AIRPORT,,Charles Arpt,St Lucia,LC,Saint Lucia,14.021,-60.993,SLU,,,,,,8,CA,METAR|TAF,site-city,,,,awc-station-cache
+TLPL,AIRPORT,,Hewanorra Intl,St Lucia,LC,Saint Lucia,13.743,-60.948,UVF,,,,,,13,VF,METAR|TAF,site-city,,,,awc-station-cache
 TNCA,AIRPORT,,Beatrix Intl,Aruba,AW,Aruba,12.501,-70.015,AUA,,,,,,7,,METAR|TAF,site-city,,,,awc-station-cache
 TNCB,AIRPORT,,Flamingo Arpt,Bonaire,BQ,Caribbean Netherlands,12.133,-68.277,BON,,,,,,6,BQ,METAR|TAF,site-city,,,,awc-station-cache
-TNCC,AIRPORT,,Hato Intl,Curacao,CW,Curaçao,12.189,-68.96,CUR,,,,,,10,,METAR|TAF,site-city,,,,awc-station-cache
+TNCC,AIRPORT,,Hato Intl,Curacao,CW,Curacao,12.189,-68.96,CUR,,,,,,10,,METAR|TAF,site-city,,,,awc-station-cache
 TNCE,AIRPORT,,Roosevelt Arpt,St Eustatius,BQ,Caribbean Netherlands,17.497,-62.979,EUX,,,,,,38,SE,METAR,site-city,,,,awc-station-cache
 TNCF,FIR,,CURACAO FIR,Curacao,BQ,Caribbean Netherlands,14.2,-70.533,,TN,0,195,false,,,,,region-name,TNC,TNCFFIR,524,eurocontrol-nm
 TNCF,UIR,,CURACAO UIR,Curacao,BQ,Caribbean Netherlands,14.2,-70.533,,TN,195,999,false,,,,,region-name,TNC,TNCFUIR,524,eurocontrol-nm
@@ -8237,15 +8237,15 @@ TNCM,AIRPORT,,St Maarten Intl,St Maarten,SX,Sint Maarten,18.041,-63.109,SXM,,,,,
 TQPF,AIRPORT,,Lloyd Intl,Anguilla,AI,Anguilla,18.205,-63.055,AXA,,,,,,33,,METAR|TAF,site-city,,,,awc-station-cache
 TRPG,AIRPORT,,Geralds Arpt,Monserrat,MS,Montserrat,16.792,-62.194,MNI,,,,,,170,,METAR|TAF,site-city,,,,awc-station-cache
 TRPM,AIRPORT,,Plym,Blackburne,MS,Montserrat,16.75,-62.17,,,,,,,12,,METAR,site-city,,,,awc-station-cache
-TTCP,AIRPORT,,Crown Pt Arpt,Tobago,TT,Trinidad & Tobago,11.149,-60.836,TAB,,,,,,13,WT,METAR|TAF,site-city,,,,awc-station-cache
-TTPP,AIRPORT,,Piarco Arpt,Port of Spain,TT,Trinidad & Tobago,10.593,-61.348,POS,,,,,,11,TU,METAR|TAF,site-city,,,,awc-station-cache
-TTPT,AIRPORT,,Crown Point Arpt,Crown Point,TT,Trinidad & Tobago,11.149,-60.836,,,,,,,13,WT,METAR,site-name,,,,awc-station-cache
-TTZP,FIR,,PIARCO FIR,Piarco,TT,Trinidad & Tobago,15.609,-51.25,,TT,0,245,false,,,,,region-name,TT,TTZPFIR,524,eurocontrol-nm
-TTZP,UIR,,PIARCO UIR,Piarco,TT,Trinidad & Tobago,15.609,-51.25,,TT,245,999,false,,,,,region-name,TT,TTZPUIR,524,eurocontrol-nm
+TTCP,AIRPORT,,Crown Pt Arpt,Tobago,TT,Trinidad and Tobago,11.149,-60.836,TAB,,,,,,13,WT,METAR|TAF,site-city,,,,awc-station-cache
+TTPP,AIRPORT,,Piarco Arpt,Port of Spain,TT,Trinidad and Tobago,10.593,-61.348,POS,,,,,,11,TU,METAR|TAF,site-city,,,,awc-station-cache
+TTPT,AIRPORT,,Crown Point Arpt,Crown Point,TT,Trinidad and Tobago,11.149,-60.836,,,,,,,13,WT,METAR,site-name,,,,awc-station-cache
+TTZP,FIR,,PIARCO FIR,Piarco,TT,Trinidad and Tobago,15.609,-51.25,,TT,0,245,false,,,,,region-name,TT,TTZPFIR,524,eurocontrol-nm
+TTZP,UIR,,PIARCO UIR,Piarco,TT,Trinidad and Tobago,15.609,-51.25,,TT,245,999,false,,,,,region-name,TT,TTZPUIR,524,eurocontrol-nm
 TUPJ,AIRPORT,,Lettsome Arpt,Beef Isl,VG,British Virgin Islands,18.445,-64.543,EIS,,,,,,6,,METAR|TAF,site-city,,,,awc-station-cache
-TVSA,AIRPORT,,Argyle Intl,Argyle,VC,St. Vincent & Grenadines,13.156,-61.15,SVD,,,,,,3,4,METAR|TAF,site-name,,,,awc-station-cache
-TVSC,AIRPORT,,Canouan Arpt,Canouan,VC,St. Vincent & Grenadines,12.7,-61.342,CIW,,,,,,2,6,METAR,site-name,,,,awc-station-cache
-TVSM,AIRPORT,,Mustique Arpt,Mustique,VC,St. Vincent & Grenadines,12.888,-61.18,MQS,,,,,,10,6,METAR,site-name,,,,awc-station-cache
+TVSA,AIRPORT,,Argyle Intl,Argyle,VC,Saint Vincent and Grenadines,13.156,-61.15,SVD,,,,,,3,4,METAR|TAF,site-name,,,,awc-station-cache
+TVSC,AIRPORT,,Canouan Arpt,Canouan,VC,Saint Vincent and Grenadines,12.7,-61.342,CIW,,,,,,2,6,METAR,site-name,,,,awc-station-cache
+TVSM,AIRPORT,,Mustique Arpt,Mustique,VC,Saint Vincent and Grenadines,12.888,-61.18,MQS,,,,,,10,6,METAR,site-name,,,,awc-station-cache
 TVSV,AIRPORT,,Joshua Arpt,Kingston,SO,Somalia,13.143,-61.212,AAD,,,,,,7,4,METAR|TAF,site-city,,,,awc-station-cache
 TXKF,AIRPORT,,Wade Intl,Bermuda,BM,Bermuda,32.364,-64.679,BDA,,,,,,4,SH,METAR|TAF,site-city,,,,awc-station-cache
 UAAA,AIRPORT,,Almaty Intl,Almaty,KZ,Kazakhstan,43.35,77.027,ALA,,,,,,673,AL,METAR|TAF,site-name,,,,awc-station-cache
@@ -8605,8 +8605,8 @@ VGSY,AIRPORT,,Osmani Arpt,Sylhet,BD,Bangladesh,24.959,91.87,ZYL,,,,,,16,SY,METAR
 VGTJ,AIRPORT,,Tejgaon Arpt,Dhaka,BD,Bangladesh,23.779,90.383,,,,,,,22,32,METAR,site-city,,,,awc-station-cache
 VGZR,AIRPORT,,Zia Intl,Kurmitola,BD,Bangladesh,23.843,90.398,,,,,,,11,32,,site-city,,,,awc-station-cache
 VHCH,AIRPORT,,Cheung Chau,Cheung Chau,CN,China,22.205,114.027,,,,,,,8,HK,METAR,site-name,,,,awc-station-cache
-VHHH,AIRPORT,,Hong Kong Intl,Hong Kong,HK,Hong Kong SAR China,22.309,113.922,HKG,,,,,,9,HK,METAR|TAF,site-name,,,,awc-station-cache
-VHHK,FIR,,HONG KONG FIR,Hong Kong,HK,Hong Kong SAR China,19.723,114.5,,VH,0,999,false,,,,,station,VHH,VHHKFIR,524,eurocontrol-nm
+VHHH,AIRPORT,,Hong Kong Intl,Hong Kong,HK,Hong Kong,22.309,113.922,HKG,,,,,,9,HK,METAR|TAF,site-name,,,,awc-station-cache
+VHHK,FIR,,HONG KONG FIR,Hong Kong,HK,Hong Kong,19.723,114.5,,VH,0,999,false,,,,,station,VHH,VHHKFIR,524,eurocontrol-nm
 VIAG,AIRPORT,,Agra Intl,Agra,IN,India,27.156,77.961,AGR,,,,,,159,UP,METAR|TAF,site-name,,,,awc-station-cache
 VIAL,AIRPORT,,Bamhra,Allahabad,IN,India,25.44,81.734,IXD,,,,,,100,UP,METAR,site-city,,,,awc-station-cache
 VIAM,AIRPORT,,Ambala Arpt,Ambala,IN,India,30.368,76.817,,,,,,,277,HR,TAF,site-name,,,,awc-station-cache
@@ -8659,7 +8659,7 @@ VLSV,AIRPORT,,Salavan Arpt,Salavan,LA,Laos,15.71,106.412,VNA,,,,,,183,SL,METAR,s
 VLTK,AIRPORT,,Thakhek,Thakhek,LA,Laos,17.379,104.649,THK,,,,,,168,SV,METAR,site-name,,,,awc-station-cache
 VLVT,AIRPORT,,Wattay Arpt,Vientiane,LA,Laos,17.987,102.564,VTE,,,,,,171,VT,METAR|TAF,site-city,,,,awc-station-cache
 VLVT,FIR,,VIENTIANE FIR,Vientiane,LA,Laos,18.207,103.894,,VL,0,999,false,,,,,station,VLVT,VLVTFIR,524,eurocontrol-nm
-VMMC,AIRPORT,,Macao Intl,Macao,MO,Macao SAR China,22.141,113.596,MFM,,,,,,1,MO,METAR|TAF,site-name,,,,awc-station-cache
+VMMC,AIRPORT,,Macao Intl,Macao,MO,Macao,22.141,113.596,MFM,,,,,,1,MO,METAR|TAF,site-name,,,,awc-station-cache
 VNBW,AIRPORT,,Bhairawa Airpor,Bhairawa Airpor,NP,Nepal,27.505,83.413,BWA,,,,,,104,LU,METAR,site-name,,,,awc-station-cache
 VNJL,AIRPORT,,Jumla,Jumla,NP,Nepal,29.274,82.192,JUM,,,,,,2371,KA,METAR,site-name,,,,awc-station-cache
 VNKT,AIRPORT,,Tribhuvan Intl,Kathmandu,NP,Nepal,27.697,85.359,KTM,,,,,,1334,BA,METAR|TAF,site-city,,,,awc-station-cache
@@ -8792,11 +8792,11 @@ VVTS,FIR,,HO CHI MINH FIR,Ho Chi Minh,VN,Vietnam,12.21,108.124,,VV,0,999,false,,
 VVVD,AIRPORT,,Van Don Intl,Van Don,VN,Vietnam,21.118,107.414,,,,,,,8,21,METAR|TAF,site-name,,,,awc-station-cache
 VVVH,AIRPORT,,Vinh,Vinh,VN,Vietnam,18.738,105.671,VII,,,,,,7,26,METAR,site-name,,,,awc-station-cache
 VVVV,FIR,,V W A REGION,,VN,Vietnam,20.191,105.447,,VV,0,999,false,,,,,,VVV,VVVVFIR,524,eurocontrol-nm
-VYMD,AIRPORT,,Mandalay Intl,Mandalay,MM,Myanmar (Burma),21.702,95.978,MDL,,,,,,87,4,METAR|TAF,site-name,,,,awc-station-cache
-VYNT,AIRPORT,,Naypyitaw Intl,Naypyitaw,MM,Myanmar (Burma),19.623,96.201,NYT,,,,,,610,4,METAR|TAF,site-name,,,,awc-station-cache
-VYSW,AIRPORT,,Sittwe Arpt,Sittwe,MM,Myanmar (Burma),20.134,92.873,AKY,,,,,,4,,METAR,site-name,,,,awc-station-cache
-VYYF,FIR,,YANGON FIR,Yangon,MM,Myanmar (Burma),19.275,96.584,,VY,0,999,false,,,,,station,VYY,VYYFFIR,524,eurocontrol-nm
-VYYY,AIRPORT,,Yangon Intl,Yangon,MM,Myanmar (Burma),16.906,96.137,RGN,,,,,,31,6,METAR|TAF,site-name,,,,awc-station-cache
+VYMD,AIRPORT,,Mandalay Intl,Mandalay,MM,Myanmar,21.702,95.978,MDL,,,,,,87,4,METAR|TAF,site-name,,,,awc-station-cache
+VYNT,AIRPORT,,Naypyitaw Intl,Naypyitaw,MM,Myanmar,19.623,96.201,NYT,,,,,,610,4,METAR|TAF,site-name,,,,awc-station-cache
+VYSW,AIRPORT,,Sittwe Arpt,Sittwe,MM,Myanmar,20.134,92.873,AKY,,,,,,4,,METAR,site-name,,,,awc-station-cache
+VYYF,FIR,,YANGON FIR,Yangon,MM,Myanmar,19.275,96.584,,VY,0,999,false,,,,,station,VYY,VYYFFIR,524,eurocontrol-nm
+VYYY,AIRPORT,,Yangon Intl,Yangon,MM,Myanmar,16.906,96.137,RGN,,,,,,31,6,METAR|TAF,site-name,,,,awc-station-cache
 WAAA,AIRPORT,,Hasanuddin Intl,Makassar,ID,Indonesia,-5.062,119.554,UPG,,,,,,13,SN,METAR|TAF,site-city,,,,awc-station-cache
 WAAB,AIRPORT,,Bau-Bau Arpt,Bau-Bau,ID,Indonesia,-5.488,122.57,,,,,,,36,SG,METAR,site-name,,,,awc-station-cache
 WAAF,FIR,,UJUNG PANDANG AND AROUND,Ujung Pandang And Around,ID,Indonesia,-3.807,125.701,,WA,0,999,false,,,,,region-name,WAA,WAAFFIR,524,eurocontrol-nm
