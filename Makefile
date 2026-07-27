@@ -19,6 +19,19 @@ CLIP_BBOX= -42.0  12.0 52.0 84.0
 CSVS = data/firs.tsv data/world-country-names.tsv data/country-id-name.csv \
 	data/firfabstates.ses.csv data/eu.csv data/world-country-flags.tsv
 
+FIRS_ALL_TMP = firs-all-attrs.csv
+# vintage of the checked-in NM export, read straight off the zip entry
+FIRUIR_DATE = $(shell unzip -l zip/FirUir_NM.zip | awk '/FirUir_NM\.dbf/{print $$2}')
+
+# Current [FU]IR reference set. zip/FirUir_NM.zip is CFMU AIRAC cycle 406
+# (2015-12-08); EUROCONTROL PRU publish newer cycles of the same PRISME export
+# openly in euctrl-pru/pruatlas (MIT, per its DESCRIPTION). 524 is the newest
+# they ship. Pinned to a commit so the build is reproducible.
+AIRAC_CURRENT = 524
+PRUATLAS_SHA = 0927219fec659e28913a325c7473c38239675003
+PRUATLAS_RAW = https://raw.githubusercontent.com/euctrl-pru/pruatlas/$(PRUATLAS_SHA)/inst/extdata
+
+
 join-with = $(subst $(space),$1,$2)
 comma := ,
 empty :=
@@ -241,6 +254,30 @@ shp/ses/firs.shp: shp/euctrl/firs_unfiltered.shp
 # properties in shapefile
 data/firs.tsv: shp/ses/firs.shp
 	node_modules/.bin/dbf2dsv shp/ses/firs.dbf | tail -n +2 > $@
+
+# Every Information Region of the current AIRAC cycle -- no FAB/Eurocontrol
+# filter -- as one flat CSV + JSON, enriched with country, Eurocontrol
+# membership and FAB, plus a reconciliation against the local 406 snapshot.
+.PHONY: firs-all
+firs-all: data/firs-all.csv data/firs-all.json data/firs-diff.csv
+
+geojson/ir-$(AIRAC_CURRENT).geojson:
+	mkdir -p $(dir $@)
+	curl -fsSL -o $@ $(PRUATLAS_RAW)/$(notdir $@)
+
+
+# attributes of the legacy 406 snapshot, used only as the reconciliation baseline
+$(FIRS_ALL_TMP): shp/euctrl/firs_unfiltered.shp
+	ogr2ogr -f CSV /vsistdout/ $< \
+		-select AC_ID,AV_AIRSPAC,AV_ICAO_ST,MIN_FLIGHT,MAX_FLIGHT,AV_NAME,OBJECTID \
+		> $@
+
+data/firs-all.csv data/firs-all.json data/firs-diff.csv &: \
+		geojson/ir-$(AIRAC_CURRENT).geojson $(FIRS_ALL_TMP) bin/firs-export.js
+	AIRAC=$(AIRAC_CURRENT) BASELINE_DATE=$(FIRUIR_DATE) node bin/firs-export.js \
+		geojson/ir-$(AIRAC_CURRENT).geojson $(FIRS_ALL_TMP) \
+		data/firs-all.csv data/firs-all.json data/firs-diff.csv
+	rm -f -- $(FIRS_ALL_TMP)
 
 # mapping FIR <--> FAB
 data/firfabstates.ses.csv: data/firs.tsv
@@ -472,6 +509,8 @@ clean-tmp:
 					data/flags-urls data/world-country-flags.tsv \
 					data/country-id-name.csv data/country-ids data/flags-names \
 					data/world-country-names.tsv \
+					data/firs-all.csv data/firs-all.json data/firs-diff.csv \
+					geojson $(FIRS_ALL_TMP) \
 					zip/ne_\*.zip $(CSVS)
 
 clean: clean-tmp
