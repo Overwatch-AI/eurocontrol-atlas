@@ -13,6 +13,35 @@ Sources: `ir-<cycle>.geojson` (see below) for the regions, and the
 (`stations.cache.json.gz`, refreshed daily) for the aerodromes and for all city/country
 resolution. Delete `geojson/stations.json` to pull a fresh cache.
 
+### Identity: `code`, `type`, `subarea`, `airspace_id`
+
+`code` is always a bare ICAO location indicator. EUROCONTROL's `[FU]IR` export does not
+identify airspaces that way — it glues the airspace class, and sometimes a sub-area
+letter, onto the indicator of the responsible FIC/ACC, so Damascus FIR arrives as
+`OSTTFIR` and the halves of the Canarias UIR as `GCCCUIRN`/`GCCCUIRS`. That identifier is
+decomposed on the way in:
+
+| column | Damascus | Canarias UIR (north) | Paris CDG |
+| --- | --- | --- | --- |
+| `code` | `OSTT` | `GCCC` | `LFPG` |
+| `type` | `FIR` | `UIR` | `AIRPORT` |
+| `subarea` | *(null)* | `N` | *(null)* |
+| `airspace_id` | `OSTTFIR` | `GCCCUIRN` | *(null)* |
+
+`airspace_id` is retained so a row can be traced back to the NM data, and because it is
+the only stable identifier for a single airspace *across* AIRAC cycles — which is what
+`firs-diff.csv` joins on.
+
+**`code` is deliberately not unique.** 60 indicators carry both an FIR and a UIR
+(`EGTT` is London FIR *and* London UIR), and 31 also name an aerodrome — `HSSS` is both
+Khartoum airport and the Khartoum FIC, `UAAA` both Almaty airport and the Almaty FIR.
+The key is `(code, type, subarea)`, verified unique at build time; the build aborts
+rather than emit a file whose rows silently collide.
+
+Note the decomposition applies only to regions, never to aerodrome codes: `KFIR` is a
+real US station ("First Divide") and stays `KFIR`, where a blanket suffix strip would
+have reduced it to `K`.
+
 ### How city and country are resolved
 
 `country` in the station cache **is** ISO 3166-1 alpha-2 (238 distinct values, all two
@@ -80,23 +109,29 @@ Caveats worth knowing before relying on these files:
 * Cycle 524 attributes some regions to a finer ICAO prefix than 406 did
   (e.g. Canarias moved `LE` → `GC`, Bodø `EN` → `BO`), which drops them out of the
   member-state and FAB joins.
+* `code`, `type`, `subarea` and `airspace_id` mean exactly what they do in
+  `icao-codes.*` above, decomposed from the same EUROCONTROL identifier.
 * The source's own `airspace_type` field is the constant `"FIR"` for every feature,
-  including the 63 codes ending in `UIR`, so `type` is derived from the code suffix
-  instead. A trailing letter is a sub-area qualifier (`GCCCUIRN`/`GCCCUIRS`).
-  `OTHER` covers the four entries that are not [FU]IRs at all: `BODO`, the `EGGX`
-  and `LPPO` rerouting extensions, and the `XXXX` "no FIR west of Peru" placeholder.
+  including the 63 identifiers ending in `UIR`, so `type` is derived from the
+  identifier instead. `OTHER` covers the four entries that are not [FU]IRs at all:
+  `BODO`, the `EGGX` and `LPPO` rerouting extensions, and the `XXXX` "no FIR west of
+  Peru" placeholder.
 * A handful of `name` values are truncated upstream (`KAZACHSTAN MERGED FI`).
 * `source_features` > 1 marks regions the source splits by flight-level band; the
   export merges them into a single `min_fl`–`max_fl` range.
 
 ## `firs-diff.csv` — reconciliation against the 2015 snapshot
 
-`change`,`code`,`icao_state`,`detail` — what moved between cycle 406 and the
-current cycle. `change` is one of `added`, `removed`, `renamed`,
+`change`,`airspace_id`,`code`,`icao_state`,`detail` — what moved between cycle 406 and
+the current cycle. `change` is one of `added`, `removed`, `renamed`,
 `renamed-truncated`, `fl-changed`, `state-changed`.
+
+The two cycles are joined on `airspace_id`, not `code`: it is the only field that
+identifies one airspace across cycles, where `LECB` would conflate the FIR with the UIR.
+`code` is carried alongside for convenience.
 
 Most of the 197 `added` / 24 `removed` rows are the 2015 model's coarse rest-of-world
 placeholders (`KKKKFIR USA CONTINENTAL`, `ZYYYFIR CHINA+MONGOLIA`,
 `UUUUFIR FICTICIOUS FIR REST OF RUSSIA`, …) being replaced by individual FIRs.
-Because the diff is keyed on `code`, a renumbered region shows up as a
-`removed`+`added` pair rather than a rename (`BIRD` → `BIRDFIR`).
+A region whose identifier changed shows up as a `removed`+`added` pair rather than a
+rename (`BIRD` → `BIRDFIR`).

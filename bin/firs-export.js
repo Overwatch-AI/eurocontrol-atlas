@@ -76,16 +76,22 @@ for (const f of readTable(path.join(DATA, 'fabstates.ses.csv'))) {
 // NOTE: `country` can only be filled for Eurocontrol member states -- data/ has no
 // ICAO-prefix -> country mapping for the rest of the world, so those stay null.
 
-// The source's own `airspace_type` is the constant "FIR" for every feature, incl.
-// the 64 codes ending in UIR, so it is useless as a discriminator -- derive instead.
-// The trailing optional letter is a sub-area qualifier: GCCCUIRN/GCCCUIRS are the
-// north/south halves of the Canarias UIR, BGGLFIRU the upper part of Nuuk, etc.
-// What is left as OTHER really is not an [FU]IR: BODO, the EGGX/LPPO rerouting
-// extensions and the XXXX "no FIR" placeholder.
-function classify (code) {
-  if (/UIR[A-Z]?$/.test(code)) return 'UIR'
-  if (/FIR[A-Z]?$/.test(code)) return 'FIR'
-  return 'OTHER'
+// What the source calls `code` is EUROCONTROL's airspace identifier: the ICAO location
+// indicator of the responsible FIC/ACC with FIR or UIR glued on, plus an optional
+// sub-area letter. Damascus FIR is carried as OSTTFIR, so the ICAO code is OSTT and the
+// FIR/UIR part is a *type*. GCCCUIRN/GCCCUIRS are the north/south halves of the
+// Canarias UIR; BGGLFIRU is the upper part of Nuuk.
+//
+// The source's own `airspace_type` is the constant "FIR" for every feature, including
+// the codes ending in UIR, so it is useless as a discriminator -- derive from the
+// identifier instead. What does not match is genuinely not an [FU]IR: BODO, the
+// EGGX/LPPO rerouting extensions and the XXXX "no FIR" placeholder.
+const AIRSPACE_ID = /^([A-Z]{4})(FIR|UIR)([A-Z]?)$/
+
+function parseAirspaceId (id) {
+  const m = AIRSPACE_ID.exec(id)
+  if (!m) return { code: id, type: 'OTHER', subarea: null }
+  return { code: m[1], type: m[2], subarea: m[3] || null }
 }
 
 // ---- inputs --------------------------------------------------------------
@@ -105,20 +111,25 @@ const baselineDate = process.env.BASELINE_DATE || null
 const byCode = new Map()
 for (const feat of JSON.parse(fs.readFileSync(currentFile, 'utf8')).features) {
   const p = feat.properties
-  const code = p.code
-  const existing = byCode.get(code)
+  const airspaceId = p.code
+  // keyed on the NM identifier: the bare ICAO code is not unique, since an indicator
+  // commonly carries both an FIR and a UIR (EGTTFIR/EGTTUIR both reduce to EGTT)
+  const existing = byCode.get(airspaceId)
   if (existing) {
     existing.min_fl = Math.min(existing.min_fl, p.min_fl)
     existing.max_fl = Math.max(existing.max_fl, p.max_fl)
     existing.source_features++
     continue
   }
+  const { code, type, subarea } = parseAirspaceId(airspaceId)
   const state = p.icao
   const member = members.get(state)
-  byCode.set(code, {
+  byCode.set(airspaceId, {
     code,
+    type,
+    subarea,
+    airspace_id: airspaceId,
     name: p.name || null,
-    type: classify(code),
     icao_state: state,
     country: member ? member.country : null,
     iso2: member ? member.iso2 : null,
@@ -131,21 +142,28 @@ for (const feat of JSON.parse(fs.readFileSync(currentFile, 'utf8')).features) {
     source_features: 1
   })
 }
-const firs = [...byCode.values()].sort((a, b) => a.code.localeCompare(b.code))
+const firs = [...byCode.values()].sort((a, b) =>
+  a.code.localeCompare(b.code) ||
+  a.type.localeCompare(b.type) ||
+  (a.subarea || '').localeCompare(b.subarea || ''))
 
 // ---- reconciliation against the 406 snapshot -----------------------------
 
+// Both cycles are compared on the NM airspace identifier (AV_AIRSPAC in 406, `code` in
+// the geojson), not on the bare ICAO code -- that is the only field that identifies a
+// single airspace across cycles, and EGTT alone would conflate the FIR with the UIR.
 const baseline = new Map()
 for (const r of readTable(baselineFile)) {
-  const code = r.AV_AIRSPAC
-  const existing = baseline.get(code)
+  const airspaceId = r.AV_AIRSPAC
+  const existing = baseline.get(airspaceId)
   if (existing) {
     existing.min_fl = Math.min(existing.min_fl, Number(r.MIN_FLIGHT))
     existing.max_fl = Math.max(existing.max_fl, Number(r.MAX_FLIGHT))
     continue
   }
-  baseline.set(code, {
-    code,
+  baseline.set(airspaceId, {
+    airspace_id: airspaceId,
+    code: parseAirspaceId(airspaceId).code,
     name: r.AV_NAME || null,
     icao_state: r.AV_ICAO_ST,
     min_fl: Number(r.MIN_FLIGHT),
@@ -167,36 +185,35 @@ function nameChange (oldName, newName) {
 }
 
 const diff = []
+const row = (change, e, detail) =>
+  ({ change, airspace_id: e.airspace_id, code: e.code, icao_state: e.icao_state, detail })
+
 for (const f of firs) {
-  const b = baseline.get(f.code)
+  const b = baseline.get(f.airspace_id)
   if (!b) {
-    diff.push({ change: 'added', code: f.code, icao_state: f.icao_state, detail: f.name || '' })
+    diff.push(row('added', f, f.name || ''))
     continue
   }
   const nc = nameChange(b.name, f.name)
-  if (nc) {
-    diff.push({ change: nc, code: f.code, icao_state: f.icao_state, detail: `${b.name || '(none)'} -> ${f.name || '(none)'}` })
-  }
+  if (nc) diff.push(row(nc, f, `${b.name || '(none)'} -> ${f.name || '(none)'}`))
   if (b.min_fl !== f.min_fl || b.max_fl !== f.max_fl) {
-    diff.push({ change: 'fl-changed', code: f.code, icao_state: f.icao_state, detail: `${b.min_fl}-${b.max_fl} -> ${f.min_fl}-${f.max_fl}` })
+    diff.push(row('fl-changed', f, `${b.min_fl}-${b.max_fl} -> ${f.min_fl}-${f.max_fl}`))
   }
   if (b.icao_state !== f.icao_state) {
-    diff.push({ change: 'state-changed', code: f.code, icao_state: f.icao_state, detail: `${b.icao_state} -> ${f.icao_state}` })
+    diff.push(row('state-changed', f, `${b.icao_state} -> ${f.icao_state}`))
   }
 }
 for (const b of baseline.values()) {
-  if (!byCode.has(b.code)) {
-    diff.push({ change: 'removed', code: b.code, icao_state: b.icao_state, detail: b.name || '' })
-  }
+  if (!byCode.has(b.airspace_id)) diff.push(row('removed', b, b.name || ''))
 }
-diff.sort((a, b) => a.change.localeCompare(b.change) || a.code.localeCompare(b.code))
+diff.sort((a, b) => a.change.localeCompare(b.change) || a.airspace_id.localeCompare(b.airspace_id))
 
 // ---- write ---------------------------------------------------------------
 
 const COLUMNS = [
-  'code', 'name', 'type', 'icao_state', 'country', 'iso2',
+  'code', 'type', 'subarea', 'name', 'icao_state', 'country', 'iso2',
   'eurocontrol_member', 'eurocontrol_entry', 'fab',
-  'min_fl', 'max_fl', 'airac_cfmu', 'source_features'
+  'min_fl', 'max_fl', 'airspace_id', 'airac_cfmu', 'source_features'
 ]
 
 const csvCell = v => {
@@ -208,7 +225,7 @@ const toCsv = (cols, rows) =>
   [cols.join(','), ...rows.map(r => cols.map(c => csvCell(r[c])).join(','))].join('\n') + '\n'
 
 fs.writeFileSync(outCsv, toCsv(COLUMNS, firs))
-fs.writeFileSync(outDiff, toCsv(['change', 'code', 'icao_state', 'detail'], diff))
+fs.writeFileSync(outDiff, toCsv(['change', 'airspace_id', 'code', 'icao_state', 'detail'], diff))
 
 fs.writeFileSync(outJson, JSON.stringify({
   source: `EUROCONTROL PRISME [FU]IR export, CFMU AIRAC cycle ${airac}, via euctrl-pru/pruatlas (ir-${airac}.geojson)`,

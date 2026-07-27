@@ -61,14 +61,36 @@ PRISME `[FU]IR` export; aerodromes and all city/country resolution come from the
 A region and an aerodrome resolve through the same lookup, and agree on the city:
 
 ```bash
-$ jq -c '.entries[] | select(.code=="LFFFFIR")
-         | {code,type,city,country,country_name,fab,min_fl,max_fl}' data/icao-codes.json
-{"code":"LFFFFIR","type":"FIR","city":"Paris","country":"FR","country_name":"France","fab":"fabec","min_fl":0,"max_fl":195}
+$ jq -c '.entries[] | select(.code=="LFFF" and .type=="FIR")
+         | {code,type,city,country_name,fab,min_fl,max_fl,airspace_id}' data/icao-codes.json
+{"code":"LFFF","type":"FIR","city":"Paris","country_name":"France","fab":"fabec","min_fl":0,"max_fl":195,"airspace_id":"LFFFFIR"}
 
 $ jq -c '.entries[] | select(.code=="LFPG")
          | {code,type,city,country,country_name,iata,state_code}' data/icao-codes.json
 {"code":"LFPG","type":"AIRPORT","city":"Paris","country":"FR","country_name":"France","iata":"CDG","state_code":"ID"}
 ```
+
+### `code` is the ICAO indicator; `type` carries FIR vs UIR
+
+`code` is always a bare ICAO location indicator — Damascus FIR is `OSTT`, not `OSTTFIR`.
+EUROCONTROL's own airspace identifier glues the airspace class onto the indicator, and
+that form is kept in `airspace_id` for tracing a row back to the NM data.
+
+**`code` alone is not a unique key.** An indicator commonly carries both an FIR and a
+UIR, and 31 indicators also name an aerodrome — `HSSS` is both Khartoum airport and the
+Khartoum FIC. The key is `(code, type, subarea)`; the build fails loudly if that ever
+collides.
+
+```bash
+$ jq -c '.entries[] | select(.code=="EGTT") | {code,type,name,min_fl,max_fl}' \
+    data/icao-codes.json
+{"code":"EGTT","type":"FIR","name":"LONDON FIR","min_fl":0,"max_fl":245}
+{"code":"EGTT","type":"UIR","name":"LONDON UIR","min_fl":245,"max_fl":999}
+```
+
+`subarea` is the trailing sub-area letter where the source splits a region — the north
+and south halves of the Canarias UIR are `GCCC`/`UIR`/`N` and `GCCC`/`UIR`/`S`. It is
+null for the other 316 regions and for every aerodrome.
 
 Every aerodrome under a given country, using the ISO 3166-1 alpha-2 code:
 
@@ -109,26 +131,28 @@ carrying flight levels, Eurocontrol membership and FAB. Unlike `data/firs.tsv`, 
 filtered to the FAB member states, this is the complete set.
 
 ```bash
-$ awk -F, 'NR==1 || ($3=="UIR" && $9=="fabec")' data/firs-all.csv | cut -d, -f1,2,10,11
+$ awk -F, 'NR==1 || ($2=="UIR" && $10=="fabec")' data/firs-all.csv | cut -d, -f1,4,11,12
 code,name,min_fl,max_fl
-EBURUIR,BRUSSELS UIR,195,999
-EDUUUIR,RHEIN UIR,245,999
-EDVVUIR,HANNOVER UIR,245,999
-LFFFUIR,FRANCE UIR,195,999
-LSASUIR,SWITZERLAND UIR,195,999
+EBUR,BRUSSELS UIR,195,999
+EDUU,RHEIN UIR,245,999
+EDVV,HANNOVER UIR,245,999
+LFFF,FRANCE UIR,195,999
+LSAS,SWITZERLAND UIR,195,999
 ```
 
 `data/firs-diff.csv` reconciles the current cycle against the 2015 snapshot still held in
-`zip/FirUir_NM.zip`, which is useful for spotting real airspace changes:
+`zip/FirUir_NM.zip`, which is useful for spotting real airspace changes. It joins the two
+cycles on `airspace_id`, since that is the only field identifying a single airspace across
+cycles — `LECB` alone would conflate the FIR with the UIR:
 
 ```bash
-$ awk -F, 'NR==1 || $3=="LE"' data/firs-diff.csv
-change,code,icao_state,detail
-fl-changed,LECBFIR,LE,0-245 -> 0-195
-fl-changed,LECBUIR,LE,245-999 -> 195-999
-fl-changed,LECMFIR,LE,0-245 -> 0-195
-fl-changed,LECMUIR,LE,245-999 -> 195-999
-removed,GCCCUIR,LE,CANARIS UIR
+$ awk -F, 'NR==1 || $4=="LE"' data/firs-diff.csv
+change,airspace_id,code,icao_state,detail
+fl-changed,LECBFIR,LECB,LE,0-245 -> 0-195
+fl-changed,LECBUIR,LECB,LE,245-999 -> 195-999
+fl-changed,LECMFIR,LECM,LE,0-245 -> 0-195
+fl-changed,LECMUIR,LECM,LE,245-999 -> 195-999
+removed,GCCCUIR,GCCC,LE,CANARIS UIR
 ```
 
 ### Refreshing the sources

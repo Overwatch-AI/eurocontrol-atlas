@@ -5,9 +5,11 @@
   "count": 322,
   "firs": [
     {
-      "code": "AGGGFIR",
-      "name": "HONIARA FIR",
+      "code": "AGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "AGGGFIR",
+      "name": "HONIARA FIR",
       "icao_state": "AG",
       "country": null,
       "iso2": null,
@@ -20,9 +22,11 @@
       "source_features": 1
     },
     {
-      "code": "ANAUFIR",
-      "name": "NAURU FIR",
+      "code": "ANAU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ANAUFIR",
+      "name": "NAURU FIR",
       "icao_state": "AN",
       "country": null,
       "iso2": null,
@@ -35,9 +39,11 @@
       "source_features": 1
     },
     {
-      "code": "AYPMFIR",
-      "name": "PORT MORESBY",
+      "code": "AYPM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "AYPMFIR",
+      "name": "PORT MORESBY",
       "icao_state": "AY",
       "country": null,
       "iso2": null,
@@ -50,9 +56,11 @@
       "source_features": 1
     },
     {
-      "code": "BGGLFIR",
-      "name": "SONDESTROM FIR",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "BGGLFIR",
+      "name": "SONDESTROM FIR",
       "icao_state": "BG",
       "country": null,
       "iso2": null,
@@ -65,9 +73,11 @@
       "source_features": 1
     },
     {
-      "code": "BGGLFIRS",
-      "name": "NUUK FIR SOUTH",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": "S",
+      "airspace_id": "BGGLFIRS",
+      "name": "NUUK FIR SOUTH",
       "icao_state": "BG",
       "country": null,
       "iso2": null,
@@ -80,9 +90,11 @@
       "source_features": 1
     },
     {
-      "code": "BGGLFIRU",
-      "name": "NUUK FIR UPPER",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": "U",
+      "airspace_id": "BGGLFIRU",
+      "name": "NUUK FIR UPPER",
       "icao_state": "BG",
       "country": null,
       "iso2": null,
@@ -95,9 +107,11 @@
       "source_features": 1
     },
     {
-      "code": "BIRDFIR",
-      "name": "REYKJAVIK FIR",
+      "code": "BIRD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "BIRDFIR",
+      "name": "REYKJAVIK FIR",
       "icao_state": "BI",
       "country": "Iceland",
       "iso2": "IS",
@@ -111,8 +125,10 @@
     },
     {
       "code": "BODO",
-      "name": "BODO INTERNATIONAL AIRSPACE",
       "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "BODO",
+      "name": "BODO INTERNATIONAL AIRSPACE",
       "icao_state": "BO",
       "country": null,
       "iso2": null,
@@ -125,9 +141,11 @@
       "source_features": 1
     },
     {
-      "code": "CZEGFIR",
+      "code": "CZEG",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZEGFIR",
       "name": "EDMONTON FLIGHT INFORMATION REGION",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -140,9 +158,11 @@
       "source_features": 1
     },
     {
-      "code": "CZQMFIR",
+      "code": "CZQM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZQMFIR",
       "name": "MONCTON FLIGHT INFORMATION REGION",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -155,9 +175,11 @@
       "source_features": 1
     },
     {
-      "code": "CZQXFIR",
-      "name": "GANDER NAT RVSM",
+      "code": "CZQX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZQXFIR",
+      "name": "GANDER NAT RVSM",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -170,9 +192,11 @@
       "source_features": 2
     },
     {
-      "code": "CZULFIR",
+      "code": "CZUL",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZULFIR",
       "name": "MONTREAL FIR",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -185,9 +209,11 @@
       "source_features": 1
     },
     {
-      "code": "CZVRFIR",
+      "code": "CZVR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZVRFIR",
       "name": "VANCOUVER FLIGHT INFORMATION REGION",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -200,9 +226,11 @@
       "source_features": 1
     },
     {
-      "code": "CZWGFIR",
+      "code": "CZWG",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZWGFIR",
       "name": "WINNIPEG FLIGHT INFORMATION REGION",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -215,9 +243,11 @@
       "source_features": 1
     },
     {
-      "code": "CZYZFIR",
+      "code": "CZYZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZYZFIR",
       "name": "TORONTO FLIGHT INFORMATION REGION",
-      "type": "FIR",
       "icao_state": "CZ",
       "country": null,
       "iso2": null,
@@ -230,9 +260,11 @@
       "source_features": 1
     },
     {
-      "code": "DAAAFIR",
-      "name": "ALGER FIR",
+      "code": "DAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DAAAFIR",
+      "name": "ALGER FIR",
       "icao_state": "DA",
       "country": null,
       "iso2": null,
@@ -245,9 +277,11 @@
       "source_features": 1
     },
     {
-      "code": "DGACFIR",
-      "name": "GHANA",
+      "code": "DGAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DGACFIR",
+      "name": "GHANA",
       "icao_state": "DG",
       "country": null,
       "iso2": null,
@@ -260,9 +294,11 @@
       "source_features": 1
     },
     {
-      "code": "DNKKFIR",
-      "name": "NIGERIA",
+      "code": "DNKK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DNKKFIR",
+      "name": "NIGERIA",
       "icao_state": "DN",
       "country": null,
       "iso2": null,
@@ -275,9 +311,11 @@
       "source_features": 1
     },
     {
-      "code": "DRRRFIR",
+      "code": "DRRR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DRRRFIR",
       "name": "D REGION",
-      "type": "FIR",
       "icao_state": "DR",
       "country": null,
       "iso2": null,
@@ -290,9 +328,11 @@
       "source_features": 1
     },
     {
-      "code": "DRRRUIR",
+      "code": "DRRR",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "DRRRUIR",
       "name": "NIAMEY UIR",
-      "type": "UIR",
       "icao_state": "DR",
       "country": null,
       "iso2": null,
@@ -305,9 +345,11 @@
       "source_features": 1
     },
     {
-      "code": "DTTCFIR",
-      "name": "TUNIS FIR",
+      "code": "DTTC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DTTCFIR",
+      "name": "TUNIS FIR",
       "icao_state": "DT",
       "country": null,
       "iso2": null,
@@ -320,9 +362,11 @@
       "source_features": 1
     },
     {
-      "code": "DTTCUIR",
-      "name": "TUNIS UIR",
+      "code": "DTTC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "DTTCUIR",
+      "name": "TUNIS UIR",
       "icao_state": "DT",
       "country": null,
       "iso2": null,
@@ -335,9 +379,11 @@
       "source_features": 1
     },
     {
-      "code": "EBBUFIR",
-      "name": "BRUSSELS FIR",
+      "code": "EBBU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EBBUFIR",
+      "name": "BRUSSELS FIR",
       "icao_state": "EB",
       "country": "Belgium",
       "iso2": "BE",
@@ -350,9 +396,11 @@
       "source_features": 1
     },
     {
-      "code": "EBURUIR",
-      "name": "BRUSSELS UIR",
+      "code": "EBUR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EBURUIR",
+      "name": "BRUSSELS UIR",
       "icao_state": "EB",
       "country": "Belgium",
       "iso2": "BE",
@@ -365,9 +413,11 @@
       "source_features": 1
     },
     {
-      "code": "EDGGFIR",
+      "code": "EDGG",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDGGFIR",
       "name": "LANGEN FIR",
-      "type": "FIR",
       "icao_state": "ED",
       "country": "Germany",
       "iso2": "DE",
@@ -380,9 +430,11 @@
       "source_features": 1
     },
     {
-      "code": "EDMMFIR",
+      "code": "EDMM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDMMFIR",
       "name": "MUNCHEN FIR",
-      "type": "FIR",
       "icao_state": "ED",
       "country": "Germany",
       "iso2": "DE",
@@ -395,9 +447,11 @@
       "source_features": 1
     },
     {
-      "code": "EDUUUIR",
+      "code": "EDUU",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EDUUUIR",
       "name": "RHEIN UIR",
-      "type": "UIR",
       "icao_state": "ED",
       "country": "Germany",
       "iso2": "DE",
@@ -410,9 +464,11 @@
       "source_features": 1
     },
     {
-      "code": "EDVVUIR",
+      "code": "EDVV",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EDVVUIR",
       "name": "HANNOVER UIR",
-      "type": "UIR",
       "icao_state": "ED",
       "country": "Germany",
       "iso2": "DE",
@@ -425,9 +481,11 @@
       "source_features": 1
     },
     {
-      "code": "EDWWFIR",
-      "name": "BREMEN FIR",
+      "code": "EDWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDWWFIR",
+      "name": "BREMEN FIR",
       "icao_state": "ED",
       "country": "Germany",
       "iso2": "DE",
@@ -440,9 +498,11 @@
       "source_features": 1
     },
     {
-      "code": "EETTFIR",
-      "name": "TALLINN FIR",
+      "code": "EETT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EETTFIR",
+      "name": "TALLINN FIR",
       "icao_state": "EE",
       "country": "Estonia",
       "iso2": "EE",
@@ -455,9 +515,11 @@
       "source_features": 1
     },
     {
-      "code": "EFINFIR",
-      "name": "HELSINKI FIR",
+      "code": "EFIN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EFINFIR",
+      "name": "HELSINKI FIR",
       "icao_state": "EF",
       "country": "Finland",
       "iso2": "FI",
@@ -470,9 +532,11 @@
       "source_features": 1
     },
     {
-      "code": "EFINUIR",
-      "name": "HELSINKI UIR",
+      "code": "EFIN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EFINUIR",
+      "name": "HELSINKI UIR",
       "icao_state": "EF",
       "country": "Finland",
       "iso2": "FI",
@@ -486,23 +550,10 @@
     },
     {
       "code": "EGGX",
-      "name": "REROUTING EXTENSION",
-      "type": "OTHER",
-      "icao_state": "EG",
-      "country": "United Kingdom",
-      "iso2": "GB",
-      "eurocontrol_member": true,
-      "eurocontrol_entry": "1960-12-13",
-      "fab": "ukei",
-      "min_fl": 0,
-      "max_fl": 999,
-      "airac_cfmu": 524,
-      "source_features": 1
-    },
-    {
-      "code": "EGGXFIR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGGXFIR",
       "name": "SHANWICK FIR",
-      "type": "FIR",
       "icao_state": "EG",
       "country": "United Kingdom",
       "iso2": "GB",
@@ -515,9 +566,28 @@
       "source_features": 1
     },
     {
-      "code": "EGPXFIR",
+      "code": "EGGX",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "EGGX",
+      "name": "REROUTING EXTENSION",
+      "icao_state": "EG",
+      "country": "United Kingdom",
+      "iso2": "GB",
+      "eurocontrol_member": true,
+      "eurocontrol_entry": "1960-12-13",
+      "fab": "ukei",
+      "min_fl": 0,
+      "max_fl": 999,
+      "airac_cfmu": 524,
+      "source_features": 1
+    },
+    {
+      "code": "EGPX",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGPXFIR",
       "name": "SCOTTISH FIR",
-      "type": "FIR",
       "icao_state": "EG",
       "country": "United Kingdom",
       "iso2": "GB",
@@ -530,9 +600,11 @@
       "source_features": 1
     },
     {
-      "code": "EGPXUIR",
+      "code": "EGPX",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EGPXUIR",
       "name": "SCOTTISH UIR",
-      "type": "UIR",
       "icao_state": "EG",
       "country": "United Kingdom",
       "iso2": "GB",
@@ -545,9 +617,11 @@
       "source_features": 1
     },
     {
-      "code": "EGTTFIR",
-      "name": "LONDON FIR",
+      "code": "EGTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGTTFIR",
+      "name": "LONDON FIR",
       "icao_state": "EG",
       "country": "United Kingdom",
       "iso2": "GB",
@@ -560,9 +634,11 @@
       "source_features": 1
     },
     {
-      "code": "EGTTUIR",
-      "name": "LONDON UIR",
+      "code": "EGTT",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EGTTUIR",
+      "name": "LONDON UIR",
       "icao_state": "EG",
       "country": "United Kingdom",
       "iso2": "GB",
@@ -575,9 +651,11 @@
       "source_features": 1
     },
     {
-      "code": "EHAAFIR",
-      "name": "AMSTERDAM FIR",
+      "code": "EHAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EHAAFIR",
+      "name": "AMSTERDAM FIR",
       "icao_state": "EH",
       "country": "Netherlands",
       "iso2": "NL",
@@ -590,9 +668,11 @@
       "source_features": 1
     },
     {
-      "code": "EISNFIR",
-      "name": "SHANNON FIR",
+      "code": "EISN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EISNFIR",
+      "name": "SHANNON FIR",
       "icao_state": "EI",
       "country": "Ireland",
       "iso2": "IE",
@@ -605,9 +685,11 @@
       "source_features": 1
     },
     {
-      "code": "EISNUIR",
-      "name": "SHANNON UIR",
+      "code": "EISN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EISNUIR",
+      "name": "SHANNON UIR",
       "icao_state": "EI",
       "country": "Ireland",
       "iso2": "IE",
@@ -620,9 +702,11 @@
       "source_features": 1
     },
     {
-      "code": "EKDKFIR",
-      "name": "COPENHAGEN FIR",
+      "code": "EKDK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EKDKFIR",
+      "name": "COPENHAGEN FIR",
       "icao_state": "EK",
       "country": "Denmark",
       "iso2": "DK",
@@ -635,9 +719,11 @@
       "source_features": 1
     },
     {
-      "code": "ENOBFIR",
+      "code": "ENOB",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ENOBFIR",
       "name": "BODO OCEANIC FIR",
-      "type": "FIR",
       "icao_state": "EN",
       "country": "Norway",
       "iso2": "NO",
@@ -650,9 +736,11 @@
       "source_features": 1
     },
     {
-      "code": "ENORFIR",
+      "code": "ENOR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ENORFIR",
       "name": null,
-      "type": "FIR",
       "icao_state": "EN",
       "country": "Norway",
       "iso2": "NO",
@@ -665,9 +753,11 @@
       "source_features": 1
     },
     {
-      "code": "EPWWFIR",
-      "name": "WARSZAWA FIR",
+      "code": "EPWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EPWWFIR",
+      "name": "WARSZAWA FIR",
       "icao_state": "EP",
       "country": "Poland",
       "iso2": "PL",
@@ -680,9 +770,11 @@
       "source_features": 1
     },
     {
-      "code": "ESAAFIR",
-      "name": "SWEDEN FIR",
+      "code": "ESAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ESAAFIR",
+      "name": "SWEDEN FIR",
       "icao_state": "ES",
       "country": "Sweden",
       "iso2": "SE",
@@ -695,9 +787,11 @@
       "source_features": 1
     },
     {
-      "code": "EVRRFIR",
-      "name": "RIGA FIR",
+      "code": "EVRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EVRRFIR",
+      "name": "RIGA FIR",
       "icao_state": "EV",
       "country": "Latvia",
       "iso2": "LV",
@@ -710,9 +804,11 @@
       "source_features": 1
     },
     {
-      "code": "EYVLFIR",
-      "name": "VILNIUS FIR",
+      "code": "EYVL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EYVLFIR",
+      "name": "VILNIUS FIR",
       "icao_state": "EY",
       "country": "Lithuania",
       "iso2": "LT",
@@ -725,9 +821,11 @@
       "source_features": 1
     },
     {
-      "code": "EYVLUIR",
-      "name": "VILNIUS UIR",
+      "code": "EYVL",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EYVLUIR",
+      "name": "VILNIUS UIR",
       "icao_state": "EY",
       "country": "Lithuania",
       "iso2": "LT",
@@ -740,9 +838,11 @@
       "source_features": 1
     },
     {
-      "code": "FACAFIR",
+      "code": "FACA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FACAFIR",
       "name": "CAPE TOWN FIR",
-      "type": "FIR",
       "icao_state": "FA",
       "country": null,
       "iso2": null,
@@ -755,9 +855,11 @@
       "source_features": 1
     },
     {
-      "code": "FAJAFIR",
+      "code": "FAJA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FAJAFIR",
       "name": "JOHANNESBURG FIR",
-      "type": "FIR",
       "icao_state": "FA",
       "country": null,
       "iso2": null,
@@ -770,9 +872,11 @@
       "source_features": 1
     },
     {
-      "code": "FAJOFIR",
+      "code": "FAJO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FAJOFIR",
       "name": "JOHANNESBURG OCEANIC FIR",
-      "type": "FIR",
       "icao_state": "FA",
       "country": null,
       "iso2": null,
@@ -785,9 +889,11 @@
       "source_features": 1
     },
     {
-      "code": "FBGRFIR",
-      "name": "GABORONE FIR",
+      "code": "FBGR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FBGRFIR",
+      "name": "GABORONE FIR",
       "icao_state": "FB",
       "country": null,
       "iso2": null,
@@ -800,9 +906,11 @@
       "source_features": 1
     },
     {
-      "code": "FCCCFIR",
-      "name": "BRAZZAVILLE FIR",
+      "code": "FCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FCCCFIR",
+      "name": "BRAZZAVILLE FIR",
       "icao_state": "FC",
       "country": null,
       "iso2": null,
@@ -815,9 +923,11 @@
       "source_features": 1
     },
     {
-      "code": "FCCCUIR",
-      "name": "BRAZZAVILLE UIR",
+      "code": "FCCC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FCCCUIR",
+      "name": "BRAZZAVILLE UIR",
       "icao_state": "FC",
       "country": null,
       "iso2": null,
@@ -830,9 +940,11 @@
       "source_features": 1
     },
     {
-      "code": "FIMMFIR",
-      "name": "MAURITIUS FIR",
+      "code": "FIMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FIMMFIR",
+      "name": "MAURITIUS FIR",
       "icao_state": "FI",
       "country": null,
       "iso2": null,
@@ -845,9 +957,11 @@
       "source_features": 1
     },
     {
-      "code": "FLFIFIR",
-      "name": "LUSAKA FIR",
+      "code": "FLFI",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FLFIFIR",
+      "name": "LUSAKA FIR",
       "icao_state": "FL",
       "country": null,
       "iso2": null,
@@ -860,9 +974,11 @@
       "source_features": 1
     },
     {
-      "code": "FMMMFIR",
-      "name": "ANTANANARIVO FIR",
+      "code": "FMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FMMMFIR",
+      "name": "ANTANANARIVO FIR",
       "icao_state": "FM",
       "country": null,
       "iso2": null,
@@ -875,9 +991,11 @@
       "source_features": 1
     },
     {
-      "code": "FMMMUIR",
-      "name": "ANTANANARIVO UIR",
+      "code": "FMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FMMMUIR",
+      "name": "ANTANANARIVO UIR",
       "icao_state": "FM",
       "country": null,
       "iso2": null,
@@ -890,9 +1008,11 @@
       "source_features": 1
     },
     {
-      "code": "FNANFIR",
-      "name": "LUANDA FIR",
+      "code": "FNAN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FNANFIR",
+      "name": "LUANDA FIR",
       "icao_state": "FN",
       "country": null,
       "iso2": null,
@@ -905,9 +1025,11 @@
       "source_features": 1
     },
     {
-      "code": "FNANUIR",
-      "name": "LUANDA UIR",
+      "code": "FNAN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FNANUIR",
+      "name": "LUANDA UIR",
       "icao_state": "FN",
       "country": null,
       "iso2": null,
@@ -920,9 +1042,11 @@
       "source_features": 1
     },
     {
-      "code": "FQBEFIR",
-      "name": "BEIRA FIR",
+      "code": "FQBE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FQBEFIR",
+      "name": "BEIRA FIR",
       "icao_state": "FQ",
       "country": null,
       "iso2": null,
@@ -935,9 +1059,11 @@
       "source_features": 1
     },
     {
-      "code": "FSSSFIR",
-      "name": "SEYCHELLES FIR",
+      "code": "FSSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FSSSFIR",
+      "name": "SEYCHELLES FIR",
       "icao_state": "FS",
       "country": null,
       "iso2": null,
@@ -950,9 +1076,11 @@
       "source_features": 1
     },
     {
-      "code": "FTTTFIR",
+      "code": "FTTT",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FTTTFIR",
       "name": "N'DJAMENA FIR",
-      "type": "FIR",
       "icao_state": "FT",
       "country": null,
       "iso2": null,
@@ -965,9 +1093,11 @@
       "source_features": 1
     },
     {
-      "code": "FTTTUIR",
+      "code": "FTTT",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FTTTUIR",
       "name": "N'DJAMENA UIR",
-      "type": "UIR",
       "icao_state": "FT",
       "country": null,
       "iso2": null,
@@ -980,9 +1110,11 @@
       "source_features": 1
     },
     {
-      "code": "FVHFFIR",
-      "name": "HARARE FIR",
+      "code": "FVHF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FVHFFIR",
+      "name": "HARARE FIR",
       "icao_state": "FV",
       "country": null,
       "iso2": null,
@@ -995,9 +1127,11 @@
       "source_features": 1
     },
     {
-      "code": "FVHFUIR",
-      "name": "HARARE UIR",
+      "code": "FVHF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FVHFUIR",
+      "name": "HARARE UIR",
       "icao_state": "FV",
       "country": null,
       "iso2": null,
@@ -1010,9 +1144,11 @@
       "source_features": 1
     },
     {
-      "code": "FWLLFIR",
-      "name": "LILONGWE FIR",
+      "code": "FWLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FWLLFIR",
+      "name": "LILONGWE FIR",
       "icao_state": "FW",
       "country": null,
       "iso2": null,
@@ -1025,9 +1161,11 @@
       "source_features": 1
     },
     {
-      "code": "FYWFFIR",
-      "name": "WINDHOEK FIR",
+      "code": "FYWF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FYWFFIR",
+      "name": "WINDHOEK FIR",
       "icao_state": "FY",
       "country": null,
       "iso2": null,
@@ -1040,9 +1178,11 @@
       "source_features": 1
     },
     {
-      "code": "FZZAFIR",
-      "name": "KINSHASA FIR",
+      "code": "FZZA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FZZAFIR",
+      "name": "KINSHASA FIR",
       "icao_state": "FZ",
       "country": null,
       "iso2": null,
@@ -1055,9 +1195,11 @@
       "source_features": 1
     },
     {
-      "code": "FZZAUIR",
-      "name": "KINSHASA UIR",
+      "code": "FZZA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FZZAUIR",
+      "name": "KINSHASA UIR",
       "icao_state": "FZ",
       "country": null,
       "iso2": null,
@@ -1070,9 +1212,11 @@
       "source_features": 1
     },
     {
-      "code": "GCCCFIR",
-      "name": "CANARIAS FIR",
+      "code": "GCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GCCCFIR",
+      "name": "CANARIAS FIR",
       "icao_state": "GC",
       "country": null,
       "iso2": null,
@@ -1085,9 +1229,11 @@
       "source_features": 1
     },
     {
-      "code": "GCCCFIRH",
+      "code": "GCCC",
+      "type": "FIR",
+      "subarea": "H",
+      "airspace_id": "GCCCFIRH",
       "name": "CANARIAS FIR SAHARA AREA",
-      "type": "FIR",
       "icao_state": "GC",
       "country": null,
       "iso2": null,
@@ -1100,9 +1246,11 @@
       "source_features": 1
     },
     {
-      "code": "GCCCFIRR",
-      "name": "CANARIAS FIR",
+      "code": "GCCC",
       "type": "FIR",
+      "subarea": "R",
+      "airspace_id": "GCCCFIRR",
+      "name": "CANARIAS FIR",
       "icao_state": "GC",
       "country": null,
       "iso2": null,
@@ -1115,9 +1263,11 @@
       "source_features": 2
     },
     {
-      "code": "GCCCUIRN",
-      "name": "CANARIS UIR",
+      "code": "GCCC",
       "type": "UIR",
+      "subarea": "N",
+      "airspace_id": "GCCCUIRN",
+      "name": "CANARIS UIR",
       "icao_state": "GC",
       "country": null,
       "iso2": null,
@@ -1130,9 +1280,11 @@
       "source_features": 8
     },
     {
-      "code": "GCCCUIRS",
-      "name": "CANARIAS UIR",
+      "code": "GCCC",
       "type": "UIR",
+      "subarea": "S",
+      "airspace_id": "GCCCUIRS",
+      "name": "CANARIAS UIR",
       "icao_state": "GC",
       "country": null,
       "iso2": null,
@@ -1145,9 +1297,11 @@
       "source_features": 2
     },
     {
-      "code": "GLRBFIR",
-      "name": "ROBERTS",
+      "code": "GLRB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GLRBFIR",
+      "name": "ROBERTS",
       "icao_state": "GL",
       "country": null,
       "iso2": null,
@@ -1160,9 +1314,11 @@
       "source_features": 1
     },
     {
-      "code": "GMMMFIR",
-      "name": "CASABLANCA FIR",
+      "code": "GMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GMMMFIR",
+      "name": "CASABLANCA FIR",
       "icao_state": "GM",
       "country": "Morocco",
       "iso2": "MA",
@@ -1175,9 +1331,11 @@
       "source_features": 1
     },
     {
-      "code": "GMMMUIR",
-      "name": "CASABLANCA UIR",
+      "code": "GMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GMMMUIR",
+      "name": "CASABLANCA UIR",
       "icao_state": "GM",
       "country": "Morocco",
       "iso2": "MA",
@@ -1190,9 +1348,11 @@
       "source_features": 1
     },
     {
-      "code": "GOOOFIR",
+      "code": "GOOO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GOOOFIR",
       "name": "DAKAR TERRESTRE (PAR",
-      "type": "FIR",
       "icao_state": "GO",
       "country": null,
       "iso2": null,
@@ -1205,9 +1365,11 @@
       "source_features": 1
     },
     {
-      "code": "GOOOUIR",
+      "code": "GOOO",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GOOOUIR",
       "name": "DAKAR UIR",
-      "type": "UIR",
       "icao_state": "GO",
       "country": null,
       "iso2": null,
@@ -1220,9 +1382,11 @@
       "source_features": 1
     },
     {
-      "code": "GVSCFIR",
-      "name": "SAL OCEANIC",
+      "code": "GVSC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GVSCFIR",
+      "name": "SAL OCEANIC",
       "icao_state": "GV",
       "country": null,
       "iso2": null,
@@ -1235,9 +1399,11 @@
       "source_features": 1
     },
     {
-      "code": "GVSCUIR",
-      "name": "SAL OCEANIC UIR",
+      "code": "GVSC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GVSCUIR",
+      "name": "SAL OCEANIC UIR",
       "icao_state": "GV",
       "country": null,
       "iso2": null,
@@ -1250,9 +1416,11 @@
       "source_features": 1
     },
     {
-      "code": "HAAAFIR",
-      "name": "ETHIOPIA FIR",
+      "code": "HAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HAAAFIR",
+      "name": "ETHIOPIA FIR",
       "icao_state": "HA",
       "country": null,
       "iso2": null,
@@ -1265,9 +1433,11 @@
       "source_features": 1
     },
     {
-      "code": "HBBAFIR",
-      "name": "BURUNDI FIR",
+      "code": "HBBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HBBAFIR",
+      "name": "BURUNDI FIR",
       "icao_state": "HB",
       "country": null,
       "iso2": null,
@@ -1280,9 +1450,11 @@
       "source_features": 1
     },
     {
-      "code": "HBBAUIR",
-      "name": "BUJUMBURA UIR",
+      "code": "HBBA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HBBAUIR",
+      "name": "BUJUMBURA UIR",
       "icao_state": "HB",
       "country": null,
       "iso2": null,
@@ -1295,9 +1467,11 @@
       "source_features": 1
     },
     {
-      "code": "HCSMFIR",
-      "name": "SOMALI FIR",
+      "code": "HCSM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HCSMFIR",
+      "name": "SOMALI FIR",
       "icao_state": "HC",
       "country": null,
       "iso2": null,
@@ -1310,9 +1484,11 @@
       "source_features": 1
     },
     {
-      "code": "HECCFIR",
-      "name": "CAIRO FIR",
+      "code": "HECC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HECCFIR",
+      "name": "CAIRO FIR",
       "icao_state": "HE",
       "country": null,
       "iso2": null,
@@ -1325,9 +1501,11 @@
       "source_features": 1
     },
     {
-      "code": "HHAAFIR",
-      "name": "ERITREA FIR",
+      "code": "HHAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HHAAFIR",
+      "name": "ERITREA FIR",
       "icao_state": "HH",
       "country": null,
       "iso2": null,
@@ -1340,9 +1518,11 @@
       "source_features": 1
     },
     {
-      "code": "HKNAFIR",
-      "name": "KENYA FIR",
+      "code": "HKNA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HKNAFIR",
+      "name": "KENYA FIR",
       "icao_state": "HK",
       "country": null,
       "iso2": null,
@@ -1355,9 +1535,11 @@
       "source_features": 1
     },
     {
-      "code": "HLLLFIR",
-      "name": "TRIPOLI FIR",
+      "code": "HLLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HLLLFIR",
+      "name": "TRIPOLI FIR",
       "icao_state": "HL",
       "country": null,
       "iso2": null,
@@ -1370,9 +1552,11 @@
       "source_features": 1
     },
     {
-      "code": "HRYRFIR",
-      "name": "RWANDA FIR",
+      "code": "HRYR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HRYRFIR",
+      "name": "RWANDA FIR",
       "icao_state": "HR",
       "country": null,
       "iso2": null,
@@ -1385,9 +1569,11 @@
       "source_features": 1
     },
     {
-      "code": "HRYRUIR",
-      "name": "KIGALI UIR",
+      "code": "HRYR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HRYRUIR",
+      "name": "KIGALI UIR",
       "icao_state": "HR",
       "country": null,
       "iso2": null,
@@ -1400,9 +1586,11 @@
       "source_features": 1
     },
     {
-      "code": "HSSSFIR",
-      "name": "SUDAN FIR",
+      "code": "HSSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HSSSFIR",
+      "name": "SUDAN FIR",
       "icao_state": "HS",
       "country": null,
       "iso2": null,
@@ -1415,9 +1603,11 @@
       "source_features": 1
     },
     {
-      "code": "HSSSUIR",
-      "name": "KHARTOUM UIR",
+      "code": "HSSS",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HSSSUIR",
+      "name": "KHARTOUM UIR",
       "icao_state": "HS",
       "country": null,
       "iso2": null,
@@ -1430,9 +1620,11 @@
       "source_features": 1
     },
     {
-      "code": "HTDCFIR",
-      "name": "TANZANIA FIR",
+      "code": "HTDC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HTDCFIR",
+      "name": "TANZANIA FIR",
       "icao_state": "HT",
       "country": null,
       "iso2": null,
@@ -1445,9 +1637,11 @@
       "source_features": 1
     },
     {
-      "code": "HUECFIR",
-      "name": "UGANDA FIR",
+      "code": "HUEC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HUECFIR",
+      "name": "UGANDA FIR",
       "icao_state": "HU",
       "country": null,
       "iso2": null,
@@ -1460,9 +1654,11 @@
       "source_features": 1
     },
     {
-      "code": "KZABFIR",
-      "name": "ALBUQUERQUE",
+      "code": "KZAB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZABFIR",
+      "name": "ALBUQUERQUE",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1475,9 +1671,11 @@
       "source_features": 1
     },
     {
-      "code": "KZABUIR",
-      "name": "ALBUQUERQUE",
+      "code": "KZAB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZABUIR",
+      "name": "ALBUQUERQUE",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1490,9 +1688,11 @@
       "source_features": 1
     },
     {
-      "code": "KZAKFIR",
+      "code": "KZAK",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZAKFIR",
       "name": "OAKLAND OCEANIC FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1505,9 +1705,11 @@
       "source_features": 1
     },
     {
-      "code": "KZAUFIR",
-      "name": "CHICAGO",
+      "code": "KZAU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZAUFIR",
+      "name": "CHICAGO",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1520,9 +1722,11 @@
       "source_features": 1
     },
     {
-      "code": "KZAUUIR",
-      "name": "CHICAGO",
+      "code": "KZAU",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZAUUIR",
+      "name": "CHICAGO",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1535,9 +1739,11 @@
       "source_features": 1
     },
     {
-      "code": "KZBWFIR",
+      "code": "KZBW",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZBWFIR",
       "name": "BOSTON FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1550,9 +1756,11 @@
       "source_features": 1
     },
     {
-      "code": "KZBWUIR",
+      "code": "KZBW",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZBWUIR",
       "name": "BOSTON UIR",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1565,9 +1773,11 @@
       "source_features": 1
     },
     {
-      "code": "KZDCFIR",
+      "code": "KZDC",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZDCFIR",
       "name": "WASHINGTON",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1580,9 +1790,11 @@
       "source_features": 1
     },
     {
-      "code": "KZDCUIR",
+      "code": "KZDC",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZDCUIR",
       "name": "WASHINGTON",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1595,9 +1807,11 @@
       "source_features": 1
     },
     {
-      "code": "KZDVFIR",
-      "name": "DENVER",
+      "code": "KZDV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZDVFIR",
+      "name": "DENVER",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1610,9 +1824,11 @@
       "source_features": 1
     },
     {
-      "code": "KZDVUIR",
-      "name": "DENVER",
+      "code": "KZDV",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZDVUIR",
+      "name": "DENVER",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1625,9 +1841,11 @@
       "source_features": 1
     },
     {
-      "code": "KZFWFIR",
-      "name": "FT WORTH",
+      "code": "KZFW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZFWFIR",
+      "name": "FT WORTH",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1640,9 +1858,11 @@
       "source_features": 1
     },
     {
-      "code": "KZFWUIR",
-      "name": "FT WORTH",
+      "code": "KZFW",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZFWUIR",
+      "name": "FT WORTH",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1655,9 +1875,11 @@
       "source_features": 1
     },
     {
-      "code": "KZHUFIR",
+      "code": "KZHU",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZHUFIR",
       "name": "HOUSTON FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1670,9 +1892,11 @@
       "source_features": 1
     },
     {
-      "code": "KZIDFIR",
+      "code": "KZID",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZIDFIR",
       "name": "INDIANAPOLIS",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1685,9 +1909,11 @@
       "source_features": 1
     },
     {
-      "code": "KZIDUIR",
+      "code": "KZID",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZIDUIR",
       "name": "INDIANAPOLIS",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1700,9 +1926,11 @@
       "source_features": 1
     },
     {
-      "code": "KZJXFIR",
+      "code": "KZJX",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZJXFIR",
       "name": "JACKSONVILLE",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1715,9 +1943,11 @@
       "source_features": 1
     },
     {
-      "code": "KZJXUIR",
+      "code": "KZJX",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZJXUIR",
       "name": "JACKSONVILLE",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1730,9 +1960,11 @@
       "source_features": 1
     },
     {
-      "code": "KZKCFIR",
+      "code": "KZKC",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZKCFIR",
       "name": "KANSAS CITY",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1745,9 +1977,11 @@
       "source_features": 1
     },
     {
-      "code": "KZKCUIR",
+      "code": "KZKC",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZKCUIR",
       "name": "KANSAS CITY",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1760,9 +1994,11 @@
       "source_features": 1
     },
     {
-      "code": "KZLAFIR",
-      "name": "LOS ANGELES",
+      "code": "KZLA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZLAFIR",
+      "name": "LOS ANGELES",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1775,9 +2011,11 @@
       "source_features": 1
     },
     {
-      "code": "KZLAUIR",
-      "name": "LOS ANGELES",
+      "code": "KZLA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZLAUIR",
+      "name": "LOS ANGELES",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1790,9 +2028,11 @@
       "source_features": 1
     },
     {
-      "code": "KZLCFIR",
-      "name": "SALT LAKE CITY",
+      "code": "KZLC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZLCFIR",
+      "name": "SALT LAKE CITY",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1805,9 +2045,11 @@
       "source_features": 1
     },
     {
-      "code": "KZLCUIR",
-      "name": "SALT LAKE CITY",
+      "code": "KZLC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZLCUIR",
+      "name": "SALT LAKE CITY",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1820,9 +2062,11 @@
       "source_features": 1
     },
     {
-      "code": "KZMAFIR",
+      "code": "KZMA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMAFIR",
       "name": "MIAMI FIR / UIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1835,9 +2079,11 @@
       "source_features": 1
     },
     {
-      "code": "KZMEFIR",
-      "name": "MEMPHIS",
+      "code": "KZME",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMEFIR",
+      "name": "MEMPHIS",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1850,9 +2096,11 @@
       "source_features": 1
     },
     {
-      "code": "KZMEUIR",
-      "name": "MEMPHIS",
+      "code": "KZME",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZMEUIR",
+      "name": "MEMPHIS",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1865,9 +2113,11 @@
       "source_features": 1
     },
     {
-      "code": "KZMPFIR",
-      "name": "MINNEAPOLIS",
+      "code": "KZMP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMPFIR",
+      "name": "MINNEAPOLIS",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1880,9 +2130,11 @@
       "source_features": 1
     },
     {
-      "code": "KZMPUIR",
-      "name": "MINNEAPOLIS",
+      "code": "KZMP",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZMPUIR",
+      "name": "MINNEAPOLIS",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1895,9 +2147,11 @@
       "source_features": 1
     },
     {
-      "code": "KZNYFIR",
+      "code": "KZNY",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZNYFIR",
       "name": "NEW YORK FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1910,9 +2164,11 @@
       "source_features": 2
     },
     {
-      "code": "KZNYUIR",
+      "code": "KZNY",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZNYUIR",
       "name": "NEW YORK UIR",
-      "type": "UIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1925,9 +2181,11 @@
       "source_features": 1
     },
     {
-      "code": "KZOAFIR",
+      "code": "KZOA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZOAFIR",
       "name": "OAKLAND FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1940,9 +2198,11 @@
       "source_features": 1
     },
     {
-      "code": "KZOBFIR",
-      "name": "CLEVELAND",
+      "code": "KZOB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZOBFIR",
+      "name": "CLEVELAND",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1955,9 +2215,11 @@
       "source_features": 1
     },
     {
-      "code": "KZOBUIR",
-      "name": "CLEVELAND",
+      "code": "KZOB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZOBUIR",
+      "name": "CLEVELAND",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1970,9 +2232,11 @@
       "source_features": 1
     },
     {
-      "code": "KZSEFIR",
-      "name": "SEATTLE",
+      "code": "KZSE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZSEFIR",
+      "name": "SEATTLE",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -1985,9 +2249,11 @@
       "source_features": 1
     },
     {
-      "code": "KZSEUIR",
-      "name": "SEATTLE",
+      "code": "KZSE",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZSEUIR",
+      "name": "SEATTLE",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -2000,9 +2266,11 @@
       "source_features": 1
     },
     {
-      "code": "KZTLFIR",
+      "code": "KZTL",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZTLFIR",
       "name": "ATLANTA FIR",
-      "type": "FIR",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -2015,9 +2283,11 @@
       "source_features": 1
     },
     {
-      "code": "KZTLUIR",
-      "name": "ATLANTA",
+      "code": "KZTL",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZTLUIR",
+      "name": "ATLANTA",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -2030,9 +2300,11 @@
       "source_features": 1
     },
     {
-      "code": "KZWYFIR",
-      "name": "NEW YORK OCEANIC",
+      "code": "KZWY",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZWYFIR",
+      "name": "NEW YORK OCEANIC",
       "icao_state": "KZ",
       "country": null,
       "iso2": null,
@@ -2045,9 +2317,11 @@
       "source_features": 1
     },
     {
-      "code": "LAAAFIR",
-      "name": "TIRANA FIR",
+      "code": "LAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LAAAFIR",
+      "name": "TIRANA FIR",
       "icao_state": "LA",
       "country": "Albania",
       "iso2": "AL",
@@ -2060,9 +2334,11 @@
       "source_features": 1
     },
     {
-      "code": "LBSRFIR",
-      "name": "SOFIA FIR",
+      "code": "LBSR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LBSRFIR",
+      "name": "SOFIA FIR",
       "icao_state": "LB",
       "country": "Bulgaria",
       "iso2": "BG",
@@ -2075,9 +2351,11 @@
       "source_features": 1
     },
     {
-      "code": "LCCCFIR",
-      "name": "NICOSIA FIR",
+      "code": "LCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LCCCFIR",
+      "name": "NICOSIA FIR",
       "icao_state": "LC",
       "country": "Cyprus",
       "iso2": "CY",
@@ -2090,9 +2368,11 @@
       "source_features": 1
     },
     {
-      "code": "LDZOFIR",
-      "name": "ZAGREB FIR",
+      "code": "LDZO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LDZOFIR",
+      "name": "ZAGREB FIR",
       "icao_state": "LD",
       "country": "Croatia",
       "iso2": "HR",
@@ -2105,9 +2385,11 @@
       "source_features": 1
     },
     {
-      "code": "LECBFIR",
+      "code": "LECB",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LECBFIR",
       "name": "BARCELONA FIR",
-      "type": "FIR",
       "icao_state": "LE",
       "country": "Spain",
       "iso2": "ES",
@@ -2120,9 +2402,11 @@
       "source_features": 1
     },
     {
-      "code": "LECBUIR",
+      "code": "LECB",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LECBUIR",
       "name": "BARCELONA UIR",
-      "type": "UIR",
       "icao_state": "LE",
       "country": "Spain",
       "iso2": "ES",
@@ -2135,9 +2419,11 @@
       "source_features": 1
     },
     {
-      "code": "LECMFIR",
+      "code": "LECM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LECMFIR",
       "name": "MADRID FIR",
-      "type": "FIR",
       "icao_state": "LE",
       "country": "Spain",
       "iso2": "ES",
@@ -2150,9 +2436,11 @@
       "source_features": 1
     },
     {
-      "code": "LECMUIR",
+      "code": "LECM",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LECMUIR",
       "name": "MADRID UIR",
-      "type": "UIR",
       "icao_state": "LE",
       "country": "Spain",
       "iso2": "ES",
@@ -2165,9 +2453,11 @@
       "source_features": 1
     },
     {
-      "code": "LFBBFIR",
+      "code": "LFBB",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFBBFIR",
       "name": "BORDEAUX FIR",
-      "type": "FIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2180,9 +2470,11 @@
       "source_features": 1
     },
     {
-      "code": "LFEEFIR",
+      "code": "LFEE",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFEEFIR",
       "name": "REIMS FIR",
-      "type": "FIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2195,9 +2487,11 @@
       "source_features": 1
     },
     {
-      "code": "LFFFFIR",
+      "code": "LFFF",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFFFFIR",
       "name": "PARIS FIR",
-      "type": "FIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2210,9 +2504,11 @@
       "source_features": 1
     },
     {
-      "code": "LFFFUIR",
-      "name": "FRANCE UIR",
+      "code": "LFFF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LFFFUIR",
+      "name": "FRANCE UIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2225,9 +2521,11 @@
       "source_features": 1
     },
     {
-      "code": "LFMMFIR",
+      "code": "LFMM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFMMFIR",
       "name": "MARSEILLE FIR",
-      "type": "FIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2240,9 +2538,11 @@
       "source_features": 1
     },
     {
-      "code": "LFRRFIR",
+      "code": "LFRR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFRRFIR",
       "name": "BREST FIR",
-      "type": "FIR",
       "icao_state": "LF",
       "country": "France",
       "iso2": "FR",
@@ -2255,9 +2555,11 @@
       "source_features": 1
     },
     {
-      "code": "LGGGFIR",
-      "name": "ATHINAI FIR",
+      "code": "LGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LGGGFIR",
+      "name": "ATHINAI FIR",
       "icao_state": "LG",
       "country": "Greece",
       "iso2": "GR",
@@ -2270,9 +2572,11 @@
       "source_features": 1
     },
     {
-      "code": "LGGGUIR",
-      "name": "ATHINAI UIR",
+      "code": "LGGG",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LGGGUIR",
+      "name": "ATHINAI UIR",
       "icao_state": "LG",
       "country": "Greece",
       "iso2": "GR",
@@ -2285,9 +2589,11 @@
       "source_features": 1
     },
     {
-      "code": "LHCCFIR",
-      "name": "BUDAPEST FIR",
+      "code": "LHCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LHCCFIR",
+      "name": "BUDAPEST FIR",
       "icao_state": "LH",
       "country": "Hungary",
       "iso2": "HU",
@@ -2300,9 +2606,11 @@
       "source_features": 1
     },
     {
-      "code": "LIBBFIR",
+      "code": "LIBB",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIBBFIR",
       "name": "BRINDISI FIR",
-      "type": "FIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2315,9 +2623,11 @@
       "source_features": 1
     },
     {
-      "code": "LIBBUIR",
+      "code": "LIBB",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIBBUIR",
       "name": "BRINDISI UIR",
-      "type": "UIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2330,9 +2640,11 @@
       "source_features": 1
     },
     {
-      "code": "LIMMFIR",
+      "code": "LIMM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIMMFIR",
       "name": "MILANO FIR",
-      "type": "FIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2345,9 +2657,11 @@
       "source_features": 1
     },
     {
-      "code": "LIMMUIR",
+      "code": "LIMM",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIMMUIR",
       "name": "MILANO UIR",
-      "type": "UIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2360,9 +2674,11 @@
       "source_features": 1
     },
     {
-      "code": "LIRRFIR",
-      "name": "ROMA FIR",
+      "code": "LIRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIRRFIR",
+      "name": "ROMA FIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2375,9 +2691,11 @@
       "source_features": 1
     },
     {
-      "code": "LIRRUIR",
-      "name": "ROMA UIR",
+      "code": "LIRR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIRRUIR",
+      "name": "ROMA UIR",
       "icao_state": "LI",
       "country": "Italy",
       "iso2": "IT",
@@ -2390,9 +2708,11 @@
       "source_features": 1
     },
     {
-      "code": "LJLAFIR",
-      "name": "LJUBLJANA FIR",
+      "code": "LJLA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LJLAFIR",
+      "name": "LJUBLJANA FIR",
       "icao_state": "LJ",
       "country": "Slovenia",
       "iso2": "SI",
@@ -2405,9 +2725,11 @@
       "source_features": 1
     },
     {
-      "code": "LKAAFIR",
-      "name": "PRAHA FIR",
+      "code": "LKAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LKAAFIR",
+      "name": "PRAHA FIR",
       "icao_state": "LK",
       "country": "Czech Republic",
       "iso2": "CZ",
@@ -2420,9 +2742,11 @@
       "source_features": 1
     },
     {
-      "code": "LLLLFIR",
-      "name": "TEL AVIV FIR",
+      "code": "LLLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LLLLFIR",
+      "name": "TEL AVIV FIR",
       "icao_state": "LL",
       "country": "Israel",
       "iso2": "IL",
@@ -2435,9 +2759,11 @@
       "source_features": 1
     },
     {
-      "code": "LMMMFIR",
-      "name": "MALTA FIR",
+      "code": "LMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LMMMFIR",
+      "name": "MALTA FIR",
       "icao_state": "LM",
       "country": "Malta",
       "iso2": "MT",
@@ -2450,9 +2776,11 @@
       "source_features": 1
     },
     {
-      "code": "LMMMUIR",
-      "name": "MALTA UIR",
+      "code": "LMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LMMMUIR",
+      "name": "MALTA UIR",
       "icao_state": "LM",
       "country": "Malta",
       "iso2": "MT",
@@ -2465,9 +2793,11 @@
       "source_features": 1
     },
     {
-      "code": "LOVVFIR",
-      "name": "WIEN FIR",
+      "code": "LOVV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LOVVFIR",
+      "name": "WIEN FIR",
       "icao_state": "LO",
       "country": "Austria",
       "iso2": "AT",
@@ -2480,9 +2810,11 @@
       "source_features": 1
     },
     {
-      "code": "LPPCFIR",
-      "name": "LISBOA FIR",
+      "code": "LPPC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LPPCFIR",
+      "name": "LISBOA FIR",
       "icao_state": "LP",
       "country": "Portugal",
       "iso2": "PT",
@@ -2496,23 +2828,10 @@
     },
     {
       "code": "LPPO",
-      "name": "REROUTING EXTENSION IN LPPO",
-      "type": "OTHER",
-      "icao_state": "LP",
-      "country": "Portugal",
-      "iso2": "PT",
-      "eurocontrol_member": true,
-      "eurocontrol_entry": "1986-01-01",
-      "fab": "swfab",
-      "min_fl": 0,
-      "max_fl": 999,
-      "airac_cfmu": 524,
-      "source_features": 1
-    },
-    {
-      "code": "LPPOFIR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LPPOFIR",
       "name": "SANTA MARIA FIR",
-      "type": "FIR",
       "icao_state": "LP",
       "country": "Portugal",
       "iso2": "PT",
@@ -2525,9 +2844,28 @@
       "source_features": 1
     },
     {
-      "code": "LQSBFIR",
-      "name": "SARAJEVO FIR",
+      "code": "LPPO",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "LPPO",
+      "name": "REROUTING EXTENSION IN LPPO",
+      "icao_state": "LP",
+      "country": "Portugal",
+      "iso2": "PT",
+      "eurocontrol_member": true,
+      "eurocontrol_entry": "1986-01-01",
+      "fab": "swfab",
+      "min_fl": 0,
+      "max_fl": 999,
+      "airac_cfmu": 524,
+      "source_features": 1
+    },
+    {
+      "code": "LQSB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LQSBFIR",
+      "name": "SARAJEVO FIR",
       "icao_state": "LQ",
       "country": "Bosnia and Herzegovina",
       "iso2": "BA",
@@ -2540,9 +2878,11 @@
       "source_features": 1
     },
     {
-      "code": "LQSBUIR",
-      "name": "SARAJEVO UIR",
+      "code": "LQSB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LQSBUIR",
+      "name": "SARAJEVO UIR",
       "icao_state": "LQ",
       "country": "Bosnia and Herzegovina",
       "iso2": "BA",
@@ -2555,9 +2895,11 @@
       "source_features": 1
     },
     {
-      "code": "LRBBFIR",
-      "name": "BUCAREST FIR",
+      "code": "LRBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LRBBFIR",
+      "name": "BUCAREST FIR",
       "icao_state": "LR",
       "country": "Romania",
       "iso2": "RO",
@@ -2570,9 +2912,11 @@
       "source_features": 1
     },
     {
-      "code": "LSASFIR",
-      "name": "SWITZERLAND FIR",
+      "code": "LSAS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LSASFIR",
+      "name": "SWITZERLAND FIR",
       "icao_state": "LS",
       "country": "Switzerland",
       "iso2": "CH",
@@ -2585,9 +2929,11 @@
       "source_features": 1
     },
     {
-      "code": "LSASUIR",
-      "name": "SWITZERLAND UIR",
+      "code": "LSAS",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LSASUIR",
+      "name": "SWITZERLAND UIR",
       "icao_state": "LS",
       "country": "Switzerland",
       "iso2": "CH",
@@ -2600,9 +2946,11 @@
       "source_features": 1
     },
     {
-      "code": "LTAAFIR",
+      "code": "LTAA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LTAAFIR",
       "name": "ANKARA FIR",
-      "type": "FIR",
       "icao_state": "LT",
       "country": "Turkey",
       "iso2": "TR",
@@ -2615,9 +2963,11 @@
       "source_features": 1
     },
     {
-      "code": "LTBBFIR",
+      "code": "LTBB",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LTBBFIR",
       "name": "ISTANBUL FIR",
-      "type": "FIR",
       "icao_state": "LT",
       "country": "Turkey",
       "iso2": "TR",
@@ -2630,9 +2980,11 @@
       "source_features": 1
     },
     {
-      "code": "LUUUFIR",
-      "name": "CHISINAU FIR",
+      "code": "LUUU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LUUUFIR",
+      "name": "CHISINAU FIR",
       "icao_state": "LU",
       "country": "Moldova",
       "iso2": "MD",
@@ -2645,9 +2997,11 @@
       "source_features": 1
     },
     {
-      "code": "LWSSFIR",
-      "name": "SKOPJE FIR",
+      "code": "LWSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LWSSFIR",
+      "name": "SKOPJE FIR",
       "icao_state": "LW",
       "country": "North Macedonia",
       "iso2": "MK",
@@ -2660,9 +3014,11 @@
       "source_features": 1
     },
     {
-      "code": "LYBAFIR",
-      "name": "BEOGRAD FIR",
+      "code": "LYBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LYBAFIR",
+      "name": "BEOGRAD FIR",
       "icao_state": "LY",
       "country": "Serbia",
       "iso2": "RS",
@@ -2675,9 +3031,11 @@
       "source_features": 1
     },
     {
-      "code": "LYBAUIR",
-      "name": "BEOGRAD UIR",
+      "code": "LYBA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LYBAUIR",
+      "name": "BEOGRAD UIR",
       "icao_state": "LY",
       "country": "Serbia",
       "iso2": "RS",
@@ -2690,9 +3048,11 @@
       "source_features": 1
     },
     {
-      "code": "LZBBFIR",
-      "name": "BRATISLAVA  FIR",
+      "code": "LZBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LZBBFIR",
+      "name": "BRATISLAVA  FIR",
       "icao_state": "LZ",
       "country": "Slovakia",
       "iso2": "SK",
@@ -2705,9 +3065,11 @@
       "source_features": 1
     },
     {
-      "code": "MDCSFIR",
+      "code": "MDCS",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MDCSFIR",
       "name": "SANTO DOMINGO FIR",
-      "type": "FIR",
       "icao_state": "MD",
       "country": null,
       "iso2": null,
@@ -2720,9 +3082,11 @@
       "source_features": 1
     },
     {
-      "code": "MDCSUIR",
+      "code": "MDCS",
+      "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MDCSUIR",
       "name": "SANTO DOMINGO UIR",
-      "type": "UIR",
       "icao_state": "MD",
       "country": null,
       "iso2": null,
@@ -2735,9 +3099,11 @@
       "source_features": 1
     },
     {
-      "code": "MHCCFIR",
-      "name": "CENTRAL AMERICA FIR",
+      "code": "MHCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MHCCFIR",
+      "name": "CENTRAL AMERICA FIR",
       "icao_state": "MH",
       "country": null,
       "iso2": null,
@@ -2750,9 +3116,11 @@
       "source_features": 1
     },
     {
-      "code": "MHCCUIR",
-      "name": "CENTRAL AMERICA UIR",
+      "code": "MHCC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MHCCUIR",
+      "name": "CENTRAL AMERICA UIR",
       "icao_state": "MH",
       "country": null,
       "iso2": null,
@@ -2765,9 +3133,11 @@
       "source_features": 1
     },
     {
-      "code": "MKJKFIR",
-      "name": "KINGSTON FIR",
+      "code": "MKJK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MKJKFIR",
+      "name": "KINGSTON FIR",
       "icao_state": "MK",
       "country": null,
       "iso2": null,
@@ -2780,9 +3150,11 @@
       "source_features": 1
     },
     {
-      "code": "MKJKUIR",
-      "name": "KINGSTON UIR",
+      "code": "MKJK",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MKJKUIR",
+      "name": "KINGSTON UIR",
       "icao_state": "MK",
       "country": null,
       "iso2": null,
@@ -2795,9 +3167,11 @@
       "source_features": 1
     },
     {
-      "code": "MMFOFIR",
+      "code": "MMFO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MMFOFIR",
       "name": "OCEANICA MAZATLAN",
-      "type": "FIR",
       "icao_state": "MM",
       "country": null,
       "iso2": null,
@@ -2810,9 +3184,11 @@
       "source_features": 1
     },
     {
-      "code": "MMFRFIR",
+      "code": "MMFR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MMFRFIR",
       "name": "MEXICO",
-      "type": "FIR",
       "icao_state": "MM",
       "country": null,
       "iso2": null,
@@ -2825,9 +3201,11 @@
       "source_features": 1
     },
     {
-      "code": "MPZLFIR",
-      "name": "PANAMA FIR",
+      "code": "MPZL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MPZLFIR",
+      "name": "PANAMA FIR",
       "icao_state": "MP",
       "country": null,
       "iso2": null,
@@ -2840,9 +3218,11 @@
       "source_features": 1
     },
     {
-      "code": "MTEGFIR",
-      "name": "PORT-AU-PRINCE FIR",
+      "code": "MTEG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MTEGFIR",
+      "name": "PORT-AU-PRINCE FIR",
       "icao_state": "MT",
       "country": null,
       "iso2": null,
@@ -2855,9 +3235,11 @@
       "source_features": 1
     },
     {
-      "code": "MUFHFIR",
-      "name": "HABANA FIR/UIR",
+      "code": "MUFH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MUFHFIR",
+      "name": "HABANA FIR/UIR",
       "icao_state": "MU",
       "country": null,
       "iso2": null,
@@ -2870,9 +3252,11 @@
       "source_features": 1
     },
     {
-      "code": "NFFFFIR",
-      "name": "NADI FIR",
+      "code": "NFFF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NFFFFIR",
+      "name": "NADI FIR",
       "icao_state": "NF",
       "country": null,
       "iso2": null,
@@ -2885,9 +3269,11 @@
       "source_features": 1
     },
     {
-      "code": "NTTTFIR",
-      "name": "TAHITI OCEANIC FIR",
+      "code": "NTTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NTTTFIR",
+      "name": "TAHITI OCEANIC FIR",
       "icao_state": "NT",
       "country": null,
       "iso2": null,
@@ -2900,9 +3286,11 @@
       "source_features": 1
     },
     {
-      "code": "NZZCFIR",
+      "code": "NZZC",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NZZCFIR",
       "name": "NEW ZEALAND FIR",
-      "type": "FIR",
       "icao_state": "NZ",
       "country": null,
       "iso2": null,
@@ -2915,9 +3303,11 @@
       "source_features": 1
     },
     {
-      "code": "NZZOFIR",
+      "code": "NZZO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NZZOFIR",
       "name": "AUCKLAND OCEANIC",
-      "type": "FIR",
       "icao_state": "NZ",
       "country": null,
       "iso2": null,
@@ -2930,9 +3320,11 @@
       "source_features": 1
     },
     {
-      "code": "OAKXFIR",
-      "name": "KABUL FIR",
+      "code": "OAKX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OAKXFIR",
+      "name": "KABUL FIR",
       "icao_state": "OA",
       "country": null,
       "iso2": null,
@@ -2945,9 +3337,11 @@
       "source_features": 1
     },
     {
-      "code": "OBBBFIR",
-      "name": "BAHRAIN FIR",
+      "code": "OBBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OBBBFIR",
+      "name": "BAHRAIN FIR",
       "icao_state": "OB",
       "country": null,
       "iso2": null,
@@ -2960,9 +3354,11 @@
       "source_features": 1
     },
     {
-      "code": "OBBBUIR",
-      "name": "BAHRAIN UIR",
+      "code": "OBBB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OBBBUIR",
+      "name": "BAHRAIN UIR",
       "icao_state": "OB",
       "country": null,
       "iso2": null,
@@ -2975,9 +3371,11 @@
       "source_features": 4
     },
     {
-      "code": "OEJDFIR",
-      "name": "JEDDAH FIR",
+      "code": "OEJD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OEJDFIR",
+      "name": "JEDDAH FIR",
       "icao_state": "OE",
       "country": null,
       "iso2": null,
@@ -2990,9 +3388,11 @@
       "source_features": 1
     },
     {
-      "code": "OIIXFIR",
-      "name": "TEHRAN FIR",
+      "code": "OIIX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OIIXFIR",
+      "name": "TEHRAN FIR",
       "icao_state": "OI",
       "country": null,
       "iso2": null,
@@ -3005,9 +3405,11 @@
       "source_features": 1
     },
     {
-      "code": "OJACFIR",
-      "name": "AMMAN FIR",
+      "code": "OJAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OJACFIR",
+      "name": "AMMAN FIR",
       "icao_state": "OJ",
       "country": null,
       "iso2": null,
@@ -3020,9 +3422,11 @@
       "source_features": 1
     },
     {
-      "code": "OKACFIR",
-      "name": "KUWAIT FIR",
+      "code": "OKAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OKACFIR",
+      "name": "KUWAIT FIR",
       "icao_state": "OK",
       "country": null,
       "iso2": null,
@@ -3035,9 +3439,11 @@
       "source_features": 1
     },
     {
-      "code": "OLBBFIR",
-      "name": "BEIRUT FIR",
+      "code": "OLBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OLBBFIR",
+      "name": "BEIRUT FIR",
       "icao_state": "OL",
       "country": null,
       "iso2": null,
@@ -3050,9 +3456,11 @@
       "source_features": 1
     },
     {
-      "code": "OLBBUIR",
-      "name": "BEIRUT UIR",
+      "code": "OLBB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OLBBUIR",
+      "name": "BEIRUT UIR",
       "icao_state": "OL",
       "country": null,
       "iso2": null,
@@ -3065,9 +3473,11 @@
       "source_features": 1
     },
     {
-      "code": "OMAEFIR",
-      "name": "EMIRATES FIR",
+      "code": "OMAE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OMAEFIR",
+      "name": "EMIRATES FIR",
       "icao_state": "OM",
       "country": null,
       "iso2": null,
@@ -3080,9 +3490,11 @@
       "source_features": 1
     },
     {
-      "code": "OMAEUIR",
-      "name": "EMIRATES UIR",
+      "code": "OMAE",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OMAEUIR",
+      "name": "EMIRATES UIR",
       "icao_state": "OM",
       "country": null,
       "iso2": null,
@@ -3095,9 +3507,11 @@
       "source_features": 1
     },
     {
-      "code": "OOMMFIR",
-      "name": "MUSCAT FIR",
+      "code": "OOMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OOMMFIR",
+      "name": "MUSCAT FIR",
       "icao_state": "OO",
       "country": null,
       "iso2": null,
@@ -3110,9 +3524,11 @@
       "source_features": 1
     },
     {
-      "code": "OPKRFIR",
+      "code": "OPKR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OPKRFIR",
       "name": "KARACHI FIR",
-      "type": "FIR",
       "icao_state": "OP",
       "country": null,
       "iso2": null,
@@ -3125,9 +3541,11 @@
       "source_features": 1
     },
     {
-      "code": "OPLRFIR",
+      "code": "OPLR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OPLRFIR",
       "name": "LAHORE FIR",
-      "type": "FIR",
       "icao_state": "OP",
       "country": null,
       "iso2": null,
@@ -3140,9 +3558,11 @@
       "source_features": 1
     },
     {
-      "code": "ORBBFIR",
-      "name": "BAGHDAD FIR",
+      "code": "ORBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ORBBFIR",
+      "name": "BAGHDAD FIR",
       "icao_state": "OR",
       "country": null,
       "iso2": null,
@@ -3155,9 +3575,11 @@
       "source_features": 1
     },
     {
-      "code": "OSTTFIR",
-      "name": "DAMASCUS FIR",
+      "code": "OSTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OSTTFIR",
+      "name": "DAMASCUS FIR",
       "icao_state": "OS",
       "country": null,
       "iso2": null,
@@ -3170,9 +3592,11 @@
       "source_features": 1
     },
     {
-      "code": "OTDFFIR",
-      "name": "QATAR FIR",
+      "code": "OTDF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OTDFFIR",
+      "name": "QATAR FIR",
       "icao_state": "OT",
       "country": null,
       "iso2": null,
@@ -3185,9 +3609,11 @@
       "source_features": 1
     },
     {
-      "code": "OYSCFIR",
-      "name": "SANAA FIR",
+      "code": "OYSC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OYSCFIR",
+      "name": "SANAA FIR",
       "icao_state": "OY",
       "country": null,
       "iso2": null,
@@ -3200,9 +3626,11 @@
       "source_features": 1
     },
     {
-      "code": "PAZAFIR",
-      "name": "ALASKA FIR",
+      "code": "PAZA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "PAZAFIR",
+      "name": "ALASKA FIR",
       "icao_state": "PA",
       "country": null,
       "iso2": null,
@@ -3215,9 +3643,11 @@
       "source_features": 1
     },
     {
-      "code": "RCAAFIR",
-      "name": "TAIPEI FIR",
+      "code": "RCAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RCAAFIR",
+      "name": "TAIPEI FIR",
       "icao_state": "RC",
       "country": null,
       "iso2": null,
@@ -3230,9 +3660,11 @@
       "source_features": 1
     },
     {
-      "code": "RJJJFIR",
-      "name": "JAPAN+PHILIPPINES",
+      "code": "RJJJ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RJJJFIR",
+      "name": "JAPAN+PHILIPPINES",
       "icao_state": "RJ",
       "country": null,
       "iso2": null,
@@ -3245,9 +3677,11 @@
       "source_features": 1
     },
     {
-      "code": "RKRRFIR",
-      "name": "INCHEON FIR",
+      "code": "RKRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RKRRFIR",
+      "name": "INCHEON FIR",
       "icao_state": "RK",
       "country": null,
       "iso2": null,
@@ -3260,9 +3694,11 @@
       "source_features": 1
     },
     {
-      "code": "RPHIFIR",
-      "name": "MANILA FIR",
+      "code": "RPHI",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RPHIFIR",
+      "name": "MANILA FIR",
       "icao_state": "RP",
       "country": null,
       "iso2": null,
@@ -3275,9 +3711,11 @@
       "source_features": 1
     },
     {
-      "code": "SACFFIR",
+      "code": "SACF",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SACFFIR",
       "name": "CORDOBA FIR",
-      "type": "FIR",
       "icao_state": "SA",
       "country": null,
       "iso2": null,
@@ -3290,9 +3728,11 @@
       "source_features": 1
     },
     {
-      "code": "SAEFFIR",
+      "code": "SAEF",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAEFFIR",
       "name": "EZEIZA FIR",
-      "type": "FIR",
       "icao_state": "SA",
       "country": null,
       "iso2": null,
@@ -3305,9 +3745,11 @@
       "source_features": 1
     },
     {
-      "code": "SAMFFIR",
+      "code": "SAMF",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAMFFIR",
       "name": "MENDOZA FIR",
-      "type": "FIR",
       "icao_state": "SA",
       "country": null,
       "iso2": null,
@@ -3320,9 +3762,11 @@
       "source_features": 1
     },
     {
-      "code": "SARRFIR",
+      "code": "SARR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SARRFIR",
       "name": "RESISTENCIA FIR",
-      "type": "FIR",
       "icao_state": "SA",
       "country": null,
       "iso2": null,
@@ -3335,9 +3779,11 @@
       "source_features": 1
     },
     {
-      "code": "SAVFFIR",
+      "code": "SAVF",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAVFFIR",
       "name": "COMODORO RIVADAVIA FIR",
-      "type": "FIR",
       "icao_state": "SA",
       "country": null,
       "iso2": null,
@@ -3350,9 +3796,11 @@
       "source_features": 1
     },
     {
-      "code": "SBAOFIR",
+      "code": "SBAO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBAOFIR",
       "name": "ATLANTICO FIR",
-      "type": "FIR",
       "icao_state": "SB",
       "country": null,
       "iso2": null,
@@ -3365,9 +3813,11 @@
       "source_features": 1
     },
     {
-      "code": "SBAZFIR",
+      "code": "SBAZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBAZFIR",
       "name": "AMAZONICA FIR",
-      "type": "FIR",
       "icao_state": "SB",
       "country": null,
       "iso2": null,
@@ -3380,9 +3830,11 @@
       "source_features": 1
     },
     {
-      "code": "SBBSFIR",
+      "code": "SBBS",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBBSFIR",
       "name": "BRASILIA FIR",
-      "type": "FIR",
       "icao_state": "SB",
       "country": null,
       "iso2": null,
@@ -3395,9 +3847,11 @@
       "source_features": 1
     },
     {
-      "code": "SBCWFIR",
+      "code": "SBCW",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBCWFIR",
       "name": "CURITIBA FIR",
-      "type": "FIR",
       "icao_state": "SB",
       "country": null,
       "iso2": null,
@@ -3410,9 +3864,11 @@
       "source_features": 1
     },
     {
-      "code": "SBREFIR",
+      "code": "SBRE",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBREFIR",
       "name": "RECIFE FIR",
-      "type": "FIR",
       "icao_state": "SB",
       "country": null,
       "iso2": null,
@@ -3425,9 +3881,11 @@
       "source_features": 1
     },
     {
-      "code": "SCCZFIR",
+      "code": "SCCZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCCZFIR",
       "name": "PUNTA ARENAS FIR",
-      "type": "FIR",
       "icao_state": "SC",
       "country": null,
       "iso2": null,
@@ -3440,9 +3898,11 @@
       "source_features": 1
     },
     {
-      "code": "SCEZFIR",
+      "code": "SCEZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCEZFIR",
       "name": "SANTIAGO FIR",
-      "type": "FIR",
       "icao_state": "SC",
       "country": null,
       "iso2": null,
@@ -3455,9 +3915,11 @@
       "source_features": 1
     },
     {
-      "code": "SCFZFIR",
+      "code": "SCFZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCFZFIR",
       "name": "ANTOFAGASTA FIR",
-      "type": "FIR",
       "icao_state": "SC",
       "country": null,
       "iso2": null,
@@ -3470,9 +3932,11 @@
       "source_features": 1
     },
     {
-      "code": "SCIZFIR",
+      "code": "SCIZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCIZFIR",
       "name": "ISLA DE PASCUA FIR",
-      "type": "FIR",
       "icao_state": "SC",
       "country": null,
       "iso2": null,
@@ -3485,9 +3949,11 @@
       "source_features": 1
     },
     {
-      "code": "SCTZFIR",
+      "code": "SCTZ",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCTZFIR",
       "name": "PUERTO MONTT FIR",
-      "type": "FIR",
       "icao_state": "SC",
       "country": null,
       "iso2": null,
@@ -3500,9 +3966,11 @@
       "source_features": 1
     },
     {
-      "code": "SEFGFIR",
-      "name": "GUAYAQUIL FIR/UIR",
+      "code": "SEFG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SEFGFIR",
+      "name": "GUAYAQUIL FIR/UIR",
       "icao_state": "SE",
       "country": null,
       "iso2": null,
@@ -3515,9 +3983,11 @@
       "source_features": 1
     },
     {
-      "code": "SGFAFIR",
-      "name": "ASUNCION FIR/UIR",
+      "code": "SGFA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SGFAFIR",
+      "name": "ASUNCION FIR/UIR",
       "icao_state": "SG",
       "country": null,
       "iso2": null,
@@ -3530,9 +4000,11 @@
       "source_features": 1
     },
     {
-      "code": "SKECFIR",
+      "code": "SKEC",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SKECFIR",
       "name": "BARRANQUILLA FIR",
-      "type": "FIR",
       "icao_state": "SK",
       "country": null,
       "iso2": null,
@@ -3545,9 +4017,11 @@
       "source_features": 1
     },
     {
-      "code": "SKEDFIR",
+      "code": "SKED",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SKEDFIR",
       "name": "BOGOTA FIR",
-      "type": "FIR",
       "icao_state": "SK",
       "country": null,
       "iso2": null,
@@ -3560,9 +4034,11 @@
       "source_features": 1
     },
     {
-      "code": "SLLFFIR",
-      "name": "LA PAZ FIR",
+      "code": "SLLF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SLLFFIR",
+      "name": "LA PAZ FIR",
       "icao_state": "SL",
       "country": null,
       "iso2": null,
@@ -3575,9 +4051,11 @@
       "source_features": 1
     },
     {
-      "code": "SMPMFIR",
-      "name": "PARAMARIBO FIR",
+      "code": "SMPM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SMPMFIR",
+      "name": "PARAMARIBO FIR",
       "icao_state": "SM",
       "country": null,
       "iso2": null,
@@ -3590,9 +4068,11 @@
       "source_features": 1
     },
     {
-      "code": "SOOOFIR",
-      "name": "FIR CAYENNE",
+      "code": "SOOO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SOOOFIR",
+      "name": "FIR CAYENNE",
       "icao_state": "SO",
       "country": null,
       "iso2": null,
@@ -3605,9 +4085,11 @@
       "source_features": 1
     },
     {
-      "code": "SOOOUIR",
-      "name": "UIR CAYENNE",
+      "code": "SOOO",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "SOOOUIR",
+      "name": "UIR CAYENNE",
       "icao_state": "SO",
       "country": null,
       "iso2": null,
@@ -3620,9 +4102,11 @@
       "source_features": 1
     },
     {
-      "code": "SPIMFIR",
-      "name": "LIMA FIR",
+      "code": "SPIM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SPIMFIR",
+      "name": "LIMA FIR",
       "icao_state": "SP",
       "country": null,
       "iso2": null,
@@ -3635,9 +4119,11 @@
       "source_features": 1
     },
     {
-      "code": "SUEOFIR",
-      "name": "MONTEVIDEO FIR",
+      "code": "SUEO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SUEOFIR",
+      "name": "MONTEVIDEO FIR",
       "icao_state": "SU",
       "country": null,
       "iso2": null,
@@ -3650,9 +4136,11 @@
       "source_features": 1
     },
     {
-      "code": "SVZMFIR",
-      "name": "MAIQUETIA FIR",
+      "code": "SVZM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SVZMFIR",
+      "name": "MAIQUETIA FIR",
       "icao_state": "SV",
       "country": null,
       "iso2": null,
@@ -3665,9 +4153,11 @@
       "source_features": 1
     },
     {
-      "code": "SYGCFIR",
-      "name": "GEORGETOWN FIR",
+      "code": "SYGC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SYGCFIR",
+      "name": "GEORGETOWN FIR",
       "icao_state": "SY",
       "country": null,
       "iso2": null,
@@ -3680,9 +4170,11 @@
       "source_features": 1
     },
     {
-      "code": "TJZSFIR",
-      "name": "SAN JUAN OCEANIC FIR/UIR",
+      "code": "TJZS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TJZSFIR",
+      "name": "SAN JUAN OCEANIC FIR/UIR",
       "icao_state": "TJ",
       "country": null,
       "iso2": null,
@@ -3695,9 +4187,11 @@
       "source_features": 1
     },
     {
-      "code": "TNCFFIR",
-      "name": "CURACAO FIR",
+      "code": "TNCF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TNCFFIR",
+      "name": "CURACAO FIR",
       "icao_state": "TN",
       "country": null,
       "iso2": null,
@@ -3710,9 +4204,11 @@
       "source_features": 1
     },
     {
-      "code": "TNCFUIR",
-      "name": "CURACAO UIR",
+      "code": "TNCF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "TNCFUIR",
+      "name": "CURACAO UIR",
       "icao_state": "TN",
       "country": null,
       "iso2": null,
@@ -3725,9 +4221,11 @@
       "source_features": 1
     },
     {
-      "code": "TTZPFIR",
-      "name": "PIARCO FIR",
+      "code": "TTZP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TTZPFIR",
+      "name": "PIARCO FIR",
       "icao_state": "TT",
       "country": null,
       "iso2": null,
@@ -3740,9 +4238,11 @@
       "source_features": 1
     },
     {
-      "code": "TTZPUIR",
-      "name": "PIARCO UIR",
+      "code": "TTZP",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "TTZPUIR",
+      "name": "PIARCO UIR",
       "icao_state": "TT",
       "country": null,
       "iso2": null,
@@ -3755,9 +4255,11 @@
       "source_features": 1
     },
     {
-      "code": "UAAAFIR",
+      "code": "UAAA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UAAAFIR",
       "name": "KAZACHSTAN MERGED FI",
-      "type": "FIR",
       "icao_state": "UA",
       "country": null,
       "iso2": null,
@@ -3770,9 +4272,11 @@
       "source_features": 1
     },
     {
-      "code": "UACNFIR",
+      "code": "UACN",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UACNFIR",
       "name": "UACN NUR-SULTAN FIR",
-      "type": "FIR",
       "icao_state": "UA",
       "country": null,
       "iso2": null,
@@ -3785,9 +4289,11 @@
       "source_features": 1
     },
     {
-      "code": "UAIIFIR",
+      "code": "UAII",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UAIIFIR",
       "name": "SHYMKENT FIR",
-      "type": "FIR",
       "icao_state": "UA",
       "country": null,
       "iso2": null,
@@ -3800,9 +4306,11 @@
       "source_features": 1
     },
     {
-      "code": "UATTFIR",
+      "code": "UATT",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UATTFIR",
       "name": "AKTOBE FIR",
-      "type": "FIR",
       "icao_state": "UA",
       "country": null,
       "iso2": null,
@@ -3815,9 +4323,11 @@
       "source_features": 1
     },
     {
-      "code": "UBBAFIR",
-      "name": "BAKU FIR",
+      "code": "UBBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UBBAFIR",
+      "name": "BAKU FIR",
       "icao_state": "UB",
       "country": null,
       "iso2": null,
@@ -3830,9 +4340,11 @@
       "source_features": 1
     },
     {
-      "code": "UCFMFIR",
+      "code": "UCFM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UCFMFIR",
       "name": "BISHKEK FIR",
-      "type": "FIR",
       "icao_state": "UC",
       "country": null,
       "iso2": null,
@@ -3845,9 +4357,11 @@
       "source_features": 1
     },
     {
-      "code": "UCFOFIR",
+      "code": "UCFO",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UCFOFIR",
       "name": "OSH FIR",
-      "type": "FIR",
       "icao_state": "UC",
       "country": null,
       "iso2": null,
@@ -3860,9 +4374,11 @@
       "source_features": 1
     },
     {
-      "code": "UDDDFIR",
-      "name": "YEREVAN FIR",
+      "code": "UDDD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UDDDFIR",
+      "name": "YEREVAN FIR",
       "icao_state": "UD",
       "country": "Armenia",
       "iso2": "AM",
@@ -3875,9 +4391,11 @@
       "source_features": 1
     },
     {
-      "code": "UEEEFIR",
-      "name": "YAKUTSK",
+      "code": "UEEE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UEEEFIR",
+      "name": "YAKUTSK",
       "icao_state": "UE",
       "country": null,
       "iso2": null,
@@ -3890,9 +4408,11 @@
       "source_features": 1
     },
     {
-      "code": "UGGGFIR",
-      "name": "TIBILISI FIR",
+      "code": "UGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UGGGFIR",
+      "name": "TIBILISI FIR",
       "icao_state": "UG",
       "country": "Georgia",
       "iso2": "GE",
@@ -3905,9 +4425,11 @@
       "source_features": 1
     },
     {
-      "code": "UGGGUIR",
-      "name": "TIBILISI UIR",
+      "code": "UGGG",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "UGGGUIR",
+      "name": "TIBILISI UIR",
       "icao_state": "UG",
       "country": "Georgia",
       "iso2": "GE",
@@ -3920,9 +4442,11 @@
       "source_features": 1
     },
     {
-      "code": "UHHHFIR",
+      "code": "UHHH",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UHHHFIR",
       "name": "KHABAROVSK FIR",
-      "type": "FIR",
       "icao_state": "UH",
       "country": null,
       "iso2": null,
@@ -3935,9 +4459,11 @@
       "source_features": 1
     },
     {
-      "code": "UHMMFIR",
+      "code": "UHMM",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UHMMFIR",
       "name": "MAGADAN",
-      "type": "FIR",
       "icao_state": "UH",
       "country": null,
       "iso2": null,
@@ -3950,9 +4476,11 @@
       "source_features": 1
     },
     {
-      "code": "UIIIFIR",
-      "name": "IRKUTSK FIR",
+      "code": "UIII",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UIIIFIR",
+      "name": "IRKUTSK FIR",
       "icao_state": "UI",
       "country": null,
       "iso2": null,
@@ -3965,9 +4493,11 @@
       "source_features": 1
     },
     {
-      "code": "UKBVFIR",
-      "name": "KIEV FIR",
+      "code": "UKBV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKBVFIR",
+      "name": "KIEV FIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -3980,9 +4510,11 @@
       "source_features": 1
     },
     {
-      "code": "UKBVUIR",
-      "name": "KIEV UIR",
+      "code": "UKBV",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "UKBVUIR",
+      "name": "KIEV UIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -3995,9 +4527,11 @@
       "source_features": 1
     },
     {
-      "code": "UKDVFIR",
+      "code": "UKDV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKDVFIR",
       "name": "DNIPROPETROVSK FIR",
-      "type": "FIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -4010,9 +4544,11 @@
       "source_features": 1
     },
     {
-      "code": "UKFVFIR",
+      "code": "UKFV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKFVFIR",
       "name": "SIMFEROPOL FIR",
-      "type": "FIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -4025,9 +4561,11 @@
       "source_features": 1
     },
     {
-      "code": "UKLVFIR",
+      "code": "UKLV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKLVFIR",
       "name": "LVOV FIR",
-      "type": "FIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -4040,9 +4578,11 @@
       "source_features": 1
     },
     {
-      "code": "UKOVFIR",
+      "code": "UKOV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKOVFIR",
       "name": "ODESSA FIR",
-      "type": "FIR",
       "icao_state": "UK",
       "country": "Ukraine",
       "iso2": "UA",
@@ -4055,9 +4595,11 @@
       "source_features": 1
     },
     {
-      "code": "ULLLFIR",
-      "name": null,
+      "code": "ULLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ULLLFIR",
+      "name": null,
       "icao_state": "UL",
       "country": null,
       "iso2": null,
@@ -4070,9 +4612,11 @@
       "source_features": 1
     },
     {
-      "code": "UMKKFIR",
+      "code": "UMKK",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UMKKFIR",
       "name": "KALININGRAD FIR",
-      "type": "FIR",
       "icao_state": "UM",
       "country": null,
       "iso2": null,
@@ -4085,9 +4629,11 @@
       "source_features": 1
     },
     {
-      "code": "UMMVFIR",
+      "code": "UMMV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UMMVFIR",
       "name": "MINSK FIR",
-      "type": "FIR",
       "icao_state": "UM",
       "country": null,
       "iso2": null,
@@ -4100,9 +4646,11 @@
       "source_features": 1
     },
     {
-      "code": "UNKLFIR",
+      "code": "UNKL",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UNKLFIR",
       "name": "KRASNOYARSK FIR",
-      "type": "FIR",
       "icao_state": "UN",
       "country": null,
       "iso2": null,
@@ -4115,9 +4663,11 @@
       "source_features": 1
     },
     {
-      "code": "UNNTFIR",
+      "code": "UNNT",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UNNTFIR",
       "name": "NOVOSIBIRSK FIR",
-      "type": "FIR",
       "icao_state": "UN",
       "country": null,
       "iso2": null,
@@ -4130,9 +4680,11 @@
       "source_features": 1
     },
     {
-      "code": "URRVFIR",
-      "name": null,
+      "code": "URRV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "URRVFIR",
+      "name": null,
       "icao_state": "UR",
       "country": null,
       "iso2": null,
@@ -4145,9 +4697,11 @@
       "source_features": 1
     },
     {
-      "code": "USSVFIR",
+      "code": "USSV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "USSVFIR",
       "name": "YEKATERINBURG",
-      "type": "FIR",
       "icao_state": "US",
       "country": null,
       "iso2": null,
@@ -4160,9 +4714,11 @@
       "source_features": 1
     },
     {
-      "code": "USTVFIR",
+      "code": "USTV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "USTVFIR",
       "name": "TYUMEN FIR",
-      "type": "FIR",
       "icao_state": "US",
       "country": null,
       "iso2": null,
@@ -4175,9 +4731,11 @@
       "source_features": 1
     },
     {
-      "code": "UTAAFIR",
+      "code": "UTAA",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAAFIR",
       "name": "TURKMENISTAN FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4190,9 +4748,11 @@
       "source_features": 1
     },
     {
-      "code": "UTAKFIR",
+      "code": "UTAK",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAKFIR",
       "name": "TURKMENBASHI FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4205,9 +4765,11 @@
       "source_features": 1
     },
     {
-      "code": "UTATFIR",
+      "code": "UTAT",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTATFIR",
       "name": "DASHOGUZ FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4220,9 +4782,11 @@
       "source_features": 1
     },
     {
-      "code": "UTAVFIR",
+      "code": "UTAV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAVFIR",
       "name": "TURKMENABAT FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4235,9 +4799,11 @@
       "source_features": 1
     },
     {
-      "code": "UTDDFIR",
+      "code": "UTDD",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTDDFIR",
       "name": "TAJIKISTAN FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4250,9 +4816,11 @@
       "source_features": 1
     },
     {
-      "code": "UTSDFIR",
+      "code": "UTSD",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTSDFIR",
       "name": "SAMARKAND FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4265,9 +4833,11 @@
       "source_features": 1
     },
     {
-      "code": "UTTRFIR",
+      "code": "UTTR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTTRFIR",
       "name": "TASHKENT FIR",
-      "type": "FIR",
       "icao_state": "UT",
       "country": null,
       "iso2": null,
@@ -4280,9 +4850,11 @@
       "source_features": 1
     },
     {
-      "code": "UUWVFIR",
-      "name": "MOSCOW FIR",
+      "code": "UUWV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UUWVFIR",
+      "name": "MOSCOW FIR",
       "icao_state": "UU",
       "country": null,
       "iso2": null,
@@ -4295,9 +4867,11 @@
       "source_features": 1
     },
     {
-      "code": "UWWWFIR",
-      "name": "UWWW SAMARA FIR",
+      "code": "UWWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UWWWFIR",
+      "name": "UWWW SAMARA FIR",
       "icao_state": "UW",
       "country": null,
       "iso2": null,
@@ -4310,9 +4884,11 @@
       "source_features": 1
     },
     {
-      "code": "VABFFIR",
-      "name": "MUMBAI FIR",
+      "code": "VABF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VABFFIR",
+      "name": "MUMBAI FIR",
       "icao_state": "VA",
       "country": null,
       "iso2": null,
@@ -4325,9 +4901,11 @@
       "source_features": 1
     },
     {
-      "code": "VCCFFIR",
-      "name": "COLOMBO FIR",
+      "code": "VCCF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VCCFFIR",
+      "name": "COLOMBO FIR",
       "icao_state": "VC",
       "country": null,
       "iso2": null,
@@ -4340,9 +4918,11 @@
       "source_features": 1
     },
     {
-      "code": "VDPFFIR",
-      "name": "PHNOM PENH FIR",
+      "code": "VDPF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VDPFFIR",
+      "name": "PHNOM PENH FIR",
       "icao_state": "VD",
       "country": null,
       "iso2": null,
@@ -4355,9 +4935,11 @@
       "source_features": 1
     },
     {
-      "code": "VECFFIR",
-      "name": "KOLKATA FIR",
+      "code": "VECF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VECFFIR",
+      "name": "KOLKATA FIR",
       "icao_state": "VE",
       "country": null,
       "iso2": null,
@@ -4370,9 +4952,11 @@
       "source_features": 1
     },
     {
-      "code": "VGFRFIR",
-      "name": "DHAKA FIR",
+      "code": "VGFR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VGFRFIR",
+      "name": "DHAKA FIR",
       "icao_state": "VG",
       "country": null,
       "iso2": null,
@@ -4385,9 +4969,11 @@
       "source_features": 1
     },
     {
-      "code": "VHHKFIR",
-      "name": "HONG KONG FIR",
+      "code": "VHHK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VHHKFIR",
+      "name": "HONG KONG FIR",
       "icao_state": "VH",
       "country": null,
       "iso2": null,
@@ -4400,9 +4986,11 @@
       "source_features": 1
     },
     {
-      "code": "VIDFFIR",
-      "name": "DELHI FIR",
+      "code": "VIDF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VIDFFIR",
+      "name": "DELHI FIR",
       "icao_state": "VI",
       "country": null,
       "iso2": null,
@@ -4415,9 +5003,11 @@
       "source_features": 1
     },
     {
-      "code": "VLVTFIR",
-      "name": "VIENTIANE FIR",
+      "code": "VLVT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VLVTFIR",
+      "name": "VIENTIANE FIR",
       "icao_state": "VL",
       "country": null,
       "iso2": null,
@@ -4430,9 +5020,11 @@
       "source_features": 1
     },
     {
-      "code": "VNSMFIR",
-      "name": "KATHMANDU FIR",
+      "code": "VNSM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VNSMFIR",
+      "name": "KATHMANDU FIR",
       "icao_state": "VN",
       "country": null,
       "iso2": null,
@@ -4445,9 +5037,11 @@
       "source_features": 1
     },
     {
-      "code": "VOMFFIR",
-      "name": "CHENNAI FIR",
+      "code": "VOMF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VOMFFIR",
+      "name": "CHENNAI FIR",
       "icao_state": "VO",
       "country": null,
       "iso2": null,
@@ -4460,9 +5054,11 @@
       "source_features": 1
     },
     {
-      "code": "VRMFFIR",
-      "name": "MALE FIR",
+      "code": "VRMF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VRMFFIR",
+      "name": "MALE FIR",
       "icao_state": "VR",
       "country": null,
       "iso2": null,
@@ -4475,9 +5071,11 @@
       "source_features": 1
     },
     {
-      "code": "VTBBFIR",
-      "name": "BANGKOK FIR",
+      "code": "VTBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VTBBFIR",
+      "name": "BANGKOK FIR",
       "icao_state": "VT",
       "country": null,
       "iso2": null,
@@ -4490,9 +5088,11 @@
       "source_features": 1
     },
     {
-      "code": "VVTSFIR",
+      "code": "VVTS",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VVTSFIR",
       "name": "HO CHI MINH FIR",
-      "type": "FIR",
       "icao_state": "VV",
       "country": null,
       "iso2": null,
@@ -4505,9 +5105,11 @@
       "source_features": 1
     },
     {
-      "code": "VVVVFIR",
+      "code": "VVVV",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VVVVFIR",
       "name": "V W A REGION",
-      "type": "FIR",
       "icao_state": "VV",
       "country": null,
       "iso2": null,
@@ -4520,9 +5122,11 @@
       "source_features": 1
     },
     {
-      "code": "VYYFFIR",
-      "name": "YANGON FIR",
+      "code": "VYYF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VYYFFIR",
+      "name": "YANGON FIR",
       "icao_state": "VY",
       "country": null,
       "iso2": null,
@@ -4535,9 +5139,11 @@
       "source_features": 1
     },
     {
-      "code": "WAAFFIR",
-      "name": "UJUNG PANDANG AND AROUND",
+      "code": "WAAF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WAAFFIR",
+      "name": "UJUNG PANDANG AND AROUND",
       "icao_state": "WA",
       "country": null,
       "iso2": null,
@@ -4550,9 +5156,11 @@
       "source_features": 1
     },
     {
-      "code": "WBFCFIR",
-      "name": "KOTA KINABALU FIR",
+      "code": "WBFC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WBFCFIR",
+      "name": "KOTA KINABALU FIR",
       "icao_state": "WB",
       "country": null,
       "iso2": null,
@@ -4565,9 +5173,11 @@
       "source_features": 1
     },
     {
-      "code": "WIIFFIR",
-      "name": "JAKARTA",
+      "code": "WIIF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WIIFFIR",
+      "name": "JAKARTA",
       "icao_state": "WI",
       "country": null,
       "iso2": null,
@@ -4580,9 +5190,11 @@
       "source_features": 1
     },
     {
-      "code": "WMFCFIR",
-      "name": "KUALA LUMPUR FIR",
+      "code": "WMFC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WMFCFIR",
+      "name": "KUALA LUMPUR FIR",
       "icao_state": "WM",
       "country": null,
       "iso2": null,
@@ -4595,9 +5207,11 @@
       "source_features": 1
     },
     {
-      "code": "WSJCFIR",
-      "name": "SINGAPORE FIR",
+      "code": "WSJC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WSJCFIR",
+      "name": "SINGAPORE FIR",
       "icao_state": "WS",
       "country": null,
       "iso2": null,
@@ -4611,23 +5225,10 @@
     },
     {
       "code": "XXXX",
-      "name": "NO FIR WEST OF PERU",
-      "type": "OTHER",
-      "icao_state": "XX",
-      "country": null,
-      "iso2": null,
-      "eurocontrol_member": false,
-      "eurocontrol_entry": null,
-      "fab": null,
-      "min_fl": 0,
-      "max_fl": 999,
-      "airac_cfmu": 524,
-      "source_features": 1
-    },
-    {
-      "code": "XXXXFIR",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "XXXXFIR",
       "name": "FIR XX",
-      "type": "FIR",
       "icao_state": "XX",
       "country": null,
       "iso2": null,
@@ -4640,9 +5241,28 @@
       "source_features": 1
     },
     {
-      "code": "YBBBFIR",
-      "name": "BRISBANE FIR",
+      "code": "XXXX",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "XXXX",
+      "name": "NO FIR WEST OF PERU",
+      "icao_state": "XX",
+      "country": null,
+      "iso2": null,
+      "eurocontrol_member": false,
+      "eurocontrol_entry": null,
+      "fab": null,
+      "min_fl": 0,
+      "max_fl": 999,
+      "airac_cfmu": 524,
+      "source_features": 1
+    },
+    {
+      "code": "YBBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "YBBBFIR",
+      "name": "BRISBANE FIR",
       "icao_state": "YB",
       "country": null,
       "iso2": null,
@@ -4655,9 +5275,11 @@
       "source_features": 1
     },
     {
-      "code": "YMMMFIR",
-      "name": "MELBOURNE FIR",
+      "code": "YMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "YMMMFIR",
+      "name": "MELBOURNE FIR",
       "icao_state": "YM",
       "country": null,
       "iso2": null,
@@ -4670,9 +5292,11 @@
       "source_features": 1
     },
     {
-      "code": "ZBPEFIR",
-      "name": "BEIJING FIR",
+      "code": "ZBPE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZBPEFIR",
+      "name": "BEIJING FIR",
       "icao_state": "ZB",
       "country": null,
       "iso2": null,
@@ -4685,9 +5309,11 @@
       "source_features": 1
     },
     {
-      "code": "ZGZUFIR",
-      "name": "GUANGZHOU FIR",
+      "code": "ZGZU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZGZUFIR",
+      "name": "GUANGZHOU FIR",
       "icao_state": "ZG",
       "country": null,
       "iso2": null,
@@ -4700,9 +5326,11 @@
       "source_features": 1
     },
     {
-      "code": "ZHWHFIR",
-      "name": "WUHAN FIR",
+      "code": "ZHWH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZHWHFIR",
+      "name": "WUHAN FIR",
       "icao_state": "ZH",
       "country": null,
       "iso2": null,
@@ -4715,9 +5343,11 @@
       "source_features": 1
     },
     {
-      "code": "ZJSAFIR",
-      "name": "SANYA FIR",
+      "code": "ZJSA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZJSAFIR",
+      "name": "SANYA FIR",
       "icao_state": "ZJ",
       "country": null,
       "iso2": null,
@@ -4730,9 +5360,11 @@
       "source_features": 1
     },
     {
-      "code": "ZKKPFIR",
-      "name": "PYONGYANG FIR",
+      "code": "ZKKP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZKKPFIR",
+      "name": "PYONGYANG FIR",
       "icao_state": "ZK",
       "country": null,
       "iso2": null,
@@ -4745,9 +5377,11 @@
       "source_features": 1
     },
     {
-      "code": "ZLHWFIR",
-      "name": "LANZHOU FIR",
+      "code": "ZLHW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZLHWFIR",
+      "name": "LANZHOU FIR",
       "icao_state": "ZL",
       "country": null,
       "iso2": null,
@@ -4760,9 +5394,11 @@
       "source_features": 1
     },
     {
-      "code": "ZMUBFIR",
-      "name": "ULAANBAATAR FIR",
+      "code": "ZMUB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZMUBFIR",
+      "name": "ULAANBAATAR FIR",
       "icao_state": "ZM",
       "country": null,
       "iso2": null,
@@ -4775,9 +5411,11 @@
       "source_features": 1
     },
     {
-      "code": "ZPKMFIR",
-      "name": "KUNMING FIR",
+      "code": "ZPKM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZPKMFIR",
+      "name": "KUNMING FIR",
       "icao_state": "ZP",
       "country": null,
       "iso2": null,
@@ -4790,9 +5428,11 @@
       "source_features": 1
     },
     {
-      "code": "ZSHAFIR",
-      "name": "SHANGHAI FIR",
+      "code": "ZSHA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZSHAFIR",
+      "name": "SHANGHAI FIR",
       "icao_state": "ZS",
       "country": null,
       "iso2": null,
@@ -4805,9 +5445,11 @@
       "source_features": 1
     },
     {
-      "code": "ZWUQFIR",
-      "name": "URUMQI FIR",
+      "code": "ZWUQ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZWUQFIR",
+      "name": "URUMQI FIR",
       "icao_state": "ZW",
       "country": null,
       "iso2": null,
@@ -4820,9 +5462,11 @@
       "source_features": 1
     },
     {
-      "code": "ZYSHFIR",
-      "name": "SHENYANG FIR",
+      "code": "ZYSH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZYSHFIR",
+      "name": "SHENYANG FIR",
       "icao_state": "ZY",
       "country": null,
       "iso2": null,
