@@ -2,6 +2,15 @@
 SHELL := $(shell echo $$SHELL)
 TOPOJSON = node_modules/.bin/topojson
 TOPOMERGE = node_modules/.bin/topojson-merge
+# GNU sed: `gsed` on macOS (homebrew), plain `sed` on GNU/Linux
+SED := $(shell command -v gsed || command -v sed)
+
+# md5 hash of a string: macOS has `md5 -qs`, GNU/Linux has `md5sum` reading stdin
+ifeq ($(shell command -v md5sum),)
+md5s = md5 -qs "$1"
+else
+md5s = printf '%s' "$1" | md5sum
+endif
 # http://www.naturalearthdata.com/downloads/
 NATURAL_EARTH_CDN = http://naciscdn.org/naturalearth
 GISCO_CDN = http://ec.europa.eu/eurostat/cache/GISCO/geodatafiles
@@ -10,10 +19,27 @@ CLIP_BBOX= -42.0  12.0 52.0 84.0
 CSVS = data/firs.tsv data/world-country-names.tsv data/country-id-name.csv \
 	data/firfabstates.ses.csv data/eu.csv data/world-country-flags.tsv
 
+FIRS_ALL_TMP = firs-all-attrs.csv
+# vintage of the checked-in NM export, read straight off the zip entry
+FIRUIR_DATE = $(shell unzip -l zip/FirUir_NM.zip | awk '/FirUir_NM\.dbf/{print $$2}')
+
+# Current [FU]IR reference set. zip/FirUir_NM.zip is CFMU AIRAC cycle 406
+# (2015-12-08); EUROCONTROL PRU publish newer cycles of the same PRISME export
+# openly in euctrl-pru/pruatlas (MIT, per its DESCRIPTION). 524 is the newest
+# they ship. Pinned to a commit so the build is reproducible.
+AIRAC_CURRENT = 524
+PRUATLAS_SHA = 0927219fec659e28913a325c7473c38239675003
+PRUATLAS_RAW = https://raw.githubusercontent.com/euctrl-pru/pruatlas/$(PRUATLAS_SHA)/inst/extdata
+
+# NOAA/AWC station cache: supplies city + country for both airports and, via the
+# ICAO location-indicator prefix, the [FU]IRs. https://aviationweather.gov/data/api/#cache
+AWC_CACHE = https://aviationweather.gov/data/cache
+
 join-with = $(subst $(space),$1,$2)
 comma := ,
-space :=
-space +=
+empty :=
+# NOTE: `space :=` + `space +=` no longer yields a space as of GNU Make 4.4
+space := $(empty) $(empty)
 make-list = $(call join-with,$(comma),$(patsubst %,'%',$1))
 
 
@@ -232,13 +258,51 @@ shp/ses/firs.shp: shp/euctrl/firs_unfiltered.shp
 data/firs.tsv: shp/ses/firs.shp
 	node_modules/.bin/dbf2dsv shp/ses/firs.dbf | tail -n +2 > $@
 
+# Every Information Region of the current AIRAC cycle -- no FAB/Eurocontrol
+# filter -- as one flat CSV + JSON, enriched with country, Eurocontrol
+# membership and FAB, plus a reconciliation against the local 406 snapshot.
+.PHONY: firs-all
+firs-all: data/firs-all.csv data/firs-all.json data/firs-diff.csv
+
+geojson/ir-$(AIRAC_CURRENT).geojson:
+	mkdir -p $(dir $@)
+	curl -fsSL -o $@ $(PRUATLAS_RAW)/$(notdir $@)
+
+# refreshed daily upstream, so .PHONY would re-fetch on every make; delete to update
+geojson/stations.json:
+	mkdir -p $(dir $@)
+	curl -fsSL $(AWC_CACHE)/stations.cache.json.gz | gzip -dc > $@
+
+# unified ICAO lookup: [FU]IRs + aerodromes, each with city and country
+.PHONY: icao-codes
+icao-codes: data/icao-codes.json data/icao-codes.csv
+
+data/icao-codes.json data/icao-codes.csv &: \
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js
+	AIRAC=$(AIRAC_CURRENT) node bin/icao-codes.js \
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
+		data/icao-codes.json data/icao-codes.csv
+
+# attributes of the legacy 406 snapshot, used only as the reconciliation baseline
+$(FIRS_ALL_TMP): shp/euctrl/firs_unfiltered.shp
+	ogr2ogr -f CSV /vsistdout/ $< \
+		-select AC_ID,AV_AIRSPAC,AV_ICAO_ST,MIN_FLIGHT,MAX_FLIGHT,AV_NAME,OBJECTID \
+		> $@
+
+data/firs-all.csv data/firs-all.json data/firs-diff.csv &: \
+		geojson/ir-$(AIRAC_CURRENT).geojson $(FIRS_ALL_TMP) bin/firs-export.js
+	AIRAC=$(AIRAC_CURRENT) BASELINE_DATE=$(FIRUIR_DATE) node bin/firs-export.js \
+		geojson/ir-$(AIRAC_CURRENT).geojson $(FIRS_ALL_TMP) \
+		data/firs-all.csv data/firs-all.json data/firs-diff.csv
+	rm -f -- $(FIRS_ALL_TMP)
+
 # mapping FIR <--> FAB
 data/firfabstates.ses.csv: data/firs.tsv
 	tail -n +2 data/fabstates.ses.csv |sed 's/\([^,]*\),\([^,]*\)/s%\1%\2%/' > sed.script
-	cut -d '	' -f 3 $< | gsed -f sed.script > /tmp/f2
+	cut -d '	' -f 3 $< | $(SED) -f sed.script > /tmp/f2
 	cut -d '	' -f 2 $< > /tmp/f1
-	gsed -i '1i AV_AIRSPAC' /tmp/f1
-	gsed -i '1i fab' /tmp/f2
+	$(SED) -i '1i AV_AIRSPAC' /tmp/f1
+	$(SED) -i '1i fab' /tmp/f2
 	paste -d , /tmp/f1 /tmp/f2 > $@
 	rm -f -- sed.script /tmp/f1 /tmp/f2
 
@@ -342,7 +406,7 @@ data/country-id-name.csv: data/world-country-names.tsv
 	cat $< <(echo "900	Kosovo") | cut -f1,2 -s | tail -n+5 | cut -d',' -f1 | sed -e 's/	/,/'  > $@
 
 data/eu.csv: data/country-id-name.csv data/eu-members.csv
-	awk 'BEGIN {FS = ","; OFS = "," }; FNR==NR{a[$$1]=$$2;next} ($$1 in a) {print $$1,$$2,$$3,a[$$1]}' $? > $@
+	awk 'BEGIN {FS = ","; OFS = "," }; FNR==NR{a[$$1]=$$2;next} ($$1 in a) {print $$1,$$2,$$3,a[$$1]}' $^ > $@
 
 
 ########## FLAGS ##########
@@ -353,7 +417,7 @@ data/flags-urls: data/flags-names
 	rm -f $@
 	for c in $$(cat $<); \
 	do \
-		h=$$(md5 -qs "Flag_of_$$c.svg" | cut -c1-2); \
+		h=$$($(call md5s,Flag_of_$$c.svg) | cut -c1-2); \
 		f=$$(echo $$h | cut -c1); \
 		u="http://upload.wikimedia.org/wikipedia/commons/$$f/$$h/Flag_of_$$c.svg"; \
 		echo "$$u"; \
@@ -374,7 +438,7 @@ data/world-country-flags.tsv: data/country-ids data/flags-urls
 flags/Flag_of_%.svg:
 	mkdir -p $(dir $@)
 	( \
-		h=$$(md5 -qs "$(notdir $@)" | cut -c1-2); \
+		h=$$($(call md5s,$(notdir $@)) | cut -c1-2); \
 		f=$$(echo $$h | cut -c1); \
 		u="http://upload.wikimedia.org/wikipedia/commons/$$f/$$h/$(notdir $@)"; \
 		curl -L -o "$@" $$u; \
@@ -462,6 +526,9 @@ clean-tmp:
 					data/flags-urls data/world-country-flags.tsv \
 					data/country-id-name.csv data/country-ids data/flags-names \
 					data/world-country-names.tsv \
+					data/firs-all.csv data/firs-all.json data/firs-diff.csv \
+					data/icao-codes.json data/icao-codes.csv \
+					geojson $(FIRS_ALL_TMP) \
 					zip/ne_\*.zip $(CSVS)
 
 clean: clean-tmp
