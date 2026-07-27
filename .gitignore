@@ -1,0 +1,19 @@
+node_modules/
+
+# intermediate GIS artefacts, all rebuildable via the Makefile (see clean-tmp)
+geo/
+shp/
+geojson/
+topo/world-*.json
+
+# generated tables that clean-tmp removes; the curated + published ones stay tracked
+data/country-ids
+data/firs.tsv
+data/flags-names
+data/flags-urls
+data/world-country-flags.tsv
+data/world-country-names.tsv
+
+# scratch files written by recipes into the working dir
+sed.script
+firs-all-attrs.csv

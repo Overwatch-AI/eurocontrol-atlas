@@ -2,6 +2,15 @@
 SHELL := $(shell echo $$SHELL)
 TOPOJSON = node_modules/.bin/topojson
 TOPOMERGE = node_modules/.bin/topojson-merge
+# GNU sed: `gsed` on macOS (homebrew), plain `sed` on GNU/Linux
+SED := $(shell command -v gsed || command -v sed)
+
+# md5 hash of a string: macOS has `md5 -qs`, GNU/Linux has `md5sum` reading stdin
+ifeq ($(shell command -v md5sum),)
+md5s = md5 -qs "$1"
+else
+md5s = printf '%s' "$1" | md5sum
+endif
 # http://www.naturalearthdata.com/downloads/
 NATURAL_EARTH_CDN = http://naciscdn.org/naturalearth
 GISCO_CDN = http://ec.europa.eu/eurostat/cache/GISCO/geodatafiles
@@ -12,8 +21,9 @@ CSVS = data/firs.tsv data/world-country-names.tsv data/country-id-name.csv \
 
 join-with = $(subst $(space),$1,$2)
 comma := ,
-space :=
-space +=
+empty :=
+# NOTE: `space :=` + `space +=` no longer yields a space as of GNU Make 4.4
+space := $(empty) $(empty)
 make-list = $(call join-with,$(comma),$(patsubst %,'%',$1))
 
 
@@ -235,10 +245,10 @@ data/firs.tsv: shp/ses/firs.shp
 # mapping FIR <--> FAB
 data/firfabstates.ses.csv: data/firs.tsv
 	tail -n +2 data/fabstates.ses.csv |sed 's/\([^,]*\),\([^,]*\)/s%\1%\2%/' > sed.script
-	cut -d '	' -f 3 $< | gsed -f sed.script > /tmp/f2
+	cut -d '	' -f 3 $< | $(SED) -f sed.script > /tmp/f2
 	cut -d '	' -f 2 $< > /tmp/f1
-	gsed -i '1i AV_AIRSPAC' /tmp/f1
-	gsed -i '1i fab' /tmp/f2
+	$(SED) -i '1i AV_AIRSPAC' /tmp/f1
+	$(SED) -i '1i fab' /tmp/f2
 	paste -d , /tmp/f1 /tmp/f2 > $@
 	rm -f -- sed.script /tmp/f1 /tmp/f2
 
@@ -342,7 +352,7 @@ data/country-id-name.csv: data/world-country-names.tsv
 	cat $< <(echo "900	Kosovo") | cut -f1,2 -s | tail -n+5 | cut -d',' -f1 | sed -e 's/	/,/'  > $@
 
 data/eu.csv: data/country-id-name.csv data/eu-members.csv
-	awk 'BEGIN {FS = ","; OFS = "," }; FNR==NR{a[$$1]=$$2;next} ($$1 in a) {print $$1,$$2,$$3,a[$$1]}' $? > $@
+	awk 'BEGIN {FS = ","; OFS = "," }; FNR==NR{a[$$1]=$$2;next} ($$1 in a) {print $$1,$$2,$$3,a[$$1]}' $^ > $@
 
 
 ########## FLAGS ##########
@@ -353,7 +363,7 @@ data/flags-urls: data/flags-names
 	rm -f $@
 	for c in $$(cat $<); \
 	do \
-		h=$$(md5 -qs "Flag_of_$$c.svg" | cut -c1-2); \
+		h=$$($(call md5s,Flag_of_$$c.svg) | cut -c1-2); \
 		f=$$(echo $$h | cut -c1); \
 		u="http://upload.wikimedia.org/wikipedia/commons/$$f/$$h/Flag_of_$$c.svg"; \
 		echo "$$u"; \
@@ -374,7 +384,7 @@ data/world-country-flags.tsv: data/country-ids data/flags-urls
 flags/Flag_of_%.svg:
 	mkdir -p $(dir $@)
 	( \
-		h=$$(md5 -qs "$(notdir $@)" | cut -c1-2); \
+		h=$$($(call md5s,$(notdir $@)) | cut -c1-2); \
 		f=$$(echo $$h | cut -c1); \
 		u="http://upload.wikimedia.org/wikipedia/commons/$$f/$$h/$(notdir $@)"; \
 		curl -L -o "$@" $$u; \
