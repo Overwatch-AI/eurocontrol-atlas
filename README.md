@@ -144,11 +144,18 @@ PRUATLAS_SHA  = 0927219fec659e28913a325c7473c38239675003
 ```
 
 Bump both when a newer `ir-<cycle>.geojson` appears upstream. The station cache is
-refreshed daily by NOAA and is cached locally, so pull a fresh copy with:
+refreshed daily by NOAA and is cached locally under `geojson/`, so pull a fresh copy
+with:
 
 ```bash
 rm geojson/stations.json && make icao-codes
 ```
+
+Both targets are incremental and will do nothing while their outputs are newer than
+their inputs — which is what a checkout leaves you with, since git gives the committed
+files current mtimes. `make -B <target>` forces a full rebuild, re-downloading both
+remote sources; to regenerate from the already-downloaded inputs without touching the
+network, delete the outputs under `data/` and re-run instead.
 
 
 ## FABs

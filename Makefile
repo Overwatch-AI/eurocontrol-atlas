@@ -142,6 +142,15 @@ help:
 	@echo "               topo/euctrl/eurocontrol_area_110m.json contains all European countries and neighbouring ones."
 	@echo " flags         download from Wikimedia all flags of the world (SVG format)"
 	@echo " csvs          generate all support CSV files (FAB id-names, country id-name, EU members/candidates, EUROCONTROL members)"
+	@echo " icao-codes    generate the ICAO code lookup covering [FU]IRs *and* aerodromes, each with city and country:"
+	@echo "               data/icao-codes.json and data/icao-codes.csv (AIRAC $(AIRAC_CURRENT) + NOAA AWC station cache)."
+	@echo " firs-all      generate the unfiltered [FU]IR list for AIRAC $(AIRAC_CURRENT), with no FAB/Eurocontrol filter:"
+	@echo "               data/firs-all.{csv,json} plus data/firs-diff.csv reconciling it against the 2015 snapshot."
+	@echo ""
+	@echo "Targets are incremental: they do nothing while their outputs are newer than their"
+	@echo "inputs. 'make -B <target>' forces a full rebuild and re-downloads the remote"
+	@echo "sources; to regenerate from the already-downloaded inputs without touching the"
+	@echo "network, delete the outputs under data/ and re-run instead."
 
 .SECONDARY:
 
@@ -262,7 +271,10 @@ data/firs.tsv: shp/ses/firs.shp
 # filter -- as one flat CSV + JSON, enriched with country, Eurocontrol
 # membership and FAB, plus a reconciliation against the local 406 snapshot.
 .PHONY: firs-all
+# the recipe is only here so an up-to-date run reports that, rather than make's
+# bare "Nothing to be done for 'firs-all'", which reads like a failure
 firs-all: data/firs-all.csv data/firs-all.json data/firs-diff.csv
+	@printf '%s up to date (%s). Rebuild with: make -B %s\n' '$@' '$(words $^) files' '$@'
 
 geojson/ir-$(AIRAC_CURRENT).geojson:
 	mkdir -p $(dir $@)
@@ -276,6 +288,8 @@ geojson/stations.json:
 # unified ICAO lookup: [FU]IRs + aerodromes, each with city and country
 .PHONY: icao-codes
 icao-codes: data/icao-codes.json data/icao-codes.csv
+	@printf '%s up to date (%s codes). Rebuild with: make -B %s\n' '$@' \
+		"$$(($$(wc -l < data/icao-codes.csv) - 1))" '$@'
 
 data/icao-codes.json data/icao-codes.csv &: \
 		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js
