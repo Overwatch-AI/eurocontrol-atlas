@@ -59,11 +59,10 @@ if (!irFile || !stationsFile || !outJson || !outCsv) {
 }
 
 const airac = process.env.AIRAC ? Number(process.env.AIRAC) : null
-const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
-const countryName = cc => {
-  if (!cc) return null
-  try { const n = regionNames.of(cc); return n === cc ? null : n } catch { return null }
-}
+// `country_name` is the conventional ASCII form, not CLDR's current preference: see the
+// rationale in countries.js. CLDR names and match aliases live in the `countries` table
+// emitted once in the envelope.
+const { conventionalName: countryName, countryTable, normalizeCountryCode } = require('./countries.js')
 
 // ---- Eurocontrol / FAB enrichment (Europe only, from data/) ---------------
 
@@ -125,18 +124,20 @@ const airports = []
 for (const s of stations) {
   const code = s.icaoId
   const { city, aerodrome, source: citySource } = splitSite(s.site)
-  if (code && code.length === 4 && s.country) {
+  // fold AWC's non-ISO codes (KV -> XK) before anything keys off the country
+  const country = normalizeCountryCode(s.country)
+  if (code && code.length === 4 && country) {
     for (const n of [2, 3, 4]) {
       const p = code.slice(0, n)
       if (!prefixCountry.has(p)) prefixCountry.set(p, new Map())
       const c = prefixCountry.get(p)
-      c.set(s.country, (c.get(s.country) || 0) + 1)
+      c.set(country, (c.get(country) || 0) + 1)
     }
   }
-  if (s.country && city) {
-    if (!citiesByCountry.has(s.country)) citiesByCountry.set(s.country, new Map())
+  if (country && city) {
+    if (!citiesByCountry.has(country)) citiesByCountry.set(country, new Map())
     // "City/Aerodrome" wins over a stripped bare name when both offer the same key
-    const known = citiesByCountry.get(s.country)
+    const known = citiesByCountry.get(country)
     const key = city.toUpperCase()
     if (!known.has(key) || citySource === 'site-city') known.set(key, city)
   }
@@ -146,8 +147,8 @@ for (const s of stations) {
       type: 'AIRPORT',
       name: aerodrome || s.site || null,
       city: city,
-      country: s.country || null,
-      country_name: countryName(s.country),
+      country: country,
+      country_name: countryName(country),
       lat: s.lat,
       lon: s.lon,
       elev_m: s.elev,
@@ -318,6 +319,10 @@ fs.writeFileSync(outJson, JSON.stringify({
   airac_cfmu: airac,
   counts: entries.reduce((a, e) => (a[e.type] = (a[e.type] || 0) + 1, a), {}),
   total: entries.length,
+  // join on `country` (ISO 3166-1 alpha-2). Resolve however a question phrases a country
+  // through `aliases` here rather than string-matching `country_name` on the rows.
+  key: 'match a country via countries[<iso2>].aliases; rows join on `country`',
+  countries: countryTable(entries.map(e => e.country)),
   entries
 }, null, 2) + '\n')
 

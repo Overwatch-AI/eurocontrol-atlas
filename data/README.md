@@ -42,11 +42,38 @@ Note the decomposition applies only to regions, never to aerodrome codes: `KFIR`
 real US station ("First Divide") and stays `KFIR`, where a blanket suffix strip would
 have reduced it to `K`.
 
-### How city and country are resolved
+### Country naming: match on `country`, not `country_name`
 
-`country` in the station cache **is** ISO 3166-1 alpha-2 (238 distinct values, all two
-characters) and is used as such; `country_name` comes from `Intl.DisplayNames`, no
-dependency required.
+`country` in the station cache **is** ISO 3166-1 alpha-2 and is the intended join key.
+The one exception is folded on the way in: AWC uses the non-ISO `KV` for Kosovo, which
+becomes `XK`, the user-assigned ISO code `eurocontrol.csv` already carries. After that
+every row with a country has a name — 237 countries are in use.
+
+`country_name` is the **conventional ASCII English** name, which is deliberately *not*
+what `Intl.DisplayNames(['en'])` returns. CLDR tracks official renames and abbreviates,
+so it gives `Türkiye`, `Czechia`, `Bosnia & Herzegovina`, `Hong Kong SAR China`. Those
+are correct English, but anything that consumes this file by generating an exact-match
+filter — an LLM being the obvious case — will reach for `Turkey` or `Hong Kong` and get
+an empty result that looks like a legitimate "no such data" rather than a spelling
+mismatch. So the rows carry the forgiving form, and nothing is lost:
+
+```json
+"countries": {
+  "TR": { "name": "Turkey", "aliases": ["Turkey", "Türkiye", "Turkiye"], "cldr": "Türkiye" },
+  "CI": { "name": "Cote d'Ivoire", "aliases": ["Cote d'Ivoire", "Côte d’Ivoire", "Ivory Coast"],
+          "cldr": "Côte d’Ivoire" }
+}
+```
+
+That table is emitted once in the JSON envelope rather than repeated on all 9159 rows
+(≈14 kB total). **To resolve a country from arbitrary phrasing, match against
+`countries[<iso2>].aliases` and then filter rows on `country`** — the aliases cover the
+CLDR spelling, the ASCII fold, expanded abbreviations and common historical names, so
+`Türkiye`, `Turkey`, `Czech Republic`, `Czechia`, `Hong Kong`, `Ivory Coast`, `Burma`,
+`UK`, `Macedonia` and `Swaziland` all resolve. `bin/countries.js` holds the rules and is
+shared with `firs-all`, so the two datasets cannot drift apart — `eurocontrol.csv`'s own
+`name` column is no longer used for this, since it disagreed on Turkey, Czechia and
+Bosnia & Herzegovina.
 
 > **`state` is _not_ ISO 3166-2.** It is a two-character AWC/NWS subdivision code that
 > only coincides with ISO for the US and Canada — 50% of stations — because ISO's codes
@@ -105,7 +132,9 @@ Caveats worth knowing before relying on these files:
 
 * `country`/`iso2`/`eurocontrol_entry` are joined on the ICAO state prefix via
   `eurocontrol.csv`, which only covers Eurocontrol member states — 239 of the 322
-  regions are outside it and carry an empty `country`.
+  regions are outside it and carry an empty `country`. The name itself is resolved from
+  the ISO code through `bin/countries.js`, the same path `icao-codes.*` uses, so the two
+  files always agree.
 * Cycle 524 attributes some regions to a finer ICAO prefix than 406 did
   (e.g. Canarias moved `LE` → `GC`, Bodø `EN` → `BO`), which drops them out of the
   member-state and FAB joins.

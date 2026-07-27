@@ -11,6 +11,1517 @@
     "UIR": 63
   },
   "total": 9159,
+  "key": "match a country via countries[<iso2>].aliases; rows join on `country`",
+  "countries": {
+    "AE": {
+      "name": "United Arab Emirates",
+      "aliases": [
+        "United Arab Emirates",
+        "UAE"
+      ]
+    },
+    "AF": {
+      "name": "Afghanistan",
+      "aliases": [
+        "Afghanistan"
+      ]
+    },
+    "AG": {
+      "name": "Antigua and Barbuda",
+      "aliases": [
+        "Antigua and Barbuda",
+        "Antigua & Barbuda"
+      ],
+      "cldr": "Antigua & Barbuda"
+    },
+    "AI": {
+      "name": "Anguilla",
+      "aliases": [
+        "Anguilla"
+      ]
+    },
+    "AL": {
+      "name": "Albania",
+      "aliases": [
+        "Albania"
+      ]
+    },
+    "AM": {
+      "name": "Armenia",
+      "aliases": [
+        "Armenia"
+      ]
+    },
+    "AO": {
+      "name": "Angola",
+      "aliases": [
+        "Angola"
+      ]
+    },
+    "AQ": {
+      "name": "Antarctica",
+      "aliases": [
+        "Antarctica"
+      ]
+    },
+    "AR": {
+      "name": "Argentina",
+      "aliases": [
+        "Argentina"
+      ]
+    },
+    "AS": {
+      "name": "American Samoa",
+      "aliases": [
+        "American Samoa"
+      ]
+    },
+    "AT": {
+      "name": "Austria",
+      "aliases": [
+        "Austria"
+      ]
+    },
+    "AU": {
+      "name": "Australia",
+      "aliases": [
+        "Australia"
+      ]
+    },
+    "AW": {
+      "name": "Aruba",
+      "aliases": [
+        "Aruba"
+      ]
+    },
+    "AZ": {
+      "name": "Azerbaijan",
+      "aliases": [
+        "Azerbaijan"
+      ]
+    },
+    "BA": {
+      "name": "Bosnia and Herzegovina",
+      "aliases": [
+        "Bosnia and Herzegovina",
+        "Bosnia & Herzegovina"
+      ],
+      "cldr": "Bosnia & Herzegovina"
+    },
+    "BB": {
+      "name": "Barbados",
+      "aliases": [
+        "Barbados"
+      ]
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "aliases": [
+        "Bangladesh"
+      ]
+    },
+    "BE": {
+      "name": "Belgium",
+      "aliases": [
+        "Belgium"
+      ]
+    },
+    "BF": {
+      "name": "Burkina Faso",
+      "aliases": [
+        "Burkina Faso"
+      ]
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "aliases": [
+        "Bulgaria"
+      ]
+    },
+    "BH": {
+      "name": "Bahrain",
+      "aliases": [
+        "Bahrain"
+      ]
+    },
+    "BI": {
+      "name": "Burundi",
+      "aliases": [
+        "Burundi"
+      ]
+    },
+    "BJ": {
+      "name": "Benin",
+      "aliases": [
+        "Benin"
+      ]
+    },
+    "BL": {
+      "name": "Saint Barthelemy",
+      "aliases": [
+        "Saint Barthelemy",
+        "St. Barthélemy",
+        "Saint Barthélemy",
+        "St. Barthelemy"
+      ],
+      "cldr": "St. Barthélemy"
+    },
+    "BM": {
+      "name": "Bermuda",
+      "aliases": [
+        "Bermuda"
+      ]
+    },
+    "BN": {
+      "name": "Brunei",
+      "aliases": [
+        "Brunei"
+      ]
+    },
+    "BO": {
+      "name": "Bolivia",
+      "aliases": [
+        "Bolivia",
+        "Plurinational State of Bolivia"
+      ]
+    },
+    "BQ": {
+      "name": "Caribbean Netherlands",
+      "aliases": [
+        "Caribbean Netherlands"
+      ]
+    },
+    "BR": {
+      "name": "Brazil",
+      "aliases": [
+        "Brazil"
+      ]
+    },
+    "BS": {
+      "name": "Bahamas",
+      "aliases": [
+        "Bahamas"
+      ]
+    },
+    "BT": {
+      "name": "Bhutan",
+      "aliases": [
+        "Bhutan"
+      ]
+    },
+    "BW": {
+      "name": "Botswana",
+      "aliases": [
+        "Botswana"
+      ]
+    },
+    "BY": {
+      "name": "Belarus",
+      "aliases": [
+        "Belarus"
+      ]
+    },
+    "BZ": {
+      "name": "Belize",
+      "aliases": [
+        "Belize"
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "aliases": [
+        "Canada"
+      ]
+    },
+    "CC": {
+      "name": "Cocos (Keeling) Islands",
+      "aliases": [
+        "Cocos (Keeling) Islands"
+      ]
+    },
+    "CD": {
+      "name": "Democratic Republic of the Congo",
+      "aliases": [
+        "Democratic Republic of the Congo",
+        "Congo - Kinshasa",
+        "Congo-Kinshasa",
+        "DR Congo",
+        "DRC",
+        "Zaire"
+      ],
+      "cldr": "Congo - Kinshasa"
+    },
+    "CF": {
+      "name": "Central African Republic",
+      "aliases": [
+        "Central African Republic"
+      ]
+    },
+    "CG": {
+      "name": "Republic of the Congo",
+      "aliases": [
+        "Republic of the Congo",
+        "Congo - Brazzaville",
+        "Congo-Brazzaville"
+      ],
+      "cldr": "Congo - Brazzaville"
+    },
+    "CH": {
+      "name": "Switzerland",
+      "aliases": [
+        "Switzerland"
+      ]
+    },
+    "CI": {
+      "name": "Cote d'Ivoire",
+      "aliases": [
+        "Cote d'Ivoire",
+        "Côte d’Ivoire",
+        "Ivory Coast"
+      ],
+      "cldr": "Côte d’Ivoire"
+    },
+    "CK": {
+      "name": "Cook Islands",
+      "aliases": [
+        "Cook Islands"
+      ]
+    },
+    "CL": {
+      "name": "Chile",
+      "aliases": [
+        "Chile"
+      ]
+    },
+    "CM": {
+      "name": "Cameroon",
+      "aliases": [
+        "Cameroon"
+      ]
+    },
+    "CN": {
+      "name": "China",
+      "aliases": [
+        "China"
+      ]
+    },
+    "CO": {
+      "name": "Colombia",
+      "aliases": [
+        "Colombia"
+      ]
+    },
+    "CR": {
+      "name": "Costa Rica",
+      "aliases": [
+        "Costa Rica"
+      ]
+    },
+    "CU": {
+      "name": "Cuba",
+      "aliases": [
+        "Cuba"
+      ]
+    },
+    "CV": {
+      "name": "Cape Verde",
+      "aliases": [
+        "Cape Verde",
+        "Cabo Verde"
+      ]
+    },
+    "CW": {
+      "name": "Curacao",
+      "aliases": [
+        "Curacao",
+        "Curaçao"
+      ],
+      "cldr": "Curaçao"
+    },
+    "CX": {
+      "name": "Christmas Island",
+      "aliases": [
+        "Christmas Island"
+      ]
+    },
+    "CY": {
+      "name": "Cyprus",
+      "aliases": [
+        "Cyprus"
+      ]
+    },
+    "CZ": {
+      "name": "Czech Republic",
+      "aliases": [
+        "Czech Republic",
+        "Czechia"
+      ],
+      "cldr": "Czechia"
+    },
+    "DE": {
+      "name": "Germany",
+      "aliases": [
+        "Germany"
+      ]
+    },
+    "DJ": {
+      "name": "Djibouti",
+      "aliases": [
+        "Djibouti"
+      ]
+    },
+    "DK": {
+      "name": "Denmark",
+      "aliases": [
+        "Denmark"
+      ]
+    },
+    "DM": {
+      "name": "Dominica",
+      "aliases": [
+        "Dominica"
+      ]
+    },
+    "DO": {
+      "name": "Dominican Republic",
+      "aliases": [
+        "Dominican Republic"
+      ]
+    },
+    "DZ": {
+      "name": "Algeria",
+      "aliases": [
+        "Algeria"
+      ]
+    },
+    "EC": {
+      "name": "Ecuador",
+      "aliases": [
+        "Ecuador"
+      ]
+    },
+    "EE": {
+      "name": "Estonia",
+      "aliases": [
+        "Estonia"
+      ]
+    },
+    "EG": {
+      "name": "Egypt",
+      "aliases": [
+        "Egypt"
+      ]
+    },
+    "EH": {
+      "name": "Western Sahara",
+      "aliases": [
+        "Western Sahara"
+      ]
+    },
+    "ER": {
+      "name": "Eritrea",
+      "aliases": [
+        "Eritrea"
+      ]
+    },
+    "ES": {
+      "name": "Spain",
+      "aliases": [
+        "Spain"
+      ]
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "aliases": [
+        "Ethiopia"
+      ]
+    },
+    "FI": {
+      "name": "Finland",
+      "aliases": [
+        "Finland"
+      ]
+    },
+    "FJ": {
+      "name": "Fiji",
+      "aliases": [
+        "Fiji"
+      ]
+    },
+    "FK": {
+      "name": "Falkland Islands",
+      "aliases": [
+        "Falkland Islands"
+      ]
+    },
+    "FM": {
+      "name": "Micronesia",
+      "aliases": [
+        "Micronesia"
+      ]
+    },
+    "FO": {
+      "name": "Faroe Islands",
+      "aliases": [
+        "Faroe Islands"
+      ]
+    },
+    "FR": {
+      "name": "France",
+      "aliases": [
+        "France"
+      ]
+    },
+    "GA": {
+      "name": "Gabon",
+      "aliases": [
+        "Gabon"
+      ]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "aliases": [
+        "United Kingdom",
+        "UK",
+        "Great Britain",
+        "Britain",
+        "England"
+      ]
+    },
+    "GD": {
+      "name": "Grenada",
+      "aliases": [
+        "Grenada"
+      ]
+    },
+    "GE": {
+      "name": "Georgia",
+      "aliases": [
+        "Georgia"
+      ]
+    },
+    "GF": {
+      "name": "French Guiana",
+      "aliases": [
+        "French Guiana"
+      ]
+    },
+    "GG": {
+      "name": "Guernsey",
+      "aliases": [
+        "Guernsey"
+      ]
+    },
+    "GH": {
+      "name": "Ghana",
+      "aliases": [
+        "Ghana"
+      ]
+    },
+    "GI": {
+      "name": "Gibraltar",
+      "aliases": [
+        "Gibraltar"
+      ]
+    },
+    "GL": {
+      "name": "Greenland",
+      "aliases": [
+        "Greenland"
+      ]
+    },
+    "GM": {
+      "name": "Gambia",
+      "aliases": [
+        "Gambia"
+      ]
+    },
+    "GN": {
+      "name": "Guinea",
+      "aliases": [
+        "Guinea"
+      ]
+    },
+    "GP": {
+      "name": "Guadeloupe",
+      "aliases": [
+        "Guadeloupe"
+      ]
+    },
+    "GQ": {
+      "name": "Equatorial Guinea",
+      "aliases": [
+        "Equatorial Guinea"
+      ]
+    },
+    "GR": {
+      "name": "Greece",
+      "aliases": [
+        "Greece"
+      ]
+    },
+    "GT": {
+      "name": "Guatemala",
+      "aliases": [
+        "Guatemala"
+      ]
+    },
+    "GU": {
+      "name": "Guam",
+      "aliases": [
+        "Guam"
+      ]
+    },
+    "GW": {
+      "name": "Guinea-Bissau",
+      "aliases": [
+        "Guinea-Bissau"
+      ]
+    },
+    "GY": {
+      "name": "Guyana",
+      "aliases": [
+        "Guyana"
+      ]
+    },
+    "HK": {
+      "name": "Hong Kong",
+      "aliases": [
+        "Hong Kong",
+        "Hong Kong SAR China"
+      ],
+      "cldr": "Hong Kong SAR China"
+    },
+    "HN": {
+      "name": "Honduras",
+      "aliases": [
+        "Honduras"
+      ]
+    },
+    "HR": {
+      "name": "Croatia",
+      "aliases": [
+        "Croatia"
+      ]
+    },
+    "HT": {
+      "name": "Haiti",
+      "aliases": [
+        "Haiti"
+      ]
+    },
+    "HU": {
+      "name": "Hungary",
+      "aliases": [
+        "Hungary"
+      ]
+    },
+    "ID": {
+      "name": "Indonesia",
+      "aliases": [
+        "Indonesia"
+      ]
+    },
+    "IE": {
+      "name": "Ireland",
+      "aliases": [
+        "Ireland"
+      ]
+    },
+    "IL": {
+      "name": "Israel",
+      "aliases": [
+        "Israel"
+      ]
+    },
+    "IM": {
+      "name": "Isle of Man",
+      "aliases": [
+        "Isle of Man"
+      ]
+    },
+    "IN": {
+      "name": "India",
+      "aliases": [
+        "India"
+      ]
+    },
+    "IO": {
+      "name": "British Indian Ocean Territory",
+      "aliases": [
+        "British Indian Ocean Territory"
+      ]
+    },
+    "IQ": {
+      "name": "Iraq",
+      "aliases": [
+        "Iraq"
+      ]
+    },
+    "IR": {
+      "name": "Iran",
+      "aliases": [
+        "Iran",
+        "Islamic Republic of Iran",
+        "Persia"
+      ]
+    },
+    "IS": {
+      "name": "Iceland",
+      "aliases": [
+        "Iceland"
+      ]
+    },
+    "IT": {
+      "name": "Italy",
+      "aliases": [
+        "Italy"
+      ]
+    },
+    "JE": {
+      "name": "Jersey",
+      "aliases": [
+        "Jersey"
+      ]
+    },
+    "JM": {
+      "name": "Jamaica",
+      "aliases": [
+        "Jamaica"
+      ]
+    },
+    "JO": {
+      "name": "Jordan",
+      "aliases": [
+        "Jordan"
+      ]
+    },
+    "JP": {
+      "name": "Japan",
+      "aliases": [
+        "Japan"
+      ]
+    },
+    "KE": {
+      "name": "Kenya",
+      "aliases": [
+        "Kenya"
+      ]
+    },
+    "KG": {
+      "name": "Kyrgyzstan",
+      "aliases": [
+        "Kyrgyzstan"
+      ]
+    },
+    "KH": {
+      "name": "Cambodia",
+      "aliases": [
+        "Cambodia"
+      ]
+    },
+    "KI": {
+      "name": "Kiribati",
+      "aliases": [
+        "Kiribati"
+      ]
+    },
+    "KM": {
+      "name": "Comoros",
+      "aliases": [
+        "Comoros"
+      ]
+    },
+    "KN": {
+      "name": "Saint Kitts and Nevis",
+      "aliases": [
+        "Saint Kitts and Nevis",
+        "St. Kitts & Nevis"
+      ],
+      "cldr": "St. Kitts & Nevis"
+    },
+    "KP": {
+      "name": "North Korea",
+      "aliases": [
+        "North Korea",
+        "Democratic People's Republic of Korea"
+      ]
+    },
+    "KR": {
+      "name": "South Korea",
+      "aliases": [
+        "South Korea",
+        "Republic of Korea"
+      ]
+    },
+    "KW": {
+      "name": "Kuwait",
+      "aliases": [
+        "Kuwait"
+      ]
+    },
+    "KY": {
+      "name": "Cayman Islands",
+      "aliases": [
+        "Cayman Islands"
+      ]
+    },
+    "KZ": {
+      "name": "Kazakhstan",
+      "aliases": [
+        "Kazakhstan"
+      ]
+    },
+    "LA": {
+      "name": "Laos",
+      "aliases": [
+        "Laos",
+        "Lao People's Democratic Republic"
+      ]
+    },
+    "LB": {
+      "name": "Lebanon",
+      "aliases": [
+        "Lebanon"
+      ]
+    },
+    "LC": {
+      "name": "Saint Lucia",
+      "aliases": [
+        "Saint Lucia",
+        "St. Lucia"
+      ],
+      "cldr": "St. Lucia"
+    },
+    "LK": {
+      "name": "Sri Lanka",
+      "aliases": [
+        "Sri Lanka"
+      ]
+    },
+    "LR": {
+      "name": "Liberia",
+      "aliases": [
+        "Liberia"
+      ]
+    },
+    "LS": {
+      "name": "Lesotho",
+      "aliases": [
+        "Lesotho"
+      ]
+    },
+    "LT": {
+      "name": "Lithuania",
+      "aliases": [
+        "Lithuania"
+      ]
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "aliases": [
+        "Luxembourg"
+      ]
+    },
+    "LV": {
+      "name": "Latvia",
+      "aliases": [
+        "Latvia"
+      ]
+    },
+    "LY": {
+      "name": "Libya",
+      "aliases": [
+        "Libya"
+      ]
+    },
+    "MA": {
+      "name": "Morocco",
+      "aliases": [
+        "Morocco"
+      ]
+    },
+    "MD": {
+      "name": "Moldova",
+      "aliases": [
+        "Moldova",
+        "Republic of Moldova"
+      ]
+    },
+    "ME": {
+      "name": "Montenegro",
+      "aliases": [
+        "Montenegro"
+      ]
+    },
+    "MG": {
+      "name": "Madagascar",
+      "aliases": [
+        "Madagascar"
+      ]
+    },
+    "MH": {
+      "name": "Marshall Islands",
+      "aliases": [
+        "Marshall Islands"
+      ]
+    },
+    "MK": {
+      "name": "North Macedonia",
+      "aliases": [
+        "North Macedonia",
+        "Macedonia",
+        "FYROM"
+      ]
+    },
+    "ML": {
+      "name": "Mali",
+      "aliases": [
+        "Mali"
+      ]
+    },
+    "MM": {
+      "name": "Myanmar",
+      "aliases": [
+        "Myanmar",
+        "Myanmar (Burma)",
+        "Burma"
+      ],
+      "cldr": "Myanmar (Burma)"
+    },
+    "MN": {
+      "name": "Mongolia",
+      "aliases": [
+        "Mongolia"
+      ]
+    },
+    "MO": {
+      "name": "Macao",
+      "aliases": [
+        "Macao",
+        "Macao SAR China",
+        "Macau"
+      ],
+      "cldr": "Macao SAR China"
+    },
+    "MP": {
+      "name": "Northern Mariana Islands",
+      "aliases": [
+        "Northern Mariana Islands"
+      ]
+    },
+    "MQ": {
+      "name": "Martinique",
+      "aliases": [
+        "Martinique"
+      ]
+    },
+    "MR": {
+      "name": "Mauritania",
+      "aliases": [
+        "Mauritania"
+      ]
+    },
+    "MS": {
+      "name": "Montserrat",
+      "aliases": [
+        "Montserrat"
+      ]
+    },
+    "MT": {
+      "name": "Malta",
+      "aliases": [
+        "Malta"
+      ]
+    },
+    "MU": {
+      "name": "Mauritius",
+      "aliases": [
+        "Mauritius"
+      ]
+    },
+    "MV": {
+      "name": "Maldives",
+      "aliases": [
+        "Maldives"
+      ]
+    },
+    "MW": {
+      "name": "Malawi",
+      "aliases": [
+        "Malawi"
+      ]
+    },
+    "MX": {
+      "name": "Mexico",
+      "aliases": [
+        "Mexico"
+      ]
+    },
+    "MY": {
+      "name": "Malaysia",
+      "aliases": [
+        "Malaysia"
+      ]
+    },
+    "MZ": {
+      "name": "Mozambique",
+      "aliases": [
+        "Mozambique"
+      ]
+    },
+    "NA": {
+      "name": "Namibia",
+      "aliases": [
+        "Namibia"
+      ]
+    },
+    "NC": {
+      "name": "New Caledonia",
+      "aliases": [
+        "New Caledonia"
+      ]
+    },
+    "NE": {
+      "name": "Niger",
+      "aliases": [
+        "Niger"
+      ]
+    },
+    "NF": {
+      "name": "Norfolk Island",
+      "aliases": [
+        "Norfolk Island"
+      ]
+    },
+    "NG": {
+      "name": "Nigeria",
+      "aliases": [
+        "Nigeria"
+      ]
+    },
+    "NI": {
+      "name": "Nicaragua",
+      "aliases": [
+        "Nicaragua"
+      ]
+    },
+    "NL": {
+      "name": "Netherlands",
+      "aliases": [
+        "Netherlands",
+        "Holland",
+        "The Netherlands"
+      ]
+    },
+    "NO": {
+      "name": "Norway",
+      "aliases": [
+        "Norway"
+      ]
+    },
+    "NP": {
+      "name": "Nepal",
+      "aliases": [
+        "Nepal"
+      ]
+    },
+    "NR": {
+      "name": "Nauru",
+      "aliases": [
+        "Nauru"
+      ]
+    },
+    "NU": {
+      "name": "Niue",
+      "aliases": [
+        "Niue"
+      ]
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "aliases": [
+        "New Zealand"
+      ]
+    },
+    "OM": {
+      "name": "Oman",
+      "aliases": [
+        "Oman"
+      ]
+    },
+    "PA": {
+      "name": "Panama",
+      "aliases": [
+        "Panama"
+      ]
+    },
+    "PE": {
+      "name": "Peru",
+      "aliases": [
+        "Peru"
+      ]
+    },
+    "PF": {
+      "name": "French Polynesia",
+      "aliases": [
+        "French Polynesia"
+      ]
+    },
+    "PG": {
+      "name": "Papua New Guinea",
+      "aliases": [
+        "Papua New Guinea"
+      ]
+    },
+    "PH": {
+      "name": "Philippines",
+      "aliases": [
+        "Philippines"
+      ]
+    },
+    "PK": {
+      "name": "Pakistan",
+      "aliases": [
+        "Pakistan"
+      ]
+    },
+    "PL": {
+      "name": "Poland",
+      "aliases": [
+        "Poland"
+      ]
+    },
+    "PM": {
+      "name": "Saint Pierre and Miquelon",
+      "aliases": [
+        "Saint Pierre and Miquelon",
+        "St. Pierre & Miquelon"
+      ],
+      "cldr": "St. Pierre & Miquelon"
+    },
+    "PR": {
+      "name": "Puerto Rico",
+      "aliases": [
+        "Puerto Rico"
+      ]
+    },
+    "PS": {
+      "name": "Palestinian Territories",
+      "aliases": [
+        "Palestinian Territories"
+      ]
+    },
+    "PT": {
+      "name": "Portugal",
+      "aliases": [
+        "Portugal"
+      ]
+    },
+    "PW": {
+      "name": "Palau",
+      "aliases": [
+        "Palau"
+      ]
+    },
+    "PY": {
+      "name": "Paraguay",
+      "aliases": [
+        "Paraguay"
+      ]
+    },
+    "QA": {
+      "name": "Qatar",
+      "aliases": [
+        "Qatar"
+      ]
+    },
+    "RE": {
+      "name": "Reunion",
+      "aliases": [
+        "Reunion",
+        "Réunion"
+      ],
+      "cldr": "Réunion"
+    },
+    "RO": {
+      "name": "Romania",
+      "aliases": [
+        "Romania"
+      ]
+    },
+    "RS": {
+      "name": "Serbia",
+      "aliases": [
+        "Serbia"
+      ]
+    },
+    "RU": {
+      "name": "Russia",
+      "aliases": [
+        "Russia",
+        "Russian Federation"
+      ]
+    },
+    "RW": {
+      "name": "Rwanda",
+      "aliases": [
+        "Rwanda"
+      ]
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "aliases": [
+        "Saudi Arabia"
+      ]
+    },
+    "SB": {
+      "name": "Solomon Islands",
+      "aliases": [
+        "Solomon Islands"
+      ]
+    },
+    "SC": {
+      "name": "Seychelles",
+      "aliases": [
+        "Seychelles"
+      ]
+    },
+    "SD": {
+      "name": "Sudan",
+      "aliases": [
+        "Sudan"
+      ]
+    },
+    "SE": {
+      "name": "Sweden",
+      "aliases": [
+        "Sweden"
+      ]
+    },
+    "SG": {
+      "name": "Singapore",
+      "aliases": [
+        "Singapore"
+      ]
+    },
+    "SH": {
+      "name": "Saint Helena",
+      "aliases": [
+        "Saint Helena",
+        "St. Helena"
+      ],
+      "cldr": "St. Helena"
+    },
+    "SI": {
+      "name": "Slovenia",
+      "aliases": [
+        "Slovenia"
+      ]
+    },
+    "SJ": {
+      "name": "Svalbard and Jan Mayen",
+      "aliases": [
+        "Svalbard and Jan Mayen",
+        "Svalbard & Jan Mayen"
+      ],
+      "cldr": "Svalbard & Jan Mayen"
+    },
+    "SK": {
+      "name": "Slovakia",
+      "aliases": [
+        "Slovakia"
+      ]
+    },
+    "SL": {
+      "name": "Sierra Leone",
+      "aliases": [
+        "Sierra Leone"
+      ]
+    },
+    "SN": {
+      "name": "Senegal",
+      "aliases": [
+        "Senegal"
+      ]
+    },
+    "SO": {
+      "name": "Somalia",
+      "aliases": [
+        "Somalia"
+      ]
+    },
+    "SR": {
+      "name": "Suriname",
+      "aliases": [
+        "Suriname"
+      ]
+    },
+    "SS": {
+      "name": "South Sudan",
+      "aliases": [
+        "South Sudan"
+      ]
+    },
+    "ST": {
+      "name": "Sao Tome and Principe",
+      "aliases": [
+        "Sao Tome and Principe",
+        "São Tomé & Príncipe",
+        "São Tomé and Príncipe",
+        "Sao Tome & Principe"
+      ],
+      "cldr": "São Tomé & Príncipe"
+    },
+    "SV": {
+      "name": "El Salvador",
+      "aliases": [
+        "El Salvador"
+      ]
+    },
+    "SX": {
+      "name": "Sint Maarten",
+      "aliases": [
+        "Sint Maarten"
+      ]
+    },
+    "SY": {
+      "name": "Syria",
+      "aliases": [
+        "Syria",
+        "Syrian Arab Republic"
+      ]
+    },
+    "SZ": {
+      "name": "Eswatini",
+      "aliases": [
+        "Eswatini",
+        "Swaziland"
+      ]
+    },
+    "TC": {
+      "name": "Turks and Caicos Islands",
+      "aliases": [
+        "Turks and Caicos Islands",
+        "Turks & Caicos Islands"
+      ],
+      "cldr": "Turks & Caicos Islands"
+    },
+    "TD": {
+      "name": "Chad",
+      "aliases": [
+        "Chad"
+      ]
+    },
+    "TG": {
+      "name": "Togo",
+      "aliases": [
+        "Togo"
+      ]
+    },
+    "TH": {
+      "name": "Thailand",
+      "aliases": [
+        "Thailand"
+      ]
+    },
+    "TJ": {
+      "name": "Tajikistan",
+      "aliases": [
+        "Tajikistan"
+      ]
+    },
+    "TL": {
+      "name": "Timor-Leste",
+      "aliases": [
+        "Timor-Leste",
+        "East Timor"
+      ]
+    },
+    "TM": {
+      "name": "Turkmenistan",
+      "aliases": [
+        "Turkmenistan"
+      ]
+    },
+    "TN": {
+      "name": "Tunisia",
+      "aliases": [
+        "Tunisia"
+      ]
+    },
+    "TO": {
+      "name": "Tonga",
+      "aliases": [
+        "Tonga"
+      ]
+    },
+    "TR": {
+      "name": "Turkey",
+      "aliases": [
+        "Turkey",
+        "Türkiye",
+        "Turkiye"
+      ],
+      "cldr": "Türkiye"
+    },
+    "TT": {
+      "name": "Trinidad and Tobago",
+      "aliases": [
+        "Trinidad and Tobago",
+        "Trinidad & Tobago"
+      ],
+      "cldr": "Trinidad & Tobago"
+    },
+    "TV": {
+      "name": "Tuvalu",
+      "aliases": [
+        "Tuvalu"
+      ]
+    },
+    "TW": {
+      "name": "Taiwan",
+      "aliases": [
+        "Taiwan"
+      ]
+    },
+    "TZ": {
+      "name": "Tanzania",
+      "aliases": [
+        "Tanzania",
+        "United Republic of Tanzania"
+      ]
+    },
+    "UA": {
+      "name": "Ukraine",
+      "aliases": [
+        "Ukraine"
+      ]
+    },
+    "UG": {
+      "name": "Uganda",
+      "aliases": [
+        "Uganda"
+      ]
+    },
+    "UM": {
+      "name": "U.S. Outlying Islands",
+      "aliases": [
+        "U.S. Outlying Islands"
+      ]
+    },
+    "US": {
+      "name": "United States",
+      "aliases": [
+        "United States",
+        "USA",
+        "United States of America"
+      ]
+    },
+    "UY": {
+      "name": "Uruguay",
+      "aliases": [
+        "Uruguay"
+      ]
+    },
+    "UZ": {
+      "name": "Uzbekistan",
+      "aliases": [
+        "Uzbekistan"
+      ]
+    },
+    "VC": {
+      "name": "Saint Vincent and Grenadines",
+      "aliases": [
+        "Saint Vincent and Grenadines",
+        "St. Vincent & Grenadines"
+      ],
+      "cldr": "St. Vincent & Grenadines"
+    },
+    "VE": {
+      "name": "Venezuela",
+      "aliases": [
+        "Venezuela",
+        "Bolivarian Republic of Venezuela"
+      ]
+    },
+    "VG": {
+      "name": "British Virgin Islands",
+      "aliases": [
+        "British Virgin Islands"
+      ]
+    },
+    "VI": {
+      "name": "U.S. Virgin Islands",
+      "aliases": [
+        "U.S. Virgin Islands"
+      ]
+    },
+    "VN": {
+      "name": "Vietnam",
+      "aliases": [
+        "Vietnam",
+        "Viet Nam"
+      ]
+    },
+    "VU": {
+      "name": "Vanuatu",
+      "aliases": [
+        "Vanuatu"
+      ]
+    },
+    "WF": {
+      "name": "Wallis and Futuna",
+      "aliases": [
+        "Wallis and Futuna",
+        "Wallis & Futuna"
+      ],
+      "cldr": "Wallis & Futuna"
+    },
+    "WS": {
+      "name": "Samoa",
+      "aliases": [
+        "Samoa"
+      ]
+    },
+    "XK": {
+      "name": "Kosovo",
+      "aliases": [
+        "Kosovo",
+        "Republic of Kosovo"
+      ]
+    },
+    "YE": {
+      "name": "Yemen",
+      "aliases": [
+        "Yemen"
+      ]
+    },
+    "YT": {
+      "name": "Mayotte",
+      "aliases": [
+        "Mayotte"
+      ]
+    },
+    "ZA": {
+      "name": "South Africa",
+      "aliases": [
+        "South Africa"
+      ]
+    },
+    "ZM": {
+      "name": "Zambia",
+      "aliases": [
+        "Zambia"
+      ]
+    },
+    "ZW": {
+      "name": "Zimbabwe",
+      "aliases": [
+        "Zimbabwe"
+      ]
+    }
+  },
   "entries": [
     {
       "code": "AGGA",
@@ -16711,7 +18222,7 @@
       "name": "Adiake",
       "city": "Adiake",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 5.286,
       "lon": -3.303,
       "elev_m": 39,
@@ -16727,7 +18238,7 @@
       "name": "Boigny Intl",
       "city": "Abidjan",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 5.261,
       "lon": -3.926,
       "elev_m": 4,
@@ -16743,7 +18254,7 @@
       "name": "Bouaké Arpt",
       "city": "Bouaké",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 7.739,
       "lon": -5.074,
       "elev_m": 363,
@@ -16759,7 +18270,7 @@
       "name": "Bondoukou Arpt",
       "city": "Bondoukou",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 8.012,
       "lon": -2.765,
       "elev_m": 363,
@@ -16775,7 +18286,7 @@
       "name": "Dimbokro",
       "city": "Dimbokro",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 6.65,
       "lon": -4.7,
       "elev_m": 81,
@@ -16791,7 +18302,7 @@
       "name": "Daloa Arpt",
       "city": "Daloa",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 6.79,
       "lon": -6.474,
       "elev_m": 263,
@@ -16807,7 +18318,7 @@
       "name": "Gagnoa Arpt",
       "city": "Gagnoa",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 6.109,
       "lon": -5.989,
       "elev_m": 218,
@@ -16823,7 +18334,7 @@
       "name": "Korhogo Arpt",
       "city": "Korhogo",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 9.411,
       "lon": -5.622,
       "elev_m": 383,
@@ -16839,7 +18350,7 @@
       "name": "Man Arpt",
       "city": "Man",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 7.271,
       "lon": -7.588,
       "elev_m": 382,
@@ -16855,7 +18366,7 @@
       "name": "Odienne Arpt",
       "city": "Odienne",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 9.538,
       "lon": -7.564,
       "elev_m": 417,
@@ -16871,7 +18382,7 @@
       "name": "San Pedro Arpt",
       "city": "San Pedro",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 4.747,
       "lon": -6.661,
       "elev_m": 8,
@@ -16887,7 +18398,7 @@
       "name": "Sassandra Arpt",
       "city": "Sassandra",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 4.931,
       "lon": -6.132,
       "elev_m": 62,
@@ -16903,7 +18414,7 @@
       "name": "Tabou Arpt",
       "city": "Tabou",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 4.433,
       "lon": -7.36,
       "elev_m": 13,
@@ -16919,7 +18430,7 @@
       "name": "Yamoussoukro Arpt",
       "city": "Yamoussoukro",
       "country": "CI",
-      "country_name": "Côte d’Ivoire",
+      "country_name": "Cote d'Ivoire",
       "lat": 6.903,
       "lon": -5.366,
       "elev_m": 202,
@@ -23796,7 +25307,7 @@
       "name": "Ny-Ålesund Arpt",
       "city": "Ny-Ålesund",
       "country": "SJ",
-      "country_name": "Svalbard & Jan Mayen",
+      "country_name": "Svalbard and Jan Mayen",
       "lat": 78.917,
       "lon": 11.933,
       "elev_m": 8,
@@ -23828,7 +25339,7 @@
       "name": "Bjornoya Island",
       "city": "Bjornoya Island",
       "country": "SJ",
-      "country_name": "Svalbard & Jan Mayen",
+      "country_name": "Svalbard and Jan Mayen",
       "lat": 74.504,
       "lon": 19,
       "elev_m": 2,
@@ -24244,7 +25755,7 @@
       "name": "Hopen Island",
       "city": "Hopen Island",
       "country": "SJ",
-      "country_name": "Svalbard & Jan Mayen",
+      "country_name": "Svalbard and Jan Mayen",
       "lat": 76.509,
       "lon": 25.016,
       "elev_m": 5,
@@ -24276,7 +25787,7 @@
       "name": "Jan Mayen Island",
       "city": "Jan Mayen Island",
       "country": "SJ",
-      "country_name": "Svalbard & Jan Mayen",
+      "country_name": "Svalbard and Jan Mayen",
       "lat": 70.94,
       "lon": -8.668,
       "elev_m": 2,
@@ -29547,7 +31058,7 @@
       "name": "Brazzaville Arpt",
       "city": "Brazzaville",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -4.252,
       "lon": 15.253,
       "elev_m": 316,
@@ -29563,7 +31074,7 @@
       "name": "Djambala",
       "city": "Djambala",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -2.53,
       "lon": 14.77,
       "elev_m": 791,
@@ -29579,7 +31090,7 @@
       "name": "Mouyondzi",
       "city": "Mouyondzi",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -4.015,
       "lon": 13.966,
       "elev_m": 512,
@@ -29595,7 +31106,7 @@
       "name": "M'Pouya",
       "city": "M'Pouya",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -2.617,
       "lon": 16.217,
       "elev_m": 289,
@@ -29611,7 +31122,7 @@
       "name": "Sibiti",
       "city": "Sibiti",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -3.683,
       "lon": 13.35,
       "elev_m": 532,
@@ -29629,7 +31140,7 @@
       "name": "BRAZZAVILLE FIR",
       "city": "Brazzaville",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": 1.25,
       "lon": 17.008,
       "icao_state": "FC",
@@ -29650,7 +31161,7 @@
       "name": "BRAZZAVILLE UIR",
       "city": "Brazzaville",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": 1.25,
       "lon": 17.008,
       "icao_state": "FC",
@@ -29669,7 +31180,7 @@
       "name": "N'Guesso Arpt",
       "city": "Ollombo",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -1.226,
       "lon": 15.91,
       "elev_m": 327,
@@ -29685,7 +31196,7 @@
       "name": "Gamboma Arpt",
       "city": "Gamboma",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -1.894,
       "lon": 15.855,
       "elev_m": 309,
@@ -29701,7 +31212,7 @@
       "name": "Impfondo Arpt",
       "city": "Impfondo",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": 1.592,
       "lon": 18.051,
       "elev_m": 320,
@@ -29717,7 +31228,7 @@
       "name": "Makoua",
       "city": "Makoua",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -0.02,
       "lon": 15.58,
       "elev_m": 329,
@@ -29733,7 +31244,7 @@
       "name": "Souanke",
       "city": "Souanke",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": 2.067,
       "lon": 14.133,
       "elev_m": 549,
@@ -29749,7 +31260,7 @@
       "name": "Ouesso",
       "city": "Ouesso",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": 1.616,
       "lon": 16.038,
       "elev_m": 354,
@@ -29765,7 +31276,7 @@
       "name": "Makabana",
       "city": "Makabana",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -3.483,
       "lon": 12.617,
       "elev_m": 158,
@@ -29781,7 +31292,7 @@
       "name": "Loubomo",
       "city": "Loubomo",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -4.2,
       "lon": 12.7,
       "elev_m": 330,
@@ -29797,7 +31308,7 @@
       "name": "Pointe-Noire Arpt",
       "city": "Pointe-Noire",
       "country": "CG",
-      "country_name": "Congo - Brazzaville",
+      "country_name": "Republic of the Congo",
       "lat": -4.816,
       "lon": 11.887,
       "elev_m": 18,
@@ -30293,7 +31804,7 @@
       "name": "Ascension Arpt",
       "city": "Ascension",
       "country": "SH",
-      "country_name": "St. Helena",
+      "country_name": "Saint Helena",
       "lat": -7.97,
       "lon": -14.394,
       "elev_m": 79,
@@ -31247,7 +32758,7 @@
       "name": "St Denis/Garros Arpt",
       "city": "Reunion",
       "country": "RE",
-      "country_name": "Réunion",
+      "country_name": "Reunion",
       "lat": -20.887,
       "lon": 55.51,
       "elev_m": 20,
@@ -31263,7 +32774,7 @@
       "name": "Pierrefonds Arpt",
       "city": "Reunion",
       "country": "RE",
-      "country_name": "Réunion",
+      "country_name": "Reunion",
       "lat": -21.32,
       "lon": 55.425,
       "elev_m": 21,
@@ -32275,7 +33786,7 @@
       "name": "Príncipe",
       "city": "Príncipe",
       "country": "ST",
-      "country_name": "São Tomé & Príncipe",
+      "country_name": "Sao Tome and Principe",
       "lat": 1.65,
       "lon": 7.42,
       "elev_m": 3,
@@ -32291,7 +33802,7 @@
       "name": "São Tomé Intl",
       "city": "São Tomé",
       "country": "ST",
-      "country_name": "São Tomé & Príncipe",
+      "country_name": "Sao Tome and Principe",
       "lat": 0.378,
       "lon": 6.712,
       "elev_m": 11,
@@ -34043,7 +35554,7 @@
       "name": "NDjili Arpt",
       "city": "Kinshasa",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -4.387,
       "lon": 15.448,
       "elev_m": 309,
@@ -34059,7 +35570,7 @@
       "name": "Moanda Arpt",
       "city": "Moanda",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.931,
       "lon": 12.351,
       "elev_m": 27,
@@ -34075,7 +35586,7 @@
       "name": "Matadi",
       "city": "Matadi",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.8,
       "lon": 13.44,
       "elev_m": 341,
@@ -34091,7 +35602,7 @@
       "name": "Inga",
       "city": "Inga",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.532,
       "lon": 13.579,
       "elev_m": 271,
@@ -34107,7 +35618,7 @@
       "name": "Inongo",
       "city": "Inongo",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -1.946,
       "lon": 18.286,
       "elev_m": 316,
@@ -34123,7 +35634,7 @@
       "name": "Bandundu",
       "city": "Bandundu",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -3.311,
       "lon": 17.382,
       "elev_m": 321,
@@ -34139,7 +35650,7 @@
       "name": "Kikwit Arpt",
       "city": "Kikwit",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.036,
       "lon": 18.786,
       "elev_m": 479,
@@ -34155,7 +35666,7 @@
       "name": "Kenge",
       "city": "Kenge",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -4.839,
       "lon": 17.029,
       "elev_m": 545,
@@ -34171,7 +35682,7 @@
       "name": "Mbandaka Arpt",
       "city": "Mbandaka",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": 0.022,
       "lon": 18.289,
       "elev_m": 315,
@@ -34187,7 +35698,7 @@
       "name": "Gemena",
       "city": "Gemena",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": 3.28,
       "lon": 19.78,
       "elev_m": 475,
@@ -34203,7 +35714,7 @@
       "name": "Boende Arpt",
       "city": "Boende",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -0.288,
       "lon": 20.881,
       "elev_m": 352,
@@ -34219,7 +35730,7 @@
       "name": "Kisangani",
       "city": "Kisangani",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": 0.517,
       "lon": 25.183,
       "elev_m": 398,
@@ -34235,7 +35746,7 @@
       "name": "Bangoka Arpt",
       "city": "Kisangani",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": 0.482,
       "lon": 25.338,
       "elev_m": 432,
@@ -34251,7 +35762,7 @@
       "name": "Butembo",
       "city": "Butembo",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": 0.117,
       "lon": 29.313,
       "elev_m": 1754,
@@ -34267,7 +35778,7 @@
       "name": "Goma Arpt",
       "city": "Goma",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -1.663,
       "lon": 29.237,
       "elev_m": 1552,
@@ -34283,7 +35794,7 @@
       "name": "Rutshuru",
       "city": "Rutshuru",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -1.183,
       "lon": 29.45,
       "elev_m": 1283,
@@ -34299,7 +35810,7 @@
       "name": "Kindu",
       "city": "Kindu",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -2.925,
       "lon": 25.916,
       "elev_m": 495,
@@ -34315,7 +35826,7 @@
       "name": "Lubumbashi Intl",
       "city": "Lubumbashi",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -11.592,
       "lon": 27.53,
       "elev_m": 1309,
@@ -34331,7 +35842,7 @@
       "name": "Kolwezi Arpt",
       "city": "Kolwezi",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -10.766,
       "lon": 25.508,
       "elev_m": 1526,
@@ -34347,7 +35858,7 @@
       "name": "Manono Arpt",
       "city": "Manono",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -7.289,
       "lon": 27.394,
       "elev_m": 633,
@@ -34363,7 +35874,7 @@
       "name": "Kalemie",
       "city": "Kalemie",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.881,
       "lon": 29.243,
       "elev_m": 778,
@@ -34379,7 +35890,7 @@
       "name": "Kongolo",
       "city": "Kongolo",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.394,
       "lon": 26.991,
       "elev_m": 570,
@@ -34395,7 +35906,7 @@
       "name": "Kamina",
       "city": "Kamina",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -8.647,
       "lon": 25.249,
       "elev_m": 1105,
@@ -34411,7 +35922,7 @@
       "name": "Kananga",
       "city": "Kananga",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -5.88,
       "lon": 22.42,
       "elev_m": 654,
@@ -34427,7 +35938,7 @@
       "name": "Tshikapa",
       "city": "Tshikapa",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -6.438,
       "lon": 20.794,
       "elev_m": 491,
@@ -34443,7 +35954,7 @@
       "name": "Lodja",
       "city": "Lodja",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -3.462,
       "lon": 23.618,
       "elev_m": 499,
@@ -34459,7 +35970,7 @@
       "name": "Lusambo",
       "city": "Lusambo",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -4.967,
       "lon": 23.433,
       "elev_m": 433,
@@ -34475,7 +35986,7 @@
       "name": "Ilebo",
       "city": "Ilebo",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -4.33,
       "lon": 20.589,
       "elev_m": 445,
@@ -34491,7 +36002,7 @@
       "name": "Mbuji-Mayi Arpt",
       "city": "Mbuji-Mayi",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -6.123,
       "lon": 23.57,
       "elev_m": 679,
@@ -34509,7 +36020,7 @@
       "name": "KINSHASA FIR",
       "city": "Kinshasa",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -3.308,
       "lon": 21.609,
       "icao_state": "FZ",
@@ -34530,7 +36041,7 @@
       "name": "KINSHASA UIR",
       "city": "Kinshasa",
       "country": "CD",
-      "country_name": "Congo - Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
       "lat": -3.308,
       "lon": 21.609,
       "icao_state": "FZ",
@@ -98832,7 +100343,7 @@
       "name": "St Pierre Arpt",
       "city": "St Pierre",
       "country": "PM",
-      "country_name": "St. Pierre & Miquelon",
+      "country_name": "Saint Pierre and Miquelon",
       "lat": 46.764,
       "lon": -56.169,
       "elev_m": 5,
@@ -102212,7 +103723,7 @@
       "name": "PRAHA FIR",
       "city": "Praha",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.796,
       "lon": 15.529,
       "icao_state": "LK",
@@ -102231,7 +103742,7 @@
       "name": "Ceske Budejovice Arpt",
       "city": "Ceske Budejovice",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 48.946,
       "lon": 14.427,
       "elev_m": 432,
@@ -102247,7 +103758,7 @@
       "name": "Caslav Arpt",
       "city": "Caslav",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.94,
       "lon": 15.382,
       "elev_m": 234,
@@ -102263,7 +103774,7 @@
       "name": "Kbely Arpt",
       "city": "Prague",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.123,
       "lon": 14.538,
       "elev_m": 281,
@@ -102279,7 +103790,7 @@
       "name": "Kunovice Arpt",
       "city": "Kunovice",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.042,
       "lon": 17.442,
       "elev_m": 176,
@@ -102295,7 +103806,7 @@
       "name": "Karlovy Vary Intl",
       "city": "Karlovy Vary",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.202,
       "lon": 12.91,
       "elev_m": 600,
@@ -102311,7 +103822,7 @@
       "name": "Kosice Intl",
       "city": "Kosice",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 48.664,
       "lon": 21.242,
       "elev_m": 232,
@@ -102327,7 +103838,7 @@
       "name": "Liberec Arpt",
       "city": "Liberec",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.77,
       "lon": 15.024,
       "elev_m": 397,
@@ -102343,7 +103854,7 @@
       "name": "Plzeň-Líně Arpt",
       "city": "Plzeň-Líně",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.675,
       "lon": 13.275,
       "elev_m": 353,
@@ -102359,7 +103870,7 @@
       "name": "Janáček Arpt",
       "city": "Ostrava",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.696,
       "lon": 18.111,
       "elev_m": 251,
@@ -102375,7 +103886,7 @@
       "name": "Namest nad Oslavou Arpt",
       "city": "Namest nad Oslavou",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.166,
       "lon": 16.125,
       "elev_m": 460,
@@ -102391,7 +103902,7 @@
       "name": "Pardubice Arpt",
       "city": "Pardubice",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.016,
       "lon": 15.74,
       "elev_m": 226,
@@ -102407,7 +103918,7 @@
       "name": "Prerov Arpt",
       "city": "Prerov",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.424,
       "lon": 17.406,
       "elev_m": 201,
@@ -102423,7 +103934,7 @@
       "name": "Piestany",
       "city": "Piestany",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 48.613,
       "lon": 17.832,
       "elev_m": 160,
@@ -102439,7 +103950,7 @@
       "name": "Havel Arpt",
       "city": "Prague",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.101,
       "lon": 14.26,
       "elev_m": 364,
@@ -102455,7 +103966,7 @@
       "name": "Sliac",
       "city": "Sliac",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 48.63,
       "lon": 19.14,
       "elev_m": 318,
@@ -102471,7 +103982,7 @@
       "name": "Tuřany Arpt",
       "city": "Brno",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 49.151,
       "lon": 16.694,
       "elev_m": 233,
@@ -102487,7 +103998,7 @@
       "name": "Vodochody Arpt",
       "city": "Vodochody",
       "country": "CZ",
-      "country_name": "Czechia",
+      "country_name": "Czech Republic",
       "lat": 50.217,
       "lon": 14.396,
       "elev_m": 275,
@@ -103418,7 +104929,7 @@
       "name": "Bihac",
       "city": "Bihac",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 44.817,
       "lon": 15.883,
       "elev_m": 222,
@@ -103434,7 +104945,7 @@
       "name": "Banja Luka Intl",
       "city": "Banja Luka",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 44.937,
       "lon": 17.299,
       "elev_m": 114,
@@ -103450,7 +104961,7 @@
       "name": "Livno",
       "city": "Livno",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 43.825,
       "lon": 17.008,
       "elev_m": 738,
@@ -103466,7 +104977,7 @@
       "name": "Mostar Intl",
       "city": "Mostar",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 43.285,
       "lon": 17.84,
       "elev_m": 49,
@@ -103482,7 +104993,7 @@
       "name": "Sarajevo Intl",
       "city": "Sarajevo",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 43.825,
       "lon": 18.331,
       "elev_m": 505,
@@ -103500,7 +105011,7 @@
       "name": "SARAJEVO FIR",
       "city": "Sarajevo",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 43.89,
       "lon": 17.67,
       "icao_state": "LQ",
@@ -103521,7 +105032,7 @@
       "name": "SARAJEVO UIR",
       "city": "Sarajevo",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 43.89,
       "lon": 17.67,
       "icao_state": "LQ",
@@ -103540,7 +105051,7 @@
       "name": "Tuzla Intl",
       "city": "Tuzla",
       "country": "BA",
-      "country_name": "Bosnia & Herzegovina",
+      "country_name": "Bosnia and Herzegovina",
       "lat": 44.461,
       "lon": 18.728,
       "elev_m": 242,
@@ -104325,7 +105836,7 @@
       "name": "ANKARA FIR",
       "city": "Ankara",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.308,
       "lon": 37.295,
       "icao_state": "LT",
@@ -104344,7 +105855,7 @@
       "name": "Guvercin Lik",
       "city": "Ankara",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.934,
       "lon": 32.739,
       "elev_m": 820,
@@ -104360,7 +105871,7 @@
       "name": "Esenboğa Intl",
       "city": "Ankara",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.128,
       "lon": 32.995,
       "elev_m": 952,
@@ -104376,7 +105887,7 @@
       "name": "Etimesgut Arpt",
       "city": "Ankara",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.95,
       "lon": 32.689,
       "elev_m": 813,
@@ -104392,7 +105903,7 @@
       "name": "Murted )",
       "city": "Murted )",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.079,
       "lon": 32.566,
       "elev_m": 836,
@@ -104408,7 +105919,7 @@
       "name": "Adana Arpt",
       "city": "Adana",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.989,
       "lon": 35.293,
       "elev_m": 19,
@@ -104424,7 +105935,7 @@
       "name": "Incirlik",
       "city": "Adana",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.002,
       "lon": 35.426,
       "elev_m": 62,
@@ -104440,7 +105951,7 @@
       "name": "Afyon Arpt",
       "city": "Afyon",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.735,
       "lon": 30.596,
       "elev_m": 1004,
@@ -104456,7 +105967,7 @@
       "name": "Antalya Arpt",
       "city": "Antalya",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.9,
       "lon": 30.798,
       "elev_m": 50,
@@ -104472,7 +105983,7 @@
       "name": "Gaziantep Arpt",
       "city": "Gaziantep",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.947,
       "lon": 37.479,
       "elev_m": 684,
@@ -104488,7 +105999,7 @@
       "name": "Iskenderun",
       "city": "Iskenderun",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.592,
       "lon": 36.158,
       "elev_m": 2,
@@ -104504,7 +106015,7 @@
       "name": "Kastamonu Arpt",
       "city": "Kastamonu",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.305,
       "lon": 33.792,
       "elev_m": 1074,
@@ -104520,7 +106031,7 @@
       "name": "Konya Arpt",
       "city": "Konya",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.979,
       "lon": 32.562,
       "elev_m": 1029,
@@ -104536,7 +106047,7 @@
       "name": "Malatya Tulga Arpt",
       "city": "Malatya Tulga",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.354,
       "lon": 38.254,
       "elev_m": 919,
@@ -104552,7 +106063,7 @@
       "name": "Merzifon Arpt",
       "city": "Merzifon",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.826,
       "lon": 35.52,
       "elev_m": 536,
@@ -104568,7 +106079,7 @@
       "name": "Samsun Arpt",
       "city": "Samsun",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.278,
       "lon": 36.305,
       "elev_m": 168,
@@ -104584,7 +106095,7 @@
       "name": "Sivas Arpt",
       "city": "Sivas",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.798,
       "lon": 36.894,
       "elev_m": 1601,
@@ -104600,7 +106111,7 @@
       "name": "Çaycuma Arpt",
       "city": "Zonguldak",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.507,
       "lon": 32.089,
       "elev_m": 13,
@@ -104616,7 +106127,7 @@
       "name": "Malatya Arpt",
       "city": "Malatya",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.435,
       "lon": 38.092,
       "elev_m": 850,
@@ -104632,7 +106143,7 @@
       "name": "Kayseri Intl",
       "city": "Kayseri",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.77,
       "lon": 35.495,
       "elev_m": 1053,
@@ -104648,7 +106159,7 @@
       "name": "Sivrihisar",
       "city": "Sivrihisar",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.453,
       "lon": 31.369,
       "elev_m": 976,
@@ -104664,7 +106175,7 @@
       "name": "Tokat Arpt",
       "city": "Tokat",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.308,
       "lon": 36.368,
       "elev_m": 561,
@@ -104680,7 +106191,7 @@
       "name": "Çardak Arpt",
       "city": "Çardak",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.785,
       "lon": 29.701,
       "elev_m": 851,
@@ -104696,7 +106207,7 @@
       "name": "Nevsehir Arpt",
       "city": "Nevsehir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.771,
       "lon": 34.521,
       "elev_m": 944,
@@ -104712,7 +106223,7 @@
       "name": "Ataturk Intl",
       "city": "Istanbul",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.982,
       "lon": 28.821,
       "elev_m": 33,
@@ -104730,7 +106241,7 @@
       "name": "ISTANBUL FIR",
       "city": "Istanbul",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.438,
       "lon": 28.287,
       "icao_state": "LT",
@@ -104749,7 +106260,7 @@
       "name": "Çıldır Arpt",
       "city": "Aydin",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.816,
       "lon": 27.886,
       "elev_m": 29,
@@ -104765,7 +106276,7 @@
       "name": "Bursa Arpt",
       "city": "Bursa",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.233,
       "lon": 29.009,
       "elev_m": 97,
@@ -104781,7 +106292,7 @@
       "name": "Balikesir Arpt",
       "city": "Balikesir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.619,
       "lon": 27.926,
       "elev_m": 95,
@@ -104797,7 +106308,7 @@
       "name": "Bandirma Arpt",
       "city": "Bandirma",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.318,
       "lon": 27.978,
       "elev_m": 42,
@@ -104813,7 +106324,7 @@
       "name": "Çanakkale Arpt",
       "city": "Çanakkale",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.14,
       "lon": 26.425,
       "elev_m": 8,
@@ -104829,7 +106340,7 @@
       "name": "Eskisehir",
       "city": "Eskisehir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.781,
       "lon": 30.58,
       "elev_m": 785,
@@ -104845,7 +106356,7 @@
       "name": "Menderes Arpt",
       "city": "Izmir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.285,
       "lon": 27.155,
       "elev_m": 123,
@@ -104861,7 +106372,7 @@
       "name": "Gaziemir Arpt",
       "city": "Izmir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.32,
       "lon": 27.159,
       "elev_m": 132,
@@ -104877,7 +106388,7 @@
       "name": "Cigli",
       "city": "Izmir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.513,
       "lon": 27.01,
       "elev_m": 5,
@@ -104893,7 +106404,7 @@
       "name": "Isparta",
       "city": "Isparta",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.75,
       "lon": 30.55,
       "elev_m": 1116,
@@ -104909,7 +106420,7 @@
       "name": "Kutahya",
       "city": "Kutahya",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.427,
       "lon": 30.017,
       "elev_m": 921,
@@ -104925,7 +106436,7 @@
       "name": "Uşak Arpt",
       "city": "Uşak",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.68,
       "lon": 29.483,
       "elev_m": 868,
@@ -104941,7 +106452,7 @@
       "name": "Yalova",
       "city": "Yalova",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.682,
       "lon": 29.377,
       "elev_m": 13,
@@ -104957,7 +106468,7 @@
       "name": "Topel Arpt)",
       "city": "Topel Arpt)",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.735,
       "lon": 30.083,
       "elev_m": 51,
@@ -104973,7 +106484,7 @@
       "name": "Yenisehir Arpt",
       "city": "Bursa",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.255,
       "lon": 29.562,
       "elev_m": 233,
@@ -104989,7 +106500,7 @@
       "name": "Dalaman Arpt",
       "city": "Dalaman",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.713,
       "lon": 28.793,
       "elev_m": 2,
@@ -105005,7 +106516,7 @@
       "name": "Akhisar Arpt",
       "city": "Akhisar",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.809,
       "lon": 27.834,
       "elev_m": 81,
@@ -105021,7 +106532,7 @@
       "name": "Corlu Arpt",
       "city": "Corlu",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.139,
       "lon": 27.919,
       "elev_m": 165,
@@ -105037,7 +106548,7 @@
       "name": "Imisiki",
       "city": "Bodrum",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.14,
       "lon": 27.67,
       "elev_m": 48,
@@ -105053,7 +106564,7 @@
       "name": "Samandira",
       "city": "Istanbul",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.993,
       "lon": 29.216,
       "elev_m": 116,
@@ -105069,7 +106580,7 @@
       "name": "Polatkan Arpt",
       "city": "Eskisehir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.81,
       "lon": 30.519,
       "elev_m": 788,
@@ -105085,7 +106596,7 @@
       "name": "Zafer Arpt",
       "city": "Zafer",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.114,
       "lon": 30.13,
       "elev_m": 1010,
@@ -105101,7 +106612,7 @@
       "name": "Elazığ Arpt",
       "city": "Elazığ",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.607,
       "lon": 39.291,
       "elev_m": 887,
@@ -105117,7 +106628,7 @@
       "name": "Giresun Arpt",
       "city": "Ordu",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.967,
       "lon": 38.081,
       "elev_m": 5,
@@ -105133,7 +106644,7 @@
       "name": "Diyarbakır",
       "city": "Diyarbakır",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.894,
       "lon": 40.201,
       "elev_m": 676,
@@ -105149,7 +106660,7 @@
       "name": "Erzincan Arpt",
       "city": "Erzincan",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.71,
       "lon": 39.527,
       "elev_m": 1146,
@@ -105165,7 +106676,7 @@
       "name": "Erzurum Intl",
       "city": "Erzurum",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.956,
       "lon": 41.17,
       "elev_m": 1758,
@@ -105181,7 +106692,7 @@
       "name": "Harakani Arpt",
       "city": "Kars",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.562,
       "lon": 43.115,
       "elev_m": 1794,
@@ -105197,7 +106708,7 @@
       "name": "Trabzon Arpt",
       "city": "Trabzon",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.995,
       "lon": 39.782,
       "elev_m": 28,
@@ -105213,7 +106724,7 @@
       "name": "Şanlıurfa",
       "city": "Şanlıurfa",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.133,
       "lon": 38.767,
       "elev_m": 550,
@@ -105229,7 +106740,7 @@
       "name": "Van Arpt",
       "city": "Van",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.469,
       "lon": 43.337,
       "elev_m": 1654,
@@ -105245,7 +106756,7 @@
       "name": "Batman Arpt",
       "city": "Batman",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.93,
       "lon": 41.117,
       "elev_m": 559,
@@ -105261,7 +106772,7 @@
       "name": "Muş Arpt",
       "city": "Muş",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.748,
       "lon": 41.661,
       "elev_m": 1267,
@@ -105277,7 +106788,7 @@
       "name": "Siirt Arpt",
       "city": "Siirt",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.978,
       "lon": 41.842,
       "elev_m": 602,
@@ -105293,7 +106804,7 @@
       "name": "Sinop Arpt",
       "city": "Sinop",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 42.019,
       "lon": 35.072,
       "elev_m": 7,
@@ -105309,7 +106820,7 @@
       "name": "Kahramanmaraş Arpt",
       "city": "Kahramanmaraş",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.539,
       "lon": 36.953,
       "elev_m": 505,
@@ -105325,7 +106836,7 @@
       "name": "Ağrı Arpt",
       "city": "Ağrı",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.654,
       "lon": 43.026,
       "elev_m": 1657,
@@ -105341,7 +106852,7 @@
       "name": "Adiyaman Arpt",
       "city": "Adiyaman",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.731,
       "lon": 38.469,
       "elev_m": 672,
@@ -105357,7 +106868,7 @@
       "name": "Mardin Arpt",
       "city": "Mardin",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.232,
       "lon": 40.638,
       "elev_m": 529,
@@ -105373,7 +106884,7 @@
       "name": "Şanlıurfa GAP Arpt",
       "city": "Şanlıurfa GAP",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.445,
       "lon": 38.904,
       "elev_m": 825,
@@ -105389,7 +106900,7 @@
       "name": "Iğdır Arpt",
       "city": "Iğdır",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.977,
       "lon": 43.878,
       "elev_m": 936,
@@ -105405,7 +106916,7 @@
       "name": "Bingöl Arpt",
       "city": "Bingöl",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.861,
       "lon": 40.593,
       "elev_m": 1061,
@@ -105421,7 +106932,7 @@
       "name": "Sirnak Arpt",
       "city": "Sirnak",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.365,
       "lon": 42.06,
       "elev_m": 620,
@@ -105437,7 +106948,7 @@
       "name": "Yüksekova Arpt",
       "city": "Yüksekova",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.55,
       "lon": 44.238,
       "elev_m": 1852,
@@ -105453,7 +106964,7 @@
       "name": "Hatay Arpt",
       "city": "Hatay",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.361,
       "lon": 36.283,
       "elev_m": 80,
@@ -105469,7 +106980,7 @@
       "name": "Çukurova Intl",
       "city": "Tarsus",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.89385,
       "lon": 35.06999,
       "elev_m": 6,
@@ -105485,7 +106996,7 @@
       "name": "Kaklic",
       "city": "Izmir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 38.511,
       "lon": 26.978,
       "elev_m": 4,
@@ -105501,7 +107012,7 @@
       "name": "Efes Arpt",
       "city": "Izmir-Selcuk",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.951,
       "lon": 27.333,
       "elev_m": 3,
@@ -105517,7 +107028,7 @@
       "name": "Demirel Arpt",
       "city": "Isparta",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.855,
       "lon": 30.368,
       "elev_m": 862,
@@ -105533,7 +107044,7 @@
       "name": "Seyit Arpt",
       "city": "Balikesir",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 39.559,
       "lon": 27.025,
       "elev_m": 15,
@@ -105549,7 +107060,7 @@
       "name": "Milas-Bodrun Arpt",
       "city": "Milas-Bodrun",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 37.245,
       "lon": 27.673,
       "elev_m": 6,
@@ -105565,7 +107076,7 @@
       "name": "Gazipasa Arpt",
       "city": "Gazipasa",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 36.299,
       "lon": 32.3,
       "elev_m": 26,
@@ -105581,7 +107092,7 @@
       "name": "Samsun-Çarşamba Arpt",
       "city": "Samsun-Çarşamba",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.255,
       "lon": 36.567,
       "elev_m": 7,
@@ -105597,7 +107108,7 @@
       "name": "Gokcen Intl",
       "city": "Istanbul",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.899,
       "lon": 29.309,
       "elev_m": 83,
@@ -105613,7 +107124,7 @@
       "name": "Gokceada Arpt",
       "city": "Gokceada",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 40.2,
       "lon": 25.883,
       "elev_m": 21,
@@ -105629,7 +107140,7 @@
       "name": "Istanbul Arpt",
       "city": "Istanbul",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.262,
       "lon": 28.74,
       "elev_m": 99,
@@ -105645,7 +107156,7 @@
       "name": "Rize-Artvin Arpt",
       "city": "Rize-Artvin",
       "country": "TR",
-      "country_name": "Türkiye",
+      "country_name": "Turkey",
       "lat": 41.179,
       "lon": 40.845,
       "elev_m": 5,
@@ -105952,8 +107463,8 @@
       "type": "AIRPORT",
       "name": "Pristina Arpt",
       "city": "Pristina",
-      "country": "KV",
-      "country_name": null,
+      "country": "XK",
+      "country_name": "Kosovo",
       "lat": 42.581,
       "lon": 21.03,
       "elev_m": 546,
@@ -106246,7 +107757,7 @@
       "name": "McCarthy",
       "city": "Grand Turk",
       "country": "TC",
-      "country_name": "Turks & Caicos Islands",
+      "country_name": "Turks and Caicos Islands",
       "lat": 21.443,
       "lon": -71.146,
       "elev_m": 6,
@@ -106262,7 +107773,7 @@
       "name": "Providenciales Intl",
       "city": "Providenciales",
       "country": "TC",
-      "country_name": "Turks & Caicos Islands",
+      "country_name": "Turks and Caicos Islands",
       "lat": 21.772,
       "lon": -72.265,
       "elev_m": 7,
@@ -110194,7 +111705,7 @@
       "name": "Maopoopo Ile Fu",
       "city": "Maopoopo Ile Fu",
       "country": "WF",
-      "country_name": "Wallis & Futuna",
+      "country_name": "Wallis and Futuna",
       "lat": -14.308,
       "lon": -178.117,
       "elev_m": 24,
@@ -110210,7 +111721,7 @@
       "name": "Hihifo Arpt",
       "city": "Wallis Isl",
       "country": "WF",
-      "country_name": "Wallis & Futuna",
+      "country_name": "Wallis and Futuna",
       "lat": -13.238,
       "lon": -176.199,
       "elev_m": 24,
@@ -132507,7 +134018,7 @@
       "name": "Bird Intl",
       "city": "Antigua",
       "country": "AG",
-      "country_name": "Antigua & Barbuda",
+      "country_name": "Antigua and Barbuda",
       "lat": 17.135,
       "lon": -61.797,
       "elev_m": 15,
@@ -132619,7 +134130,7 @@
       "name": "Gustav Arpt",
       "city": "St Barthelemy",
       "country": "BL",
-      "country_name": "St. Barthélemy",
+      "country_name": "Saint Barthelemy",
       "lat": 17.904,
       "lon": -62.844,
       "elev_m": 13,
@@ -132832,7 +134343,7 @@
       "name": "Bradshaw Intl",
       "city": "St Kitts",
       "country": "KN",
-      "country_name": "St. Kitts & Nevis",
+      "country_name": "Saint Kitts and Nevis",
       "lat": 17.312,
       "lon": -62.72,
       "elev_m": 62,
@@ -132848,7 +134359,7 @@
       "name": "Armory Intl",
       "city": "Nevis",
       "country": "KN",
-      "country_name": "St. Kitts & Nevis",
+      "country_name": "Saint Kitts and Nevis",
       "lat": 17.205,
       "lon": -62.591,
       "elev_m": 12,
@@ -132864,7 +134375,7 @@
       "name": "Charles Arpt",
       "city": "St Lucia",
       "country": "LC",
-      "country_name": "St. Lucia",
+      "country_name": "Saint Lucia",
       "lat": 14.021,
       "lon": -60.993,
       "elev_m": 8,
@@ -132880,7 +134391,7 @@
       "name": "Hewanorra Intl",
       "city": "St Lucia",
       "country": "LC",
-      "country_name": "St. Lucia",
+      "country_name": "Saint Lucia",
       "lat": 13.743,
       "lon": -60.948,
       "elev_m": 13,
@@ -132928,7 +134439,7 @@
       "name": "Hato Intl",
       "city": "Curacao",
       "country": "CW",
-      "country_name": "Curaçao",
+      "country_name": "Curacao",
       "lat": 12.189,
       "lon": -68.96,
       "elev_m": 10,
@@ -133066,7 +134577,7 @@
       "name": "Crown Pt Arpt",
       "city": "Tobago",
       "country": "TT",
-      "country_name": "Trinidad & Tobago",
+      "country_name": "Trinidad and Tobago",
       "lat": 11.149,
       "lon": -60.836,
       "elev_m": 13,
@@ -133082,7 +134593,7 @@
       "name": "Piarco Arpt",
       "city": "Port of Spain",
       "country": "TT",
-      "country_name": "Trinidad & Tobago",
+      "country_name": "Trinidad and Tobago",
       "lat": 10.593,
       "lon": -61.348,
       "elev_m": 11,
@@ -133098,7 +134609,7 @@
       "name": "Crown Point Arpt",
       "city": "Crown Point",
       "country": "TT",
-      "country_name": "Trinidad & Tobago",
+      "country_name": "Trinidad and Tobago",
       "lat": 11.149,
       "lon": -60.836,
       "elev_m": 13,
@@ -133116,7 +134627,7 @@
       "name": "PIARCO FIR",
       "city": "Piarco",
       "country": "TT",
-      "country_name": "Trinidad & Tobago",
+      "country_name": "Trinidad and Tobago",
       "lat": 15.609,
       "lon": -51.25,
       "icao_state": "TT",
@@ -133137,7 +134648,7 @@
       "name": "PIARCO UIR",
       "city": "Piarco",
       "country": "TT",
-      "country_name": "Trinidad & Tobago",
+      "country_name": "Trinidad and Tobago",
       "lat": 15.609,
       "lon": -51.25,
       "icao_state": "TT",
@@ -133172,7 +134683,7 @@
       "name": "Argyle Intl",
       "city": "Argyle",
       "country": "VC",
-      "country_name": "St. Vincent & Grenadines",
+      "country_name": "Saint Vincent and Grenadines",
       "lat": 13.156,
       "lon": -61.15,
       "elev_m": 3,
@@ -133188,7 +134699,7 @@
       "name": "Canouan Arpt",
       "city": "Canouan",
       "country": "VC",
-      "country_name": "St. Vincent & Grenadines",
+      "country_name": "Saint Vincent and Grenadines",
       "lat": 12.7,
       "lon": -61.342,
       "elev_m": 2,
@@ -133204,7 +134715,7 @@
       "name": "Mustique Arpt",
       "city": "Mustique",
       "country": "VC",
-      "country_name": "St. Vincent & Grenadines",
+      "country_name": "Saint Vincent and Grenadines",
       "lat": 12.888,
       "lon": -61.18,
       "elev_m": 10,
@@ -139174,7 +140685,7 @@
       "name": "Hong Kong Intl",
       "city": "Hong Kong",
       "country": "HK",
-      "country_name": "Hong Kong SAR China",
+      "country_name": "Hong Kong",
       "lat": 22.309,
       "lon": 113.922,
       "elev_m": 9,
@@ -139192,7 +140703,7 @@
       "name": "HONG KONG FIR",
       "city": "Hong Kong",
       "country": "HK",
-      "country_name": "Hong Kong SAR China",
+      "country_name": "Hong Kong",
       "lat": 19.723,
       "lon": 114.5,
       "icao_state": "VH",
@@ -140053,7 +141564,7 @@
       "name": "Macao Intl",
       "city": "Macao",
       "country": "MO",
-      "country_name": "Macao SAR China",
+      "country_name": "Macao",
       "lat": 22.141,
       "lon": 113.596,
       "elev_m": 1,
@@ -142211,7 +143722,7 @@
       "name": "Mandalay Intl",
       "city": "Mandalay",
       "country": "MM",
-      "country_name": "Myanmar (Burma)",
+      "country_name": "Myanmar",
       "lat": 21.702,
       "lon": 95.978,
       "elev_m": 87,
@@ -142227,7 +143738,7 @@
       "name": "Naypyitaw Intl",
       "city": "Naypyitaw",
       "country": "MM",
-      "country_name": "Myanmar (Burma)",
+      "country_name": "Myanmar",
       "lat": 19.623,
       "lon": 96.201,
       "elev_m": 610,
@@ -142243,7 +143754,7 @@
       "name": "Sittwe Arpt",
       "city": "Sittwe",
       "country": "MM",
-      "country_name": "Myanmar (Burma)",
+      "country_name": "Myanmar",
       "lat": 20.134,
       "lon": 92.873,
       "elev_m": 4,
@@ -142261,7 +143772,7 @@
       "name": "YANGON FIR",
       "city": "Yangon",
       "country": "MM",
-      "country_name": "Myanmar (Burma)",
+      "country_name": "Myanmar",
       "lat": 19.275,
       "lon": 96.584,
       "icao_state": "VY",
@@ -142280,7 +143791,7 @@
       "name": "Yangon Intl",
       "city": "Yangon",
       "country": "MM",
-      "country_name": "Myanmar (Burma)",
+      "country_name": "Myanmar",
       "lat": 16.906,
       "lon": 96.137,
       "elev_m": 31,

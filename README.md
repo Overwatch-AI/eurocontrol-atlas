@@ -108,13 +108,44 @@ $ jq '[.entries[] | select(.city_source=="site-city")] | length' data/icao-codes
 2433
 ```
 
-Two things to know before joining against this:
+Three things to know before joining against this:
 
 * **`state_code` is not ISO 3166-2.** It is passed through verbatim from the station
   cache, where it is a two-character AWC/NWS code that only coincides with ISO for the
   US and Canada. `country` *is* ISO 3166-1 alpha-2 and can be joined as such.
+* **Resolve countries through `countries[<iso2>].aliases`, not by matching
+  `country_name`.** See below.
 * City coverage is 99% for aerodromes and 97% for regions, but a `city_source` of
   `site-name` or `region-name` means the value was derived rather than corroborated.
+
+### Country names are conventional ASCII, with an alias table
+
+`country_name` is the familiar English form — `Turkey`, `Czech Republic`, `Hong Kong`,
+`Cote d'Ivoire` — rather than what `Intl.DisplayNames(['en'])` returns, which is
+`Türkiye`, `Czechia`, `Hong Kong SAR China`, `Côte d’Ivoire`. Those CLDR forms are
+correct English, but a consumer that generates an exact-match filter gets an empty
+result that looks like real absence rather than a spelling mismatch. Nothing is lost:
+the JSON envelope carries a `countries` table with the CLDR name and every alias worth
+matching, once, rather than on all 9159 rows.
+
+```bash
+$ jq -c '.countries.TR' data/icao-codes.json
+{"name":"Turkey","aliases":["Turkey","Türkiye","Turkiye"],"cldr":"Türkiye"}
+```
+
+So to answer "which regions cover Turkey?" from arbitrary phrasing, resolve the country
+code first, then filter rows on `country`:
+
+```bash
+$ jq -r --arg q 'Türkiye' '
+    (.countries | to_entries[] | select(.value.aliases | any(ascii_downcase == ($q|ascii_downcase))) | .key) as $cc
+    | [.entries[] | select(.country==$cc and .type!="AIRPORT") | .code] | join(" ")' data/icao-codes.json
+LTAA LTBB
+```
+
+`Turkey`, `Türkiye`, `Czech Republic`, `Czechia`, `Hong Kong`, `Ivory Coast`, `Burma`,
+`UK`, `Macedonia` and `Swaziland` all resolve this way. `bin/countries.js` holds the
+rules and is shared with `firs-all`, so the two datasets cannot disagree.
 
 `data/README.md` documents every column, the resolution strategy and the known gaps.
 

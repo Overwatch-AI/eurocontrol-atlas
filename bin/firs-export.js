@@ -53,11 +53,15 @@ function readTable (file) {
 
 // ---- lookups -------------------------------------------------------------
 
-// ICAO state prefix -> Eurocontrol member state (name, iso2, entry date)
+// ICAO state prefix -> Eurocontrol member state (name, iso2, entry date).
+// The country name is resolved from the iso2 via the shared module rather than taken
+// from eurocontrol.csv's `name` column, so this file and icao-codes.* cannot drift
+// apart. eurocontrol.csv disagreed on three: Turkey, Czechia and Bosnia & Herzegovina.
+const { conventionalName } = require('./countries.js')
 const members = new Map()
 for (const m of readTable(path.join(DATA, 'eurocontrol.csv'))) {
   members.set(m.icao, {
-    country: m.name,
+    country: conventionalName(m.iso2) || m.name,
     iso2: m.iso2,
     eurocontrol_entry: m.date === 'NA' ? null : m.date
   })
