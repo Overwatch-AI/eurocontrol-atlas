@@ -1,10 +1,21 @@
 node_modules/
 
-# intermediate GIS artefacts, all rebuildable via the Makefile (see clean-tmp)
+# intermediate GIS artefacts, all rebuildable via the Makefile (see clean-tmp).
+# The per-layer topojson files are intermediates; the combined euctrl.json, rp2.json
+# and ses.json they are merged into are the published outputs and stay tracked.
 geo/
 shp/
 geojson/
 topo/world-*.json
+topo/*/firs.json
+topo/*/states.json
+topo/*/fabs.json
+topo/euctrl/eurocontrol_area_*.json
+
+# Natural Earth downloads. NOTE: zip/ne_10m_admin_0_countries.zip was committed
+# upstream and stays tracked -- .gitignore does not untrack it -- but new ones
+# should not be added.
+zip/ne_*.zip
 
 # generated tables that clean-tmp removes; the curated + published ones stay tracked
 data/country-ids

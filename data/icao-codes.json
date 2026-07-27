@@ -45,8 +45,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "AGGGFIR",
+      "code": "AGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "AGGGFIR",
       "name": "HONIARA FIR",
       "city": "Honiara",
       "country": "SB",
@@ -176,8 +178,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ANAUFIR",
+      "code": "ANAU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ANAUFIR",
       "name": "NAURU FIR",
       "city": "Nauru",
       "country": "NR",
@@ -291,8 +295,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "AYPMFIR",
+      "code": "AYPM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "AYPMFIR",
       "name": "PORT MORESBY",
       "city": "Port Moresby",
       "country": "PG",
@@ -582,8 +588,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "BGGLFIR",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "BGGLFIR",
       "name": "SONDESTROM FIR",
       "city": "Sondestrom",
       "country": "GL",
@@ -601,8 +609,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "BGGLFIRS",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": "S",
+      "airspace_id": "BGGLFIRS",
       "name": "NUUK FIR SOUTH",
       "city": "Nuuk",
       "country": "GL",
@@ -620,8 +630,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "BGGLFIRU",
+      "code": "BGGL",
       "type": "FIR",
+      "subarea": "U",
+      "airspace_id": "BGGLFIRU",
       "name": "NUUK FIR UPPER",
       "city": "Nuuk",
       "country": "GL",
@@ -1023,8 +1035,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "BIRDFIR",
+      "code": "BIRD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "BIRDFIR",
       "name": "REYKJAVIK FIR",
       "city": "Reykjavik",
       "country": "IS",
@@ -1156,6 +1170,8 @@
     {
       "code": "BODO",
       "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "BODO",
       "name": "BODO INTERNATIONAL AIRSPACE",
       "city": null,
       "country": null,
@@ -14757,8 +14773,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "CZEGFIR",
+      "code": "CZEG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZEGFIR",
       "name": "EDMONTON FLIGHT INFORMATION REGION",
       "city": "Edmonton",
       "country": "CA",
@@ -15080,8 +15098,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "CZQMFIR",
+      "code": "CZQM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZQMFIR",
       "name": "MONCTON FLIGHT INFORMATION REGION",
       "city": "Moncton",
       "country": "CA",
@@ -15099,8 +15119,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "CZQXFIR",
+      "code": "CZQX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZQXFIR",
       "name": "GANDER NAT RVSM",
       "city": "Gander Nat Rvsm",
       "country": "CA",
@@ -15246,8 +15268,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "CZULFIR",
+      "code": "CZUL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZULFIR",
       "name": "MONTREAL FIR",
       "city": "Montreal",
       "country": "CA",
@@ -15297,8 +15321,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "CZVRFIR",
+      "code": "CZVR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZVRFIR",
       "name": "VANCOUVER FLIGHT INFORMATION REGION",
       "city": "Vancouver",
       "country": "CA",
@@ -15316,8 +15342,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "CZWGFIR",
+      "code": "CZWG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZWGFIR",
       "name": "WINNIPEG FLIGHT INFORMATION REGION",
       "city": "Winnipeg",
       "country": "CA",
@@ -15351,8 +15379,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "CZYZFIR",
+      "code": "CZYZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "CZYZFIR",
       "name": "TORONTO FLIGHT INFORMATION REGION",
       "city": "Toronto",
       "country": "CA",
@@ -15386,8 +15416,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "DAAAFIR",
+      "code": "DAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DAAAFIR",
       "name": "ALGER FIR",
       "city": "Alger",
       "country": "DZ",
@@ -16365,8 +16397,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "DGACFIR",
+      "code": "DGAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DGACFIR",
       "name": "GHANA",
       "city": "Ghana",
       "country": "GH",
@@ -17104,8 +17138,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "DNKKFIR",
+      "code": "DNKK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DNKKFIR",
       "name": "NIGERIA",
       "city": "Nigeria",
       "country": "NG",
@@ -17411,8 +17447,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "DRRRFIR",
+      "code": "DRRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DRRRFIR",
       "name": "D REGION",
       "city": null,
       "country": "NE",
@@ -17430,8 +17468,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "DRRRUIR",
+      "code": "DRRR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "DRRRUIR",
       "name": "NIAMEY UIR",
       "city": "Niamey",
       "country": "NE",
@@ -17625,8 +17665,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "DTTCFIR",
+      "code": "DTTC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "DTTCFIR",
       "name": "TUNIS FIR",
       "city": "Tunis",
       "country": "TN",
@@ -17644,8 +17686,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "DTTCUIR",
+      "code": "DTTC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "DTTCUIR",
       "name": "TUNIS UIR",
       "city": "Tunis",
       "country": "TN",
@@ -18031,8 +18075,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EBBUFIR",
+      "code": "EBBU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EBBUFIR",
       "name": "BRUSSELS FIR",
       "city": "Brussels",
       "country": "BE",
@@ -18306,8 +18352,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EBURUIR",
+      "code": "EBUR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EBURUIR",
       "name": "BRUSSELS UIR",
       "city": "Brussels",
       "country": "BE",
@@ -18741,8 +18789,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EDGGFIR",
+      "code": "EDGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDGGFIR",
       "name": "LANGEN FIR",
       "city": "Langen",
       "country": "DE",
@@ -18920,8 +18970,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EDMMFIR",
+      "code": "EDMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDMMFIR",
       "name": "MUNCHEN FIR",
       "city": "Munchen",
       "country": "DE",
@@ -19131,8 +19183,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EDUUUIR",
+      "code": "EDUU",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EDUUUIR",
       "name": "RHEIN UIR",
       "city": "Rhein",
       "country": "DE",
@@ -19182,8 +19236,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EDVVUIR",
+      "code": "EDVV",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EDVVUIR",
       "name": "HANNOVER UIR",
       "city": "Hannover",
       "country": "DE",
@@ -19233,8 +19289,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EDWWFIR",
+      "code": "EDWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EDWWFIR",
       "name": "BREMEN FIR",
       "city": "Bremen",
       "country": "DE",
@@ -19364,8 +19422,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EETTFIR",
+      "code": "EETT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EETTFIR",
       "name": "TALLINN FIR",
       "city": "Tallinn",
       "country": "EE",
@@ -19511,8 +19571,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EFINFIR",
+      "code": "EFIN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EFINFIR",
       "name": "HELSINKI FIR",
       "city": "Helsinki",
       "country": "FI",
@@ -19530,8 +19592,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "EFINUIR",
+      "code": "EFIN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EFINUIR",
       "name": "HELSINKI UIR",
       "city": "Helsinki",
       "country": "FI",
@@ -20414,26 +20478,9 @@
     },
     {
       "code": "EGGX",
-      "type": "OTHER",
-      "name": "REROUTING EXTENSION",
-      "city": null,
-      "country": "GB",
-      "country_name": "United Kingdom",
-      "lat": 51,
-      "lon": -11.5,
-      "icao_state": "EG",
-      "min_fl": 0,
-      "max_fl": 999,
-      "eurocontrol_member": true,
-      "fab": "ukei",
-      "city_source": null,
-      "country_prefix": "EGG",
-      "airac_cfmu": 524,
-      "source": "eurocontrol-nm"
-    },
-    {
-      "code": "EGGXFIR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGGXFIR",
       "name": "SHANWICK FIR",
       "city": "Shanwick",
       "country": "GB",
@@ -20446,6 +20493,27 @@
       "eurocontrol_member": true,
       "fab": "ukei",
       "city_source": "region-name",
+      "country_prefix": "EGG",
+      "airac_cfmu": 524,
+      "source": "eurocontrol-nm"
+    },
+    {
+      "code": "EGGX",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "EGGX",
+      "name": "REROUTING EXTENSION",
+      "city": null,
+      "country": "GB",
+      "country_name": "United Kingdom",
+      "lat": 51,
+      "lon": -11.5,
+      "icao_state": "EG",
+      "min_fl": 0,
+      "max_fl": 999,
+      "eurocontrol_member": true,
+      "fab": "ukei",
+      "city_source": null,
       "country_prefix": "EGG",
       "airac_cfmu": 524,
       "source": "eurocontrol-nm"
@@ -21315,8 +21383,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EGPXFIR",
+      "code": "EGPX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGPXFIR",
       "name": "SCOTTISH FIR",
       "city": "Scottish",
       "country": "GB",
@@ -21334,8 +21404,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "EGPXUIR",
+      "code": "EGPX",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EGPXUIR",
       "name": "SCOTTISH UIR",
       "city": "Scottish",
       "country": "GB",
@@ -21641,8 +21713,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EGTTFIR",
+      "code": "EGTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EGTTFIR",
       "name": "LONDON FIR",
       "city": "London",
       "country": "GB",
@@ -21660,8 +21734,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "EGTTUIR",
+      "code": "EGTT",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EGTTUIR",
       "name": "LONDON UIR",
       "city": "London",
       "country": "GB",
@@ -22367,8 +22443,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EHAAFIR",
+      "code": "EHAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EHAAFIR",
       "name": "AMSTERDAM FIR",
       "city": "Amsterdam",
       "country": "NL",
@@ -23058,8 +23136,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EISNFIR",
+      "code": "EISN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EISNFIR",
       "name": "SHANNON FIR",
       "city": "Shannon",
       "country": "IE",
@@ -23077,8 +23157,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "EISNUIR",
+      "code": "EISN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EISNUIR",
       "name": "SHANNON UIR",
       "city": "Shannon",
       "country": "IE",
@@ -23192,8 +23274,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EKDKFIR",
+      "code": "EKDK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EKDKFIR",
       "name": "COPENHAGEN FIR",
       "city": "Copenhagen",
       "country": "DK",
@@ -24475,8 +24559,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ENOBFIR",
+      "code": "ENOB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ENOBFIR",
       "name": "BODO OCEANIC FIR",
       "city": "Bodo",
       "country": "NO",
@@ -24510,8 +24596,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ENORFIR",
+      "code": "ENOR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ENORFIR",
       "name": null,
       "city": null,
       "country": "NO",
@@ -25569,8 +25657,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EPWWFIR",
+      "code": "EPWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EPWWFIR",
       "name": "WARSZAWA FIR",
       "city": "Warszawa",
       "country": "PL",
@@ -25652,8 +25742,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ESAAFIR",
+      "code": "ESAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ESAAFIR",
       "name": "SWEDEN FIR",
       "city": "Sweden",
       "country": "SE",
@@ -27767,8 +27859,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EVRRFIR",
+      "code": "EVRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EVRRFIR",
       "name": "RIGA FIR",
       "city": "Riga",
       "country": "LV",
@@ -27866,8 +27960,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "EYVLFIR",
+      "code": "EYVL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "EYVLFIR",
       "name": "VILNIUS FIR",
       "city": "Vilnius",
       "country": "LT",
@@ -27885,8 +27981,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "EYVLUIR",
+      "code": "EYVL",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "EYVLUIR",
       "name": "VILNIUS UIR",
       "city": "Vilnius",
       "country": "LT",
@@ -28000,8 +28098,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FACAFIR",
+      "code": "FACA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FACAFIR",
       "name": "CAPE TOWN FIR",
       "city": "Cape Town",
       "country": "ZA",
@@ -28323,8 +28423,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FAJAFIR",
+      "code": "FAJA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FAJAFIR",
       "name": "JOHANNESBURG FIR",
       "city": "Johannesburg",
       "country": "ZA",
@@ -28358,8 +28460,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FAJOFIR",
+      "code": "FAJO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FAJOFIR",
       "name": "JOHANNESBURG OCEANIC FIR",
       "city": "Johannesburg",
       "country": "ZA",
@@ -29225,8 +29329,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FBGRFIR",
+      "code": "FBGR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FBGRFIR",
       "name": "GABORONE FIR",
       "city": "Gaborone",
       "country": "BW",
@@ -29516,8 +29622,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FCCCFIR",
+      "code": "FCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FCCCFIR",
       "name": "BRAZZAVILLE FIR",
       "city": "Brazzaville",
       "country": "CG",
@@ -29535,8 +29643,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FCCCUIR",
+      "code": "FCCC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FCCCUIR",
       "name": "BRAZZAVILLE UIR",
       "city": "Brazzaville",
       "country": "CG",
@@ -30194,8 +30304,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FIMMFIR",
+      "code": "FIMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FIMMFIR",
       "name": "MAURITIUS FIR",
       "city": "Mauritius",
       "country": "MU",
@@ -30629,8 +30741,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FLFIFIR",
+      "code": "FLFI",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FLFIFIR",
       "name": "LUSAKA FIR",
       "city": "Lusaka",
       "country": "ZM",
@@ -31208,8 +31322,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FMMMFIR",
+      "code": "FMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FMMMFIR",
       "name": "ANTANANARIVO FIR",
       "city": "Antananarivo",
       "country": "MG",
@@ -31227,8 +31343,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FMMMUIR",
+      "code": "FMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FMMMUIR",
       "name": "ANTANANARIVO UIR",
       "city": "Antananarivo",
       "country": "MG",
@@ -31566,8 +31684,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FNANFIR",
+      "code": "FNAN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FNANFIR",
       "name": "LUANDA FIR",
       "city": "Luanda",
       "country": "AO",
@@ -31585,8 +31705,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FNANUIR",
+      "code": "FNAN",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FNANUIR",
       "name": "LUANDA UIR",
       "city": "Luanda",
       "country": "AO",
@@ -32180,8 +32302,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FQBEFIR",
+      "code": "FQBE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FQBEFIR",
       "name": "BEIRA FIR",
       "city": "Beira",
       "country": "MZ",
@@ -32503,8 +32627,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FSSSFIR",
+      "code": "FSSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FSSSFIR",
       "name": "SEYCHELLES FIR",
       "city": "Seychelles",
       "country": "SC",
@@ -32634,8 +32760,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FTTTFIR",
+      "code": "FTTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FTTTFIR",
       "name": "N'DJAMENA FIR",
       "city": "N'Djamena",
       "country": "TD",
@@ -32653,8 +32781,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FTTTUIR",
+      "code": "FTTT",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FTTTUIR",
       "name": "N'DJAMENA UIR",
       "city": "N'Djamena",
       "country": "TD",
@@ -32816,8 +32946,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FVHFFIR",
+      "code": "FVHF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FVHFFIR",
       "name": "HARARE FIR",
       "city": "Harare",
       "country": "ZW",
@@ -32835,8 +32967,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FVHFUIR",
+      "code": "FVHF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FVHFUIR",
       "name": "HARARE UIR",
       "city": "Harare",
       "country": "ZW",
@@ -33094,8 +33228,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FWLLFIR",
+      "code": "FWLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FWLLFIR",
       "name": "LILONGWE FIR",
       "city": "Lilongwe",
       "country": "MW",
@@ -33849,8 +33985,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FYWFFIR",
+      "code": "FYWF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FYWFFIR",
       "name": "WINDHOEK FIR",
       "city": "Windhoek",
       "country": "NA",
@@ -34364,8 +34502,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "FZZAFIR",
+      "code": "FZZA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "FZZAFIR",
       "name": "KINSHASA FIR",
       "city": "Kinshasa",
       "country": "CD",
@@ -34383,8 +34523,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "FZZAUIR",
+      "code": "FZZA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "FZZAUIR",
       "name": "KINSHASA UIR",
       "city": "Kinshasa",
       "country": "CD",
@@ -34706,8 +34848,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "GCCCFIR",
+      "code": "GCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GCCCFIR",
       "name": "CANARIAS FIR",
       "city": "Canarias",
       "country": "ES",
@@ -34725,8 +34869,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GCCCFIRH",
+      "code": "GCCC",
       "type": "FIR",
+      "subarea": "H",
+      "airspace_id": "GCCCFIRH",
       "name": "CANARIAS FIR SAHARA AREA",
       "city": "Canarias Sahara",
       "country": "ES",
@@ -34744,8 +34890,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GCCCFIRR",
+      "code": "GCCC",
       "type": "FIR",
+      "subarea": "R",
+      "airspace_id": "GCCCFIRR",
       "name": "CANARIAS FIR",
       "city": "Canarias",
       "country": "ES",
@@ -34763,8 +34911,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GCCCUIRN",
+      "code": "GCCC",
       "type": "UIR",
+      "subarea": "N",
+      "airspace_id": "GCCCUIRN",
       "name": "CANARIS UIR",
       "city": "Canaris",
       "country": "ES",
@@ -34782,8 +34932,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GCCCUIRS",
+      "code": "GCCC",
       "type": "UIR",
+      "subarea": "S",
+      "airspace_id": "GCCCUIRS",
       "name": "CANARIAS UIR",
       "city": "Canarias",
       "country": "ES",
@@ -35025,8 +35177,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "GLRBFIR",
+      "code": "GLRB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GLRBFIR",
       "name": "ROBERTS",
       "city": "Roberts",
       "country": "LR",
@@ -35380,8 +35534,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "GMMMFIR",
+      "code": "GMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GMMMFIR",
       "name": "CASABLANCA FIR",
       "city": "Casablanca",
       "country": "MA",
@@ -35399,8 +35555,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GMMMUIR",
+      "code": "GMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GMMMUIR",
       "name": "CASABLANCA UIR",
       "city": "Casablanca",
       "country": "MA",
@@ -35690,8 +35848,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "GOOOFIR",
+      "code": "GOOO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GOOOFIR",
       "name": "DAKAR TERRESTRE (PAR",
       "city": "Dakar (par",
       "country": "SN",
@@ -35709,8 +35869,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GOOOUIR",
+      "code": "GOOO",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GOOOUIR",
       "name": "DAKAR UIR",
       "city": "Dakar",
       "country": "SN",
@@ -36272,8 +36434,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "GVSCFIR",
+      "code": "GVSC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "GVSCFIR",
       "name": "SAL OCEANIC",
       "city": "Sal",
       "country": "CV",
@@ -36291,8 +36455,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "GVSCUIR",
+      "code": "GVSC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "GVSCUIR",
       "name": "SAL OCEANIC UIR",
       "city": "Sal",
       "country": "CV",
@@ -36326,8 +36492,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HAAAFIR",
+      "code": "HAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HAAAFIR",
       "name": "ETHIOPIA FIR",
       "city": "Ethiopia",
       "country": "ET",
@@ -36761,8 +36929,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HBBAFIR",
+      "code": "HBBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HBBAFIR",
       "name": "BURUNDI FIR",
       "city": "Burundi",
       "country": "BI",
@@ -36780,8 +36950,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "HBBAUIR",
+      "code": "HBBA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HBBAUIR",
       "name": "BUJUMBURA UIR",
       "city": "Bujumbura",
       "country": "BI",
@@ -36895,8 +37067,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HCSMFIR",
+      "code": "HCSM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HCSMFIR",
       "name": "SOMALI FIR",
       "city": "Somali",
       "country": "SO",
@@ -37026,8 +37200,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HECCFIR",
+      "code": "HECC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HECCFIR",
       "name": "CAIRO FIR",
       "city": "Cairo",
       "country": "EG",
@@ -37333,8 +37509,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HHAAFIR",
+      "code": "HHAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HHAAFIR",
       "name": "ERITREA FIR",
       "city": "Eritrea",
       "country": "ER",
@@ -37768,8 +37946,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HKNAFIR",
+      "code": "HKNA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HKNAFIR",
       "name": "KENYA FIR",
       "city": "Kenya",
       "country": "KE",
@@ -37995,8 +38175,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HLLLFIR",
+      "code": "HLLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HLLLFIR",
       "name": "TRIPOLI FIR",
       "city": "Tripoli",
       "country": "LY",
@@ -38190,8 +38372,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HRYRFIR",
+      "code": "HRYR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HRYRFIR",
       "name": "RWANDA FIR",
       "city": "Rwanda",
       "country": "RW",
@@ -38209,8 +38393,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "HRYRUIR",
+      "code": "HRYR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HRYRUIR",
       "name": "KIGALI UIR",
       "city": "Kigali",
       "country": "RW",
@@ -38564,8 +38750,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HSSSFIR",
+      "code": "HSSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HSSSFIR",
       "name": "SUDAN FIR",
       "city": "Sudan",
       "country": "SD",
@@ -38583,8 +38771,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "HSSSUIR",
+      "code": "HSSS",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "HSSSUIR",
       "name": "KHARTOUM UIR",
       "city": "Khartoum",
       "country": "SD",
@@ -38666,8 +38856,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HTDCFIR",
+      "code": "HTDC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HTDCFIR",
       "name": "TANZANIA FIR",
       "city": "Tanzania",
       "country": "TZ",
@@ -39101,8 +39293,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "HUECFIR",
+      "code": "HUEC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "HUECFIR",
       "name": "UGANDA FIR",
       "city": "Uganda",
       "country": "UG",
@@ -93680,8 +93874,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "KZABFIR",
+      "code": "KZAB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZABFIR",
       "name": "ALBUQUERQUE",
       "city": "Albuquerque",
       "country": "US",
@@ -93699,8 +93895,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZABUIR",
+      "code": "KZAB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZABUIR",
       "name": "ALBUQUERQUE",
       "city": "Albuquerque",
       "country": "US",
@@ -93718,8 +93916,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZAKFIR",
+      "code": "KZAK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZAKFIR",
       "name": "OAKLAND OCEANIC FIR",
       "city": "Oakland",
       "country": "US",
@@ -93737,8 +93937,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZAUFIR",
+      "code": "KZAU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZAUFIR",
       "name": "CHICAGO",
       "city": "Chicago",
       "country": "US",
@@ -93756,8 +93958,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZAUUIR",
+      "code": "KZAU",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZAUUIR",
       "name": "CHICAGO",
       "city": "Chicago",
       "country": "US",
@@ -93775,8 +93979,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZBWFIR",
+      "code": "KZBW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZBWFIR",
       "name": "BOSTON FIR",
       "city": "Boston",
       "country": "US",
@@ -93794,8 +94000,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZBWUIR",
+      "code": "KZBW",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZBWUIR",
       "name": "BOSTON UIR",
       "city": "Boston",
       "country": "US",
@@ -93813,8 +94021,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZDCFIR",
+      "code": "KZDC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZDCFIR",
       "name": "WASHINGTON",
       "city": "Washington",
       "country": "US",
@@ -93832,8 +94042,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZDCUIR",
+      "code": "KZDC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZDCUIR",
       "name": "WASHINGTON",
       "city": "Washington",
       "country": "US",
@@ -93851,8 +94063,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZDVFIR",
+      "code": "KZDV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZDVFIR",
       "name": "DENVER",
       "city": "Denver",
       "country": "US",
@@ -93870,8 +94084,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZDVUIR",
+      "code": "KZDV",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZDVUIR",
       "name": "DENVER",
       "city": "Denver",
       "country": "US",
@@ -93921,8 +94137,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "KZFWFIR",
+      "code": "KZFW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZFWFIR",
       "name": "FT WORTH",
       "city": "Ft Worth",
       "country": "US",
@@ -93940,8 +94158,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZFWUIR",
+      "code": "KZFW",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZFWUIR",
       "name": "FT WORTH",
       "city": "Ft Worth",
       "country": "US",
@@ -93959,8 +94179,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZHUFIR",
+      "code": "KZHU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZHUFIR",
       "name": "HOUSTON FIR",
       "city": "Houston",
       "country": "US",
@@ -93978,8 +94200,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZIDFIR",
+      "code": "KZID",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZIDFIR",
       "name": "INDIANAPOLIS",
       "city": "Indianapolis",
       "country": "US",
@@ -93997,8 +94221,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZIDUIR",
+      "code": "KZID",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZIDUIR",
       "name": "INDIANAPOLIS",
       "city": "Indianapolis",
       "country": "US",
@@ -94016,8 +94242,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZJXFIR",
+      "code": "KZJX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZJXFIR",
       "name": "JACKSONVILLE",
       "city": "Jacksonville",
       "country": "US",
@@ -94035,8 +94263,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZJXUIR",
+      "code": "KZJX",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZJXUIR",
       "name": "JACKSONVILLE",
       "city": "Jacksonville",
       "country": "US",
@@ -94054,8 +94284,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZKCFIR",
+      "code": "KZKC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZKCFIR",
       "name": "KANSAS CITY",
       "city": "Kansas City",
       "country": "US",
@@ -94073,8 +94305,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZKCUIR",
+      "code": "KZKC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZKCUIR",
       "name": "KANSAS CITY",
       "city": "Kansas City",
       "country": "US",
@@ -94092,8 +94326,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZLAFIR",
+      "code": "KZLA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZLAFIR",
       "name": "LOS ANGELES",
       "city": "Los Angeles",
       "country": "US",
@@ -94111,8 +94347,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZLAUIR",
+      "code": "KZLA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZLAUIR",
       "name": "LOS ANGELES",
       "city": "Los Angeles",
       "country": "US",
@@ -94130,8 +94368,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZLCFIR",
+      "code": "KZLC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZLCFIR",
       "name": "SALT LAKE CITY",
       "city": "Salt Lake City",
       "country": "US",
@@ -94149,8 +94389,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZLCUIR",
+      "code": "KZLC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZLCUIR",
       "name": "SALT LAKE CITY",
       "city": "Salt Lake City",
       "country": "US",
@@ -94168,8 +94410,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZMAFIR",
+      "code": "KZMA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMAFIR",
       "name": "MIAMI FIR / UIR",
       "city": "Miami /",
       "country": "US",
@@ -94187,8 +94431,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZMEFIR",
+      "code": "KZME",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMEFIR",
       "name": "MEMPHIS",
       "city": "Memphis",
       "country": "US",
@@ -94206,8 +94452,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZMEUIR",
+      "code": "KZME",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZMEUIR",
       "name": "MEMPHIS",
       "city": "Memphis",
       "country": "US",
@@ -94225,8 +94473,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZMPFIR",
+      "code": "KZMP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZMPFIR",
       "name": "MINNEAPOLIS",
       "city": "Minneapolis",
       "country": "US",
@@ -94244,8 +94494,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZMPUIR",
+      "code": "KZMP",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZMPUIR",
       "name": "MINNEAPOLIS",
       "city": "Minneapolis",
       "country": "US",
@@ -94263,8 +94515,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZNYFIR",
+      "code": "KZNY",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZNYFIR",
       "name": "NEW YORK FIR",
       "city": "New York",
       "country": "US",
@@ -94282,8 +94536,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZNYUIR",
+      "code": "KZNY",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZNYUIR",
       "name": "NEW YORK UIR",
       "city": "New York",
       "country": "US",
@@ -94301,8 +94557,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZOAFIR",
+      "code": "KZOA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZOAFIR",
       "name": "OAKLAND FIR",
       "city": "Oakland",
       "country": "US",
@@ -94320,8 +94578,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZOBFIR",
+      "code": "KZOB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZOBFIR",
       "name": "CLEVELAND",
       "city": "Cleveland",
       "country": "US",
@@ -94339,8 +94599,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZOBUIR",
+      "code": "KZOB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZOBUIR",
       "name": "CLEVELAND",
       "city": "Cleveland",
       "country": "US",
@@ -94374,8 +94636,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "KZSEFIR",
+      "code": "KZSE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZSEFIR",
       "name": "SEATTLE",
       "city": "Seattle",
       "country": "US",
@@ -94393,8 +94657,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZSEUIR",
+      "code": "KZSE",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZSEUIR",
       "name": "SEATTLE",
       "city": "Seattle",
       "country": "US",
@@ -94412,8 +94678,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZTLFIR",
+      "code": "KZTL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZTLFIR",
       "name": "ATLANTA FIR",
       "city": "Atlanta",
       "country": "US",
@@ -94431,8 +94699,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "KZTLUIR",
+      "code": "KZTL",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "KZTLUIR",
       "name": "ATLANTA",
       "city": "Atlanta",
       "country": "US",
@@ -94466,8 +94736,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "KZWYFIR",
+      "code": "KZWY",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "KZWYFIR",
       "name": "NEW YORK OCEANIC",
       "city": "New York",
       "country": "US",
@@ -94501,8 +94773,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LAAAFIR",
+      "code": "LAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LAAAFIR",
       "name": "TIRANA FIR",
       "city": "Tirana",
       "country": "AL",
@@ -94680,8 +94954,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LBSRFIR",
+      "code": "LBSR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LBSRFIR",
       "name": "SOFIA FIR",
       "city": "Sofia",
       "country": "BG",
@@ -94731,8 +95007,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LCCCFIR",
+      "code": "LCCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LCCCFIR",
       "name": "NICOSIA FIR",
       "city": "Nicosia",
       "country": "CY",
@@ -95054,8 +95332,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LDZOFIR",
+      "code": "LDZO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LDZOFIR",
       "name": "ZAGREB FIR",
       "city": "Zagreb",
       "country": "HR",
@@ -95281,8 +95561,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LECBFIR",
+      "code": "LECB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LECBFIR",
       "name": "BARCELONA FIR",
       "city": "Barcelona",
       "country": "ES",
@@ -95300,8 +95582,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LECBUIR",
+      "code": "LECB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LECBUIR",
       "name": "BARCELONA UIR",
       "city": "Barcelona",
       "country": "ES",
@@ -95335,8 +95619,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LECMFIR",
+      "code": "LECM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LECMFIR",
       "name": "MADRID FIR",
       "city": "Madrid",
       "country": "ES",
@@ -95354,8 +95640,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LECMUIR",
+      "code": "LECM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LECMUIR",
       "name": "MADRID UIR",
       "city": "Madrid",
       "country": "ES",
@@ -96141,8 +96429,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LFBBFIR",
+      "code": "LFBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFBBFIR",
       "name": "BORDEAUX FIR",
       "city": "Bordeaux",
       "country": "FR",
@@ -96576,8 +96866,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LFEEFIR",
+      "code": "LFEE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFEEFIR",
       "name": "REIMS FIR",
       "city": "Reims",
       "country": "FR",
@@ -96595,8 +96887,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LFFFFIR",
+      "code": "LFFF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFFFFIR",
       "name": "PARIS FIR",
       "city": "Paris",
       "country": "FR",
@@ -96614,8 +96908,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LFFFUIR",
+      "code": "LFFF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LFFFUIR",
       "name": "FRANCE UIR",
       "city": "France",
       "country": "FR",
@@ -97209,8 +97505,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LFMMFIR",
+      "code": "LFMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFMMFIR",
       "name": "MARSEILLE FIR",
       "city": "Marseille",
       "country": "FR",
@@ -98140,8 +98438,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LFRRFIR",
+      "code": "LFRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LFRRFIR",
       "name": "BREST FIR",
       "city": "Brest",
       "country": "FR",
@@ -98687,8 +98987,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LGGGFIR",
+      "code": "LGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LGGGFIR",
       "name": "ATHINAI FIR",
       "city": "Athinai",
       "country": "GR",
@@ -98706,8 +99008,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LGGGUIR",
+      "code": "LGGG",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LGGGUIR",
       "name": "ATHINAI UIR",
       "city": "Athinai",
       "country": "GR",
@@ -99333,8 +99637,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LHCCFIR",
+      "code": "LHCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LHCCFIR",
       "name": "BUDAPEST FIR",
       "city": "Budapest",
       "country": "HU",
@@ -99624,8 +99930,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LIBBFIR",
+      "code": "LIBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIBBFIR",
       "name": "BRINDISI FIR",
       "city": "Brindisi",
       "country": "IT",
@@ -99643,8 +99951,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LIBBUIR",
+      "code": "LIBB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIBBUIR",
       "name": "BRINDISI UIR",
       "city": "Brindisi",
       "country": "IT",
@@ -100526,8 +100836,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LIMMFIR",
+      "code": "LIMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIMMFIR",
       "name": "MILANO FIR",
       "city": "Milano",
       "country": "IT",
@@ -100545,8 +100857,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LIMMUIR",
+      "code": "LIMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIMMUIR",
       "name": "MILANO UIR",
       "city": "Milano",
       "country": "IT",
@@ -101476,8 +101790,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LIRRFIR",
+      "code": "LIRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LIRRFIR",
       "name": "ROMA FIR",
       "city": "Roma",
       "country": "IT",
@@ -101495,8 +101811,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LIRRUIR",
+      "code": "LIRR",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LIRRUIR",
       "name": "ROMA UIR",
       "city": "Roma",
       "country": "IT",
@@ -101802,8 +102120,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LJLAFIR",
+      "code": "LJLA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LJLAFIR",
       "name": "LJUBLJANA FIR",
       "city": "Ljubljana",
       "country": "SI",
@@ -101885,8 +102205,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LKAAFIR",
+      "code": "LKAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LKAAFIR",
       "name": "PRAHA FIR",
       "city": "Praha",
       "country": "CZ",
@@ -102304,8 +102626,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LLLLFIR",
+      "code": "LLLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LLLLFIR",
       "name": "TEL AVIV FIR",
       "city": "Tel Aviv",
       "country": "IL",
@@ -102371,8 +102695,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LMMMFIR",
+      "code": "LMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LMMMFIR",
       "name": "MALTA FIR",
       "city": "Malta",
       "country": "MT",
@@ -102390,8 +102716,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LMMMUIR",
+      "code": "LMMM",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LMMMUIR",
       "name": "MALTA UIR",
       "city": "Malta",
       "country": "MT",
@@ -102473,8 +102801,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LOVVFIR",
+      "code": "LOVV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LOVVFIR",
       "name": "WIEN FIR",
       "city": "Wien",
       "country": "AT",
@@ -102924,8 +103254,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LPPCFIR",
+      "code": "LPPC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LPPCFIR",
       "name": "LISBOA FIR",
       "city": "Lisboa",
       "country": "PT",
@@ -102960,26 +103292,9 @@
     },
     {
       "code": "LPPO",
-      "type": "OTHER",
-      "name": "REROUTING EXTENSION IN LPPO",
-      "city": null,
-      "country": "PT",
-      "country_name": "Portugal",
-      "lat": 39.463,
-      "lon": -15.534,
-      "icao_state": "LP",
-      "min_fl": 0,
-      "max_fl": 999,
-      "eurocontrol_member": true,
-      "fab": "swfab",
-      "city_source": null,
-      "country_prefix": "LPP",
-      "airac_cfmu": 524,
-      "source": "eurocontrol-nm"
-    },
-    {
-      "code": "LPPOFIR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LPPOFIR",
       "name": "SANTA MARIA FIR",
       "city": "Santa Maria",
       "country": "PT",
@@ -102992,6 +103307,27 @@
       "eurocontrol_member": true,
       "fab": "swfab",
       "city_source": "region-name",
+      "country_prefix": "LPP",
+      "airac_cfmu": 524,
+      "source": "eurocontrol-nm"
+    },
+    {
+      "code": "LPPO",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "LPPO",
+      "name": "REROUTING EXTENSION IN LPPO",
+      "city": null,
+      "country": "PT",
+      "country_name": "Portugal",
+      "lat": 39.463,
+      "lon": -15.534,
+      "icao_state": "LP",
+      "min_fl": 0,
+      "max_fl": 999,
+      "eurocontrol_member": true,
+      "fab": "swfab",
+      "city_source": null,
       "country_prefix": "LPP",
       "airac_cfmu": 524,
       "source": "eurocontrol-nm"
@@ -103157,8 +103493,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LQSBFIR",
+      "code": "LQSB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LQSBFIR",
       "name": "SARAJEVO FIR",
       "city": "Sarajevo",
       "country": "BA",
@@ -103176,8 +103514,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LQSBUIR",
+      "code": "LQSB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LQSBUIR",
       "name": "SARAJEVO UIR",
       "city": "Sarajevo",
       "country": "BA",
@@ -103227,8 +103567,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LRBBFIR",
+      "code": "LRBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LRBBFIR",
       "name": "BUCAREST FIR",
       "city": "Bucarest",
       "country": "RO",
@@ -103582,8 +103924,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LSASFIR",
+      "code": "LSAS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LSASFIR",
       "name": "SWITZERLAND FIR",
       "city": "Switzerland",
       "country": "CH",
@@ -103601,8 +103945,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LSASUIR",
+      "code": "LSAS",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LSASUIR",
       "name": "SWITZERLAND UIR",
       "city": "Switzerland",
       "country": "CH",
@@ -103972,8 +104318,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LTAAFIR",
+      "code": "LTAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LTAAFIR",
       "name": "ANKARA FIR",
       "city": "Ankara",
       "country": "TR",
@@ -104375,8 +104723,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LTBBFIR",
+      "code": "LTBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LTBBFIR",
       "name": "ISTANBUL FIR",
       "city": "Istanbul",
       "country": "TR",
@@ -105370,8 +105720,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LUUUFIR",
+      "code": "LUUU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LUUUFIR",
       "name": "CHISINAU FIR",
       "city": "Chisinau",
       "country": "MD",
@@ -105437,8 +105789,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LWSSFIR",
+      "code": "LWSS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LWSSFIR",
       "name": "SKOPJE FIR",
       "city": "Skopje",
       "country": "MK",
@@ -105472,8 +105826,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LYBAFIR",
+      "code": "LYBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LYBAFIR",
       "name": "BEOGRAD FIR",
       "city": "Beograd",
       "country": "RS",
@@ -105491,8 +105847,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "LYBAUIR",
+      "code": "LYBA",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "LYBAUIR",
       "name": "BEOGRAD UIR",
       "city": "Beograd",
       "country": "RS",
@@ -105670,8 +106028,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "LZBBFIR",
+      "code": "LZBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "LZBBFIR",
       "name": "BRATISLAVA  FIR",
       "city": "Bratislava",
       "country": "SK",
@@ -105945,8 +106305,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MDCSFIR",
+      "code": "MDCS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MDCSFIR",
       "name": "SANTO DOMINGO FIR",
       "city": "Santo Domingo",
       "country": "DO",
@@ -105964,8 +106326,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "MDCSUIR",
+      "code": "MDCS",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MDCSUIR",
       "name": "SANTO DOMINGO UIR",
       "city": "Santo Domingo",
       "country": "DO",
@@ -106399,8 +106763,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MHCCFIR",
+      "code": "MHCC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MHCCFIR",
       "name": "CENTRAL AMERICA FIR",
       "city": "Central America",
       "country": "HN",
@@ -106418,8 +106784,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "MHCCUIR",
+      "code": "MHCC",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MHCCUIR",
       "name": "CENTRAL AMERICA UIR",
       "city": "Central America",
       "country": "HN",
@@ -106741,8 +107109,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MKJKFIR",
+      "code": "MKJK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MKJKFIR",
       "name": "KINGSTON FIR",
       "city": "Kingston",
       "country": "JM",
@@ -106760,8 +107130,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "MKJKUIR",
+      "code": "MKJK",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "MKJKUIR",
       "name": "KINGSTON UIR",
       "city": "Kingston",
       "country": "JM",
@@ -107099,8 +107471,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MMFOFIR",
+      "code": "MMFO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MMFOFIR",
       "name": "OCEANICA MAZATLAN",
       "city": "Oceanica Mazatlan",
       "country": "MX",
@@ -107118,8 +107492,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "MMFRFIR",
+      "code": "MMFR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MMFRFIR",
       "name": "MEXICO",
       "city": "Mexico",
       "country": "MX",
@@ -108369,8 +108745,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MPZLFIR",
+      "code": "MPZL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MPZLFIR",
       "name": "PANAMA FIR",
       "city": "Panama",
       "country": "PA",
@@ -108612,8 +108990,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MTEGFIR",
+      "code": "MTEG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MTEGFIR",
       "name": "PORT-AU-PRINCE FIR",
       "city": "Port-Au-Prince",
       "country": "HT",
@@ -108775,8 +109155,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "MUFHFIR",
+      "code": "MUFH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "MUFHFIR",
       "name": "HABANA FIR/UIR",
       "city": "Habana /",
       "country": "CU",
@@ -109418,8 +109800,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "NFFFFIR",
+      "code": "NFFF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NFFFFIR",
       "name": "NADI FIR",
       "city": "Nadi",
       "country": "FJ",
@@ -109965,8 +110349,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "NTTTFIR",
+      "code": "NTTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NTTTFIR",
       "name": "TAHITI OCEANIC FIR",
       "city": "Tahiti",
       "country": "PF",
@@ -110656,8 +111042,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "NZZCFIR",
+      "code": "NZZC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NZZCFIR",
       "name": "NEW ZEALAND FIR",
       "city": "New Zealand",
       "country": "NZ",
@@ -110675,8 +111063,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "NZZOFIR",
+      "code": "NZZO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "NZZOFIR",
       "name": "AUCKLAND OCEANIC",
       "city": "Auckland",
       "country": "NZ",
@@ -110822,8 +111212,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OAKXFIR",
+      "code": "OAKX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OAKXFIR",
       "name": "KABUL FIR",
       "city": "Kabul",
       "country": "AF",
@@ -110937,8 +111329,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OBBBFIR",
+      "code": "OBBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OBBBFIR",
       "name": "BAHRAIN FIR",
       "city": "Bahrain",
       "country": "BH",
@@ -110956,8 +111350,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "OBBBUIR",
+      "code": "OBBB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OBBBUIR",
       "name": "BAHRAIN UIR",
       "city": "Bahrain",
       "country": "BH",
@@ -111247,8 +111643,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OEJDFIR",
+      "code": "OEJD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OEJDFIR",
       "name": "JEDDAH FIR",
       "city": "Jeddah",
       "country": "SA",
@@ -112258,8 +112656,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OIIXFIR",
+      "code": "OIIX",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OIIXFIR",
       "name": "TEHRAN FIR",
       "city": "Tehran",
       "country": "IR",
@@ -112981,8 +113381,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OJACFIR",
+      "code": "OJAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OJACFIR",
       "name": "AMMAN FIR",
       "city": "Amman",
       "country": "JO",
@@ -113128,8 +113530,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OKACFIR",
+      "code": "OKAC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OKACFIR",
       "name": "KUWAIT FIR",
       "city": "Kuwait",
       "country": "KW",
@@ -113211,8 +113615,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OLBBFIR",
+      "code": "OLBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OLBBFIR",
       "name": "BEIRUT FIR",
       "city": "Beirut",
       "country": "LB",
@@ -113230,8 +113636,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "OLBBUIR",
+      "code": "OLBB",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OLBBUIR",
       "name": "BEIRUT UIR",
       "city": "Beirut",
       "country": "LB",
@@ -113297,8 +113705,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OMAEFIR",
+      "code": "OMAE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OMAEFIR",
       "name": "EMIRATES FIR",
       "city": "Emirates",
       "country": "AE",
@@ -113316,8 +113726,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "OMAEUIR",
+      "code": "OMAE",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "OMAEUIR",
       "name": "EMIRATES UIR",
       "city": "Emirates",
       "country": "AE",
@@ -113639,8 +114051,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OOMMFIR",
+      "code": "OOMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OOMMFIR",
       "name": "MUSCAT FIR",
       "city": "Muscat",
       "country": "OM",
@@ -113914,8 +114328,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OPKRFIR",
+      "code": "OPKR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OPKRFIR",
       "name": "KARACHI FIR",
       "city": "Karachi",
       "country": "PK",
@@ -113965,8 +114381,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OPLRFIR",
+      "code": "OPLR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OPLRFIR",
       "name": "LAHORE FIR",
       "city": "Lahore",
       "country": "PK",
@@ -114240,8 +114658,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ORBBFIR",
+      "code": "ORBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ORBBFIR",
       "name": "BAGHDAD FIR",
       "city": "Baghdad",
       "country": "IQ",
@@ -114563,8 +114983,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OSTTFIR",
+      "code": "OSTT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OSTTFIR",
       "name": "DAMASCUS FIR",
       "city": "Damascus",
       "country": "SY",
@@ -114614,8 +115036,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OTDFFIR",
+      "code": "OTDF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OTDFFIR",
       "name": "QATAR FIR",
       "city": "Qatar",
       "country": "QA",
@@ -114873,8 +115297,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "OYSCFIR",
+      "code": "OYSC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "OYSCFIR",
       "name": "SANAA FIR",
       "city": "Sanaa",
       "country": "YE",
@@ -118156,8 +118582,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "PAZAFIR",
+      "code": "PAZA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "PAZAFIR",
       "name": "ALASKA FIR",
       "city": "Alaska",
       "country": "US",
@@ -119119,8 +119547,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "RCAAFIR",
+      "code": "RCAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RCAAFIR",
       "name": "TAIPEI FIR",
       "city": "Taipei",
       "country": "TW",
@@ -120434,8 +120864,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "RJJJFIR",
+      "code": "RJJJ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RJJJFIR",
       "name": "JAPAN+PHILIPPINES",
       "city": "Japan+philippines",
       "country": "JP",
@@ -121733,8 +122165,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "RKRRFIR",
+      "code": "RKRR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RKRRFIR",
       "name": "INCHEON FIR",
       "city": "Incheon",
       "country": "KR",
@@ -122632,8 +123066,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "RPHIFIR",
+      "code": "RPHI",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "RPHIFIR",
       "name": "MANILA FIR",
       "city": "Manila",
       "country": "PH",
@@ -123451,8 +123887,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SACFFIR",
+      "code": "SACF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SACFFIR",
       "name": "CORDOBA FIR",
       "city": "Cordoba",
       "country": "AR",
@@ -123630,8 +124068,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SAEFFIR",
+      "code": "SAEF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAEFFIR",
       "name": "EZEIZA FIR",
       "city": "Ezeiza",
       "country": "AR",
@@ -123681,8 +124121,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SAMFFIR",
+      "code": "SAMF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAMFFIR",
       "name": "MENDOZA FIR",
       "city": "Mendoza",
       "country": "AR",
@@ -124148,8 +124590,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SARRFIR",
+      "code": "SARR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SARRFIR",
       "name": "RESISTENCIA FIR",
       "city": "Resistencia",
       "country": "AR",
@@ -124343,8 +124787,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SAVFFIR",
+      "code": "SAVF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SAVFFIR",
       "name": "COMODORO RIVADAVIA FIR",
       "city": "Comodoro Rivadavia",
       "country": "AR",
@@ -124890,8 +125336,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SBAOFIR",
+      "code": "SBAO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBAOFIR",
       "name": "ATLANTICO FIR",
       "city": "Atlantico",
       "country": "BR",
@@ -124989,8 +125437,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SBAZFIR",
+      "code": "SBAZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBAZFIR",
       "name": "AMAZONICA FIR",
       "city": "Amazonica",
       "country": "BR",
@@ -125120,8 +125570,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SBBSFIR",
+      "code": "SBBS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBBSFIR",
       "name": "BRASILIA FIR",
       "city": "Brasilia",
       "country": "BR",
@@ -125427,8 +125879,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SBCWFIR",
+      "code": "SBCW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBCWFIR",
       "name": "CURITIBA FIR",
       "city": "Curitiba",
       "country": "BR",
@@ -126566,8 +127020,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SBREFIR",
+      "code": "SBRE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SBREFIR",
       "name": "RECIFE FIR",
       "city": "Recife",
       "country": "BR",
@@ -127305,8 +127761,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SCCZFIR",
+      "code": "SCCZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCCZFIR",
       "name": "PUNTA ARENAS FIR",
       "city": "Punta Arenas",
       "country": "CL",
@@ -127372,8 +127830,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SCEZFIR",
+      "code": "SCEZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCEZFIR",
       "name": "SANTIAGO FIR",
       "city": "Santiago",
       "country": "CL",
@@ -127439,8 +127899,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SCFZFIR",
+      "code": "SCFZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCFZFIR",
       "name": "ANTOFAGASTA FIR",
       "city": "Antofagasta",
       "country": "CL",
@@ -127586,8 +128048,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SCIZFIR",
+      "code": "SCIZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCIZFIR",
       "name": "ISLA DE PASCUA FIR",
       "city": "Isla De Pascua",
       "country": "CL",
@@ -127893,8 +128357,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SCTZFIR",
+      "code": "SCTZ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SCTZFIR",
       "name": "PUERTO MONTT FIR",
       "city": "Puerto Montt",
       "country": "CL",
@@ -128040,8 +128506,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SEFGFIR",
+      "code": "SEFG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SEFGFIR",
       "name": "GUAYAQUIL FIR/UIR",
       "city": "Guayaquil /",
       "country": "EC",
@@ -128555,8 +129023,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SGFAFIR",
+      "code": "SGFA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SGFAFIR",
       "name": "ASUNCION FIR/UIR",
       "city": "Asuncion /",
       "country": "PY",
@@ -128942,8 +129412,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SKECFIR",
+      "code": "SKEC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SKECFIR",
       "name": "BARRANQUILLA FIR",
       "city": "Barranquilla",
       "country": "CO",
@@ -128961,8 +129433,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "SKEDFIR",
+      "code": "SKED",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SKEDFIR",
       "name": "BOGOTA FIR",
       "city": "Bogota",
       "country": "CO",
@@ -129748,8 +130222,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SLLFFIR",
+      "code": "SLLF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SLLFFIR",
       "name": "LA PAZ FIR",
       "city": "La Paz",
       "country": "BO",
@@ -130119,8 +130595,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SMPMFIR",
+      "code": "SMPM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SMPMFIR",
       "name": "PARAMARIBO FIR",
       "city": "Paramaribo",
       "country": "SR",
@@ -130202,8 +130680,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SOOOFIR",
+      "code": "SOOO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SOOOFIR",
       "name": "FIR CAYENNE",
       "city": "Cayenne",
       "country": "GF",
@@ -130221,8 +130701,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "SOOOUIR",
+      "code": "SOOO",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "SOOOUIR",
       "name": "UIR CAYENNE",
       "city": "Cayenne",
       "country": "GF",
@@ -130384,8 +130866,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SPIMFIR",
+      "code": "SPIM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SPIMFIR",
       "name": "LIMA FIR",
       "city": "Lima",
       "country": "PE",
@@ -130851,8 +131335,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SUEOFIR",
+      "code": "SUEO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SUEOFIR",
       "name": "MONTEVIDEO FIR",
       "city": "Montevideo",
       "country": "UY",
@@ -131798,8 +132284,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SVZMFIR",
+      "code": "SVZM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SVZMFIR",
       "name": "MAIQUETIA FIR",
       "city": "Maiquetia",
       "country": "VE",
@@ -131881,8 +132369,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "SYGCFIR",
+      "code": "SYGC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "SYGCFIR",
       "name": "GEORGETOWN FIR",
       "city": "Georgetown",
       "country": "GY",
@@ -132316,8 +132806,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "TJZSFIR",
+      "code": "TJZS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TJZSFIR",
       "name": "SAN JUAN OCEANIC FIR/UIR",
       "city": "San Juan /",
       "country": "PR",
@@ -132463,8 +132955,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "TNCFFIR",
+      "code": "TNCF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TNCFFIR",
       "name": "CURACAO FIR",
       "city": "Curacao",
       "country": "BQ",
@@ -132482,8 +132976,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "TNCFUIR",
+      "code": "TNCF",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "TNCFUIR",
       "name": "CURACAO UIR",
       "city": "Curacao",
       "country": "BQ",
@@ -132613,8 +133109,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "TTZPFIR",
+      "code": "TTZP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "TTZPFIR",
       "name": "PIARCO FIR",
       "city": "Piarco",
       "country": "TT",
@@ -132632,8 +133130,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "TTZPUIR",
+      "code": "TTZP",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "TTZPUIR",
       "name": "PIARCO UIR",
       "city": "Piarco",
       "country": "TT",
@@ -132763,8 +133263,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UAAAFIR",
+      "code": "UAAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UAAAFIR",
       "name": "KAZACHSTAN MERGED FI",
       "city": null,
       "country": "KZ",
@@ -132846,8 +133348,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UACNFIR",
+      "code": "UACN",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UACNFIR",
       "name": "UACN NUR-SULTAN FIR",
       "city": "Uacn Nur-Sultan",
       "country": "KZ",
@@ -132913,8 +133417,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UAIIFIR",
+      "code": "UAII",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UAIIFIR",
       "name": "SHYMKENT FIR",
       "city": "Shymkent",
       "country": "KZ",
@@ -133124,8 +133630,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UATTFIR",
+      "code": "UATT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UATTFIR",
       "name": "AKTOBE FIR",
       "city": "Aktobe",
       "country": "KZ",
@@ -133159,8 +133667,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UBBAFIR",
+      "code": "UBBA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UBBAFIR",
       "name": "BAKU FIR",
       "city": "Baku",
       "country": "AZ",
@@ -133370,8 +133880,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UCFMFIR",
+      "code": "UCFM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UCFMFIR",
       "name": "BISHKEK FIR",
       "city": "Bishkek",
       "country": "KG",
@@ -133405,8 +133917,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UCFOFIR",
+      "code": "UCFO",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UCFOFIR",
       "name": "OSH FIR",
       "city": "Osh",
       "country": "KG",
@@ -133424,8 +133938,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "UDDDFIR",
+      "code": "UDDD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UDDDFIR",
       "name": "YEREVAN FIR",
       "city": "Yerevan",
       "country": "AM",
@@ -133491,8 +134007,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UEEEFIR",
+      "code": "UEEE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UEEEFIR",
       "name": "YAKUTSK",
       "city": "Yakutsk",
       "country": "RU",
@@ -133622,8 +134140,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UGGGFIR",
+      "code": "UGGG",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UGGGFIR",
       "name": "TIBILISI FIR",
       "city": "Tibilisi",
       "country": "GE",
@@ -133641,8 +134161,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "UGGGUIR",
+      "code": "UGGG",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "UGGGUIR",
       "name": "TIBILISI UIR",
       "city": "Tibilisi",
       "country": "GE",
@@ -133788,8 +134310,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UHHHFIR",
+      "code": "UHHH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UHHHFIR",
       "name": "KHABAROVSK FIR",
       "city": "Khabarovsk",
       "country": "RU",
@@ -133887,8 +134411,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UHMMFIR",
+      "code": "UHMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UHMMFIR",
       "name": "MAGADAN",
       "city": "Magadan",
       "country": "RU",
@@ -134050,8 +134576,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UIIIFIR",
+      "code": "UIII",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UIIIFIR",
       "name": "IRKUTSK FIR",
       "city": "Irkutsk",
       "country": "RU",
@@ -134181,8 +134709,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UKBVFIR",
+      "code": "UKBV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKBVFIR",
       "name": "KIEV FIR",
       "city": "Kiev",
       "country": "UA",
@@ -134200,8 +134730,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "UKBVUIR",
+      "code": "UKBV",
       "type": "UIR",
+      "subarea": null,
+      "airspace_id": "UKBVUIR",
       "name": "KIEV UIR",
       "city": "Kiev",
       "country": "UA",
@@ -134315,8 +134847,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UKDVFIR",
+      "code": "UKDV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKDVFIR",
       "name": "DNIPROPETROVSK FIR",
       "city": "Dnipropetrovsk",
       "country": "UA",
@@ -134350,8 +134884,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UKFVFIR",
+      "code": "UKFV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKFVFIR",
       "name": "SIMFEROPOL FIR",
       "city": "Simferopol",
       "country": "UA",
@@ -134529,8 +135065,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UKLVFIR",
+      "code": "UKLV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKLVFIR",
       "name": "LVOV FIR",
       "city": "Lvov",
       "country": "UA",
@@ -134596,8 +135134,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UKOVFIR",
+      "code": "UKOV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UKOVFIR",
       "name": "ODESSA FIR",
       "city": "Odessa",
       "country": "UA",
@@ -134711,8 +135251,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ULLLFIR",
+      "code": "ULLL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ULLLFIR",
       "name": null,
       "city": null,
       "country": "RU",
@@ -134922,8 +135464,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UMKKFIR",
+      "code": "UMKK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UMKKFIR",
       "name": "KALININGRAD FIR",
       "city": "Kaliningrad",
       "country": "RU",
@@ -134989,8 +135533,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UMMVFIR",
+      "code": "UMMV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UMMVFIR",
       "name": "MINSK FIR",
       "city": "Minsk",
       "country": "BY",
@@ -135104,8 +135650,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UNKLFIR",
+      "code": "UNKL",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UNKLFIR",
       "name": "KRASNOYARSK FIR",
       "city": "Krasnoyarsk",
       "country": "RU",
@@ -135155,8 +135703,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UNNTFIR",
+      "code": "UNNT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UNNTFIR",
       "name": "NOVOSIBIRSK FIR",
       "city": "Novosibirsk",
       "country": "RU",
@@ -135462,8 +136012,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "URRVFIR",
+      "code": "URRV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "URRVFIR",
       "name": null,
       "city": null,
       "country": "RU",
@@ -135737,8 +136289,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "USSVFIR",
+      "code": "USSV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "USSVFIR",
       "name": "YEKATERINBURG",
       "city": "Yekaterinburg",
       "country": "RU",
@@ -135772,8 +136326,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "USTVFIR",
+      "code": "USTV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "USTVFIR",
       "name": "TYUMEN FIR",
       "city": "Tyumen",
       "country": "RU",
@@ -135807,8 +136363,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTAAFIR",
+      "code": "UTAA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAAFIR",
       "name": "TURKMENISTAN FIR",
       "city": "Turkmenistan",
       "country": "TM",
@@ -135842,8 +136400,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTAKFIR",
+      "code": "UTAK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAKFIR",
       "name": "TURKMENBASHI FIR",
       "city": "Turkmenbashi",
       "country": "TM",
@@ -135893,8 +136453,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTATFIR",
+      "code": "UTAT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTATFIR",
       "name": "DASHOGUZ FIR",
       "city": "Dashoguz",
       "country": "TM",
@@ -135928,8 +136490,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTAVFIR",
+      "code": "UTAV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTAVFIR",
       "name": "TURKMENABAT FIR",
       "city": "Turkmenabat",
       "country": "TM",
@@ -135963,8 +136527,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTDDFIR",
+      "code": "UTDD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTDDFIR",
       "name": "TAJIKISTAN FIR",
       "city": "Tajikistan",
       "country": "TJ",
@@ -136030,8 +136596,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UTSDFIR",
+      "code": "UTSD",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTSDFIR",
       "name": "SAMARKAND FIR",
       "city": "Samarkand",
       "country": "TM",
@@ -136049,8 +136617,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "UTTRFIR",
+      "code": "UTTR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UTTRFIR",
       "name": "TASHKENT FIR",
       "city": "Tashkent",
       "country": "TM",
@@ -136276,8 +136846,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UUWVFIR",
+      "code": "UUWV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UUWVFIR",
       "name": "MOSCOW FIR",
       "city": "Moscow",
       "country": "RU",
@@ -136615,8 +137187,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "UWWWFIR",
+      "code": "UWWW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "UWWWFIR",
       "name": "UWWW SAMARA FIR",
       "city": "Uwww Samara",
       "country": "RU",
@@ -136922,8 +137496,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VABFFIR",
+      "code": "VABF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VABFFIR",
       "name": "MUMBAI FIR",
       "city": "Mumbai",
       "country": "IN",
@@ -137453,8 +138029,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VCCFFIR",
+      "code": "VCCF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VCCFFIR",
       "name": "COLOMBO FIR",
       "city": "Colombo",
       "country": "LK",
@@ -137536,8 +138114,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VDPFFIR",
+      "code": "VDPF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VDPFFIR",
       "name": "PHNOM PENH FIR",
       "city": "Phnom Penh",
       "country": "KH",
@@ -137779,8 +138359,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VECFFIR",
+      "code": "VECF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VECFFIR",
       "name": "KOLKATA FIR",
       "city": "Kolkata",
       "country": "IN",
@@ -138438,8 +139020,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VGFRFIR",
+      "code": "VGFR",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VGFRFIR",
       "name": "DHAKA FIR",
       "city": "Dhaka",
       "country": "BD",
@@ -138601,8 +139185,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VHHKFIR",
+      "code": "VHHK",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VHHKFIR",
       "name": "HONG KONG FIR",
       "city": "Hong Kong",
       "country": "HK",
@@ -138844,8 +139430,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VIDFFIR",
+      "code": "VIDF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VIDFFIR",
       "name": "DELHI FIR",
       "city": "Delhi",
       "country": "IN",
@@ -139439,8 +140027,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VLVTFIR",
+      "code": "VLVT",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VLVTFIR",
       "name": "VIENTIANE FIR",
       "city": "Vientiane",
       "country": "LA",
@@ -139570,8 +140160,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VNSMFIR",
+      "code": "VNSM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VNSMFIR",
       "name": "KATHMANDU FIR",
       "city": "Kathmandu",
       "country": "NP",
@@ -140069,8 +140661,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VOMFFIR",
+      "code": "VOMF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VOMFFIR",
       "name": "CHENNAI FIR",
       "city": "Chennai",
       "country": "IN",
@@ -140408,8 +141002,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VRMFFIR",
+      "code": "VRMF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VRMFFIR",
       "name": "MALE FIR",
       "city": "Male",
       "country": "MV",
@@ -140475,8 +141071,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VTBBFIR",
+      "code": "VTBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VTBBFIR",
       "name": "BANGKOK FIR",
       "city": "Bangkok",
       "country": "TH",
@@ -141534,8 +142132,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VVTSFIR",
+      "code": "VVTS",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VVTSFIR",
       "name": "HO CHI MINH FIR",
       "city": "Ho Chi Minh",
       "country": "VN",
@@ -141585,8 +142185,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VVVVFIR",
+      "code": "VVVV",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VVVVFIR",
       "name": "V W A REGION",
       "city": null,
       "country": "VN",
@@ -141652,8 +142254,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "VYYFFIR",
+      "code": "VYYF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "VYYFFIR",
       "name": "YANGON FIR",
       "city": "Yangon",
       "country": "MM",
@@ -141719,8 +142323,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "WAAFFIR",
+      "code": "WAAF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WAAFFIR",
       "name": "UJUNG PANDANG AND AROUND",
       "city": "Ujung Pandang And Around",
       "country": "ID",
@@ -142730,8 +143336,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "WBFCFIR",
+      "code": "WBFC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WBFCFIR",
       "name": "KOTA KINABALU FIR",
       "city": "Kota Kinabalu",
       "country": "MY",
@@ -143149,8 +143757,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "WIIFFIR",
+      "code": "WIIF",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WIIFFIR",
       "name": "JAKARTA",
       "city": "Jakarta",
       "country": "ID",
@@ -143664,8 +144274,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "WMFCFIR",
+      "code": "WMFC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WMFCFIR",
       "name": "KUALA LUMPUR FIR",
       "city": "Kuala Lumpur",
       "country": "MY",
@@ -143955,8 +144567,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "WSJCFIR",
+      "code": "WSJC",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "WSJCFIR",
       "name": "SINGAPORE FIR",
       "city": "Singapore",
       "country": "SG",
@@ -144007,13 +144621,15 @@
     },
     {
       "code": "XXXX",
-      "type": "OTHER",
-      "name": "NO FIR WEST OF PERU",
-      "city": "No West Of Peru",
+      "type": "FIR",
+      "subarea": null,
+      "airspace_id": "XXXXFIR",
+      "name": "FIR XX",
+      "city": "Xx",
       "country": null,
       "country_name": null,
-      "lat": -2.5,
-      "lon": -105,
+      "lat": -88.5,
+      "lon": -179,
       "icao_state": "XX",
       "min_fl": 0,
       "max_fl": 999,
@@ -144025,14 +144641,16 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "XXXXFIR",
-      "type": "FIR",
-      "name": "FIR XX",
-      "city": "Xx",
+      "code": "XXXX",
+      "type": "OTHER",
+      "subarea": null,
+      "airspace_id": "XXXX",
+      "name": "NO FIR WEST OF PERU",
+      "city": "No West Of Peru",
       "country": null,
       "country_name": null,
-      "lat": -88.5,
-      "lon": -179,
+      "lat": -2.5,
+      "lon": -105,
       "icao_state": "XX",
       "min_fl": 0,
       "max_fl": 999,
@@ -144156,8 +144774,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "YBBBFIR",
+      "code": "YBBB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "YBBBFIR",
       "name": "BRISBANE FIR",
       "city": "Brisbane",
       "country": "AU",
@@ -145263,8 +145883,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "YMMMFIR",
+      "code": "YMMM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "YMMMFIR",
       "name": "MELBOURNE FIR",
       "city": "Melbourne",
       "country": "AU",
@@ -146258,8 +146880,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZBPEFIR",
+      "code": "ZBPE",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZBPEFIR",
       "name": "BEIJING FIR",
       "city": "Beijing",
       "country": "CN",
@@ -146501,8 +147125,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZGZUFIR",
+      "code": "ZGZU",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZGZUFIR",
       "name": "GUANGZHOU FIR",
       "city": "Guangzhou",
       "country": "CN",
@@ -146568,8 +147194,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZHWHFIR",
+      "code": "ZHWH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZHWHFIR",
       "name": "WUHAN FIR",
       "city": "Wuhan",
       "country": "CN",
@@ -146603,8 +147231,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZJSAFIR",
+      "code": "ZJSA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZJSAFIR",
       "name": "SANYA FIR",
       "city": "Sanya",
       "country": "CN",
@@ -146654,8 +147284,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZKKPFIR",
+      "code": "ZKKP",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZKKPFIR",
       "name": "PYONGYANG FIR",
       "city": "Pyongyang",
       "country": "KP",
@@ -146705,8 +147337,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZLHWFIR",
+      "code": "ZLHW",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZLHWFIR",
       "name": "LANZHOU FIR",
       "city": "Lanzhou",
       "country": "CN",
@@ -146868,8 +147502,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZMUBFIR",
+      "code": "ZMUB",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZMUBFIR",
       "name": "ULAANBAATAR FIR",
       "city": "Ulaanbaatar",
       "country": "MN",
@@ -146887,8 +147523,10 @@
       "source": "eurocontrol-nm"
     },
     {
-      "code": "ZPKMFIR",
+      "code": "ZPKM",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZPKMFIR",
       "name": "KUNMING FIR",
       "city": "Kunming",
       "country": "CN",
@@ -147002,8 +147640,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZSHAFIR",
+      "code": "ZSHA",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZSHAFIR",
       "name": "SHANGHAI FIR",
       "city": "Shanghai",
       "country": "CN",
@@ -147373,8 +148013,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZWUQFIR",
+      "code": "ZWUQ",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZWUQFIR",
       "name": "URUMQI FIR",
       "city": "Urumqi",
       "country": "CN",
@@ -147472,8 +148114,10 @@
       "source": "awc-station-cache"
     },
     {
-      "code": "ZYSHFIR",
+      "code": "ZYSH",
       "type": "FIR",
+      "subarea": null,
+      "airspace_id": "ZYSHFIR",
       "name": "SHENYANG FIR",
       "city": "Shenyang",
       "country": "CN",

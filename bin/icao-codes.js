@@ -179,10 +179,24 @@ function resolveCountry (code) {
 
 // ---- [FU]IRs -------------------------------------------------------------
 
-// A trailing letter is a sub-area qualifier (GCCCUIRN/GCCCUIRS); what is left over
-// genuinely is not an [FU]IR (rerouting extensions, the XXXX placeholder).
-const classify = code =>
-  /UIR[A-Z]?$/.test(code) ? 'UIR' : /FIR[A-Z]?$/.test(code) ? 'FIR' : 'OTHER'
+// EUROCONTROL's airspace identifier is the ICAO location indicator of the responsible
+// FIC/ACC with FIR or UIR glued on, plus an optional sub-area letter: Damascus FIR is
+// carried as OSTTFIR, the halves of the Canarias UIR as GCCCUIRN/GCCCUIRS. The ICAO
+// code is the leading four characters -- OSTT -- and FIR-vs-UIR is a *type*, not part
+// of the code, so split the identifier into its three parts and keep the original for
+// traceability back into the NM data.
+//
+// Note the 4-letter code alone is not a key: 60 indicators carry both an FIR and a UIR
+// (EGTTFIR/EGTTUIR), and 31 collide with an aerodrome of the same name -- HSSS is both
+// Khartoum airport and the Khartoum FIC. (code, type, subarea) is unique; code is not.
+const AIRSPACE_ID = /^([A-Z]{4})(FIR|UIR)([A-Z]?)$/
+
+function parseAirspaceId (id) {
+  const m = AIRSPACE_ID.exec(id)
+  // BODO, EGGX, LPPO and XXXX do not follow the pattern and are not [FU]IRs anyway
+  if (!m) return { code: id, type: 'OTHER', subarea: null }
+  return { code: m[1], type: m[2], subarea: m[3] || null }
+}
 
 // Region names are mostly just the FIC city ("PARIS FIR"), dressed with airspace words
 // and qualifiers. Strip those FIRST -- "EDMONTON FLIGHT INFORMATION REGION" and
@@ -226,19 +240,24 @@ const bboxCenter = geom => {
 const regions = new Map()
 for (const feat of JSON.parse(fs.readFileSync(irFile, 'utf8')).features) {
   const p = feat.properties
-  const code = p.code
-  const existing = regions.get(code)
+  const airspaceId = p.code
+  // keyed on the NM identifier, which stays unique where the bare ICAO code does not
+  const existing = regions.get(airspaceId)
   if (existing) {
     existing.min_fl = Math.min(existing.min_fl, p.min_fl)
     existing.max_fl = Math.max(existing.max_fl, p.max_fl)
     continue
   }
-  const { country, matched_prefix } = resolveCountry(code)
+  const { code, type, subarea } = parseAirspaceId(airspaceId)
+  // resolve country off the full identifier: its first 2-4 chars are the ICAO prefix
+  const { country, matched_prefix } = resolveCountry(airspaceId)
   const { city, city_source } = regionCity(p.name, country)
   const center = feat.geometry ? bboxCenter(feat.geometry) : { lat: null, lon: null }
-  regions.set(code, {
+  regions.set(airspaceId, {
     code,
-    type: classify(code),
+    type,
+    subarea,
+    airspace_id: airspaceId,
     name: p.name || null,
     city,
     country,
@@ -260,18 +279,33 @@ for (const feat of JSON.parse(fs.readFileSync(irFile, 'utf8')).features) {
 // ---- combine -------------------------------------------------------------
 
 const entries = [...regions.values(), ...airports]
-  .sort((a, b) => a.code.localeCompare(b.code) || a.type.localeCompare(b.type))
+  .sort((a, b) =>
+    a.code.localeCompare(b.code) ||
+    a.type.localeCompare(b.type) ||
+    (a.subarea || '').localeCompare(b.subarea || ''))
 
 const COLUMNS = [
-  'code', 'type', 'name', 'city', 'country', 'country_name', 'lat', 'lon',
+  'code', 'type', 'subarea', 'name', 'city', 'country', 'country_name', 'lat', 'lon',
   'iata', 'icao_state', 'min_fl', 'max_fl', 'eurocontrol_member', 'fab',
   'elev_m', 'state_code', 'site_types', 'city_source', 'country_prefix',
-  'airac_cfmu', 'source'
+  'airspace_id', 'airac_cfmu', 'source'
 ]
 const cell = v => {
   if (v === null || v === undefined) return ''
   const s = String(v)
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+}
+
+// (code, type, subarea) is the documented key. Fail loudly rather than emit a file
+// whose rows silently collide -- `code` alone is deliberately not unique.
+const seen = new Set()
+for (const e of entries) {
+  const key = `${e.code} ${e.type} ${e.subarea || ''}`
+  if (seen.has(key)) {
+    console.error(`FATAL: duplicate (code, type, subarea): ${e.code} ${e.type} ${e.subarea || '-'}`)
+    process.exit(1)
+  }
+  seen.add(key)
 }
 fs.writeFileSync(outCsv,
   [COLUMNS.join(','), ...entries.map(e => COLUMNS.map(c => cell(e[c])).join(','))].join('\n') + '\n')
@@ -299,5 +333,6 @@ console.error(`regions: country ${pct(regionList.filter(r => r.country).length, 
   ` (${fmt(regionList.reduce((a, r) => (a[r.city_source || 'none'] = (a[r.city_source || 'none'] || 0) + 1, a), {}))})`)
 console.error(`airports: country ${pct(airports.filter(a => a.country).length, airports.length)}` +
   `, city ${pct(airports.filter(a => a.city).length, airports.length)}`)
-const noCountry = regionList.filter(r => !r.country).map(r => r.code)
+// report the NM identifier, not the bare code -- XXXX and XXXXFIR both reduce to XXXX
+const noCountry = regionList.filter(r => !r.country).map(r => r.airspace_id)
 if (noCountry.length) console.error(`  regions with no country: ${noCountry.join(', ')}`)
