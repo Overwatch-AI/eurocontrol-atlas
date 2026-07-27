@@ -31,6 +31,9 @@ AIRAC_CURRENT = 524
 PRUATLAS_SHA = 0927219fec659e28913a325c7473c38239675003
 PRUATLAS_RAW = https://raw.githubusercontent.com/euctrl-pru/pruatlas/$(PRUATLAS_SHA)/inst/extdata
 
+# NOAA/AWC station cache: supplies city + country for both airports and, via the
+# ICAO location-indicator prefix, the [FU]IRs. https://aviationweather.gov/data/api/#cache
+AWC_CACHE = https://aviationweather.gov/data/cache
 
 join-with = $(subst $(space),$1,$2)
 comma := ,
@@ -265,6 +268,20 @@ geojson/ir-$(AIRAC_CURRENT).geojson:
 	mkdir -p $(dir $@)
 	curl -fsSL -o $@ $(PRUATLAS_RAW)/$(notdir $@)
 
+# refreshed daily upstream, so .PHONY would re-fetch on every make; delete to update
+geojson/stations.json:
+	mkdir -p $(dir $@)
+	curl -fsSL $(AWC_CACHE)/stations.cache.json.gz | gzip -dc > $@
+
+# unified ICAO lookup: [FU]IRs + aerodromes, each with city and country
+.PHONY: icao-codes
+icao-codes: data/icao-codes.json data/icao-codes.csv
+
+data/icao-codes.json data/icao-codes.csv &: \
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js
+	AIRAC=$(AIRAC_CURRENT) node bin/icao-codes.js \
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
+		data/icao-codes.json data/icao-codes.csv
 
 # attributes of the legacy 406 snapshot, used only as the reconciliation baseline
 $(FIRS_ALL_TMP): shp/euctrl/firs_unfiltered.shp
@@ -510,6 +527,7 @@ clean-tmp:
 					data/country-id-name.csv data/country-ids data/flags-names \
 					data/world-country-names.tsv \
 					data/firs-all.csv data/firs-all.json data/firs-diff.csv \
+					data/icao-codes.json data/icao-codes.csv \
 					geojson $(FIRS_ALL_TMP) \
 					zip/ne_\*.zip $(CSVS)
 

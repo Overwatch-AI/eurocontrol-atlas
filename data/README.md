@@ -2,6 +2,59 @@ Note: Kosovo has been assigned numeric code 900
 
 The file `world-country-names.tsv` comes from [Mike Bostock](https://gist.github.com/mbostock/4090846) and has been modified for Kosovo.
 
+## `icao-codes.json` / `icao-codes.csv` — unified ICAO code lookup
+
+One row per ICAO code covering **both** the [FU]IRs of the current AIRAC cycle and
+every aerodrome/station in the NOAA AWC station cache, each with a city and country.
+Built by `make icao-codes`. 9159 codes: 8837 `AIRPORT`, 255 `FIR`, 63 `UIR`, 4 `OTHER`.
+
+Sources: `ir-<cycle>.geojson` (see below) for the regions, and the
+[AWC station cache](https://aviationweather.gov/data/api/#cache)
+(`stations.cache.json.gz`, refreshed daily) for the aerodromes and for all city/country
+resolution. Delete `geojson/stations.json` to pull a fresh cache.
+
+### How city and country are resolved
+
+`country` in the station cache **is** ISO 3166-1 alpha-2 (238 distinct values, all two
+characters) and is used as such; `country_name` comes from `Intl.DisplayNames`, no
+dependency required.
+
+> **`state` is _not_ ISO 3166-2.** It is a two-character AWC/NWS subdivision code that
+> only coincides with ISO for the US and Canada — 50% of stations — because ISO's codes
+> there happen to be two characters too. Elsewhere it diverges: ISO 3166-2:GB is
+> `ENG`/`SCT`/`WLS`/`NIR` where AWC gives `EN`/`SC`/`WL`/`NI`, ISO 3166-2:FR is
+> `IDF`/`ARA`/`BFC`/… where AWC gives `ID`/`AR`/`BF`/…, and 207 country/state pairs are
+> a *single* character, which no ISO 3166-2 subdivision ever is. It is carried through
+> verbatim as `state_code` and deliberately not resolved or joined against ISO.
+
+There is no city field anywhere in the cache — city exists only inside the `site`
+string, so `city_source` records how each one was obtained:
+
+| `city_source` | n | how |
+| --- | --- | --- |
+| `site-city` | 2433 | `site` is `"City/Aerodrome Name"`; city is the part before `/` |
+| `site-name` | 6273 | bare `site`, with aerodrome words (`Arpt`, `Muni`, `Intl`, `AFB`, …) stripped off the tail |
+| `station` | 213 | region name confirmed against a station place name in the same country |
+| `region-name` | 100 | region name only, no station corroborated it |
+
+`site-name` yields the station's *place*, which is usually but not always a city —
+`Cheyenne Mountain` and `Fourchu Head` come through as-is. Filter on `city_source` if
+you need only the corroborated ones.
+
+[FU]IR codes are ICAO location indicators, so a region shares its prefix with the
+stations beneath it (`LFFFFIR` and `LFPG` are both `LF`). Country is resolved by
+longest-prefix majority vote over station indicators, 4 → 3 → 2 characters, because two
+characters is not always decisive: `UT` spans Turkmenistan, Tajikistan *and* Uzbekistan.
+`country_prefix` records how many characters actually matched.
+
+Coverage: regions 319/322 country, 313/322 city; airports 8703/8837 country,
+8706/8837 city. What is left over is genuinely unresolvable — `BODO`/`XXXX` and the
+`EGGX`/`LPPO` rerouting extensions are not real regions, `D REGION` and
+`V W A REGION` are placeholder names, `KAZACHSTAN MERGED FI` is truncated upstream,
+and `ENORFIR`/`ULLLFIR`/`URRVFIR` have a `null` name in cycle 524 (cycle 406 had
+`SANKT-PETERBURG` and `ROSTOV` for the latter two, if you want a fallback).
+The 131 airports without a city have a `site` of literally `MIL`.
+
 ## `firs-all.csv` / `firs-all.json` — current [FU]IR reference list
 
 Every Information Region of the current CFMU AIRAC cycle, with no FAB or
