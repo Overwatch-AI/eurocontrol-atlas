@@ -78,6 +78,33 @@ for (const f of readTable(path.join(DATA, 'fabstates.ses.csv'))) {
   fabOfState.set(f.AV_ICAO_ST, fabNames.get(f.fab) || null)
 }
 
+// ---- alternate IATA codes (curated, from data/) ---------------------------
+
+// The station cache carries exactly one `iataId` per station, but an aerodrome can hold
+// more than one IATA *airport* code: LFSB is binational, so EuroAirport is BSL on the
+// Swiss side and MLH on the French one, and both are live for booking and billing. The
+// cache happens to give MLH, which left BSL unfindable. Codes are emitted one row each,
+// `rank` first, so the primary code leads.
+//
+// Airport codes only. IATA metropolitan area codes (EAP for Basel, NYC, LON, PAR) are a
+// separate namespace and are many-to-one -- LON alone covers seven London aerodromes --
+// so they are deliberately absent rather than mixed into `iata`.
+const altIata = new Map()
+for (const r of readTable(path.join(DATA, 'iata-alt.csv'))) {
+  if (!altIata.has(r.icao)) altIata.set(r.icao, [])
+  altIata.get(r.icao).push({ iata: r.iata, rank: Number(r.rank) })
+}
+for (const list of altIata.values()) list.sort((a, b) => a.rank - b.rank)
+
+// the curated list wins on order, but never silently drops what the cache knows
+function iataCodes (code, cached) {
+  const alt = altIata.get(code)
+  if (!alt) return [cached || null]
+  const codes = alt.map(a => a.iata)
+  if (cached && !codes.includes(cached)) codes.push(cached)
+  return codes
+}
+
 // ---- stations ------------------------------------------------------------
 
 const stations = JSON.parse(fs.readFileSync(stationsFile, 'utf8'))
@@ -93,24 +120,59 @@ const stations = JSON.parse(fs.readFileSync(stationsFile, 'utf8'))
 // other 6403. For the bare form, strip the aerodrome-type words off the tail and what
 // remains is the place ("Port Moresby Intl" -> "Port Moresby"). Word boundaries keep
 // this off real names, so Springfield survives and "Nauru Island" is left whole.
-const AERODROME_TAIL = /[\s,]*\b(intl|international|arpt|aprt|airport|airfield|airpark|muni|municipal|rgnl|regional|afb|aaf|afs|nas|naf|mil|ab|cnty|county|exec|executive|mem|memorial|fld|field|hlpt|heliport|spb)\b\.?[\s,]*$/i
+const AERODROME_WORDS = 'intl|international|arpt|aprt|airport|airfield|airpark|muni|' +
+  'municipal|rgnl|regional|afb|aaf|afs|nas|naf|mil|ab|cnty|county|exec|executive|mem|' +
+  'memorial|fld|field|hlpt|heliport|spb'
+const AERODROME_TAIL = new RegExp(`[\\s,]*\\b(${AERODROME_WORDS})\\b\\.?[\\s,]*$`, 'i')
+// the same dressing, bracketed: "Fort Campbell Arpt(AAF)". Only a lone aerodrome word
+// inside the brackets qualifies -- anything else there is part of the name.
+const AERODROME_BRACKET = new RegExp(`\\s*\\(\\s*(?:${AERODROME_WORDS})\\s*\\)\\s*$`, 'i')
+
+// Both upstreams truncate long names in place, which leaves punctuation behind that is
+// not part of any name: an orphan bracket at the seam (`Culdrose )`, `Yeovilton Arpt)`,
+// `DAKAR TERRESTRE (PAR`), or -- once a trailing aerodrome/airspace word is stripped --
+// the separator that joined it on (`Battle Mountain+ Arpt`, `MIAMI FIR / UIR`). Trimming
+// is edge-only, so N'Djamena, Port-au-Prince and Kiel/Holtenau come through whole.
+const EDGE_PUNCT = /^[\s\-/,;:+?!#&*_'"]+|[\s\-/,;:+?!#&*_'"]+$/g
+const trimPunct = s => s.replace(EDGE_PUNCT, '')
+
+// A lone `)` lost its opener, so only the bracket goes. A lone `(` means the
+// parenthetical itself was cut off, so everything from it goes. Balanced pairs are
+// content and are left alone: `Fort Campbell Arpt(AAF)`.
+function dropOrphanParens (s) {
+  const open = []
+  let out = ''
+  for (const c of s) {
+    if (c === '(') { open.push(out.length); out += c } else if (c === ')') {
+      if (open.length) { open.pop(); out += c }
+    } else out += c
+  }
+  return open.length ? out.slice(0, open[0]) : out
+}
+
+const tidy = s => trimPunct(dropOrphanParens(s).replace(/\s+/g, ' '))
 
 function splitSite (site) {
   if (!site) return { city: null, aerodrome: null, source: null }
-  const i = site.indexOf('/')
+  const clean = tidy(site)
+  if (!clean) return { city: null, aerodrome: null, source: null }
+  const i = clean.indexOf('/')
   if (i !== -1) {
     return {
-      city: site.slice(0, i).trim() || null,
-      aerodrome: site.slice(i + 1).trim() || null,
+      city: trimPunct(clean.slice(0, i)) || null,
+      aerodrome: trimPunct(clean.slice(i + 1)) || null,
       source: 'site-city'
     }
   }
-  let place = site.trim()
+  let place = clean
   let prev
-  do { prev = place; place = place.replace(AERODROME_TAIL, '').trim() } while (place && place !== prev)
+  do {
+    prev = place
+    place = trimPunct(place.replace(AERODROME_BRACKET, '').replace(AERODROME_TAIL, ''))
+  } while (place && place !== prev)
   return {
     city: place || null,
-    aerodrome: site.trim(),
+    aerodrome: clean,
     source: place ? 'site-name' : null
   }
 }
@@ -141,23 +203,27 @@ for (const s of stations) {
     const key = city.toUpperCase()
     if (!known.has(key) || citySource === 'site-city') known.set(key, city)
   }
+  // one row per IATA airport code: an aerodrome with two live codes gets two rows,
+  // identical but for `iata`, which is why `iata` is part of the key
   if (code && code.length === 4) {
-    airports.push({
-      code,
-      type: 'AIRPORT',
-      name: aerodrome || s.site || null,
-      city: city,
-      country: country,
-      country_name: countryName(country),
-      lat: s.lat,
-      lon: s.lon,
-      elev_m: s.elev,
-      iata: s.iataId || null,
-      state_code: s.state || null,
-      site_types: (s.siteType || []).join('|') || null,
-      city_source: citySource,
-      source: 'awc-station-cache'
-    })
+    for (const iata of iataCodes(code, s.iataId)) {
+      airports.push({
+        code,
+        type: 'AIRPORT',
+        name: aerodrome || s.site || null,
+        city: city,
+        country: country,
+        country_name: countryName(country),
+        lat: s.lat,
+        lon: s.lon,
+        elev_m: s.elev,
+        iata,
+        state_code: s.state || null,
+        site_types: (s.siteType || []).join('|') || null,
+        city_source: citySource,
+        source: 'awc-station-cache'
+      })
+    }
   }
 }
 
@@ -214,9 +280,9 @@ const titleCase = s => s.toLowerCase().replace(/(^|[\s/'-])([a-z])/g, (_, a, b) 
 
 function regionCity (name, country) {
   if (!name) return { city: null, city_source: null }
-  let stripped = name.replace(AIRSPACE_WORDS, ' ').replace(/\s+/g, ' ').trim()
+  let stripped = tidy(name.replace(AIRSPACE_WORDS, ' '))
   let prev
-  do { prev = stripped; stripped = stripped.replace(TRAILING_QUALIFIER, '').trim() } while (stripped && stripped !== prev)
+  do { prev = stripped; stripped = trimPunct(stripped.replace(TRAILING_QUALIFIER, '')) } while (stripped && stripped !== prev)
   if (!stripped) return { city: null, city_source: null }
   const known = citiesByCountry.get(country)
   const hit = known && known.get(stripped.toUpperCase())
@@ -279,6 +345,8 @@ for (const feat of JSON.parse(fs.readFileSync(irFile, 'utf8')).features) {
 
 // ---- combine -------------------------------------------------------------
 
+// two rows of the same aerodrome compare equal here; Array#sort is stable, so they stay
+// in the order `iataCodes` produced them and the primary IATA code leads
 const entries = [...regions.values(), ...airports]
   .sort((a, b) =>
     a.code.localeCompare(b.code) ||
@@ -297,13 +365,15 @@ const cell = v => {
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
 }
 
-// (code, type, subarea) is the documented key. Fail loudly rather than emit a file
-// whose rows silently collide -- `code` alone is deliberately not unique.
+// (code, type, subarea, iata) is the documented key. Fail loudly rather than emit a file
+// whose rows silently collide -- `code` alone is deliberately not unique, and neither is
+// (code, type, subarea) once an aerodrome with two live IATA codes gets a row per code.
 const seen = new Set()
 for (const e of entries) {
-  const key = `${e.code} ${e.type} ${e.subarea || ''}`
+  const key = `${e.code} ${e.type} ${e.subarea || ''} ${e.iata || ''}`
   if (seen.has(key)) {
-    console.error(`FATAL: duplicate (code, type, subarea): ${e.code} ${e.type} ${e.subarea || '-'}`)
+    console.error('FATAL: duplicate (code, type, subarea, iata): ' +
+      `${e.code} ${e.type} ${e.subarea || '-'} ${e.iata || '-'}`)
     process.exit(1)
   }
   seen.add(key)
@@ -319,6 +389,9 @@ fs.writeFileSync(outJson, JSON.stringify({
   airac_cfmu: airac,
   counts: entries.reduce((a, e) => (a[e.type] = (a[e.type] || 0) + 1, a), {}),
   total: entries.length,
+  // `counts` and `total` are row counts, and an aerodrome holding two live IATA codes
+  // occupies two rows -- count distinct `code` if you want aerodromes.
+  row_key: '(code, type, subarea, iata)',
   // join on `country` (ISO 3166-1 alpha-2). Resolve however a question phrases a country
   // through `aliases` here rather than string-matching `country_name` on the rows.
   key: 'match a country via countries[<iso2>].aliases; rows join on `country`',
@@ -331,7 +404,10 @@ fs.writeFileSync(outJson, JSON.stringify({
 const regionList = [...regions.values()]
 const pct = (n, d) => `${n}/${d} (${Math.round(100 * n / d)}%)`
 const fmt = o => Object.entries(o).map(([k, v]) => `${k}=${v}`).join(' ')
-console.error(`${entries.length} codes -> ${outJson}, ${outCsv}`)
+const distinct = new Set(entries.map(e => e.code)).size
+const extra = entries.length - new Set(entries.map(e => `${e.code} ${e.type} ${e.subarea || ''}`)).size
+console.error(`${entries.length} rows, ${distinct} distinct codes -> ${outJson}, ${outCsv}` +
+  (extra ? ` (${extra} extra row(s) for aerodromes with a second IATA code)` : ''))
 console.error(`  ${fmt(entries.reduce((a, e) => (a[e.type] = (a[e.type] || 0) + 1, a), {}))}`)
 console.error(`regions: country ${pct(regionList.filter(r => r.country).length, regionList.length)}` +
   `, city ${pct(regionList.filter(r => r.city).length, regionList.length)}` +

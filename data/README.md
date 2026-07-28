@@ -4,14 +4,15 @@ The file `world-country-names.tsv` comes from [Mike Bostock](https://gist.github
 
 ## `icao-codes.json` / `icao-codes.csv` — unified ICAO code lookup
 
-One row per ICAO code covering **both** the [FU]IRs of the current AIRAC cycle and
-every aerodrome/station in the NOAA AWC station cache, each with a city and country.
-Built by `make icao-codes`. 9159 codes: 8837 `AIRPORT`, 255 `FIR`, 63 `UIR`, 4 `OTHER`.
+Covers **both** the [FU]IRs of the current AIRAC cycle and every aerodrome/station in the
+NOAA AWC station cache, each with a city and country. Built by `make icao-codes`.
+9160 rows over 9061 distinct codes: 8838 `AIRPORT`, 255 `FIR`, 63 `UIR`, 4 `OTHER`.
 
-Sources: `ir-<cycle>.geojson` (see below) for the regions, and the
+Sources: `ir-<cycle>.geojson` (see below) for the regions, the
 [AWC station cache](https://aviationweather.gov/data/api/#cache)
 (`stations.cache.json.gz`, refreshed daily) for the aerodromes and for all city/country
-resolution. Delete `geojson/stations.json` to pull a fresh cache.
+resolution, and `iata-alt.csv` (below) for alternate IATA codes. Delete
+`geojson/stations.json` to pull a fresh cache.
 
 ### Identity: `code`, `type`, `subarea`, `airspace_id`
 
@@ -35,8 +36,12 @@ the only stable identifier for a single airspace *across* AIRAC cycles — which
 **`code` is deliberately not unique.** 60 indicators carry both an FIR and a UIR
 (`EGTT` is London FIR *and* London UIR), and 31 also name an aerodrome — `HSSS` is both
 Khartoum airport and the Khartoum FIC, `UAAA` both Almaty airport and the Almaty FIR.
-The key is `(code, type, subarea)`, verified unique at build time; the build aborts
+The key is `(code, type, subarea, iata)`, verified unique at build time; the build aborts
 rather than emit a file whose rows silently collide.
+
+`iata` is in the key because an aerodrome can hold more than one live IATA *airport* code
+and gets one row per code — see `iata-alt.csv` below. `counts` and `total` in the JSON
+envelope are therefore row counts; count distinct `code` for aerodromes.
 
 Note the decomposition applies only to regions, never to aerodrome codes: `KFIR` is a
 real US station ("First Divide") and stays `KFIR`, where a blanket suffix strip would
@@ -88,14 +93,23 @@ string, so `city_source` records how each one was obtained:
 
 | `city_source` | n | how |
 | --- | --- | --- |
-| `site-city` | 2433 | `site` is `"City/Aerodrome Name"`; city is the part before `/` |
+| `site-city` | 2434 | `site` is `"City/Aerodrome Name"`; city is the part before `/` |
 | `site-name` | 6273 | bare `site`, with aerodrome words (`Arpt`, `Muni`, `Intl`, `AFB`, …) stripped off the tail |
-| `station` | 213 | region name confirmed against a station place name in the same country |
-| `region-name` | 100 | region name only, no station corroborated it |
+| `station` | 217 | region name confirmed against a station place name in the same country |
+| `region-name` | 96 | region name only, no station corroborated it |
 
 `site-name` yields the station's *place*, which is usually but not always a city —
 `Cheyenne Mountain` and `Fourchu Head` come through as-is. Filter on `city_source` if
 you need only the corroborated ones.
+
+Both upstreams truncate long names in place, so a name can arrive with punctuation that
+belongs to no place: an orphan bracket at the seam (`Culdrose )`, `Yeovilton Arpt)`,
+`DAKAR TERRESTRE (PAR`) or the separator exposed once a trailing aerodrome/airspace word
+is stripped (`Battle Mountain+ Arpt`, `MIAMI FIR / UIR`). Those edges are trimmed off
+both `city` and the aerodrome `name`; a *balanced* bracket is content and is kept, so
+`Fort Campbell Arpt(AAF)` stays whole as a name and still yields `Fort Campbell` as the
+city. Trimming is edge-only — `N'Djamena`, `Port-au-Prince` and `Kiel/Holtenau` are
+untouched. Region `name` stays verbatim from NM for traceability, punctuation and all.
 
 [FU]IR codes are ICAO location indicators, so a region shares its prefix with the
 stations beneath it (`LFFFFIR` and `LFPG` are both `LF`). Country is resolved by
@@ -103,13 +117,41 @@ longest-prefix majority vote over station indicators, 4 → 3 → 2 characters, 
 characters is not always decisive: `UT` spans Turkmenistan, Tajikistan *and* Uzbekistan.
 `country_prefix` records how many characters actually matched.
 
-Coverage: regions 319/322 country, 313/322 city; airports 8703/8837 country,
-8706/8837 city. What is left over is genuinely unresolvable — `BODO`/`XXXX` and the
+Coverage: regions 319/322 country, 313/322 city; airport rows 8704/8838 country,
+8707/8838 city. What is left over is genuinely unresolvable — `BODO`/`XXXX` and the
 `EGGX`/`LPPO` rerouting extensions are not real regions, `D REGION` and
 `V W A REGION` are placeholder names, `KAZACHSTAN MERGED FI` is truncated upstream,
 and `ENORFIR`/`ULLLFIR`/`URRVFIR` have a `null` name in cycle 524 (cycle 406 had
 `SANKT-PETERBURG` and `ROSTOV` for the latter two, if you want a fallback).
 The 131 airports without a city have a `site` of literally `MIL`.
+
+### `iata-alt.csv` — alternate IATA airport codes (curated input)
+
+The station cache carries exactly one `iataId` per station, but an aerodrome can hold more
+than one live IATA *airport* code. `LFSB` is the case in point: EuroAirport is binational,
+so it is `BSL` on the Swiss side and `MLH` on the French one, both current for booking and
+billing. The cache gives `MLH`, which left `BSL` unfindable in the lookup.
+
+| column | meaning |
+| --- | --- |
+| `icao` | the ICAO location indicator the codes belong to |
+| `iata` | one IATA airport code |
+| `rank` | emission order; `1` is the primary code |
+| `note` | why this code exists, for review |
+
+Each code becomes its own row in the output, `rank` first, which is why `iata` is part of
+the key. A code the station cache knows but the table omits is appended rather than
+dropped. `LFSB` is currently the only entry, so it is the only `code` that fans out to two
+rows.
+
+Airport codes only. IATA **metropolitan area** codes are a separate namespace and are
+many-to-one — `EAP` covers EuroAirport, but `NYC` covers eight New York aerodromes and
+`LON` seven London ones — so they are deliberately absent rather than mixed into `iata`,
+which would otherwise mean two different things depending on the row.
+
+`iata` is not unique on its own either, from upstream: three codes appear twice, under an
+old and a new ICAO indicator for the same field (`SRG` as `WAHS`/`WARS`, `TRK` as
+`WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`).
 
 ## `firs-all.csv` / `firs-all.json` — current [FU]IR reference list
 
