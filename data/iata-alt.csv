@@ -1,0 +1,3 @@
+icao,iata,rank,note
+LFSB,BSL,1,Swiss code (Basel); the code IATA and OurAirports carry as primary
+LFSB,MLH,2,French code (Mulhouse); the code the AWC station cache carries

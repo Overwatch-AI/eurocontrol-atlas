@@ -302,11 +302,12 @@ sources: geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
 # unified ICAO lookup: [FU]IRs + aerodromes, each with city and country
 .PHONY: icao-codes
 icao-codes: data/icao-codes.json data/icao-codes.csv
-	@printf '%s up to date (%s codes). Rebuild with: make -B %s\n' '$@' \
+	@printf '%s up to date (%s rows). Rebuild with: make -B %s\n' '$@' \
 		"$$(($$(wc -l < data/icao-codes.csv) - 1))" '$@'
 
 data/icao-codes.json data/icao-codes.csv &: \
-		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js \
+		data/iata-alt.csv
 	AIRAC=$(AIRAC_CURRENT) node bin/icao-codes.js \
 		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
 		data/icao-codes.json data/icao-codes.csv

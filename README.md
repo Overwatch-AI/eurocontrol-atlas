@@ -53,9 +53,9 @@ make icao-codes
 # -> data/icao-codes.csv
 ```
 
-One row per ICAO code, covering **both** airspace regions and aerodromes — 9159 codes:
-8837 `AIRPORT`, 255 `FIR`, 63 `UIR`, 4 `OTHER`. Regions come from the EUROCONTROL
-PRISME `[FU]IR` export; aerodromes and all city/country resolution come from the
+Covers **both** airspace regions and aerodromes — 9160 rows: 8838 `AIRPORT`, 255 `FIR`,
+63 `UIR`, 4 `OTHER`. Regions come from the EUROCONTROL PRISME `[FU]IR` export; aerodromes
+and all city/country resolution come from the
 [NOAA AWC station cache](https://aviationweather.gov/data/api/#cache).
 
 A region and an aerodrome resolve through the same lookup, and agree on the city:
@@ -78,8 +78,8 @@ that form is kept in `airspace_id` for tracing a row back to the NM data.
 
 **`code` alone is not a unique key.** An indicator commonly carries both an FIR and a
 UIR, and 31 indicators also name an aerodrome — `HSSS` is both Khartoum airport and the
-Khartoum FIC. The key is `(code, type, subarea)`; the build fails loudly if that ever
-collides.
+Khartoum FIC. The key is `(code, type, subarea, iata)`; the build fails loudly if that
+ever collides.
 
 ```bash
 $ jq -c '.entries[] | select(.code=="EGTT") | {code,type,name,min_fl,max_fl}' \
@@ -91,6 +91,33 @@ $ jq -c '.entries[] | select(.code=="EGTT") | {code,type,name,min_fl,max_fl}' \
 `subarea` is the trailing sub-area letter where the source splits a region — the north
 and south halves of the Canarias UIR are `GCCC`/`UIR`/`N` and `GCCC`/`UIR`/`S`. It is
 null for the other 316 regions and for every aerodrome.
+
+### One row per IATA airport code
+
+`iata` is part of the key because an aerodrome can hold more than one live IATA *airport*
+code. EuroAirport is binational, so `LFSB` is `BSL` on the Swiss side and `MLH` on the
+French one — both are current, and each gets its own row:
+
+```bash
+$ jq -c '.entries[] | select(.code=="LFSB") | {code,iata,city,country_name}' \
+    data/icao-codes.json
+{"code":"LFSB","iata":"BSL","city":"Basel","country_name":"France"}
+{"code":"LFSB","iata":"MLH","city":"Basel","country_name":"France"}
+```
+
+The station cache carries only one code per station (`MLH` here), so the alternates are
+curated in [`data/iata-alt.csv`](data/iata-alt.csv) — `rank` puts the primary code first.
+LFSB is currently the only aerodrome in the set with two codes, so `code` fans out to two
+rows for it and one row everywhere else; count distinct `code` if you want aerodromes
+rather than rows.
+
+IATA **metropolitan area** codes are deliberately not here. `EAP` (Basel), `NYC`, `LON`
+and `PAR` are a separate namespace and are many-to-one — `LON` alone covers seven London
+aerodromes — so mixing them into `iata` would make the column mean two different things.
+
+`iata` is also not unique on its own: the station cache lists three IATA codes twice,
+under an old and a new ICAO indicator for the same field (`SRG` as `WAHS`/`WARS`, `TRK` as
+`WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`).
 
 Every aerodrome under a given country, using the ISO 3166-1 alpha-2 code:
 
