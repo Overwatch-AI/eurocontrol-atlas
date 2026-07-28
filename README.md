@@ -186,6 +186,34 @@ fl-changed,LECMUIR,LECM,LE,245-999 -> 195-999
 removed,GCCCUIR,GCCC,LE,CANARIS UIR
 ```
 
+### Getting the source GIS data (`shp/`, `geojson/`)
+
+Both directories are gitignored build inputs, so a **fresh clone has the committed
+outputs under `data/` but neither of them**. Fetch and unpack them without regenerating
+anything:
+
+```bash
+make sources
+```
+
+| file | features | where it comes from |
+| --- | --- | --- |
+| `geojson/ir-524.geojson` | 336 | downloaded from `euctrl-pru/pruatlas` (pinned commit) — the current [FU]IR polygons |
+| `geojson/stations.json` | 9872 | downloaded from NOAA AWC, gunzipped — the station cache |
+| `shp/euctrl/firs_unfiltered.shp` | 151 | unpacked from the committed `zip/FirUir_NM.zip`, no network — the 2015 snapshot |
+| `shp/ses/firs.shp` | 69 | `ogr2ogr` filter of the above to the FAB member states |
+
+All are readable straight from GDAL/QGIS. The other `shp/` layers come from their own
+targets: `make shp/euctrl/firs.shp` for the Eurocontrol-member cut, and
+`make shp/ne_50m_admin_0_countries.shp` for Natural Earth (downloads a zip first).
+
+> `make sources` exists because the Makefile declares a bare `.SECONDARY:`, which marks
+> every target secondary. Make then treats a *missing* intermediate as acceptable while
+> the final output is up to date — so on a fresh clone `make icao-codes` reports
+> "up to date" and downloads nothing at all. Naming the inputs as goals avoids that.
+> Removing `.SECONDARY:` is not the fix: it is what stops make deleting these same
+> intermediates after a build.
+
 ### Refreshing the sources
 
 `zip/FirUir_NM.zip` is a manual export from 2015-12-08 (CFMU AIRAC cycle 406) and has no

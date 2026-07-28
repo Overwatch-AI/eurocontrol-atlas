@@ -146,6 +146,8 @@ help:
 	@echo "               data/icao-codes.json and data/icao-codes.csv (AIRAC $(AIRAC_CURRENT) + NOAA AWC station cache)."
 	@echo " firs-all      generate the unfiltered [FU]IR list for AIRAC $(AIRAC_CURRENT), with no FAB/Eurocontrol filter:"
 	@echo "               data/firs-all.{csv,json} plus data/firs-diff.csv reconciling it against the 2015 snapshot."
+	@echo " sources       fetch/unpack the inputs only, into geojson/ and shp/ (both are gitignored,"
+	@echo "               so a fresh clone has the committed outputs but none of the source data)."
 	@echo ""
 	@echo "Targets are incremental: they do nothing while their outputs are newer than their"
 	@echo "inputs. 'make -B <target>' forces a full rebuild and re-downloads the remote"
@@ -284,6 +286,18 @@ geojson/ir-$(AIRAC_CURRENT).geojson:
 geojson/stations.json:
 	mkdir -p $(dir $@)
 	curl -fsSL $(AWC_CACHE)/stations.cache.json.gz | gzip -dc > $@
+
+# Fetch and unpack the inputs without regenerating anything.
+#
+# Needed because `.SECONDARY:` above (no prerequisites, so it applies to every target)
+# stops make rebuilding a missing intermediate while the final output is up to date --
+# and data/ is committed, so a fresh clone has the outputs but neither geojson/ nor shp/.
+# `make icao-codes` there reports "up to date" and downloads nothing. Naming the inputs
+# as goals sidesteps that.
+.PHONY: sources
+sources: geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
+		shp/euctrl/firs_unfiltered.shp shp/ses/firs.shp
+	@printf 'inputs ready:\n'; for f in $^; do printf '  %s\n' "$$f"; done
 
 # unified ICAO lookup: [FU]IRs + aerodromes, each with city and country
 .PHONY: icao-codes
