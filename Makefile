@@ -147,7 +147,7 @@ help:
 	@echo " firs-all      generate the unfiltered [FU]IR list for AIRAC $(AIRAC_CURRENT), with no FAB/Eurocontrol filter:"
 	@echo "               data/firs-all.{csv,json} plus data/firs-diff.csv reconciling it against the 2015 snapshot."
 	@echo " fir-uir       publish the [FU]IR polygons for AIRAC $(AIRAC_CURRENT) as data/fir-uir.geojson,"
-	@echo "               a verbatim copy of the PRISME export (geojson/ is gitignored)."
+	@echo "               one shape per identifier and flight-level band (geojson/ is gitignored)."
 	@echo " sources       fetch/unpack the inputs only, into geojson/ and shp/ (both are gitignored,"
 	@echo "               so a fresh clone has the committed outputs but none of the source data)."
 	@echo ""
@@ -328,15 +328,14 @@ data/firs-all.csv data/firs-all.json data/firs-diff.csv &: \
 	rm -f -- $(FIRS_ALL_TMP)
 
 # The [FU]IR polygons themselves. geojson/ is gitignored, so this is the only tracked
-# copy, and a plain copy on purpose: byte-identical to the PRISME export, with
-# data/firs-all.json already carrying the derived attributes. The name is cycle-free so
-# a consumer's path survives an AIRAC bump; the cycle is inside the file.
+# copy. The name is cycle-free so a consumer's path survives an AIRAC bump; the cycle is
+# inside the file.
 .PHONY: fir-uir
 fir-uir: data/fir-uir.geojson
 	@printf '%s up to date (AIRAC $(AIRAC_CURRENT)). Rebuild with: make -B %s\n' '$@' '$@'
 
-data/fir-uir.geojson: geojson/ir-$(AIRAC_CURRENT).geojson
-	cp $< $@
+data/fir-uir.geojson: geojson/ir-$(AIRAC_CURRENT).geojson bin/fir-uir.js bin/airspace-id.js
+	node bin/fir-uir.js $< $@
 
 # mapping FIR <--> FAB
 data/firfabstates.ses.csv: data/firs.tsv

@@ -247,23 +247,9 @@ function resolveCountry (code) {
 // ---- [FU]IRs -------------------------------------------------------------
 
 // EUROCONTROL's airspace identifier is the ICAO location indicator of the responsible
-// FIC/ACC with FIR or UIR glued on, plus an optional sub-area letter: Damascus FIR is
-// carried as OSTTFIR, the halves of the Canarias UIR as GCCCUIRN/GCCCUIRS. The ICAO
-// code is the leading four characters -- OSTT -- and FIR-vs-UIR is a *type*, not part
-// of the code, so split the identifier into its three parts and keep the original for
+// FIC/ACC with FIR or UIR glued on. The original is kept as `airspace_id` for
 // traceability back into the NM data.
-//
-// Note the 4-letter code alone is not a key: 60 indicators carry both an FIR and a UIR
-// (EGTTFIR/EGTTUIR), and 31 collide with an aerodrome of the same name -- HSSS is both
-// Khartoum airport and the Khartoum FIC. (code, type, subarea) is unique; code is not.
-const AIRSPACE_ID = /^([A-Z]{4})(FIR|UIR)([A-Z]?)$/
-
-function parseAirspaceId (id) {
-  const m = AIRSPACE_ID.exec(id)
-  // BODO, EGGX, LPPO and XXXX do not follow the pattern and are not [FU]IRs anyway
-  if (!m) return { code: id, type: 'OTHER', subarea: null }
-  return { code: m[1], type: m[2], subarea: m[3] || null }
-}
+const { parseAirspaceId } = require('./airspace-id.js')
 
 // Region names are mostly just the FIC city ("PARIS FIR"), dressed with airspace words
 // and qualifiers. Strip those FIRST -- "EDMONTON FLIGHT INFORMATION REGION" and

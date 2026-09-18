@@ -80,23 +80,9 @@ for (const f of readTable(path.join(DATA, 'fabstates.ses.csv'))) {
 // NOTE: `country` can only be filled for Eurocontrol member states -- data/ has no
 // ICAO-prefix -> country mapping for the rest of the world, so those stay null.
 
-// What the source calls `code` is EUROCONTROL's airspace identifier: the ICAO location
-// indicator of the responsible FIC/ACC with FIR or UIR glued on, plus an optional
-// sub-area letter. Damascus FIR is carried as OSTTFIR, so the ICAO code is OSTT and the
-// FIR/UIR part is a *type*. GCCCUIRN/GCCCUIRS are the north/south halves of the
-// Canarias UIR; BGGLFIRU is the upper part of Nuuk.
-//
-// The source's own `airspace_type` is the constant "FIR" for every feature, including
-// the codes ending in UIR, so it is useless as a discriminator -- derive from the
-// identifier instead. What does not match is genuinely not an [FU]IR: BODO, the
-// EGGX/LPPO rerouting extensions and the XXXX "no FIR" placeholder.
-const AIRSPACE_ID = /^([A-Z]{4})(FIR|UIR)([A-Z]?)$/
-
-function parseAirspaceId (id) {
-  const m = AIRSPACE_ID.exec(id)
-  if (!m) return { code: id, type: 'OTHER', subarea: null }
-  return { code: m[1], type: m[2], subarea: m[3] || null }
-}
+// What the source calls `code` is EUROCONTROL's airspace identifier, kept here as
+// `airspace_id` and decomposed into code/type/subarea.
+const { parseAirspaceId } = require('./airspace-id.js')
 
 // ---- inputs --------------------------------------------------------------
 
