@@ -191,6 +191,48 @@ Caveats worth knowing before relying on these files:
 * `source_features` > 1 marks regions the source splits by flight-level band; the
   export merges them into a single `min_fl`–`max_fl` range.
 
+## `fir-uir.geojson` — the [FU]IR polygons
+
+The geometry behind `firs-all.*`: 324 `MultiPolygon` features in CRS84, global, each with a
+flight-level band. Built by `make fir-uir` from `geojson/ir-<cycle>.geojson`, which is
+gitignored — so this is the only tracked copy of the shapes.
+
+The filename carries no cycle, so a consumer's path survives an AIRAC bump. The cycle is
+inside: as the FeatureCollection `name` (`ir-524`) and as `airac_cfmu` on every feature.
+
+Properties: `airac_cfmu`, `airspace_id`, `code`, `type`, `subarea`, `name`, `icao_state`,
+`id`, `min_fl`, `max_fl`. `code`, `type`, `subarea` and `airspace_id` mean exactly what they
+do in `firs-all.*` and `icao-codes.*`, decomposed by the same `bin/airspace-id.js`, so the
+three datasets cannot disagree.
+
+```json
+{"airac_cfmu":524,"airspace_id":"EGTTUIR","code":"EGTT","type":"UIR","subarea":null,
+ "name":"LONDON UIR","icao_state":"EG","id":"1142035","min_fl":245,"max_fl":999}
+```
+
+Two ways this differs from the raw PRISME export it is built from:
+
+* **`airspace_type` is dropped.** Upstream sets it to the constant `"FIR"` on every
+  feature, including the ones whose identifier ends in `UIR`. Publishing it beside a
+  correct `type` would put two disagreeing fields on the same feature, and its only use
+  was as the field you must ignore. `type` replaces it.
+* **12 repeated features are dropped**, leaving one shape per
+  `(airspace_id, min_fl, max_fl)`. Upstream republishes a shape under an alternate name or
+  NM object id — `GANDER NAT RVSM` / `GANDER FLIGHT INFORMATION REGION`, `NEW YORK FIR` /
+  `NEW YORK OCEANIC`. The build fails loudly if two rows of one key ever carry different
+  geometry, and keeps the first name, as `firs-export.js` does, so the two agree.
+
+Those 324 features cover 322 identifiers: `GCCCUIRN` and `OBBBUIR` are each published as
+two stacked bands, which is why `type` tallies 255 `FIR` / 65 `UIR` / 4 `OTHER` over
+features but 255 / 63 / 4 over identifiers, matching `firs-all.*`.
+
+`id` is the NM object id, kept for tracing a shape back into the source. It is not a key:
+where a repeat was dropped it is the first of several, and it is not unique across
+features.
+
+Distinct identifiers do share a polygon, which is not a duplicate — a UIR is usually the
+same footprint as its FIR at a higher band.
+
 ## `firs-diff.csv` — reconciliation against the 2015 snapshot
 
 `change`,`airspace_id`,`code`,`icao_state`,`detail` — what moved between cycle 406 and

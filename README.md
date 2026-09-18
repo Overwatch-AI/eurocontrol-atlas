@@ -213,6 +213,28 @@ fl-changed,LECMUIR,LECM,LE,245-999 -> 195-999
 removed,GCCCUIR,GCCC,LE,CANARIS UIR
 ```
 
+### `make fir-uir` — the polygons themselves
+
+```bash
+make fir-uir
+# -> data/fir-uir.geojson
+```
+
+The [FU]IR shapes, tracked so a consumer can have them without GDAL or the pinned pruatlas
+commit. 324 `MultiPolygon` features in CRS84, each with a flight-level band and the
+airspace identifier decomposed the same way `icao-codes` and `firs-all` decompose it.
+
+```bash
+$ jq -c '.features[] | select(.properties.code=="EGTT") | .properties
+         | {airspace_id,code,type,name,min_fl,max_fl}' data/fir-uir.geojson
+{"airspace_id":"EGTTFIR","code":"EGTT","type":"FIR","name":"LONDON FIR","min_fl":0,"max_fl":245}
+{"airspace_id":"EGTTUIR","code":"EGTT","type":"UIR","name":"LONDON UIR","min_fl":245,"max_fl":999}
+```
+
+This is the one output that is not a faithful copy of its input: the source's useless
+`airspace_type` is dropped in favour of a derived `type`, and 12 repeated features are
+collapsed. `data/README.md` covers both.
+
 ### Getting the source GIS data (`shp/`, `geojson/`)
 
 Both directories are gitignored build inputs, so a **fresh clone has the committed
