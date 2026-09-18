@@ -191,6 +191,36 @@ Caveats worth knowing before relying on these files:
 * `source_features` > 1 marks regions the source splits by flight-level band; the
   export merges them into a single `min_fl`–`max_fl` range.
 
+## `fir-uir.geojson` — the [FU]IR polygons
+
+The geometry behind `firs-all.*`: 336 `MultiPolygon` features in CRS84, global, each with
+a flight-level band. Built by `make fir-uir`, which is a **verbatim copy** of
+`geojson/ir-<cycle>.geojson` — that directory is gitignored, so this is the only tracked
+copy of the shapes, and it stays byte-identical to the PRISME export.
+
+The filename carries no cycle, so a consumer's path survives an AIRAC bump. The cycle is
+inside: as the FeatureCollection `name` (`ir-524`) and as `airac_cfmu` on every feature.
+
+Properties are the source's own — `airac_cfmu`, `icao`, `id`, `code`, `name`, `min_fl`,
+`max_fl`, `airspace_type` — **not** the decomposed columns of `firs-all.*`. Two traps:
+
+* `code` here is the EUROCONTROL airspace identifier, not a bare ICAO code: London UIR is
+  `EGTTUIR`, the north half of Canarias UIR is `GCCCUIRN`.
+* `airspace_type` is the constant `"FIR"` on all 336 features, including the 74 whose
+  identifier ends in `UIR`. Derive the type from the identifier, as `bin/firs-export.js`
+  does. Over distinct identifiers that gives 255 `FIR`, 63 `UIR` and 4 `OTHER`, agreeing
+  with `firs-all.*` and `icao-codes.*`.
+
+**One shape per `(code, min_fl, max_fl)`, which is 324 of the 336 features.** The other 12
+are upstream attribute duplicates — the same polygon and band repeated under an alternate
+name or NM object id (`GANDER NAT RVSM` / `GANDER FLIGHT INFORMATION REGION`,
+`NEW YORK FIR` / `NEW YORK OCEANIC`). No `(code, min_fl, max_fl)` ever carries two
+different geometries. Those 324 keys cover 322 identifiers: `GCCCUIRN` and `OBBBUIR` are
+each published as two stacked bands.
+
+Distinct identifiers do share a polygon, which is not a duplicate — a UIR is usually the
+same footprint as its FIR at a higher band.
+
 ## `firs-diff.csv` — reconciliation against the 2015 snapshot
 
 `change`,`airspace_id`,`code`,`icao_state`,`detail` — what moved between cycle 406 and
