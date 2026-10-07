@@ -109,14 +109,19 @@ function iataCodes (code, upstream, source) {
 
 // ---- contested IATA codes (curated, from data/) ---------------------------
 
-// OurAirports (below) can hand out an IATA code the station cache already gives to a
-// different aerodrome. Neither upstream is reliably the newer one, so the build refuses
-// to guess: every such code must be settled here, by naming the ICAO indicator(s) that
-// own it. The code is then taken off every other holder.
-const iataOwners = new Map()
+// An IATA code resolves to one aerodrome. Both upstreams break that: the station cache
+// lists some fields under an old and a new indicator with the same code, and OurAirports
+// (below) can hand out a code the cache gives to a different aerodrome. Neither is
+// reliably the fresher, and a consumer resolving the code would otherwise fall back on
+// whichever indicator sorts first -- so the build refuses to guess. Every such code is
+// settled here by naming the one indicator that owns it, and is taken off the others.
+const iataOwner = new Map()
 for (const r of readTable(path.join(DATA, 'iata-owner.csv'))) {
-  if (!iataOwners.has(r.iata)) iataOwners.set(r.iata, new Set())
-  iataOwners.get(r.iata).add(r.icao)
+  if (iataOwner.has(r.iata)) {
+    console.error(`FATAL: iata-owner.csv names two owners for ${r.iata}; an IATA code has one`)
+    process.exit(1)
+  }
+  iataOwner.set(r.iata, r.icao)
 }
 
 // ---- stations ------------------------------------------------------------
@@ -282,6 +287,35 @@ const index = row => {
 }
 for (const a of airports) index(a)
 
+// OurAirports' `municipality` is the administrative unit the field sits in, which is not
+// always the city a person names, and it is unchecked. Puerto Nare (SKPN) is filed under
+// "Armenia", so "Armenia, Colombia" -- unambiguous on the cache alone (SKAR) -- would
+// suddenly match two fields 235 km apart. A municipality is therefore not taken as the
+// city when the cache already has that city in the same country, none of its fields is
+// near, and the airport's own name does not repeat it. The last test keeps real
+// namesakes: Grayling Airport is in Grayling, Alaska, not Grayling, Michigan. Such a row
+// gets no city rather than a guess; its code and IATA code still resolve.
+const CITY_KM = 50
+const placeKey = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+  .replace(/[^a-z0-9]+/g, ' ').trim()
+const cityRows = new Map()
+for (const a of airports) {
+  if (!a.city) continue
+  const k = `${a.country} ${placeKey(a.city)}`
+  if (!cityRows.has(k)) cityRows.set(k, [])
+  cityRows.get(k).push(a)
+}
+const distrusted = []
+function municipality (o, code, country, pos) {
+  if (!o.municipality) return null
+  const key = placeKey(o.municipality)
+  const known = cityRows.get(`${country} ${key}`)
+  if (!known || known.some(r => km(r, pos) <= CITY_KM)) return o.municipality
+  if (` ${placeKey(o.name)} `.includes(` ${key} `)) return o.municipality
+  distrusted.push(`${code}=${o.municipality}`)
+  return null
+}
+
 const merged = { filled: 0, second_code: 0, added: 0, known: 0, same_field: 0, no_icao: 0 }
 const moved = []
 for (const o of readTable(ourAirportsFile)) {
@@ -320,12 +354,13 @@ for (const o of readTable(ourAirportsFile)) {
   if (!code) { merged.no_icao++; continue }
   const country = normalizeCountryCode(o.iso_country || null)
   const elevFt = o.elevation_ft === '' ? NaN : Number(o.elevation_ft)
+  const city = municipality(o, code, country, pos)
   for (const { iata: rowIata, source: iataSource } of iataCodes(code, iata, 'ourairports')) {
     const row = {
       code,
       type: 'AIRPORT',
       name: o.name || null,
-      city: o.municipality || null,
+      city,
       country,
       country_name: countryName(country),
       lat: pos.lat,
@@ -336,7 +371,7 @@ for (const o of readTable(ourAirportsFile)) {
       // `iso_region` is real ISO 3166-2, which `state_code` deliberately is not
       state_code: null,
       site_types: null,
-      city_source: o.municipality ? 'ourairports' : null,
+      city_source: city ? 'ourairports' : null,
       source: 'ourairports'
     }
     airports.push(row)
@@ -345,39 +380,37 @@ for (const o of readTable(ourAirportsFile)) {
   merged.added++
 }
 
-// Settle contested codes from iata-owner.csv: take the code off every holder that is not
-// a named owner. A row left with no code is kept unless the aerodrome still has another
-// row with one, since `iata` is a key column and two null-coded rows would collide.
+// Settle contested codes from iata-owner.csv: take the code off every holder but the
+// owner. A row left with no code is kept unless the aerodrome still has another row with
+// one, since `iata` is a key column and two null-coded rows would collide.
 const dropped = new Set()
-for (const [iata, owners] of iataOwners) {
-  for (const r of rowsByIata.get(iata) || []) {
-    if (owners.has(r.code)) continue
+for (const [iata, owner] of iataOwner) {
+  const holders = rowsByIata.get(iata) || []
+  if (!holders.some(r => r.code === owner && r.iata === iata)) {
+    console.error(`FATAL: iata-owner.csv names ${owner} for ${iata}, which no upstream gives it. Stale entry?`)
+    process.exit(1)
+  }
+  for (const r of holders) {
+    if (r.code === owner) continue
     const others = rowsByCode.get(r.code).filter(x => x !== r && !dropped.has(x) && x.iata)
     if (others.length) dropped.add(r)
     else { r.iata = null; r.iata_source = null }
   }
-  for (const owner of owners) {
-    if (!(rowsByIata.get(iata) || []).some(r => r.code === owner && r.iata === iata)) {
-      console.error(`FATAL: iata-owner.csv names ${owner} for ${iata}, which no upstream gives it. Stale entry?`)
-      process.exit(1)
-    }
-  }
 }
 
-// An IATA code on more than one aerodrome is ambiguous to anyone resolving it. The cache
-// has a few of its own (an old and a new indicator for one field) and they are left
-// alone, but one that OurAirports introduced must be settled in iata-owner.csv first.
+// Whatever its source, a code still on more than one aerodrome must be settled in
+// iata-owner.csv first. A refreshed station cache can bring a new one in on any day, and
+// failing here is what keeps that from reaching consumers as a silent tie.
 const unsettled = []
 for (const [iata, rows] of rowsByIata) {
   const live = rows.filter(r => !dropped.has(r) && r.iata === iata)
-  if (new Set(live.map(r => r.code)).size < 2 || iataOwners.has(iata)) continue
-  if (live.some(r => r.iata_source === 'ourairports')) {
+  if (new Set(live.map(r => r.code)).size > 1) {
     unsettled.push(`${iata}: ${live.map(r => `${r.code} (${r.iata_source}, ${r.name})`).join(' vs ')}`)
   }
 }
 if (unsettled.length) {
-  console.error(`FATAL: ${unsettled.length} IATA code(s) held by more than one aerodrome, ` +
-    'introduced by OurAirports. Name the owner(s) in data/iata-owner.csv:')
+  console.error(`FATAL: ${unsettled.length} IATA code(s) held by more than one aerodrome. ` +
+    'Name the owner in data/iata-owner.csv:')
   for (const u of unsettled) console.error(`  ${u}`)
   process.exit(1)
 }
@@ -562,7 +595,8 @@ console.error(`airports: country ${pct(airportRows.filter(a => a.country).length
   ` (${new Set(airportRows.map(a => a.iata).filter(Boolean)).size} distinct codes)`)
 console.error(`ourairports: ${fmt(merged)}`)
 if (moved.length) console.error(`  indicator now names another aerodrome, code not attached: ${moved.join(' ')}`)
-if (dropped.size || iataOwners.size) console.error(`  iata-owner.csv settled ${iataOwners.size} code(s)`)
+console.error(`  iata-owner.csv settled ${iataOwner.size} code(s)`)
+if (distrusted.length) console.error(`  municipality not taken as city: ${distrusted.join(' ')}`)
 // report the NM identifier, not the bare code -- XXXX and XXXXFIR both reduce to XXXX
 const noCountry = regionList.filter(r => !r.country).map(r => r.airspace_id)
 if (noCountry.length) console.error(`  regions with no country: ${noCountry.join(', ')}`)

@@ -101,7 +101,7 @@ string, so `city_source` records how each one was obtained:
 | `site-name` | 6346 | bare `site`, with aerodrome words (`Arpt`, `Muni`, `Intl`, `AFB`, …) stripped off the tail |
 | `station` | 217 | region name confirmed against a station place name in the same country |
 | `region-name` | 96 | region name only, no station corroborated it |
-| `ourairports` | 2859 | OurAirports `municipality`, verbatim; only on rows OurAirports added |
+| `ourairports` | 2847 | OurAirports `municipality`, verbatim, unless it fails the check below; only on rows OurAirports added |
 
 `site-name` yields the station's *place*, which is usually but not always a city —
 `Cheyenne Mountain` and `Fourchu Head` come through as-is. Filter on `city_source` if
@@ -123,13 +123,14 @@ characters is not always decisive: `UT` spans Turkmenistan, Tajikistan *and* Uzb
 `country_prefix` records how many characters actually matched.
 
 Coverage: regions 319/322 country, 313/322 city; airport rows 11928/12062 country,
-11642/12062 city. What is left over is genuinely unresolvable — `BODO`/`XXXX` and the
+11630/12062 city. What is left over is genuinely unresolvable — `BODO`/`XXXX` and the
 `EGGX`/`LPPO` rerouting extensions are not real regions, `D REGION` and
 `V W A REGION` are placeholder names, `KAZACHSTAN MERGED FI` is truncated upstream,
 and `ENORFIR`/`ULLLFIR`/`URRVFIR` have a `null` name in cycle 524 (cycle 406 had
 `SANKT-PETERBURG` and `ROSTOV` for the latter two, if you want a fallback).
-Of the airports without a city, 131 are stations whose `site` is literally `MIL`, and 289
-are OurAirports rows with an empty `municipality`.
+Of the airports without a city, 131 are stations whose `site` is literally `MIL`, 289
+are OurAirports rows with an empty `municipality`, and 12 are OurAirports rows whose
+`municipality` was not trusted (below).
 
 ### OurAirports: the IATA gap in the station cache
 
@@ -160,7 +161,10 @@ Before and after, on the same station cache:
 | | aerodromes | with an IATA code | distinct IATA codes | of OurAirports' 9051 |
 | --- | --- | --- | --- | --- |
 | station cache only | 8907 | 5080 | 5073 | 4989 |
-| with OurAirports | 12055 | 8342 | 8341 | 8257 |
+| with OurAirports | 12055 | 8334 | 8341 | 8257 |
+
+Every distinct code resolves to exactly one aerodrome. A few more codes than aerodromes
+carry one, because 7 aerodromes hold two.
 
 Rows from OurAirports have **no weather station behind them**: `site_types`,
 `state_code` and AWC's `elev` are AWC-only, so `site_types` and `state_code` are null there
@@ -172,30 +176,54 @@ ISO 3166-2 and so means something different (see above).
 `iata_source` says where each row's `iata` came from: `awc-station-cache`, `ourairports`
 or `iata-alt` (the curated table below), null where there is no code.
 
-### `iata-owner.csv` — contested IATA codes (curated input)
+**`municipality` is checked before it becomes `city`.** It is the administrative unit the
+field sits in, which is not always the city a person would name, and nothing upstream
+verifies it. Puerto Nare (`SKPN`) is filed under "Armenia", so a lookup for Armenia,
+Colombia, which the cache alone answers with `SKAR`, would suddenly also match a field
+235 km away. A municipality is therefore **not** taken as the city when all three hold:
 
-An IATA code on two aerodromes is ambiguous to anyone resolving it, and OurAirports can
-hand out a code the cache already gives to a different indicator. Neither upstream is
-reliably the fresher one, so **the build fails on any such code OurAirports introduced
-until it is settled here**, listing each one with both holders.
+* the cache already has that city in the same country (accent- and case-folded);
+* none of the cache's fields of that city is within 50 km;
+* the airport's own name does not repeat it.
+
+The last condition keeps real namesakes: Grayling Airport is in Grayling, Alaska, not
+Grayling, Michigan. Such a row gets a null `city` rather than a guess: deriving one
+from the name would turn Evelio Javier Airport into the city "Evelio Javier". Its
+`code` and `iata` still resolve. 12 rows are affected and the build lists them. A few,
+such as Arnold AFB in Manchester, Tennessee, are true municipalities lost to the
+caution, which is the cheaper error.
+
+### `iata-owner.csv` — one aerodrome per IATA code (curated input)
+
+**Every IATA code in the output resolves to exactly one aerodrome.** Both upstreams break
+that on their own. The station cache lists some fields under an old *and* a new
+indicator with the same code. OurAirports can hand out a code the cache gives to a
+different indicator. Left alone, a consumer resolving the code falls back on whichever
+indicator happens to sort first, which is the alphabet deciding, not the data. Neither
+upstream is reliably the fresher one, so **the build fails on any code held by more
+than one indicator until it is settled here**, listing each with its holders. A
+refreshed station cache can bring a new one in on any day; it fails the build rather
+than reach consumers as a silent tie.
 
 | column | meaning |
 | --- | --- |
-| `iata` | the contested code |
-| `icao` | the indicator that owns it; more than one row if it is genuinely shared |
+| `iata` | the contested code; at most one row per code |
+| `icao` | the one indicator that owns it |
 | `note` | the evidence, for review |
 
-The code is then taken off every other holder; a holder left with no code keeps its row,
-with `iata` null. The build also fails on an entry no upstream supports any more, so the
-table cannot go stale silently. The 24 current entries are almost all a cache station
-still filed under the old indicator of a recoded field (`FVHA` → `FVRG` for Harare,
-`FLLS` → `FLKK` for Lusaka), plus a few airports that moved to a new field (`HTMB` →
-`HTGW` Songwe, `SBNT` → `SBSG` Natal) and three cache errors (`AAD` on St Vincent rather
-than Adado, `UKR` on Mokha rather than Mukeiras, and `SIP` on the Russian-assigned `URFF`
-rather than ICAO's `UKFF`).
+The code is then taken off every other holder. A holder left with no code keeps its row,
+with `iata` null, so its ICAO indicator still resolves. The build also fails on an entry
+no upstream supports any more, so the table cannot go stale silently.
 
-The ambiguity the cache brings with it is left alone and does not fail the build — see
-the end of the next section.
+All 32 current entries follow OurAirports' current indicator, which it gives as
+`icao_code`. Most are a field filed under an old indicator as well as its current one,
+e.g. `FVHA` → `FVRG` for Harare, `ORSU` → `ORSJ` for Sulaymaniyah, `WARS` → `WAHS` for
+Semarang. Some airports moved to a new field: `HTMB` → `HTGW` Songwe, `SBNT` → `SBSG`
+Natal, `VOVZ` → `VOVI` Visakhapatnam, `OPGD` → `OPGW` Gwadar. Three are cache errors:
+
+* `AAD` sits on St Vincent rather than Adado;
+* `UKR` sits on Mokha rather than Mukeiras;
+* `SIP` sits on the Russian-assigned `URFF` rather than ICAO's `UKFF`.
 
 ### `iata-alt.csv` — alternate IATA airport codes (curated input)
 
@@ -221,11 +249,8 @@ many-to-one — `EAP` covers EuroAirport, but `NYC` covers eight New York aerodr
 `LON` seven London ones — so they are deliberately absent rather than mixed into `iata`,
 which would otherwise mean two different things depending on the row.
 
-`iata` is not unique on its own either, from upstream: the station cache gives 8 codes to
-two indicators each, usually an old and a new one for the same field (`SRG` as
-`WAHS`/`WARS`, `TRK` as `WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`, `GWD`, `ISU`, `CEM`, `GYA`,
-`VTZ`). The merge adds none; a new one would fail the build until `iata-owner.csv` settles
-it.
+The reverse does not hold: an `iata` value never appears under two indicators.
+`iata-owner.csv` (above) settles every code an upstream gives to more than one.
 
 ## `firs-all.csv` / `firs-all.json` — current [FU]IR reference list
 

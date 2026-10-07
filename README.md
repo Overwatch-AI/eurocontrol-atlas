@@ -117,17 +117,24 @@ IATA **metropolitan area** codes are deliberately not here. `EAP` (Basel), `NYC`
 and `PAR` are a separate namespace and are many-to-one — `LON` alone covers seven London
 aerodromes — so mixing them into `iata` would make the column mean two different things.
 
-`iata` is also not unique on its own: the station cache lists 8 IATA codes twice, usually
-under an old and a new ICAO indicator for the same field (`SRG` as `WAHS`/`WARS`, `TRK` as
-`WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`, …). OurAirports adds none: the build fails on any
-code it would put on a second aerodrome until
-[`data/iata-owner.csv`](data/iata-owner.csv) names the owner.
+The reverse does hold: **an IATA code resolves to exactly one aerodrome.** The upstreams
+sometimes give one code to an old and a new indicator for the same field. The station
+cache files Semarang as both `WAHS` and `WARS` under `SRG`. The build fails on any such
+code until [`data/iata-owner.csv`](data/iata-owner.csv) names the owner, so a consumer
+never breaks the tie by the alphabet.
+
+```bash
+$ jq -c '.entries[] | select(.iata=="SRG") | {code,iata}' data/icao-codes.json
+{"code":"WAHS","iata":"SRG"}
+```
 
 ### Not every aerodrome has weather
 
 3148 aerodromes come from OurAirports alone, tagged `source: ourairports`, with null
 `site_types` and `state_code`. They have no AWC station, so test `site_types` (or
-`source`) rather than row existence before expecting a METAR or TAF.
+`source`) rather than row existence before expecting a METAR or TAF. Their `city` is OurAirports'
+`municipality`, dropped to null where it would send a city lookup to a field far away
+(Puerto Nare is filed under "Armenia", Colombia).
 `iata_source` records where each `iata` came from:
 
 ```bash
