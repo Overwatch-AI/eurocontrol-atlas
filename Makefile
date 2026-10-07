@@ -35,6 +35,11 @@ PRUATLAS_RAW = https://raw.githubusercontent.com/euctrl-pru/pruatlas/$(PRUATLAS_
 # ICAO location-indicator prefix, the [FU]IRs. https://aviationweather.gov/data/api/#cache
 AWC_CACHE = https://aviationweather.gov/data/cache
 
+# OurAirports (public domain): fills the IATA codes, and adds the aerodromes, that the
+# station cache lacks -- it only lists fields with a weather station. Nightly mirror.
+# https://ourairports.com/data/
+OURAIRPORTS_CSV = https://davidmegginson.github.io/ourairports-data/airports.csv
+
 join-with = $(subst $(space),$1,$2)
 comma := ,
 empty :=
@@ -143,7 +148,8 @@ help:
 	@echo " flags         download from Wikimedia all flags of the world (SVG format)"
 	@echo " csvs          generate all support CSV files (FAB id-names, country id-name, EU members/candidates, EUROCONTROL members)"
 	@echo " icao-codes    generate the ICAO code lookup covering [FU]IRs *and* aerodromes, each with city and country:"
-	@echo "               data/icao-codes.json and data/icao-codes.csv (AIRAC $(AIRAC_CURRENT) + NOAA AWC station cache)."
+	@echo "               data/icao-codes.json and data/icao-codes.csv (AIRAC $(AIRAC_CURRENT) + NOAA AWC station cache,"
+	@echo "               topped up with IATA codes and aerodromes from OurAirports)."
 	@echo " firs-all      generate the unfiltered [FU]IR list for AIRAC $(AIRAC_CURRENT), with no FAB/Eurocontrol filter:"
 	@echo "               data/firs-all.{csv,json} plus data/firs-diff.csv reconciling it against the 2015 snapshot."
 	@echo " fir-uir       publish the [FU]IR polygons for AIRAC $(AIRAC_CURRENT) as data/fir-uir.geojson,"
@@ -289,6 +295,11 @@ geojson/stations.json:
 	mkdir -p $(dir $@)
 	curl -fsSL $(AWC_CACHE)/stations.cache.json.gz | gzip -dc > $@
 
+# refreshed nightly upstream; delete to update, as with the station cache
+geojson/ourairports.csv:
+	mkdir -p $(dir $@)
+	curl -fsSL -o $@ $(OURAIRPORTS_CSV)
+
 # Fetch and unpack the inputs without regenerating anything.
 #
 # Needed because `.SECONDARY:` above (no prerequisites, so it applies to every target)
@@ -297,7 +308,7 @@ geojson/stations.json:
 # `make icao-codes` there reports "up to date" and downloads nothing. Naming the inputs
 # as goals sidesteps that.
 .PHONY: sources
-sources: geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
+sources: geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json geojson/ourairports.csv \
 		shp/euctrl/firs_unfiltered.shp shp/ses/firs.shp
 	@printf 'inputs ready:\n'; for f in $^; do printf '  %s\n' "$$f"; done
 
@@ -308,10 +319,10 @@ icao-codes: data/icao-codes.json data/icao-codes.csv
 		"$$(($$(wc -l < data/icao-codes.csv) - 1))" '$@'
 
 data/icao-codes.json data/icao-codes.csv &: \
-		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json bin/icao-codes.js \
-		data/iata-alt.csv
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json geojson/ourairports.csv \
+		bin/icao-codes.js bin/countries.js data/iata-alt.csv data/iata-owner.csv
 	AIRAC=$(AIRAC_CURRENT) node bin/icao-codes.js \
-		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json \
+		geojson/ir-$(AIRAC_CURRENT).geojson geojson/stations.json geojson/ourairports.csv \
 		data/icao-codes.json data/icao-codes.csv
 
 # attributes of the legacy 406 snapshot, used only as the reconciliation baseline

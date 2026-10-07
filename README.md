@@ -53,10 +53,12 @@ make icao-codes
 # -> data/icao-codes.csv
 ```
 
-Covers **both** airspace regions and aerodromes — 9160 rows: 8838 `AIRPORT`, 255 `FIR`,
+Covers **both** airspace regions and aerodromes — 12384 rows: 12062 `AIRPORT`, 255 `FIR`,
 63 `UIR`, 4 `OTHER`. Regions come from the EUROCONTROL PRISME `[FU]IR` export; aerodromes
-and all city/country resolution come from the
-[NOAA AWC station cache](https://aviationweather.gov/data/api/#cache).
+and all region city/country resolution come from the
+[NOAA AWC station cache](https://aviationweather.gov/data/api/#cache), topped up from
+[OurAirports](https://ourairports.com/data/) with the IATA codes and aerodromes the cache
+lacks — 8341 distinct IATA codes, up from 5073.
 
 A region and an aerodrome resolve through the same lookup, and agree on the city:
 
@@ -107,24 +109,43 @@ $ jq -c '.entries[] | select(.code=="LFSB") | {code,iata,city,country_name}' \
 
 The station cache carries only one code per station (`MLH` here), so the alternates are
 curated in [`data/iata-alt.csv`](data/iata-alt.csv) — `rank` puts the primary code first.
-LFSB is currently the only aerodrome in the set with two codes, so `code` fans out to two
-rows for it and one row everywhere else; count distinct `code` if you want aerodromes
-rather than rows.
+OurAirports adds a second code the same way where the cache has not caught up with a
+recode (`LUKK` is `KIV` and the current `RMO`), so 7 aerodromes fan out to two rows and
+the rest to one; count distinct `code` if you want aerodromes rather than rows.
 
 IATA **metropolitan area** codes are deliberately not here. `EAP` (Basel), `NYC`, `LON`
 and `PAR` are a separate namespace and are many-to-one — `LON` alone covers seven London
 aerodromes — so mixing them into `iata` would make the column mean two different things.
 
-`iata` is also not unique on its own: the station cache lists three IATA codes twice,
+`iata` is also not unique on its own: the station cache lists 8 IATA codes twice, usually
 under an old and a new ICAO indicator for the same field (`SRG` as `WAHS`/`WARS`, `TRK` as
-`WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`).
+`WALR`/`WAQQ`, `PTZ` as `SEPA`/`SESM`, …). OurAirports adds none: the build fails on any
+code it would put on a second aerodrome until
+[`data/iata-owner.csv`](data/iata-owner.csv) names the owner.
+
+### Not every aerodrome has weather
+
+3148 aerodromes come from OurAirports alone, tagged `source: ourairports`, with null
+`site_types` and `state_code`. They have no AWC station, so test `site_types` (or
+`source`) rather than row existence before expecting a METAR or TAF.
+`iata_source` records where each `iata` came from:
+
+```bash
+$ jq -c '.entries[] | select(.code=="LUKK") | {code,iata,iata_source,source}' data/icao-codes.json
+{"code":"LUKK","iata":"KIV","iata_source":"awc-station-cache","source":"awc-station-cache"}
+{"code":"LUKK","iata":"RMO","iata_source":"ourairports","source":"awc-station-cache"}
+```
+
+See [`data/README.md`](data/README.md#ourairports-the-iata-gap-in-the-station-cache) for
+how the two are merged and what is deliberately left out.
 
 Every aerodrome under a given country, using the ISO 3166-1 alpha-2 code:
 
 ```bash
 $ jq -r '[.entries[] | select(.type=="AIRPORT" and .country=="IS") | .code] | join(" ")' \
     data/icao-codes.json
-BIAR BIBD BIEG BIGJ BIGR BIHN BIHU BIIS BIKF BIRG BIRK BIST BITN BIVM BIVO
+BIAR BIBD BIBF BIBL BIBV BIDV BIEG BIFM BIGF BIGJ BIGR BIHK BIHN BIHU BIIS BIKF BIKP BIKR
+BINF BIRE BIRF BIRG BIRK BIRL BISI BIST BITE BITN BIVM BIVO
 ```
 
 `city_source` records where each city came from, so you can restrict yourself to the
@@ -132,7 +153,7 @@ strongest provenance:
 
 ```bash
 $ jq '[.entries[] | select(.city_source=="site-city")] | length' data/icao-codes.json
-2433
+2437
 ```
 
 Three things to know before joining against this:
@@ -249,6 +270,7 @@ make sources
 | --- | --- | --- |
 | `geojson/ir-524.geojson` | 336 | downloaded from `euctrl-pru/pruatlas` (pinned commit) — the current [FU]IR polygons |
 | `geojson/stations.json` | 9872 | downloaded from NOAA AWC, gunzipped — the station cache |
+| `geojson/ourairports.csv` | 86215 | downloaded from OurAirports — all aerodromes, ~9k with an IATA code |
 | `shp/euctrl/firs_unfiltered.shp` | 151 | unpacked from the committed `zip/FirUir_NM.zip`, no network — the 2015 snapshot |
 | `shp/ses/firs.shp` | 69 | `ogr2ogr` filter of the above to the FAB member states |
 
@@ -276,11 +298,11 @@ PRUATLAS_SHA  = 0927219fec659e28913a325c7473c38239675003
 ```
 
 Bump both when a newer `ir-<cycle>.geojson` appears upstream. The station cache is
-refreshed daily by NOAA and is cached locally under `geojson/`, so pull a fresh copy
-with:
+refreshed daily by NOAA and OurAirports nightly; both are cached locally under
+`geojson/`, so pull fresh copies with:
 
 ```bash
-rm geojson/stations.json && make icao-codes
+rm geojson/stations.json geojson/ourairports.csv && make icao-codes
 ```
 
 Both targets are incremental and will do nothing while their outputs are newer than
