@@ -1,0 +1,25 @@
+iata,icao,note
+AAD,HCAD,Adado (Somalia); the AWC cache puts AAD on TVSV Argyle (St Vincent) 11767 km away
+BLB,MPPA,Panama Pacifico; MPHO is the former Howard AFB indicator for the same field
+BUQ,FVJN,Bulawayo Joshua Mqabuko Nkomo; FVBU is the old indicator for the same field
+DWD,OEDM,Dawadmi Domestic per OurAirports; AWC OEDW is 29 km off and unknown to OurAirports
+FRS,MGMM,Flores Mundo Maya; MGTK is the old indicator for the same field
+FRW,FBPM,Francistown Phillip Gaonwe Matante; FBFT is the old indicator for the same field
+HRE,FVRG,Harare Robert Gabriel Mugabe; FVHA is the old indicator for the same field
+HTO,KJPX,East Hampton; KHTO is the old indicator for the same field
+IXD,VEAB,Prayagraj; VIAL is the old indicator for the same field
+KRC,WIJI,Kerinci Depati Parbo (new field); WIPH is the old Kerinci strip 76 km away
+KYS,GAKD,Kayes Dag Dag; GAKY is the old indicator for the same field
+LUN,FLKK,Lusaka Kenneth Kaunda; FLLS is the old indicator for the same field
+LVI,FLHN,Livingstone Harry Mwanga Nkumbula; FLLI is the old indicator for the same field
+MAK,HSSM,Malakal; HJMK is the South Sudan reassignment AWC carries for the same field
+MBI,HTGW,Songwe replaced the old Mbeya field (HTMB) 21 km away
+NAT,SBSG,Natal Sao Goncalo do Amarante replaced SBNT (now Natal AFB) 20 km away
+NNA,GMMP,Kenitra Air Base; GMMY is the old indicator for the same field
+OGL,SYEC,Georgetown Eugene F. Correia; SYGO is the old indicator for the same field
+SIP,UKFF,Simferopol; UKFF is the ICAO-registered indicator, URFF the Russian-assigned one AWC carries
+SOC,WAHQ,Solo Adisoemarmo; WARQ is the old indicator for the same field
+SXK,WAPS,Saumlaki Mathilda Batlayeri (new field); WAPI is the old Olilit strip 16 km away
+TNK,POKA,Tununak; K4KA is the FAA-derived station id for the same field
+UKR,OYMS,Mukeiras per OurAirports; the AWC cache puts UKR on OYMK Mokha 269 km away
+XPL,MHPR,Comayagua Palmerola; MHSC is the old indicator for the same field
