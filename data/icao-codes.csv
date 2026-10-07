@@ -1083,7 +1083,7 @@ CYGH,AIRPORT,,Fort Good Hope Arpt,Fort Good Hope,CA,Canada,66.242,-128.644,YGH,a
 CYGK,AIRPORT,,Kingston Arpt,Kingston,CA,Canada,44.223,-76.599,YGK,awc-station-cache,,,,,,91,ON,METAR|TAF,site-name,,,,awc-station-cache
 CYGL,AIRPORT,,La Grande Riviere Arpt,La Grande Riviere,CA,Canada,53.625,-77.7,YGL,awc-station-cache,,,,,,192,QC,METAR|TAF,site-name,,,,awc-station-cache
 CYGM,AIRPORT,,Gimli,Gimli,CA,Canada,50.63,-97.05,YGM,awc-station-cache,,,,,,230,MB,METAR,site-name,,,,awc-station-cache
-CYGN,AIRPORT,,Greenway Sound Seaplane Base,Broughton Island,CA,Canada,50.839,-126.775,YGN,ourairports,,,,,,,,,ourairports,,,,ourairports
+CYGN,AIRPORT,,Greenway Sound Seaplane Base,,CA,Canada,50.839,-126.775,YGN,ourairports,,,,,,,,,,,,,ourairports
 CYGO,AIRPORT,,Gods Lake Narrows Airport,Gods Lake Narrows,CA,Canada,54.55768,-94.490061,YGO,ourairports,,,,,,188,,,ourairports,,,,ourairports
 CYGP,AIRPORT,,Gaspé Arpt,Gaspé,CA,Canada,48.777,-64.478,YGP,awc-station-cache,,,,,,31,QC,METAR|TAF,site-name,,,,awc-station-cache
 CYGQ,AIRPORT,,Geraldton Arpt,Geraldton,CA,Canada,49.781,-86.932,YGQ,awc-station-cache,,,,,,340,ON,METAR|TAF,site-name,,,,awc-station-cache
@@ -3890,7 +3890,7 @@ KAPA,AIRPORT,,Centennial Arpt,Denver,US,United States,39.55989,-104.84843,APA,aw
 KAPC,AIRPORT,,Napa Cnty Arpt,Napa,US,United States,38.2075,-122.28041,APC,awc-station-cache,,,,,,5,CA,METAR|TAF,site-name,,,,awc-station-cache
 KAPF,AIRPORT,,Naples Muni,Naples,US,United States,26.15498,-81.77513,APF,awc-station-cache,,,,,,2,FL,METAR|TAF,site-name,,,,awc-station-cache
 KAPG,AIRPORT,,Phillips,Phillips,US,United States,39.474,-76.166,APG,awc-station-cache,,,,,,18,MD,METAR,site-name,,,,awc-station-cache
-KAPH,AIRPORT,,Mary Walker LZ Airport,Bowling Green,US,United States,38.068631,-77.319318,APH,ourairports,,,,,,67,,,ourairports,,,,ourairports
+KAPH,AIRPORT,,Mary Walker LZ Airport,,US,United States,38.068631,-77.319318,APH,ourairports,,,,,,67,,,,,,,ourairports
 KAPN,AIRPORT,,Alpena Cnty Rgnl,Alpena,US,United States,45.07161,-83.56453,APN,awc-station-cache,,,,,,208,MI,METAR|TAF,site-name,,,,awc-station-cache
 KAPS,AIRPORT,,Port of South Louisiana Exec,Reserve,US,United States,30.086,-90.584,,,,,,,,1,LA,METAR,site-city,,,,awc-station-cache
 KAPT,AIRPORT,,Marion Cnty,Jasper,US,United States,35.06,-85.586,APT,awc-station-cache,,,,,,195,TN,,site-city,,,,awc-station-cache
@@ -3961,7 +3961,7 @@ KAXV,AIRPORT,,Armstrong Arpt,Wapakoneta,US,United States,40.49594,-84.29293,AXV,
 KAXX,AIRPORT,,Angel Fire Arpt,Angel Fire,US,United States,36.422,-105.29,AXX,awc-station-cache,,,,,,2543,NM,METAR,site-name,,,,awc-station-cache
 KAYE,AIRPORT,,Aye,Fort Devens,US,United States,42.57,-71.6,,,,,,,,82,MA,,site-city,,,,awc-station-cache
 KAYS,AIRPORT,,Ware Cnty,Waycross,US,United States,31.24659,-82.40138,AYS,awc-station-cache,,,,,,42,GA,METAR,site-city,,,,awc-station-cache
-KAYX,AIRPORT,,Arnold Air Force Base,Manchester,US,United States,35.392601,-86.0858,TUH,ourairports,,,,,,325,,,ourairports,,,,ourairports
+KAYX,AIRPORT,,Arnold Air Force Base,,US,United States,35.392601,-86.0858,TUH,ourairports,,,,,,325,,,,,,,ourairports
 KAZC,AIRPORT,,Colorado City Muni,Colorado City,US,United States,36.959,-113.013,,,,,,,,1476,AZ,METAR,site-name,,,,awc-station-cache
 KAZE,AIRPORT,,Hazlehurst Arpt,Hazlehurst,US,United States,31.87923,-82.64543,,,,,,,,78,GA,METAR,site-name,,,,awc-station-cache
 KAZO,AIRPORT,,Kalamazoo Intl,Kalamazoo,US,United States,42.22827,-85.546,AZO,awc-station-cache,,,,,,264,MI,METAR|TAF,site-name,,,,awc-station-cache
@@ -4219,7 +4219,7 @@ KCIU,AIRPORT,,Chippewa Cnty Intl,Chippewa,US,United States,46.2531,-84.47727,CIU
 KCJJ,AIRPORT,,Church Fld,Cresco,US,United States,43.365,-92.133,,,,,,,,389,IA,,site-city,,,,awc-station-cache
 KCJR,AIRPORT,,Culpeper Rgnl,Culpeper,US,United States,38.52607,-77.85739,,,,,,,,90,VA,METAR,site-name,,,,awc-station-cache
 KCJX,AIRPORT,,Crooked Cr,Crooked Cr,US,United States,61.870315,-158.137636,CKD,awc-station-cache,,,,,,178,AK,,site-name,,,,awc-station-cache
-KCKA,AIRPORT,,Kegelman AF Aux Field,Cherokee,US,United States,36.734348,-98.123531,CKA,ourairports,,,,,,366,,,ourairports,,,,ourairports
+KCKA,AIRPORT,,Kegelman AF Aux Field,,US,United States,36.734348,-98.123531,CKA,ourairports,,,,,,366,,,,,,,ourairports
 KCKB,AIRPORT,,NC West Virginia Arpt,Clarksburg,US,United States,39.30217,-80.22391,CKB,awc-station-cache,,,,,,368,WV,METAR|TAF,site-city,,,,awc-station-cache
 KCKC,AIRPORT,,Grand Marais Muni,Grand Marais,US,United States,47.83664,-90.38644,GRM,awc-station-cache,,,,,,544,MN,METAR,site-name,,,,awc-station-cache
 KCKF,AIRPORT,,Crisp Cnty,Cordele,US,United States,31.98894,-83.77392,,,,,,,,92,GA,METAR,site-city,,,,awc-station-cache
@@ -7780,7 +7780,7 @@ MMPY,AIRPORT,,Playa del Carmen National Airport,Playa del Carmen,MX,Mexico,20.62
 MMQT,AIRPORT,,Querétaro Intl,Querétaro,MX,Mexico,20.617,-100.194,QRO,awc-station-cache,,,,,,1909,QT,METAR|TAF,site-name,,,,awc-station-cache
 MMRX,AIRPORT,,Blanco Intl,Reynosa,MX,Mexico,26.01,-98.232,REX,awc-station-cache,,,,,,45,TM,METAR|TAF,site-city,,,,awc-station-cache
 MMSD,AIRPORT,,San Jose Del Cabo Intl,San Jose Del Cabo,MX,Mexico,23.157,-109.72,SJD,awc-station-cache,,,,,,107,BS,METAR|TAF,site-name,,,,awc-station-cache
-MMSF,AIRPORT,,San Felipe International Airport,Mexicali,MX,Mexico,30.93006,-114.808459,SFH,ourairports,,,,,,45,,,ourairports,,,,ourairports
+MMSF,AIRPORT,,San Felipe International Airport,,MX,Mexico,30.93006,-114.808459,SFH,ourairports,,,,,,45,,,,,,,ourairports
 MMSL,AIRPORT,,Cabo San Lucas Intl,Cabo San Lucas,MX,Mexico,22.948,-109.936,CSW,ourairports,,,,,,205,BS,METAR|TAF,site-name,,,,awc-station-cache
 MMSM,AIRPORT,,Santa Lucia,Santa Lucia,MX,Mexico,19.763,-99.002,NLU,awc-station-cache,,,,,,2250,MX,METAR|TAF,site-name,,,,awc-station-cache
 MMSP,AIRPORT,,San Luis Potosi Intl,San Luis Potosi,MX,Mexico,22.256,-100.93,SLP,awc-station-cache,,,,,,1841,SL,METAR|TAF,site-name,,,,awc-station-cache
@@ -7877,7 +7877,7 @@ MRRF,AIRPORT,,Rio Frio / Progreso Airport,Rio Frio / Progreso,CR,Costa Rica,10.3
 MRSI,AIRPORT,,San Isidro del General Airport,Pérez Zeledón,CR,Costa Rica,9.348676,-83.712301,IPZ,ourairports,,,,,,640,,,ourairports,,,,ourairports
 MRSV,AIRPORT,,San Vito de Java Airport,Coto Brus,CR,Costa Rica,8.826971,-82.958922,TOO,ourairports,,,,,,984,,,ourairports,,,,ourairports
 MRTM,AIRPORT,,Tamarindo Airport,Tamarindo,CR,Costa Rica,10.313500404358,-85.815498352051,TNO,ourairports,,,,,,12,,,ourairports,,,,ourairports
-MRTR,AIRPORT,,Tambor Airport,Nicoya,CR,Costa Rica,9.739307,-85.016199,TMU,ourairports,,,,,,10,,,ourairports,,,,ourairports
+MRTR,AIRPORT,,Tambor Airport,,CR,Costa Rica,9.739307,-85.016199,TMU,ourairports,,,,,,10,,,,,,,ourairports
 MRUP,AIRPORT,,Upala Airport,Upala,CR,Costa Rica,10.8922,-85.016197,UPL,ourairports,,,,,,56,,,ourairports,,,,ourairports
 MSAC,AIRPORT,,Sonsonate,Acajutla,SV,El Salvador,13.576,-89.833,,,,,,,,14,SO,METAR,site-city,,,,awc-station-cache
 MSLP,AIRPORT,,El Salvador Intl,El Salvador,SV,El Salvador,13.438,-89.056,SAL,awc-station-cache,,,,,,25,PA,METAR|TAF,site-name,,,,awc-station-cache
@@ -8459,7 +8459,7 @@ OPDB,AIRPORT,,Dalbandin Airport,Dalbandin,PK,Pakistan,28.878299713100002,64.3998
 OPDG,AIRPORT,,Dera Ghazi Khan Intl,Dera Ghazi Khan,PK,Pakistan,29.961,70.486,DEA,awc-station-cache,,,,,,150,PB,TAF,site-name,,,,awc-station-cache
 OPDI,AIRPORT,,Dera Ismail Khan Arpt,Dera Ismail Khan,PK,Pakistan,31.909,70.897,DSK,awc-station-cache,,,,,,180,PB,METAR,site-name,,,,awc-station-cache
 OPFA,AIRPORT,,Faisalabad Intl,Faisalabad,PK,Pakistan,31.365,72.995,LYP,awc-station-cache,,,,,,180,,METAR|TAF,site-name,,,,awc-station-cache
-OPGD,AIRPORT,,Gwadar Intl,Gwadar,PK,Pakistan,25.233,62.33,GWD,awc-station-cache,,,,,,9,BA,METAR|TAF,site-name,,,,awc-station-cache
+OPGD,AIRPORT,,Gwadar Intl,Gwadar,PK,Pakistan,25.233,62.33,,,,,,,,9,BA,METAR|TAF,site-name,,,,awc-station-cache
 OPGT,AIRPORT,,Gilgit Airport,Gilgit,PK,Pakistan,35.918800354003906,74.33360290527344,GIL,ourairports,,,,,,1462,,,ourairports,,,,ourairports
 OPGW,AIRPORT,,New Gwadar Intl,New Gwadar,PK,Pakistan,25.296733,62.498822,GWD,awc-station-cache,,,,,,19,BA,METAR|TAF,site-name,,,,awc-station-cache
 OPIS,AIRPORT,,Gandhara Intl,Islamabad,PK,Pakistan,33.551,72.827,ISB,awc-station-cache,,,,,,542,IS,METAR|TAF,site-city,,,,awc-station-cache
@@ -8526,7 +8526,7 @@ ORNI,AIRPORT,,Al Najaf Intl,Al Najaf,IQ,Iraq,31.99,44.405,NJF,awc-station-cache,
 ORQW,AIRPORT,,Qayyarah Arpt,Qayyarah,IQ,Iraq,35.767,43.125,RQW,ourairports,,,,,,228,NI,METAR,site-name,,,,awc-station-cache
 ORSH,AIRPORT,,Al Sahra,Tikrit,IQ,Iraq,34.67,43.539,,,,,,,,130,SD,METAR,site-city,,,,awc-station-cache
 ORSJ,AIRPORT,,Talabani Intl,Talabani,IQ,Iraq,35.560487,45.315137,ISU,awc-station-cache,,,,,,760,SW,METAR|TAF,site-name,,,,awc-station-cache
-ORSU,AIRPORT,,Sulaymaniyah Intl,Sulaymaniyah,IQ,Iraq,35.56,45.318,ISU,awc-station-cache,,,,,,760,SU,METAR|TAF,site-name,,,,awc-station-cache
+ORSU,AIRPORT,,Sulaymaniyah Intl,Sulaymaniyah,IQ,Iraq,35.56,45.318,,,,,,,,760,SU,METAR|TAF,site-name,,,,awc-station-cache
 ORTL,AIRPORT,,Ali,Tallil,IQ,Iraq,30.936,46.09,XNH,awc-station-cache,,,,,,6,DQ,METAR,site-city,,,,awc-station-cache
 OSAP,AIRPORT,,Aleppo Intl,Aleppo,SY,Syria,36.183,37.218,ALP,awc-station-cache,,,,,,390,HL,METAR|TAF,site-name,,,,awc-station-cache
 OSDI,AIRPORT,,Damascus Intl,Damascus,SY,Syria,33.411,36.516,DAM,awc-station-cache,,,,,,614,DI,METAR|TAF,site-name,,,,awc-station-cache
@@ -8569,7 +8569,7 @@ OYZM,AIRPORT,,Al-Hazm,Al-Hazm,YE,Yemen,16.205,44.79,,,,,,,,1122,JA,METAR,site-na
 PAAD,AIRPORT,,Point Thomson Arpt,Point Thomson,US,United States,70.136,-146.29,,,,,,,,8,AK,METAR,site-name,,,,awc-station-cache
 PAAE,AIRPORT,,Ouzinkie Arpt,Ouzinkie,US,United States,57.942,-152.465,,,,,,,,30,AK,METAR,site-name,,,,awc-station-cache
 PAAK,AIRPORT,,Atka Arpt,Atka,US,United States,52.219,-174.208,AKB,awc-station-cache,,,,,,11,AK,METAR,site-name,,,,awc-station-cache
-PAAL,AIRPORT,,Port Moller Airport,Cold Bay,US,United States,56.006001,-160.561005,PML,ourairports,,,,,,6,,,ourairports,,,,ourairports
+PAAL,AIRPORT,,Port Moller Airport,,US,United States,56.006001,-160.561005,PML,ourairports,,,,,,6,,,,,,,ourairports
 PAAM,AIRPORT,,Gambell,Gambell,US,United States,63.77,-171.73,,,,,,,,8,AK,,site-name,,,,awc-station-cache
 PAAP,AIRPORT,,Port Alexander,Port Alexander,US,United States,56.247,-134.648,PTD,awc-station-cache,,,,,,4,AK,METAR,site-name,,,,awc-station-cache
 PAAQ,AIRPORT,,Palmer Muni,Palmer,US,United States,61.59505,-149.09172,PAQ,awc-station-cache,,,,,,68,AK,METAR|TAF,site-name,,,,awc-station-cache
@@ -8744,7 +8744,7 @@ PAPT,AIRPORT,,Puntilla Lake Arpt,Puntilla Lake,US,United States,62.087,-152.722,
 PAQH,AIRPORT,,Quinhagak Arpt,Quinhagak,US,United States,59.751,-161.842,KWN,awc-station-cache,,,,,,8,AK,METAR,site-name,,,,awc-station-cache
 PAQT,AIRPORT,,Nuiqsut Arpt,Nuiqsut,US,United States,70.213,-150.994,NUI,awc-station-cache,,,,,,11,AK,METAR|TAF,site-name,,,,awc-station-cache
 PARC,AIRPORT,,Arctic Village Arpt,Arctic Village,US,United States,68.113,-145.576,ARC,awc-station-cache,,,,,,626,AK,METAR,site-name,,,,awc-station-cache
-PARL,AIRPORT,,Central Arpt,Central,US,United States,65.57,-144.77,CEM,awc-station-cache,,,,,,284,AK,METAR,site-name,,,,awc-station-cache
+PARL,AIRPORT,,Central Arpt,Central,US,United States,65.57,-144.77,,,,,,,,284,AK,METAR,site-name,,,,awc-station-cache
 PARS,AIRPORT,,Russian Mission Arpt,Russian Mission,US,United States,61.78,-161.321,RSH,awc-station-cache,,,,,,15,AK,METAR,site-name,,,,awc-station-cache
 PARY,AIRPORT,,Ruby Arpt,Ruby,US,United States,64.731,-155.463,RBY,awc-station-cache,,,,,,185,AK,METAR,site-name,,,,awc-station-cache
 PASA,AIRPORT,,Savoonga Arpt,Savoonga,US,United States,63.689,-170.49,SVA,awc-station-cache,,,,,,9,AK,METAR,site-name,,,,awc-station-cache
@@ -9183,7 +9183,7 @@ RPVM,AIRPORT,,Mactan-Cebu Intl,Mactan-Cebu,PH,Philippines,10.308,123.978,CEB,awc
 RPVO,AIRPORT,,Ormoc Airport,Ormoc City,PH,Philippines,11.057715,124.565622,OMC,ourairports,,,,,,25,,,ourairports,,,,ourairports
 RPVP,AIRPORT,,Puerto Princesa Intl,Puerto Princesa,PH,Philippines,9.742,118.759,PPS,awc-station-cache,,,,,,15,PL,METAR|TAF,site-name,,,,awc-station-cache
 RPVR,AIRPORT,,Roxas,Roxas,PH,Philippines,11.598,122.752,RXS,awc-station-cache,,,,,,4,CA,METAR,site-name,,,,awc-station-cache
-RPVS,AIRPORT,,Evelio Javier Airport,San Jose,PH,Philippines,10.766644,121.932506,EUQ,ourairports,,,,,,7,,,ourairports,,,,ourairports
+RPVS,AIRPORT,,Evelio Javier Airport,,PH,Philippines,10.766644,121.932506,EUQ,ourairports,,,,,,7,,,,,,,ourairports
 RPVT,AIRPORT,,Tagbilaran,Tagbilaran,PH,Philippines,9.664,123.853,,,,,,,,12,BO,METAR,site-name,,,,awc-station-cache
 RPVU,AIRPORT,,Tugdan Airport,Tablas Island,PH,Philippines,12.3109998703,122.084999084,TBH,ourairports,,,,,,3,,,ourairports,,,,ourairports
 RPVV,AIRPORT,,Francisco B. Reyes (Busuanga) Airport,Coron,PH,Philippines,12.121865,120.100801,USU,ourairports,,,,,,45,,,ourairports,,,,ourairports
@@ -9595,7 +9595,7 @@ SEMC,AIRPORT,,Carvajal Arpt,Macas,EC,Ecuador,-2.299,-78.121,XMS,awc-station-cach
 SEMH,AIRPORT,,Serran,Machala,EC,Ecuador,-3.269,-79.962,MCH,awc-station-cache,,,,,,3,O,METAR,site-city,,,,awc-station-cache
 SEMT,AIRPORT,,Alfaro Intl,Manta,EC,Ecuador,-0.946,-80.679,MEC,awc-station-cache,,,,,,13,M,METAR|TAF,site-city,,,,awc-station-cache
 SENL,AIRPORT,,Lago Agrio Arpt,Lago Agrio,EC,Ecuador,0.092,-76.869,LGQ,awc-station-cache,,,,,,293,U,METAR,site-name,,,,awc-station-cache
-SEPA,AIRPORT,,Rio Amazon,Pastaza,EC,Ecuador,-1.505,-78.062,PTZ,awc-station-cache,,,,,,1048,Y,METAR,site-city,,,,awc-station-cache
+SEPA,AIRPORT,,Rio Amazon,Pastaza,EC,Ecuador,-1.505,-78.062,,,,,,,,1048,Y,METAR,site-city,,,,awc-station-cache
 SEPT,AIRPORT,,Putumayo Airport,Puerto Putumayo,EC,Ecuador,0.115949,-75.85022,PYO,ourairports,,,,,,223,,,ourairports,,,,ourairports
 SEPV,AIRPORT,,Reales Tamarindos Airport,Portoviejo,EC,Ecuador,-1.04165,-80.472198,PVO,ourairports,,,,,,40,,,ourairports,,,,ourairports
 SEQM,AIRPORT,,New Intl,Quito,EC,Ecuador,-0.124,-78.354,UIO,awc-station-cache,,,,,,2386,P,METAR|TAF,site-city,,,,awc-station-cache
@@ -9724,7 +9724,7 @@ SKPD,AIRPORT,,Puerto Inirida Arpt,Puerto Inirida,CO,Colombia,3.854,-67.906,PDA,o
 SKPE,AIRPORT,,Matecana Arpt,Pereira,CO,Colombia,4.814,-75.735,PEI,awc-station-cache,,,,,,1341,RI,METAR|TAF,site-city,,,,awc-station-cache
 SKPI,AIRPORT,,Pitalito Airport,Pitalito,CO,Colombia,1.85777,-76.0857,PTX,ourairports,,,,,,1284,,,ourairports,,,,ourairports
 SKPL,AIRPORT,,Plato Airport,Plato,CO,Colombia,9.8,-74.7833,PLT,ourairports,,,,,,21,,,ourairports,,,,ourairports
-SKPN,AIRPORT,,Puerto Nare Airport,Armenia,CO,Colombia,6.21002,-74.5906,NAR,ourairports,,,,,,145,,,ourairports,,,,ourairports
+SKPN,AIRPORT,,Puerto Nare Airport,,CO,Colombia,6.21002,-74.5906,NAR,ourairports,,,,,,145,,,,,,,ourairports
 SKPP,AIRPORT,,Guillermo,Popayan,CO,Colombia,2.453,-76.609,PPN,awc-station-cache,,,,,,1726,CA,METAR,site-city,,,,awc-station-cache
 SKPQ,AIRPORT,,German Olano Air Base,La Dorada,CO,Colombia,5.48361,-74.6574,PAL,ourairports,,,,,,173,,,ourairports,,,,ourairports
 SKPR,AIRPORT,,Puerto Berrio Airport,Puerto Berrio,CO,Colombia,6.46034,-74.4105,PBE,ourairports,,,,,,136,,,ourairports,,,,ourairports
@@ -9756,7 +9756,7 @@ SKUC,AIRPORT,,Perez Arpt,Arauca,CO,Colombia,7.066,-70.735,AUC,awc-station-cache,
 SKUI,AIRPORT,,El Caraño Arpt,Quibdó,CO,Colombia,5.691,-76.644,UIB,awc-station-cache,,,,,,55,CH,METAR,site-city,,,,awc-station-cache
 SKUL,AIRPORT,,Heriberto Gíl Martínez Airport,Tuluá,CO,Colombia,4.08836,-76.2351,ULQ,ourairports,,,,,,955,,,ourairports,,,,ourairports
 SKUR,AIRPORT,,Urrao Airport,Urrao,CO,Colombia,6.32883,-76.1425,URR,ourairports,,,,,,1856,,,ourairports,,,,ourairports
-SKUV,AIRPORT,,Guerima Airport,Puerto Carreño,CO,Colombia,3.629996,-70.323028,GMC,ourairports,,,,,,144,,,ourairports,,,,ourairports
+SKUV,AIRPORT,,Guerima Airport,,CO,Colombia,3.629996,-70.323028,GMC,ourairports,,,,,,144,,,,,,,ourairports
 SKVG,AIRPORT,,Villa Garzón Airport,Villa Garzón,CO,Colombia,0.978767,-76.6056,VGZ,ourairports,,,,,,380,,,ourairports,,,,ourairports
 SKVL,AIRPORT,,Velásquez Airport,Puerto Boyacá,CO,Colombia,5.93904,-74.457,PYA,ourairports,,,,,,173,,,ourairports,,,,ourairports
 SKVP,AIRPORT,,Pumerejo Arpt,Valledupar,CO,Colombia,10.436,-73.248,VUP,awc-station-cache,,,,,,137,CE,METAR,site-city,,,,awc-station-cache
@@ -9776,7 +9776,7 @@ SLCO,AIRPORT,,Cobija Arpt,Cobija,BO,Bolivia,-11.04,-68.782,CIJ,awc-station-cache
 SLCP,AIRPORT,,Concepción Arpt,Concepción,BO,Bolivia,-16.138,-62.028,CEP,awc-station-cache,,,,,,502,S,METAR,site-name,,,,awc-station-cache
 SLET,AIRPORT,,El Tromp,Santa Cruz,BO,Bolivia,-17.812,-63.172,SRZ,awc-station-cache,,,,,,421,S,METAR|TAF,site-city,,,,awc-station-cache
 SLGM,AIRPORT,,Guayaramerín Arpt,Guayaramerín,BO,Bolivia,-10.88856,-65.380955,GYA,awc-station-cache,,,,,,139,B,METAR,site-name,,,,awc-station-cache
-SLGY,AIRPORT,,Guayaramerin,Guayaramerin,BO,Bolivia,-10.821,-65.346,GYA,awc-station-cache,,,,,,128,C,METAR,site-name,,,,awc-station-cache
+SLGY,AIRPORT,,Guayaramerin,Guayaramerin,BO,Bolivia,-10.821,-65.346,,,,,,,,128,C,METAR,site-name,,,,awc-station-cache
 SLHI,AIRPORT,,Chimore Airport,Chimore,BO,Bolivia,-16.976834,-65.145568,CCA,ourairports,,,,,,267,,,ourairports,,,,ourairports
 SLHJ,AIRPORT,,Huacaraje Airport,Itenes,BO,Bolivia,-13.605556,-63.879444,BVK,ourairports,,,,,,258,,,ourairports,,,,ourairports
 SLJE,AIRPORT,,San José de Chiquitos Arpt,San José de Chiquitos,BO,Bolivia,-17.832,-60.744,SJS,awc-station-cache,,,,,,286,S,METAR,site-name,,,,awc-station-cache
@@ -10931,7 +10931,7 @@ VOTR,AIRPORT,,Tiruchchirapalli Arpt,Tiruchchirapalli,IN,India,10.765,78.71,TRZ,a
 VOTV,AIRPORT,,Thiruvananthapuram Intl,Thiruvananthapuram,IN,India,8.484,76.919,TRV,awc-station-cache,,,,,,9,KL,METAR|TAF,site-name,,,,awc-station-cache
 VOVI,AIRPORT,,Visakhapatnam Intl,Visakhapatnam,IN,India,17.971512,83.503617,VTZ,awc-station-cache,,,,,,57,AP,METAR|TAF,site-name,,,,awc-station-cache
 VOVR,AIRPORT,,Vellore,Vellore,IN,India,12.909,79.064,,,,,,,,234,TN,METAR,site-name,,,,awc-station-cache
-VOVZ,AIRPORT,,Vizagapatam Arpt,Vizagapatam,IN,India,17.722,83.228,VTZ,awc-station-cache,,,,,,4,AP,METAR|TAF,site-name,,,,awc-station-cache
+VOVZ,AIRPORT,,Vizagapatam Arpt,Vizagapatam,IN,India,17.722,83.228,,,,,,,,4,AP,METAR|TAF,site-name,,,,awc-station-cache
 VOWA,AIRPORT,,Warangal Airport,Warangal,IN,India,17.9144,79.602203,WGC,ourairports,,,,,,285,,,ourairports,,,,ourairports
 VQBT,AIRPORT,,Bathpalathang Airport,Jakar,BT,Bhutan,27.5622,90.7471,BUT,ourairports,,,,,,2586,,,ourairports,,,,ourairports
 VQGP,AIRPORT,,Gelephu Airport,Gelephu,BT,Bhutan,26.88456,90.46412,GLU,ourairports,,,,,,299,,,ourairports,,,,ourairports
@@ -11169,7 +11169,7 @@ WALC,AIRPORT,,LNG Badak Airport,Bontang-Borneo Island,ID,Indonesia,0.121656,117.
 WALE,AIRPORT,,Melalan Airport,Melak-Borneo Island,ID,Indonesia,-0.203611,115.760002,GHS,ourairports,,,,,,101,,,ourairports,,,,ourairports
 WALJ,AIRPORT,,Datadawai Airport,Datadawai-Borneo Island,ID,Indonesia,0.807028,114.529052,DTD,ourairports,,,,,,155,,,ourairports,,,,ourairports
 WALL,AIRPORT,,Sepinggan Intl,Sepinggan,ID,Indonesia,-1.268,116.894,BPN,awc-station-cache,,,,,,3,KI,METAR|TAF,site-name,,,,awc-station-cache
-WALR,AIRPORT,,Tarakan Juwata Intl,Tarakan Juwata,ID,Indonesia,3.327,117.566,TRK,awc-station-cache,,,,,,6,KT,,site-name,,,,awc-station-cache
+WALR,AIRPORT,,Tarakan Juwata Intl,Tarakan Juwata,ID,Indonesia,3.327,117.566,,,,,,,,6,KT,,site-name,,,,awc-station-cache
 WALS,AIRPORT,,Pranoto Intl,Samarinda,ID,Indonesia,-0.371,117.255,SRI,awc-station-cache,,,,,,3,KT,TAF,site-city,,,,awc-station-cache
 WALS,AIRPORT,,Pranoto Intl,Samarinda,ID,Indonesia,-0.371,117.255,AAP,ourairports,,,,,,3,KT,TAF,site-city,,,,awc-station-cache
 WAMA,AIRPORT,,Galela,Galela,ID,Indonesia,1.82,127.83,GLX,awc-station-cache,,,,,,8,,METAR|TAF,site-name,,,,awc-station-cache
@@ -11217,7 +11217,7 @@ WARD,AIRPORT,,Dhoho International Airport,Kediri,ID,Indonesia,-7.749527,111.9468
 WARE,AIRPORT,,Notohadinegoro Airport,Jember,ID,Indonesia,-8.242494,113.693476,JBB,ourairports,,,,,,86,,,ourairports,,,,ourairports
 WARQ,AIRPORT,,Sumarmo Intl,Surakarta,ID,Indonesia,-7.516,110.757,,,,,,,,125,JT,METAR|TAF,site-city,,,,awc-station-cache
 WARR,AIRPORT,,Juanda Intl,Surabaya,ID,Indonesia,-7.38,112.787,SUB,awc-station-cache,,,,,,3,JI,METAR|TAF,site-city,,,,awc-station-cache
-WARS,AIRPORT,,Uani Arpt,Semarang,ID,Indonesia,-6.973,110.375,SRG,awc-station-cache,,,,,,3,JT,METAR|TAF,site-city,,,,awc-station-cache
+WARS,AIRPORT,,Uani Arpt,Semarang,ID,Indonesia,-6.973,110.375,,,,,,,,3,JT,METAR|TAF,site-city,,,,awc-station-cache
 WART,AIRPORT,,Trunojoyo Airport,Sumenep,ID,Indonesia,-7.022391,113.887699,SUP,ourairports,,,,,,3,,,ourairports,,,,ourairports
 WARW,AIRPORT,,Harun Thohir Airport,Bawean,ID,Indonesia,-5.723628,112.678889,BXW,ourairports,,,,,,28,,,ourairports,,,,ourairports
 WASA,AIRPORT,,Ayawasi Airport,Ayawasi,ID,Indonesia,-1.159779,132.464082,AYW,ourairports,,,,,,475,,,ourairports,,,,ourairports
@@ -11338,7 +11338,7 @@ WIDT,AIRPORT,,Raja Haji Abdullah Airport,Tanjung Balai-Karinmunbesar Island,ID,I
 WIEB,AIRPORT,,Mentawai Airport,Sipura Island,ID,Indonesia,-2.1001,99.7044,RKI,ourairports,,,,,,8,,,ourairports,,,,ourairports
 WIEE,AIRPORT,,Minangkabau Intl,Padang,ID,Indonesia,-0.783,100.283,PDG,awc-station-cache,,,,,,5,SB,METAR|TAF,site-city,,,,awc-station-cache
 WIGE,AIRPORT,,Enggano Airport,Enggano,ID,Indonesia,-5.305621,102.189546,ENG,ourairports,,,,,,11,,,ourairports,,,,ourairports
-WIHG,AIRPORT,,Pulau Panjang Airport,Jakarta,ID,Indonesia,-5.644444,106.5625,PPJ,ourairports,,,,,,47,,,ourairports,,,,ourairports
+WIHG,AIRPORT,,Pulau Panjang Airport,,ID,Indonesia,-5.644444,106.5625,PPJ,ourairports,,,,,,47,,,,,,,ourairports
 WIHH,AIRPORT,,Perdanakusum,Jakarta,ID,Indonesia,-6.267,106.891,HLP,awc-station-cache,,,,,,26,JK,METAR|TAF,site-city,,,,awc-station-cache
 WIHK,AIRPORT,,Kalijati,Kalijati,ID,Indonesia,-6.55,107.667,,,,,,,,80,LA,,site-name,,,,awc-station-cache
 WIHP,AIRPORT,,Pondok Cabe Air Base,Jakarta,ID,Indonesia,-6.3369598388671875,106.76499938964844,PCB,ourairports,,,,,,61,,,ourairports,,,,ourairports
@@ -12013,7 +12013,7 @@ YWBS,AIRPORT,,Warraber Island Airport,Sue Islet,AU,Australia,-10.20829963684082,
 YWCA,AIRPORT,,Wilcannia Airport,,AU,Australia,-31.522082,143.378358,WIO,ourairports,,,,,,76,,,,,,,ourairports
 YWCH,AIRPORT,,Walcha Airport,,AU,Australia,-31.009492,151.547442,WLC,ourairports,,,,,,,,,,,,,ourairports
 YWCK,AIRPORT,,Warwick Airport,,AU,Australia,-28.149401,151.942993,WAZ,ourairports,,,,,,457,,,,,,,ourairports
-YWDA,AIRPORT,,Windarra Airport,Laverton,AU,Australia,-28.48061,122.244415,WND,ourairports,,,,,,,,,ourairports,,,,ourairports
+YWDA,AIRPORT,,Windarra Airport,,AU,Australia,-28.48061,122.244415,WND,ourairports,,,,,,,,,,,,,ourairports
 YWDG,AIRPORT,,Windarling Airport,Windarling Mine,AU,Australia,-30.032277,119.386489,WRN,ourairports,,,,,,458,,,ourairports,,,,ourairports
 YWDH,AIRPORT,,Windorah Airport,Windorah,AU,Australia,-25.410641,142.668428,WNR,ourairports,,,,,,138,,,ourairports,,,,ourairports
 YWDL,AIRPORT,,Wondoola Airport,Wondoola,AU,Australia,-18.5750007629,140.891998291,WON,ourairports,,,,,,18,,,ourairports,,,,ourairports
